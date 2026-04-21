@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://danielhadobas.com/sitemap-index.xml

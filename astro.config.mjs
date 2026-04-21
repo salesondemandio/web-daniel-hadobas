@@ -5,7 +5,8 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   site: 'https://danielhadobas.com',
-  integrations: [sitemap()],
+  integrations: [sitemap({ lastmod: new Date() })],
+  trailingSlash: 'never',
   output: 'static',
   vite: {
     plugins: [tailwindcss()],

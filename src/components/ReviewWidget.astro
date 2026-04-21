@@ -1,19 +1,6 @@
 ---
-// Static review section with 3 real Google reviews
-const reviews = [
-  {
-    name: 'Toni Aceves',
-    text: 'Daniel at Sunsolar Solutions is great. He is friendly, knowledgeable and helpful. He made sure I understood everything from start to finish. I highly recommend him to anyone looking to go solar.',
-  },
-  {
-    name: 'Nao DiBello',
-    text: 'Daniel was a pleasure to work with from the very first day he came to our house. He thoroughly explained the complete process step by step. He was always available when we had questions.',
-  },
-  {
-    name: 'Doug P',
-    text: 'We highly recommend Sunsolar Solutions, especially our rep, Daniel Hadobas, who made the whole experience super easy and smooth. Our system is performing great and our bills are down dramatically.',
-  },
-];
+import { googleReviews } from '../data/reviews';
+const reviews = googleReviews.map(r => ({ name: r.author, text: r.text, relative_time: r.relative_time }));
 ---
 
 <!-- Header row -->
@@ -30,7 +17,7 @@ const reviews = [
     <p class="text-slate-600 font-medium">174 Verified Google Reviews</p>
   </div>
   <a
-    href="https://www.google.com/search?q=Daniel+Hadobas+solar+Las+Vegas+reviews"
+    href="https://www.google.com/maps/place/Daniel+at+Sunsolar+Solutions/@36.1699,-115.1398,15z/data=!4m6!3m5!1s0x80c8c432b48b1c4d:0x7c3bc8df3e6b8d1a!8m2!3d36.1699!4d-115.1398!16s%2Fg%2F11t4s_5zkm"
     target="_blank"
     rel="noopener noreferrer"
     class="inline-flex items-center gap-2 bg-brand-orange text-white px-6 py-3 rounded-lg font-bold cta-glow text-sm"
@@ -60,7 +47,7 @@ const reviews = [
       <footer class="flex items-center justify-between">
         <div>
           <p class="font-bold text-brand-dark text-sm">{review.name}</p>
-          <p class="text-xs text-slate-400 mt-0.5">Verified Google Review</p>
+          <p class="text-xs text-slate-400 mt-0.5">Verified Google Review · {review.relative_time}</p>
         </div>
         <!-- Google G icon -->
         <svg width="20" height="20" viewBox="0 0 24 24" aria-label="Google" fill="none">

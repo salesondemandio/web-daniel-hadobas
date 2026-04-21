@@ -3,20 +3,34 @@ interface Props {
   city: string;
   state: string;
   description?: string;
+  slug?: string;
 }
 
 const {
   city,
   state,
   description = `Daniel Hadobas is a licensed solar energy specialist serving ${city}, ${state} homeowners. Get $0 down solar with the 30% federal tax credit.`,
+  slug,
 } = Astro.props;
+
+const citySlug = slug || `solar-${city.toLowerCase().replace(/\s+/g, '-')}-${state.toLowerCase()}`;
+const pageUrl = slug === 'home' ? 'https://danielhadobas.com' : `https://danielhadobas.com/${citySlug}`;
+
+const geoCoords: Record<string, { latitude: number; longitude: number }> = {
+  'Las Vegas': { latitude: 36.1699, longitude: -115.1398 },
+  'Henderson': { latitude: 36.0397, longitude: -114.9817 },
+  'North Las Vegas': { latitude: 36.1988, longitude: -115.1175 },
+  'Los Angeles': { latitude: 34.0522, longitude: -118.2437 },
+  'San Diego': { latitude: 32.7157, longitude: -117.1611 },
+  'Riverside': { latitude: 33.9806, longitude: -117.3755 },
+};
 
 const schema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": ["LocalBusiness", "ProfessionalService"],
   "name": `Daniel Hadobas Solar — ${city}, ${state}`,
   "description": description,
-  "url": "https://danielhadobas.com",
+  "url": pageUrl,
   "telephone": "+17027654527",
   "priceRange": "$$$",
   "image": "https://danielhadobas.com/images/daniel-hadobas.jpg",
@@ -26,10 +40,10 @@ const schema = {
     "addressRegion": state,
     "addressCountry": "US"
   },
-  "geo": state === "NV" ? {
+  "geo": geoCoords[city] ? {
     "@type": "GeoCoordinates",
-    "latitude": 36.1699,
-    "longitude": -115.1398
+    "latitude": geoCoords[city].latitude,
+    "longitude": geoCoords[city].longitude
   } : undefined,
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",

@@ -38,15 +38,39 @@ const homeFaqs = [
   },
   {
     question: 'What is the 30% federal solar tax credit?',
-    answer: 'The Inflation Reduction Act provides a 30% Investment Tax Credit (ITC) on the full cost of your solar installation. If your system costs $18,000, you receive a $5,400 credit directly off your federal taxes. This credit is available through at least 2032 but may be subject to future legislative changes.',
+    answer: 'The Inflation Reduction Act provides a 30% Investment Tax Credit (ITC) on the full cost of your solar installation. If your system costs $18,000, you receive a $5,400 credit directly off your federal taxes. This credit is available through at least 2032 but may be subject to future legislative changes. The credit is non-refundable — it reduces the taxes you owe but does not create a refund if you owe less than the credit amount.',
   },
   {
     question: 'How does NV Energy net metering work?',
-    answer: "NV Energy's net metering program lets you sell excess solar energy back to the grid. When your panels produce more than you use, the surplus spins your meter backward. You receive a credit at a retail rate, which offsets the energy you pull from the grid at night. This significantly reduces or eliminates your electric bill.",
+    answer: "NV Energy's net metering program lets you sell excess solar energy back to the grid at approximately 75% of retail rate. When your panels produce more than you use, the surplus earns credits that offset the energy you pull from the grid at night. This significantly reduces or eliminates your electric bill. Las Vegas's 290+ sunny days per year make net metering especially valuable.",
   },
   {
     question: 'Is Daniel Hadobas a licensed solar contractor?',
-    answer: "Daniel is a licensed solar energy specialist and independent agent with Sunder Energy, one of the nation's top-rated residential solar companies. He handles permitting, HOA approvals, utility interconnection, and monitors your system post-install to ensure everything performs as promised.",
+    answer: "Daniel is a licensed solar energy specialist and independent agent with Sunder Energy, one of the nation's top-rated residential solar companies. He handles permitting, HOA approvals, utility interconnection, and monitors your system post-install to ensure everything performs as promised. He has earned 174 five-star reviews from verified homeowners across Nevada and California.",
+  },
+  {
+    question: 'How many solar panels do I need for a Las Vegas home?',
+    answer: 'Most Las Vegas homes (1,500–2,500 sq ft) need 18–28 panels to offset 80–100% of their electric usage. The exact number depends on your average monthly kWh usage, roof orientation, and shading. Daniel analyzes your last 12 months of utility bills to design a system sized precisely for your home — no guessing, no overselling.',
+  },
+  {
+    question: 'Does solar work in Las Vegas heat?',
+    answer: 'Yes — Las Vegas is one of the best solar markets in the US. While high temperatures slightly reduce panel output (panels are rated at 25°C), Las Vegas gets over 290 sunny days per year, far more than the national average of 205. The sheer volume of daily sunlight more than compensates for any heat-related efficiency dip. Las Vegas homeowners consistently see the highest solar production rates in the country.',
+  },
+  {
+    question: 'What company does Daniel Hadobas work for?',
+    answer: 'Daniel works as an independent licensed agent with Sunder Energy, a national residential solar company with an A+ rating. He previously represented Sunsolar Solutions, which merged into Sunder Energy. When you work with Daniel, you get the same trusted advisor regardless of which company name appears on documents — Daniel handles your account personally from quote to post-install support.',
+  },
+  {
+    question: 'What happens to my solar if I sell my house?',
+    answer: "If you own your solar system outright or financed it with a loan, it transfers with the house and typically adds $15,000–$25,000 to your home's appraised value. Studies show solar homes sell faster than non-solar homes. If you have a lease or PPA (which Daniel does not recommend), the new buyer must qualify to take over the contract or you may need to buy it out at closing.",
+  },
+  {
+    question: 'How long does solar installation take in Las Vegas?',
+    answer: 'From signed contract to system activation, most Las Vegas installs take 4–8 weeks. The physical installation takes 1–2 days. The remaining time covers city permits (1–2 weeks), HOA approval if applicable (1–3 weeks), and NV Energy interconnection approval (1–2 weeks). Daniel coordinates all of this for you — you just show up for the install day.',
+  },
+  {
+    question: 'Does Daniel serve California homeowners?',
+    answer: 'Yes — Daniel is licensed to serve homeowners throughout Southern California, including Los Angeles, San Diego, and Riverside. California solar operates under NEM 3.0 (Net Billing Tariff), which changed how excess energy is credited starting in April 2023. Daniel specializes in designing California systems that maximize self-consumption and battery storage to optimize savings under the new rate structure.',
   },
 ];
 
@@ -66,13 +90,13 @@ const serviceAreas = [
 >
   <Fragment slot="schema">
     <PersonSchema />
-    <LocalBusinessSchema city="Las Vegas" state="NV" />
+    <LocalBusinessSchema city="Las Vegas" state="NV" slug="home" />
   </Fragment>
 
   <!-- Hero -->
   <Hero
-    headline="Las Vegas's #1 Rated Solar Agent"
-    subheadline="174 Five-Star Reviews. $0 Down Solar. $150–$400/mo in Savings. Stop overpaying NV Energy — lock in the 30% federal tax credit before it expires."
+    headline="Nevada & California's #1 Rated Solar Agent"
+    subheadline="174 Five-Star Reviews. $0 Down Solar. $150–$400/mo in Savings. Serving Las Vegas, Henderson, Los Angeles, San Diego, and Riverside."
     ctaText="Get Your Free Quote"
     ctaHref="https://danielhadobas.com/sodsolarsavings"
   />

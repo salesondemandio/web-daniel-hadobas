@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PersonSchema from '../components/PersonSchema.astro';
+import LocalBusinessSchema from '../components/LocalBusinessSchema.astro';
 import CTAButton from '../components/CTAButton.astro';
 import ReviewWidget from '../components/ReviewWidget.astro';
 ---
@@ -11,6 +12,7 @@ import ReviewWidget from '../components/ReviewWidget.astro';
 >
   <Fragment slot="schema">
     <PersonSchema />
+    <LocalBusinessSchema city="Las Vegas" state="NV" slug="about" />
   </Fragment>
 
   <!-- Hero -->
@@ -30,15 +32,26 @@ import ReviewWidget from '../components/ReviewWidget.astro';
   <section class="py-16 px-4">
     <div class="max-w-4xl mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-        <!-- Photo placeholder -->
-        <div class="bg-gradient-to-br from-solar-cream to-amber-100 rounded-2xl aspect-[4/5] flex items-center justify-center border border-amber-200">
-          <div class="text-center text-slate-400 p-8">
-            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" class="mx-auto mb-3 text-amber-300" aria-hidden="true">
-              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
-              <circle cx="12" cy="7" r="4"/>
-            </svg>
-            <p class="text-sm font-medium text-amber-400">Photo — Daniel Hadobas</p>
-            <p class="text-xs text-amber-300 mt-1">Add to /public/images/daniel-hadobas.jpg</p>
+        <!-- Photo -->
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-gradient-to-br from-solar-cream to-amber-100 border border-amber-200">
+          <img
+            src="/images/daniel-hadobas.jpg"
+            alt="Daniel Hadobas — Licensed Solar Energy Specialist, Las Vegas NV"
+            class="w-full h-full object-cover"
+            width="480"
+            height="600"
+            loading="eager"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+          />
+          <div class="hidden w-full h-full items-center justify-center text-center p-8">
+            <div>
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" class="mx-auto mb-3 text-amber-300" aria-hidden="true">
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+              <p class="text-sm font-medium text-amber-500">Daniel Hadobas</p>
+              <p class="text-xs text-amber-400 mt-1">Licensed Solar Specialist</p>
+            </div>
           </div>
         </div>
 
