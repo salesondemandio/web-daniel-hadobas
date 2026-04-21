@@ -1,0 +1,63 @@
+---
+interface Props {
+  headline?: string;
+  points?: string[];
+}
+
+const {
+  headline = 'Why Las Vegas Homeowners Choose Daniel',
+  points = [
+    '174 five-star Google reviews — real homeowners, real results',
+    'Las Vegas local since 1996 — he knows your neighborhood, your utility, your HOA',
+    '$0 down financing with payment options that beat your NV Energy bill from day one',
+    '30% federal tax credit guidance — Daniel makes sure you claim every dollar',
+    'Handles permits, HOA approvals, and utility interconnection for you',
+    'Post-install monitoring so your system keeps performing year after year',
+    'Works with top-rated installer Sunder Energy — crews that show up on time',
+    'No high-pressure sales. One honest conversation about your actual savings.',
+  ],
+} = Astro.props;
+---
+
+<section class="py-16 bg-brand-light">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+      <!-- Left: Headline + CTA -->
+      <div>
+        <div class="section-divider mb-4"></div>
+        <h2 class="text-3xl sm:text-4xl font-bold text-brand-dark mb-4">{headline}</h2>
+        <p class="text-slate-600 mb-8 leading-relaxed">
+          Not a call center. Not a corporate solar company pushing quotas. Daniel is an independent expert whose reputation is built entirely on referrals and reviews — so your success is his success.
+        </p>
+        <a
+          href="https://danielhadobas.com/sodsolarsavings"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 bg-brand-orange text-white px-8 py-4 rounded-lg font-bold cta-glow"
+        >
+          Book My Free Consultation
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <p class="text-sm text-slate-500 mt-3">No obligation. No pressure. Just your numbers.</p>
+      </div>
+
+      <!-- Right: Checklist -->
+      <div>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {points.map((point) => (
+            <li class="flex items-start gap-3 bg-white rounded-xl p-4 border border-slate-100 shadow-sm">
+              <span class="shrink-0 w-6 h-6 rounded-full bg-brand-orange/10 flex items-center justify-center mt-0.5" aria-hidden="true">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 6L9 17l-5-5"/>
+                </svg>
+              </span>
+              <span class="text-slate-700 text-sm leading-snug">{point}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>

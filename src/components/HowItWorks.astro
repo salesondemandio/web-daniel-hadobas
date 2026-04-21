@@ -1,0 +1,58 @@
+---
+interface Step {
+  title: string;
+  description: string;
+}
+
+interface Props {
+  headline?: string;
+  steps: Step[];
+}
+
+const {
+  headline = 'Go Solar in 3 Simple Steps',
+  steps,
+} = Astro.props;
+---
+
+<section class="py-16 bg-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-12">
+      <div class="section-divider mx-auto mb-4"></div>
+      <h2 class="text-3xl sm:text-4xl font-bold text-brand-dark mb-3">{headline}</h2>
+      <p class="text-slate-500 max-w-xl mx-auto">
+        Daniel handles everything from your free savings analysis to final inspection. You just flip the switch.
+      </p>
+    </div>
+
+    <!-- Steps grid -->
+    <div class="relative grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Connecting line (desktop only) -->
+      <div class="hidden md:block absolute top-10 left-[16.67%] right-[16.67%] h-0.5 bg-gradient-to-r from-brand-orange via-brand-amber to-brand-orange opacity-30" aria-hidden="true"></div>
+
+      {steps.map((step, i) => (
+        <div class="relative bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-lg transition-shadow duration-300 hover:border-brand-orange/30">
+          <!-- Numbered circle -->
+          <div class="w-12 h-12 rounded-full bg-brand-orange flex items-center justify-center mb-6 shadow-lg shadow-orange-200 relative z-10">
+            <span class="text-white font-bold text-lg">{String(i + 1).padStart(2, '0')}</span>
+          </div>
+          <h3 class="font-bold text-brand-dark text-lg mb-3">{step.title}</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">{step.description}</p>
+        </div>
+      ))}
+    </div>
+
+    <!-- CTA under steps -->
+    <div class="text-center mt-10">
+      <a
+        href="https://danielhadobas.com/sodsolarsavings"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 bg-brand-orange text-white px-8 py-4 rounded-lg font-bold cta-glow"
+      >
+        Start My Free Analysis
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>

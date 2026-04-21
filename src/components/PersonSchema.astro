@@ -1,0 +1,27 @@
+---
+// No props — static schema for Daniel Hadobas
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Daniel Hadobas",
+  "jobTitle": "Licensed Solar Energy Specialist",
+  "telephone": "+17027654527",
+  "url": "https://danielhadobas.com",
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=100089968135364",
+    "https://www.instagram.com/hadobadass/",
+    "https://www.linkedin.com/in/daniel-hadobas"
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Sunder Energy"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Las Vegas",
+    "addressRegion": "NV"
+  }
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

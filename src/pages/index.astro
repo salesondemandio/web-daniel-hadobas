@@ -1,0 +1,138 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import StatsBar from '../components/StatsBar.astro';
+import HowItWorks from '../components/HowItWorks.astro';
+import WhyDaniel from '../components/WhyDaniel.astro';
+import ReviewWidget from '../components/ReviewWidget.astro';
+import SectionCTA from '../components/SectionCTA.astro';
+import PersonSchema from '../components/PersonSchema.astro';
+import LocalBusinessSchema from '../components/LocalBusinessSchema.astro';
+import FAQSection from '../components/FAQSection.astro';
+
+const stats = [
+  { value: '290+', label: 'Sunny Days Per Year in Las Vegas' },
+  { value: '174', label: 'Five-Star Google Reviews' },
+  { value: '$400', label: 'Avg Monthly Savings' },
+];
+
+const howItWorksSteps = [
+  {
+    title: 'Free Savings Analysis',
+    description: 'Daniel reviews your utility bills and designs a custom solar system sized for your home and energy usage. Zero cost, zero obligation.',
+  },
+  {
+    title: 'Permits & Installation',
+    description: "Daniel coordinates permits, HOA approvals, and schedules your installation with Sunder's certified crews. Average install: 1–2 days.",
+  },
+  {
+    title: 'Start Saving Immediately',
+    description: 'Once your utility approves interconnection, your system goes live. Watch your bill drop from day one — and lock in rates for 25 years.',
+  },
+];
+
+const homeFaqs = [
+  {
+    question: 'How much does solar cost in Las Vegas?',
+    answer: 'Most Las Vegas homeowners go solar for $0 down with financing. The average system size is 6–8kW, costing $15,000–$22,000 before incentives. After the 30% federal tax credit, your net cost drops to $10,500–$15,400. Monthly savings typically range from $150–$400 depending on your current NV Energy bill.',
+  },
+  {
+    question: 'What is the 30% federal solar tax credit?',
+    answer: 'The Inflation Reduction Act provides a 30% Investment Tax Credit (ITC) on the full cost of your solar installation. If your system costs $18,000, you receive a $5,400 credit directly off your federal taxes. This credit is available through at least 2032 but may be subject to future legislative changes.',
+  },
+  {
+    question: 'How does NV Energy net metering work?',
+    answer: "NV Energy's net metering program lets you sell excess solar energy back to the grid. When your panels produce more than you use, the surplus spins your meter backward. You receive a credit at a retail rate, which offsets the energy you pull from the grid at night. This significantly reduces or eliminates your electric bill.",
+  },
+  {
+    question: 'Is Daniel Hadobas a licensed solar contractor?',
+    answer: "Daniel is a licensed solar energy specialist and independent agent with Sunder Energy, one of the nation's top-rated residential solar companies. He handles permitting, HOA approvals, utility interconnection, and monitors your system post-install to ensure everything performs as promised.",
+  },
+];
+
+const serviceAreas = [
+  { name: 'Las Vegas, NV', href: '/solar-las-vegas' },
+  { name: 'Henderson, NV', href: '/solar-henderson-nv' },
+  { name: 'North Las Vegas, NV', href: '/solar-north-las-vegas' },
+  { name: 'Los Angeles, CA', href: '/solar-los-angeles' },
+  { name: 'San Diego, CA', href: '/solar-san-diego' },
+  { name: 'Riverside, CA', href: '/solar-riverside' },
+];
+---
+
+<BaseLayout
+  title="Las Vegas Solar Agent — $0 Down Solar | Daniel Hadobas"
+  description="Las Vegas's #1 rated solar agent. 174 five-star reviews. $0 down solar with 30% federal tax credit. Serving Las Vegas NV and California. Call (702) 765-4527."
+>
+  <Fragment slot="schema">
+    <PersonSchema />
+    <LocalBusinessSchema city="Las Vegas" state="NV" />
+  </Fragment>
+
+  <!-- Hero -->
+  <Hero
+    headline="Las Vegas's #1 Rated Solar Agent"
+    subheadline="174 Five-Star Reviews. $0 Down Solar. $150–$400/mo in Savings. Stop overpaying NV Energy — lock in the 30% federal tax credit before it expires."
+    ctaText="Get Your Free Quote"
+    ctaHref="https://danielhadobas.com/sodsolarsavings"
+  />
+
+  <!-- Stats Bar -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 py-12" aria-label="Key statistics">
+    <StatsBar stats={stats} />
+  </section>
+
+  <!-- How It Works -->
+  <HowItWorks
+    headline="Go Solar in 3 Simple Steps"
+    steps={howItWorksSteps}
+  />
+
+  <!-- Why Daniel -->
+  <WhyDaniel headline="Why Las Vegas Homeowners Choose Daniel" />
+
+  <!-- Reviews -->
+  <section class="py-16 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-10">
+        <div class="section-divider mx-auto mb-4"></div>
+        <h2 class="text-3xl font-bold text-brand-dark">Trusted by Las Vegas Homeowners</h2>
+        <p class="text-slate-500 mt-2 max-w-xl mx-auto">Real reviews from real people who made the switch with Daniel.</p>
+      </div>
+      <ReviewWidget />
+    </div>
+  </section>
+
+  <!-- Service Areas -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-10">
+        <div class="section-divider mx-auto mb-4"></div>
+        <h2 class="text-3xl font-bold text-brand-dark">Service Areas</h2>
+        <p class="text-slate-500 mt-2">Daniel serves homeowners across Nevada and California</p>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 max-w-2xl mx-auto">
+        {serviceAreas.map((area) => (
+          <a
+            href={area.href}
+            class="flex items-center gap-2 bg-slate-50 hover:bg-solar-cream border border-slate-200 hover:border-brand-orange rounded-xl px-4 py-3 text-sm font-medium text-slate-700 hover:text-brand-orange transition-all duration-200 group"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-400 group-hover:text-brand-orange" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            {area.name}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQSection faqs={homeFaqs} heading="Solar FAQs for Las Vegas Homeowners" />
+
+  <!-- Final CTA -->
+  <SectionCTA
+    headline="Ready to Cut Your NV Energy Bill?"
+    subheadline="Free savings analysis. No pressure. No obligation. Daniel will show you exactly how much you'll save — and how much you'll get back in tax credits."
+    buttonText="Book My Free Consultation"
+    buttonHref="https://danielhadobas.com/sodsolarsavings"
+  />
+</BaseLayout>

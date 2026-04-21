@@ -1,0 +1,29 @@
+---
+interface Props {
+  text: string;
+  href?: string;
+  size?: 'sm' | 'lg';
+}
+
+const {
+  text,
+  href = 'https://danielhadobas.com/sodsolarsavings',
+  size = 'lg',
+} = Astro.props;
+
+const sizeClasses = size === 'lg'
+  ? 'px-8 py-4 text-base'
+  : 'px-5 py-2.5 text-sm';
+---
+
+<a
+  href={href}
+  target="_blank"
+  rel="noopener noreferrer"
+  class={`inline-flex items-center gap-2 bg-brand-orange text-white rounded-lg font-bold cta-glow ${sizeClasses}`}
+>
+  {text}
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M5 12h14M12 5l7 7-7 7"/>
+  </svg>
+</a>

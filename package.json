@@ -1,17 +1,26 @@
 {
   "name": "web-daniel-hadobas",
+  "type": "module",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs",
-    "test": "tests"
+  "description": "Daniel Hadobas Solar — Personal brand SEO site",
+  "engines": {
+    "node": ">=22.12.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "deploy": "astro build && wrangler pages deploy dist --branch=main --project-name=web-daniel-hadobas"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.2",
+    "@astrojs/tailwind": "^6.0.2",
+    "@tailwindcss/vite": "^4.2.3",
+    "astro": "^6.1.8",
+    "tailwindcss": "^4.2.3"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs"
+  "author": "Sales On Demand",
+  "license": "ISC"
 }

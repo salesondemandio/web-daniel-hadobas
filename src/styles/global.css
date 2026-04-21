@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-brand-orange: #F97316;
+  --color-brand-dark: #0F172A;
+  --color-brand-light: #F8FAFC;
+  --color-brand-amber: #FCD34D;
+  --color-solar-gold: #D97706;
+  --color-solar-cream: #FFFBEB;
+
+  --font-family-sans: 'Inter', sans-serif;
+  --font-family-display: 'Inter', sans-serif;
+}
+
+/* Base resets */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-family-sans);
+}
+
+body {
+  font-family: var(--font-family-sans);
+  background-color: var(--color-brand-light);
+  color: var(--color-brand-dark);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+/* Urgency banner pulse animation */
+@keyframes pulse-orange {
+  0%, 100% { background-color: #EA580C; }
+  50% { background-color: #F97316; }
+}
+
+.urgency-banner {
+  animation: pulse-orange 3s ease-in-out infinite;
+}
+
+/* Sun ray animation for hero */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.sun-rays {
+  animation: spin-slow 40s linear infinite;
+}
+
+/* Fade-up animation */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-up {
+  animation: fade-up 0.7s ease-out forwards;
+}
+
+.fade-up-delay-1 { animation-delay: 0.1s; opacity: 0; }
+.fade-up-delay-2 { animation-delay: 0.25s; opacity: 0; }
+.fade-up-delay-3 { animation-delay: 0.4s; opacity: 0; }
+.fade-up-delay-4 { animation-delay: 0.6s; opacity: 0; }
+
+/* Star rating */
+.star-filled { color: #FCD34D; }
+
+/* CTA glow effect */
+.cta-glow {
+  box-shadow: 0 0 24px rgba(249, 115, 22, 0.5);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.cta-glow:hover {
+  box-shadow: 0 0 40px rgba(249, 115, 22, 0.75);
+  transform: translateY(-2px);
+}
+
+/* Noise texture overlay for hero */
+.noise-overlay {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+}
+
+/* Section divider */
+.section-divider {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #F97316, #FCD34D);
+  border-radius: 2px;
+}
+
+/* Button base styles */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #F97316;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #EA580C;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #fff;
+  color: #0F172A;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #E2E8F0;
+  transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: #F8FAFC;
+}

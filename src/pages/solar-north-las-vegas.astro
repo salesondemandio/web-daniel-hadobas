@@ -1,0 +1,92 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTAButton from '../components/CTAButton.astro';
+import PersonSchema from '../components/PersonSchema.astro';
+import LocalBusinessSchema from '../components/LocalBusinessSchema.astro';
+import StatsBar from '../components/StatsBar.astro';
+import FAQSection from '../components/FAQSection.astro';
+import ReviewWidget from '../components/ReviewWidget.astro';
+
+const city = "North Las Vegas";
+const state = "NV";
+
+const stats = [
+  { value: '290+', label: 'Sunny days per year' },
+  { value: '30%', label: 'Federal ITC tax credit' },
+  { value: '$0', label: 'Down payment required' },
+];
+
+const faqs = [
+  {
+    question: `How much does solar save in ${city}?`,
+    answer: `${city} homeowners on NV Energy typically save $150–$350 per month after going solar. Your savings depend on your current bill, system size, and how much electricity you use. Daniel provides a free detailed savings estimate — no obligation, no pressure.`,
+  },
+  {
+    question: `Are there HOA restrictions on solar in ${city}?`,
+    answer: `Nevada law (NRS 278.0208) protects homeowners' right to install solar regardless of HOA rules. No HOA in Nevada can outright prohibit solar installations. Daniel handles all HOA paperwork and submissions as part of his full-service installation.`,
+  },
+  {
+    question: `What is the solar installation process in ${city}?`,
+    answer: `Daniel walks you through a free savings analysis, designs a custom system for your home, handles permits and HOA approval, coordinates installation with Sunder's certified crews, and manages NV Energy interconnection. Most homeowners are generating solar power within 6–10 weeks.`,
+  },
+];
+---
+
+<BaseLayout
+  title={`Solar Panels ${city}, NV | Daniel Hadobas Solar`}
+  description={`Trusted solar agent serving ${city}, NV. $0 down solar with 30% federal tax credit. Get your free savings quote from Daniel Hadobas — call (702) 765-4527.`}
+>
+  <Fragment slot="schema">
+    <PersonSchema />
+    <LocalBusinessSchema city={city} state={state} />
+  </Fragment>
+
+  <section class="bg-brand-dark py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+      <div class="inline-flex items-center gap-2 bg-brand-orange/20 border border-brand-orange/30 text-brand-orange rounded-full px-4 py-1.5 text-xs font-semibold mb-6">
+        Serving {city}, {state}
+      </div>
+      <h1 class="font-display text-4xl sm:text-5xl font-black text-white mb-4">
+        Solar North <span class="text-brand-orange">Las Vegas</span>, NV
+      </h1>
+      <p class="text-slate-300 text-lg max-w-xl mb-8">
+        Trusted by {city} homeowners. $0 down solar panels with the 30% federal tax credit.
+        Start saving immediately.
+      </p>
+      <CTAButton text="Get Free Savings Quote" size="lg" />
+    </div>
+  </section>
+
+  <section class="max-w-5xl mx-auto px-4 py-12">
+    <StatsBar stats={stats} />
+  </section>
+
+  <section class="py-8 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="font-display text-2xl font-bold text-brand-dark mb-3">Solar in {city}, NV</h2>
+      <div class="section-divider mb-4"></div>
+      <p class="text-slate-600 leading-relaxed">
+        {city} residents have access to the same powerful solar incentives and exceptional
+        sunshine that make the Las Vegas metro one of the top solar markets in the country.
+        Daniel Hadobas provides the same trusted, full-service experience that has earned
+        174 five-star reviews across the valley — with $0 down and savings that start on day one.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-10 px-4">
+    <div class="max-w-4xl mx-auto">
+      <ReviewWidget />
+    </div>
+  </section>
+
+  <FAQSection faqs={faqs} heading={`Solar FAQs — ${city}, ${state}`} />
+
+  <section class="bg-brand-dark py-16 px-4 text-center">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="font-display text-3xl font-bold text-white mb-4">Go Solar in {city}</h2>
+      <p class="text-slate-300 mb-8">Free quote. No salespeople. Just real numbers.</p>
+      <CTAButton text="Get My Free Quote" size="lg" />
+    </div>
+  </section>
+</BaseLayout>

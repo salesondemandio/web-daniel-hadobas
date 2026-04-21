@@ -1,0 +1,58 @@
+---
+interface Props {
+  city: string;
+  state: string;
+  description?: string;
+}
+
+const {
+  city,
+  state,
+  description = `Daniel Hadobas is a licensed solar energy specialist serving ${city}, ${state} homeowners. Get $0 down solar with the 30% federal tax credit.`,
+} = Astro.props;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": `Daniel Hadobas Solar — ${city}, ${state}`,
+  "description": description,
+  "url": "https://danielhadobas.com",
+  "telephone": "+17027654527",
+  "priceRange": "$$$",
+  "image": "https://danielhadobas.com/images/daniel-hadobas.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": city,
+    "addressRegion": state,
+    "addressCountry": "US"
+  },
+  "geo": state === "NV" ? {
+    "@type": "GeoCoordinates",
+    "latitude": 36.1699,
+    "longitude": -115.1398
+  } : undefined,
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "08:00",
+    "closes": "19:00"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "174",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=100089968135364",
+    "https://www.instagram.com/hadobadass/",
+    "https://www.linkedin.com/in/daniel-hadobas"
+  ]
+};
+
+// Remove undefined values
+const cleanSchema = JSON.parse(JSON.stringify(schema));
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(cleanSchema)} />

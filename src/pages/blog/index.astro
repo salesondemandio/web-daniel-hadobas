@@ -1,0 +1,114 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CTAButton from '../../components/CTAButton.astro';
+
+// Placeholder posts — will be replaced with MDX content in Phase 3
+const posts = [
+  {
+    title: 'How Much Does Solar Cost in Las Vegas in 2025?',
+    slug: 'solar-cost-las-vegas-2025',
+    description: 'A complete breakdown of solar panel costs in Las Vegas, NV — before and after the 30% federal tax credit.',
+    date: '2025-01-15',
+    readTime: '6 min read',
+  },
+  {
+    title: 'NV Energy Net Metering Explained',
+    slug: 'nv-energy-net-metering-explained',
+    description: 'How NV Energy\'s net metering program works, what you get paid for excess solar, and how to maximize your credits.',
+    date: '2025-01-20',
+    readTime: '5 min read',
+  },
+  {
+    title: 'Nevada Solar Tax Credit 2025: What You Need to Know',
+    slug: 'nevada-solar-tax-credit-2025',
+    description: 'Every state and federal solar incentive available to Nevada homeowners in 2025 — and how to claim them.',
+    date: '2025-02-01',
+    readTime: '7 min read',
+  },
+  {
+    title: 'Best Solar Companies in Las Vegas — What to Look For',
+    slug: 'best-solar-companies-las-vegas',
+    description: 'How to evaluate solar companies in Las Vegas, what questions to ask, and red flags to avoid.',
+    date: '2025-02-10',
+    readTime: '8 min read',
+  },
+  {
+    title: 'California Solar Incentives 2025: Complete Guide',
+    slug: 'california-solar-incentives-2025',
+    description: 'All federal, state, and utility solar incentives for California homeowners in 2025 — including NEM 3.0 and battery rebates.',
+    date: '2025-02-20',
+    readTime: '9 min read',
+  },
+];
+---
+
+<BaseLayout
+  title="Solar Energy Blog | Daniel Hadobas Solar"
+  description="Expert solar energy advice for Las Vegas and California homeowners. Tax credits, net metering, cost breakdowns, and installation guides."
+>
+  <!-- Hero -->
+  <section class="bg-brand-dark py-16 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="section-divider mx-auto mb-6"></div>
+      <h1 class="font-display text-4xl sm:text-5xl font-black text-white mb-3">
+        Solar <span class="text-brand-orange">Energy Blog</span>
+      </h1>
+      <p class="text-slate-300 text-lg max-w-xl mx-auto">
+        Expert guides for Las Vegas and California homeowners going solar — tax credits,
+        net metering, cost breakdowns, and real-world savings stories.
+      </p>
+    </div>
+  </section>
+
+  <!-- Post list -->
+  <section class="py-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      <div class="grid gap-6">
+        {posts.map((post) => (
+          <article class="group bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden">
+            <div class="p-6 sm:p-8 flex flex-col sm:flex-row gap-4 sm:gap-6 items-start">
+              <!-- Icon -->
+              <div class="shrink-0 w-12 h-12 rounded-xl bg-brand-orange/10 flex items-center justify-center">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                </svg>
+              </div>
+
+              <!-- Content -->
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-3 text-xs text-slate-400 mb-2">
+                  <time datetime={post.date}>{new Date(post.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</time>
+                  <span>·</span>
+                  <span>{post.readTime}</span>
+                </div>
+                <h2 class="font-display font-bold text-xl text-brand-dark group-hover:text-brand-orange transition-colors mb-2">
+                  {post.title}
+                </h2>
+                <p class="text-slate-500 text-sm leading-relaxed">{post.description}</p>
+                <div class="mt-4">
+                  <span class="inline-flex items-center gap-1 text-brand-orange text-sm font-semibold">
+                    Read article
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+
+      <!-- Note: posts link to slugs that don't exist yet — will be built in Phase 3 -->
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-slate-50 py-16 px-4 text-center">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="font-display text-2xl font-bold text-brand-dark mb-3">
+        Ready to Go Solar?
+      </h2>
+      <p class="text-slate-500 mb-8">Get your free savings analysis from Daniel — no commitment required.</p>
+      <CTAButton text="Get Free Savings Quote" size="lg" />
+    </div>
+  </section>
+</BaseLayout>
