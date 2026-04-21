@@ -1,7 +1,8 @@
 export const lasVegasContent = {
   meta: {
     title: "Solar Panels Las Vegas NV | Daniel Hadobas Solar",
-    description: "Get Las Vegas solar panels with $0 down and save $150–$400/mo. 174 five-star reviews. Licensed Nevada solar agent. Free quote today."
+    description: "Get Las Vegas solar panels with $0 down and save $150–$400/mo. 174 five-star reviews. Licensed Nevada solar agent. Free quote today.",
+    keywords: "solar panels Las Vegas NV, Las Vegas solar installation, NV Energy solar Las Vegas, solar cost Las Vegas, best solar company Las Vegas, $0 down solar Las Vegas"
   },
   hero: {
     h1: "Solar Panels Las Vegas, NV — $0 Down, Real Savings",

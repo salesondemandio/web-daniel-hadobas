@@ -4,6 +4,7 @@ export interface BlogPost {
   description: string;
   date: string;
   readTime: string;
+  tags: string[];
   body: string;
   faqs: { question: string; answer: string }[];
 }
@@ -15,6 +16,7 @@ export const blogPosts: BlogPost[] = [
     description: 'A complete breakdown of solar panel costs in Las Vegas, NV — before and after the 30% federal tax credit.',
     date: '2025-01-15',
     readTime: '6 min read',
+    tags: ['Nevada', 'Cost & Financing', 'Las Vegas'],
     body: `
 <p>Going solar in Las Vegas in 2025 is one of the best financial decisions a homeowner can make — if you understand the numbers. Here's the complete cost picture.</p>
 
@@ -70,6 +72,7 @@ export const blogPosts: BlogPost[] = [
     description: "How NV Energy's net metering program works, what you get paid for excess solar, and how to maximize your credits.",
     date: '2025-01-20',
     readTime: '5 min read',
+    tags: ['Nevada', 'Net Metering', 'NV Energy'],
     body: `
 <p>NV Energy's net metering program is one of the most important factors in your solar savings calculation. Here's exactly how it works — and how to maximize it.</p>
 
@@ -112,6 +115,7 @@ export const blogPosts: BlogPost[] = [
     description: 'Every state and federal solar incentive available to Nevada homeowners in 2025 — and how to claim them.',
     date: '2025-02-01',
     readTime: '7 min read',
+    tags: ['Nevada', 'Tax Credits', 'Incentives'],
     body: `
 <p>Nevada homeowners in 2025 have access to a stacked set of incentives that make going solar more affordable than ever. Here's the complete picture — federal, state, and utility.</p>
 
@@ -165,6 +169,7 @@ export const blogPosts: BlogPost[] = [
     description: 'How to evaluate solar companies in Las Vegas, what questions to ask, and red flags to avoid.',
     date: '2025-02-10',
     readTime: '8 min read',
+    tags: ['Las Vegas', 'Buying Guide', 'Nevada'],
     body: `
 <p>Las Vegas has dozens of solar companies competing for your business. Here's how to separate the legitimate installers from the predatory ones — and what to ask before signing anything.</p>
 
@@ -212,6 +217,7 @@ export const blogPosts: BlogPost[] = [
     description: 'All federal, state, and utility solar incentives for California homeowners in 2025 — including NEM 3.0 and battery rebates.',
     date: '2025-02-20',
     readTime: '9 min read',
+    tags: ['California', 'Incentives', 'NEM 3.0'],
     body: `
 <p>California solar incentives changed significantly in 2023 with NEM 3.0. Here's everything Southern California homeowners need to know going into 2025.</p>
 

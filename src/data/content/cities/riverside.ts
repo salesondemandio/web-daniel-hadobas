@@ -1,7 +1,8 @@
 export const riversideContent = {
   meta: {
     title: "Solar Panels Riverside CA | Daniel Hadobas Solar",
-    description: "Solar panels in Riverside, CA with $0 down. SCE rates at $0.28–$0.32/kWh and brutal summer heat drive bills high — solar pays back fast. Free quote today."
+    description: "Solar panels in Riverside, CA with $0 down. SCE rates at $0.28–$0.32/kWh and brutal summer heat drive bills high — solar pays back fast. Free quote today.",
+    keywords: "solar panels Riverside CA, Riverside solar installation, SCE solar Riverside, solar agent Riverside California, solar cost Riverside CA"
   },
   hero: {
     h1: "Solar Panels Riverside, CA — Slash Your SCE Bill",

@@ -1,7 +1,8 @@
 export const greenValleyContent = {
   meta: {
     title: "Solar Panels Green Valley Henderson NV — $0 Down | Daniel Hadobas",
-    description: "Green Valley's top-rated solar agent. 174 five-star reviews. $0 down solar, 30% federal tax credit. Serving Henderson & Green Valley, NV. Call (702) 765-4527."
+    description: "Green Valley's top-rated solar agent. 174 five-star reviews. $0 down solar, 30% federal tax credit. Serving Henderson & Green Valley, NV. Call (702) 765-4527.",
+    keywords: "solar panels Green Valley NV, Green Valley Henderson solar, solar agent Green Valley Nevada, NV Energy solar Henderson, solar installation Green Valley"
   },
   hero: {
     h1: "Green Valley Solar Expert — Henderson's Most Trusted Agent",

@@ -1,50 +1,15 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CTAButton from '../../components/CTAButton.astro';
+import { blogPosts } from '../../data/blog-posts';
 
-// Placeholder posts — will be replaced with MDX content in Phase 3
-const posts = [
-  {
-    title: 'How Much Does Solar Cost in Las Vegas in 2025?',
-    slug: 'solar-cost-las-vegas-2025',
-    description: 'A complete breakdown of solar panel costs in Las Vegas, NV — before and after the 30% federal tax credit.',
-    date: '2025-01-15',
-    readTime: '6 min read',
-  },
-  {
-    title: 'NV Energy Net Metering Explained',
-    slug: 'nv-energy-net-metering-explained',
-    description: 'How NV Energy\'s net metering program works, what you get paid for excess solar, and how to maximize your credits.',
-    date: '2025-01-20',
-    readTime: '5 min read',
-  },
-  {
-    title: 'Nevada Solar Tax Credit 2025: What You Need to Know',
-    slug: 'nevada-solar-tax-credit-2025',
-    description: 'Every state and federal solar incentive available to Nevada homeowners in 2025 — and how to claim them.',
-    date: '2025-02-01',
-    readTime: '7 min read',
-  },
-  {
-    title: 'Best Solar Companies in Las Vegas — What to Look For',
-    slug: 'best-solar-companies-las-vegas',
-    description: 'How to evaluate solar companies in Las Vegas, what questions to ask, and red flags to avoid.',
-    date: '2025-02-10',
-    readTime: '8 min read',
-  },
-  {
-    title: 'California Solar Incentives 2025: Complete Guide',
-    slug: 'california-solar-incentives-2025',
-    description: 'All federal, state, and utility solar incentives for California homeowners in 2025 — including NEM 3.0 and battery rebates.',
-    date: '2025-02-20',
-    readTime: '9 min read',
-  },
-];
+const allTags = [...new Set(blogPosts.flatMap((p) => p.tags))].sort();
 ---
 
 <BaseLayout
   title="Solar Energy Blog | Daniel Hadobas Solar"
   description="Expert solar energy advice for Las Vegas and California homeowners. Tax credits, net metering, cost breakdowns, and installation guides."
+  keywords="solar energy blog, Las Vegas solar tips, California solar guide, solar tax credit guide, NV Energy net metering, solar installation advice"
 >
   <!-- Hero -->
   <section class="bg-brand-dark py-16 px-4">
@@ -60,12 +25,33 @@ const posts = [
     </div>
   </section>
 
+  <!-- Tag filter -->
+  <section class="bg-white border-b border-slate-100 py-4 px-4 sticky top-16 z-10">
+    <div class="max-w-4xl mx-auto flex flex-wrap gap-2 items-center">
+      <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider mr-1">Filter:</span>
+      <a
+        href="/blog"
+        class="tag-pill px-3 py-1.5 rounded-full text-xs font-semibold border transition-all bg-brand-orange text-white border-brand-orange"
+        id="tag-all"
+      >All</a>
+      {allTags.map((tag) => (
+        <button
+          class="tag-pill px-3 py-1.5 rounded-full text-xs font-semibold border border-slate-200 text-slate-600 hover:border-brand-orange hover:text-brand-orange transition-all bg-white"
+          data-tag={tag}
+        >{tag}</button>
+      ))}
+    </div>
+  </section>
+
   <!-- Post list -->
   <section class="py-16 px-4">
     <div class="max-w-4xl mx-auto">
-      <div class="grid gap-6">
-        {posts.map((post) => (
-          <article class="group bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden">
+      <div class="grid gap-6" id="post-list">
+        {blogPosts.map((post) => (
+          <article
+            class="group bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden"
+            data-tags={post.tags.join(',')}
+          >
             <a href={`/blog/${post.slug}`} class="block p-6 sm:p-8 flex flex-col sm:flex-row gap-4 sm:gap-6 items-start">
               <!-- Icon -->
               <div class="shrink-0 w-12 h-12 rounded-xl bg-brand-orange/10 flex items-center justify-center">
@@ -76,10 +62,13 @@ const posts = [
 
               <!-- Content -->
               <div class="flex-1 min-w-0">
-                <div class="flex items-center gap-3 text-xs text-slate-400 mb-2">
-                  <time datetime={post.date}>{new Date(post.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</time>
-                  <span>·</span>
-                  <span>{post.readTime}</span>
+                <div class="flex flex-wrap items-center gap-2 mb-2">
+                  <time datetime={post.date} class="text-xs text-slate-400">{new Date(post.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</time>
+                  <span class="text-slate-300 text-xs">·</span>
+                  <span class="text-xs text-slate-400">{post.readTime}</span>
+                  {post.tags.map((tag) => (
+                    <span class="px-2 py-0.5 rounded-full bg-slate-100 text-slate-500 text-xs font-medium">{tag}</span>
+                  ))}
                 </div>
                 <h2 class="font-display font-bold text-xl text-brand-dark group-hover:text-brand-orange transition-colors mb-2">
                   {post.title}
@@ -96,8 +85,6 @@ const posts = [
           </article>
         ))}
       </div>
-
-      <!-- Note: posts link to slugs that don't exist yet — will be built in Phase 3 -->
     </div>
   </section>
 
@@ -112,3 +99,36 @@ const posts = [
     </div>
   </section>
 </BaseLayout>
+
+<script>
+  const pills = document.querySelectorAll<HTMLElement>('.tag-pill[data-tag]');
+  const allPill = document.getElementById('tag-all') as HTMLAnchorElement;
+  const posts = document.querySelectorAll<HTMLElement>('#post-list article');
+
+  function activate(activeTag: string | null) {
+    // pill styles
+    allPill.className = allPill.className.replace('bg-brand-orange text-white border-brand-orange', 'bg-white text-slate-600 border-slate-200');
+    pills.forEach((p) => {
+      p.className = p.className.replace('bg-brand-orange text-white border-brand-orange', 'bg-white text-slate-600 border-slate-200');
+    });
+    if (!activeTag) {
+      allPill.className = allPill.className.replace('bg-white text-slate-600 border-slate-200', 'bg-brand-orange text-white border-brand-orange');
+    } else {
+      pills.forEach((p) => {
+        if (p.dataset.tag === activeTag) {
+          p.className = p.className.replace('bg-white text-slate-600 border-slate-200', 'bg-brand-orange text-white border-brand-orange');
+        }
+      });
+    }
+    // show/hide posts
+    posts.forEach((article) => {
+      const tags = article.dataset.tags?.split(',') ?? [];
+      article.style.display = (!activeTag || tags.includes(activeTag)) ? '' : 'none';
+    });
+  }
+
+  pills.forEach((p) => {
+    p.addEventListener('click', () => activate(p.dataset.tag ?? null));
+  });
+  allPill.addEventListener('click', (e) => { e.preventDefault(); activate(null); });
+</script>

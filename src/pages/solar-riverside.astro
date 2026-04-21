@@ -9,7 +9,7 @@ import ReviewWidget from '../components/ReviewWidget.astro';
 import { riversideContent as c } from '../data/content/cities/riverside';
 ---
 
-<BaseLayout title={c.meta.title} description={c.meta.description}>
+<BaseLayout title={c.meta.title} description={c.meta.description} keywords={c.meta.keywords}>
   <Fragment slot="schema">
     <PersonSchema />
     <LocalBusinessSchema city="Riverside" state="CA" description={c.meta.description} />

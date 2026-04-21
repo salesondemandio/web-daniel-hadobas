@@ -25,6 +25,8 @@ urls = [
     "https://danielhadobas.com/blog/nevada-solar-tax-credit-2025",
     "https://danielhadobas.com/blog/best-solar-companies-las-vegas",
     "https://danielhadobas.com/blog/california-solar-incentives-2025",
+    "https://danielhadobas.com/solar-summerlin",
+    "https://danielhadobas.com/solar-henderson-green-valley",
 ]
 
 ok = 0

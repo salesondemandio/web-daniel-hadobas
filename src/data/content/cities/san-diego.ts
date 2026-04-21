@@ -1,7 +1,8 @@
 export const sanDiegoContent = {
   meta: {
     title: "Solar Panels San Diego CA | Daniel Hadobas Solar",
-    description: "San Diego solar panels with $0 down. SDG&E rates hit $0.40+/kWh — the highest in the US. Solar-plus-battery is the fastest payback in California. Free quote."
+    description: "San Diego solar panels with $0 down. SDG&E rates hit $0.40+/kWh — the highest in the US. Solar-plus-battery is the fastest payback in California. Free quote.",
+    keywords: "solar panels San Diego, SDG&E solar San Diego, solar installation San Diego CA, solar agent San Diego, NEM 3.0 San Diego, solar battery San Diego"
   },
   hero: {
     h1: "Solar Panels San Diego, CA — Beat the Highest Rates in America",

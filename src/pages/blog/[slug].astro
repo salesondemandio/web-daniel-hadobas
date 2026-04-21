@@ -12,7 +12,7 @@ export function getStaticPaths() {
 const { post } = Astro.props;
 ---
 
-<BaseLayout title={`${post.title} | Daniel Hadobas Solar`} description={post.description}>
+<BaseLayout title={`${post.title} | Daniel Hadobas Solar`} description={post.description} keywords={post.tags.join(', ') + ', solar Las Vegas, Daniel Hadobas solar'}>
   <Fragment slot="schema">
     <PersonSchema />
     <script type="application/ld+json" set:html={JSON.stringify({
@@ -43,12 +43,15 @@ const { post } = Astro.props;
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
         Back to Blog
       </a>
-      <div class="flex items-center gap-3 text-xs text-slate-400 mb-4">
+      <div class="flex flex-wrap items-center gap-2 text-xs text-slate-400 mb-4">
         <time datetime={post.date}>{new Date(post.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</time>
         <span>·</span>
         <span>{post.readTime}</span>
         <span>·</span>
         <span>By Daniel Hadobas</span>
+        {post.tags.map((tag) => (
+          <span class="ml-1 px-2 py-0.5 rounded-full bg-white/10 text-slate-300 font-medium">{tag}</span>
+        ))}
       </div>
       <h1 class="font-display text-3xl sm:text-4xl font-black text-white leading-tight mb-4">{post.title}</h1>
       <p class="text-slate-300 text-lg leading-relaxed">{post.description}</p>

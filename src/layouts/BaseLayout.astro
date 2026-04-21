@@ -4,12 +4,14 @@ import '../styles/global.css';
 interface Props {
   title: string;
   description: string;
+  keywords?: string;
   canonical?: string;
 }
 
 const {
   title,
   description,
+  keywords,
   canonical = Astro.url.href,
 } = Astro.props;
 
@@ -24,6 +26,7 @@ const canonicalClean = canonical.replace(/\/$/, '') || 'https://danielhadobas.co
   <meta name="description" content={description} />
   <link rel="canonical" href={canonicalClean} />
   <meta name="robots" content="index, follow" />
+  {keywords && <meta name="keywords" content={keywords} />}
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />

@@ -9,7 +9,7 @@ import ReviewWidget from '../components/ReviewWidget.astro';
 import { summerlinContent as c } from '../data/content/cities/summerlin';
 ---
 
-<BaseLayout title={c.meta.title} description={c.meta.description}>
+<BaseLayout title={c.meta.title} description={c.meta.description} keywords={c.meta.keywords}>
   <Fragment slot="schema">
     <PersonSchema />
     <LocalBusinessSchema city="Summerlin" state="NV" description={c.meta.description} />

@@ -1,7 +1,8 @@
 export const californiaContent = {
   meta: {
     title: "Solar Panels California | Daniel Hadobas Solar",
-    description: "California solar panels under NEM 3.0 — why battery storage changes the math and how to still save big. Serving LA, San Diego, and Riverside. Free quote."
+    description: "California solar panels under NEM 3.0 — why battery storage changes the math and how to still save big. Serving LA, San Diego, and Riverside. Free quote.",
+    keywords: "solar panels California, NEM 3.0 solar California, California solar incentives 2025, solar battery storage California, solar agent Southern California"
   },
   hero: {
     h1: "Solar Panels in California — Maximize Savings Under NEM 3.0",

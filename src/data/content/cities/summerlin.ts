@@ -1,7 +1,8 @@
 export const summerlinContent = {
   meta: {
     title: "Solar Panels Summerlin NV — $0 Down | Daniel Hadobas",
-    description: "Summerlin's top-rated solar agent. 174 five-star reviews. $0 down solar, 30% federal tax credit. Serving Summerlin master-planned community. Call (702) 765-4527."
+    description: "Summerlin's top-rated solar agent. 174 five-star reviews. $0 down solar, 30% federal tax credit. Serving Summerlin master-planned community. Call (702) 765-4527.",
+    keywords: "solar panels Summerlin NV, Summerlin solar installation, solar agent Summerlin Las Vegas, HOA solar Summerlin, NRS 116 solar Nevada"
   },
   hero: {
     h1: "Summerlin Solar Expert — $0 Down, 174 Five-Star Reviews",

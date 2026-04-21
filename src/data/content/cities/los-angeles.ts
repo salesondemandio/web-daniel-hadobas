@@ -1,7 +1,8 @@
 export const losAngelesContent = {
   meta: {
     title: "Solar Panels Los Angeles CA | Daniel Hadobas Solar",
-    description: "Solar panels in Los Angeles with $0 down. SCE and LADWP rates hit $0.30–$0.35/kWh — solar-plus-battery eliminates most of your bill. Free quote today."
+    description: "Solar panels in Los Angeles with $0 down. SCE and LADWP rates hit $0.30–$0.35/kWh — solar-plus-battery eliminates most of your bill. Free quote today.",
+    keywords: "solar panels Los Angeles, LA solar installation, SCE solar Los Angeles, LADWP solar, solar agent Los Angeles CA, NEM 3.0 Los Angeles"
   },
   hero: {
     h1: "Solar Panels Los Angeles, CA — Cut Your SCE or LADWP Bill",
