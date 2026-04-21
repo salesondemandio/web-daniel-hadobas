@@ -12,7 +12,7 @@ export function getStaticPaths() {
 const { post } = Astro.props;
 ---
 
-<BaseLayout title={`${post.title} | Daniel Hadobas Solar`} description={post.description} keywords={post.tags.join(', ') + ', solar Las Vegas, Daniel Hadobas solar'}>
+<BaseLayout title={`${post.title} | Daniel Hadobas Solar`} description={post.description} keywords={post.tags.join(', ') + ', solar Las Vegas, Daniel Hadobas solar'} ogType="article">
   <Fragment slot="schema">
     <PersonSchema />
     <script type="application/ld+json" set:html={JSON.stringify({

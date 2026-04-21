@@ -6,6 +6,7 @@ interface Props {
   description: string;
   keywords?: string;
   canonical?: string;
+  ogType?: string;
 }
 
 const {
@@ -13,6 +14,7 @@ const {
   description,
   keywords,
   canonical = Astro.url.href,
+  ogType = 'website',
 } = Astro.props;
 
 const canonicalClean = canonical.replace(/\/$/, '') || 'https://danielhadobas.com';
@@ -27,9 +29,10 @@ const canonicalClean = canonical.replace(/\/$/, '') || 'https://danielhadobas.co
   <link rel="canonical" href={canonicalClean} />
   <meta name="robots" content="index, follow" />
   {keywords && <meta name="keywords" content={keywords} />}
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
   <!-- Open Graph -->
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content={ogType} />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:url" content={canonicalClean} />
@@ -40,13 +43,9 @@ const canonicalClean = canonical.replace(/\/$/, '') || 'https://danielhadobas.co
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="https://danielhadobas.com/images/daniel-hadobas.jpg" />
 
-  <!-- Google Fonts: Inter -->
+  <!-- Google Fonts: Inter (preconnect only; @import in global.css handles load) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
 
   <slot name="schema" />
 
@@ -192,7 +191,7 @@ const canonicalClean = canonical.replace(/\/$/, '') || 'https://danielhadobas.co
           <h3 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Contact &amp; Reviews</h3>
           <ul class="space-y-3 text-sm">
             <li>
-              <a href="tel:7027654527" class="flex items-center gap-2 hover:text-brand-orange transition-colors">
+              <a href="tel:+17027654527" class="flex items-center gap-2 hover:text-brand-orange transition-colors">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 0117 2.18 2 2 0 0119.08 4v3.09a2 2 0 01-1.42 1.93l-1.8.6a16 16 0 006.62 6.62l.6-1.8a2 2 0 011.92-1.42z"/></svg>
                 (702) 765-4527
               </a>
