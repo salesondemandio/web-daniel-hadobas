@@ -2,269 +2,353 @@ export interface BlogPost {
   slug: string;
   title: string;
   description: string;
-  date: string;
-  readTime: string;
+  publishDate: string;
   tags: string[];
   body: string;
-  faqs: { question: string; answer: string }[];
+  faqs?: { question: string; answer: string }[];
 }
 
 export const blogPosts: BlogPost[] = [
   {
     slug: 'solar-cost-las-vegas-2025',
-    title: 'How Much Does Solar Cost in Las Vegas in 2025?',
-    description: 'A complete breakdown of solar panel costs in Las Vegas, NV — before and after the 30% federal tax credit.',
-    date: '2025-01-15',
-    readTime: '6 min read',
+    title: 'How Much Do Solar Panels Cost in Las Vegas in 2025?',
+    description: 'A straight answer on Las Vegas solar costs in 2025 — before and after incentives, monthly savings, payback timeline, and what to watch out for.',
+    publishDate: '2025-01-15',
     tags: ['Nevada', 'Cost & Financing', 'Las Vegas'],
     body: `
-<p>Going solar in Las Vegas in 2025 is one of the best financial decisions a homeowner can make — if you understand the numbers. Here's the complete cost picture.</p>
+<p>If you're shopping for solar in Las Vegas, you've probably gotten a range of quotes that feel confusing — and maybe a few sales pitches that didn't quite add up. Here's a straight answer on what solar actually costs in Las Vegas in 2025, what you'll save, and how to evaluate whether the investment makes sense for your home.</p>
 
-<h2>Average Solar System Cost in Las Vegas</h2>
-<p>A typical Las Vegas home (1,500–2,500 sq ft) needs a <strong>6–9 kW solar system</strong> to offset 80–100% of electricity usage. Before incentives, expect to pay:</p>
+<h2>The Raw Numbers: What Solar Costs Before Incentives</h2>
+<p>The industry benchmark for residential solar in Las Vegas is approximately <strong>$2.85 per watt</strong> for a fully installed system — panels, inverter, racking, electrical work, permits, and installation. That number varies based on the installer, equipment brand, and roof complexity, but $2.80–$3.00/watt is the realistic range for quality systems.</p>
+<p>For a typical Las Vegas home:</p>
 <ul>
-  <li><strong>6 kW system:</strong> $15,000–$18,000</li>
-  <li><strong>8 kW system:</strong> $20,000–$24,000</li>
-  <li><strong>9 kW system:</strong> $22,500–$27,000</li>
+  <li><strong>5 kW system:</strong> $14,250 before incentives</li>
+  <li><strong>6 kW system:</strong> $17,100 before incentives</li>
+  <li><strong>7 kW system:</strong> $19,950 before incentives</li>
+  <li><strong>8 kW system:</strong> $22,800 before incentives</li>
 </ul>
-<p>Las Vegas solar costs average <strong>$2.50–$3.10 per watt</strong> installed, which includes panels, inverter, mounting hardware, permits, and labor.</p>
+<p>Most Las Vegas homes land in the 6–7 kW range based on their electricity usage and roof size.</p>
 
 <h2>After the 30% Federal Tax Credit</h2>
-<p>The Inflation Reduction Act's Investment Tax Credit (ITC) gives you 30% of your total system cost back as a federal tax credit. On an $18,000 system, that's <strong>$5,400 back</strong>. Your actual out-of-pocket cost:</p>
+<p>The federal Investment Tax Credit (ITC) gives you <strong>30% of your total system cost as a direct credit against your federal income tax</strong>. This is not a deduction — it's a dollar-for-dollar reduction in your tax bill. It applies to all system components and installation costs.</p>
+<p>After the ITC:</p>
 <ul>
-  <li><strong>$18,000 system → $12,600 after ITC</strong></li>
-  <li><strong>$22,000 system → $15,400 after ITC</strong></li>
+  <li><strong>6 kW system:</strong> $17,100 → <strong>$11,970</strong></li>
+  <li><strong>7 kW system:</strong> $19,950 → <strong>$13,965</strong></li>
 </ul>
-<p>The ITC is available through at least 2032 and applies to cash purchases and solar loans. It does not apply to leases or PPAs.</p>
+<p>For most homeowners, that works out to <strong>$5,000–$6,000 back</strong> from the federal government. The credit is available through 2032 with no income cap for most taxpayers. You do need to have federal tax liability to use it — if your tax bill is lower than the credit amount, the remainder rolls forward to the following year.</p>
 
-<h2>Nevada State Incentives</h2>
-<p>Nevada homeowners qualify for additional savings beyond the federal credit:</p>
+<h2>Nevada's Additional Incentives</h2>
+<p>On top of the federal ITC, Nevada homeowners benefit from two automatic incentives:</p>
+<p><strong>Nevada Property Tax Exemption:</strong> The added value your solar system brings to your home is fully exempt from property tax assessment. Your home's market value goes up, but your tax bill doesn't increase because of solar.</p>
+<p><strong>Nevada Sales Tax Exemption:</strong> Solar equipment purchased in Nevada is exempt from the 8.375% state and county sales tax. That's an additional $1,200–$1,900 in savings on a typical system — applied automatically at purchase.</p>
+<p>These incentives stack on top of the federal ITC and don't require any additional paperwork beyond your normal tax filing.</p>
+
+<h2>Monthly Savings: What to Expect</h2>
+<p>The average Las Vegas household spends about <strong>$160 per month on electricity</strong> from NV Energy. Current NV Energy rates are approximately $0.125 per kilowatt-hour. With 290+ sunny days per year, a properly sized system can eliminate most or all of that bill.</p>
+<p>Realistic monthly savings ranges:</p>
 <ul>
-  <li><strong>Sales tax exemption:</strong> No sales tax on solar equipment purchases (saves 8.375% in Clark County)</li>
-  <li><strong>Property tax exemption:</strong> Solar panels don't increase your property tax assessment in Nevada</li>
-  <li><strong>NV Energy net metering:</strong> Earn credits at ~75% of retail rate for excess energy exported to the grid</li>
+  <li><strong>Small home / low usage:</strong> $100–$150/month</li>
+  <li><strong>Average home / average usage:</strong> $150–$250/month</li>
+  <li><strong>Larger home / pool / EV:</strong> $250–$400/month</li>
 </ul>
+<p>NV Energy's net metering program credits you at 75% of the retail rate for excess power your panels produce. Those credits roll forward and offset future bills — especially useful in spring and fall when your panels overproduce relative to your usage.</p>
 
-<h2>Monthly Payment vs. Monthly Savings</h2>
-<p>Most Las Vegas homeowners go solar with <strong>$0 down financing</strong>. A typical scenario:</p>
+<h2>Payback Period: 6–9 Years</h2>
+<p>With an average after-incentive cost of $12,000–$14,000 and average monthly savings of $150–$250, most Las Vegas homeowners see a payback period of <strong>6 to 9 years</strong>. Cash purchases pay back faster; financed systems may show immediate monthly positive cash flow even before accounting for the tax credit.</p>
+<p>After payback, you have 16 to 19 years of essentially free electricity — most panels carry 25-year production warranties. Over that period, the typical Las Vegas homeowner accumulates <strong>$51,532 in lifetime energy savings</strong>.</p>
+
+<h2>Financing Options</h2>
 <ul>
-  <li>Current NV Energy bill: $280/month</li>
-  <li>Solar loan payment: $145/month (25-year, 4.99%)</li>
-  <li>Residual utility bill: $15–$30/month</li>
-  <li><strong>Net monthly savings: $105–$120 from day one</strong></li>
+  <li><strong>Cash purchase:</strong> Best long-term ROI, shortest payback</li>
+  <li><strong>$0 down solar loan:</strong> Monthly payment often less than current utility bill; you own the system and keep all incentives</li>
+  <li><strong>Lease/PPA:</strong> Lower upfront risk but you don't own the system and don't get the tax credit — not recommended for most homeowners</li>
 </ul>
-<p>After the loan is paid off (typically 10–12 years with the tax credit applied), your electric costs drop to near zero for the remaining 13–15 years of your system's warranty.</p>
 
-<h2>How Long Until Payback?</h2>
-<p>In Las Vegas, the solar payback period is typically <strong>6–8 years</strong> — faster than the national average of 8–10 years, thanks to 290+ sunny days per year and rising NV Energy rates. Over a 25-year system lifetime, most Las Vegas homeowners save <strong>$40,000–$60,000</strong> on electricity.</p>
+<h2>What to Watch Out For</h2>
+<p><strong>Oversized systems:</strong> Some installers push larger systems to increase their revenue. A properly sized system covers your needs — not 40% more than your needs.</p>
+<p><strong>Long-term leases:</strong> A 25-year lease can complicate your home sale and the terms often favor the installer, not you.</p>
+<p><strong>Door-to-door pressure:</strong> If someone is pressuring you to sign today, walk away. The incentives don't expire tomorrow. Take time to compare proposals.</p>
 
-<h2>Get an Exact Quote for Your Home</h2>
-<p>Every home is different. Your savings depend on your roof orientation, shading, current utility usage, and financing terms. Daniel Hadobas offers free, no-obligation savings analyses — he'll analyze your last 12 months of NV Energy bills and design a system sized precisely for your home.</p>
+<h2>The Bottom Line</h2>
+<p>For most Las Vegas homeowners who own their home, have adequate roof space, and a reasonable credit score, solar makes financial sense. The combination of 290+ annual sunny days, rising NV Energy rates, and Nevada's tax incentives puts Las Vegas near the top of the national solar opportunity list.</p>
+<p>If you want to see the actual numbers for your home — based on your real utility bill, your roof's sun exposure, and current financing options — <a href="/sodsolarsavings">book a free consultation</a>. No pressure, no obligation, just honest math.</p>
     `,
     faqs: [
-      { question: 'Is $0 down solar real or a gimmick?', answer: '$0 down solar loans are real financing products offered by solar-specific lenders like Mosaic, Goodleap, and Service Finance. You borrow the full system cost and repay it monthly. The key is that your monthly loan payment is typically lower than your current electric bill, so you save money immediately while building equity in a home improvement.' },
-      { question: 'What is the best time of year to go solar in Las Vegas?', answer: 'Any time is a good time — Las Vegas averages 294 sunny days per year, so seasonality barely matters. However, permit processing times are shortest in fall and winter. If you want to be generating by summer (when NV Energy bills peak), sign your contract by February or March.' },
+      {
+        question: 'Is $0 down solar real or a gimmick?',
+        answer: '$0 down solar loans are real financing products offered by solar-specific lenders like Mosaic, Goodleap, and Service Finance. You borrow the full system cost and repay it monthly. The key is that your monthly loan payment is typically lower than your current electric bill, so you save money immediately while building equity in a home improvement.'
+      },
+      {
+        question: 'What is the best time of year to go solar in Las Vegas?',
+        answer: 'Any time is a good time — Las Vegas averages 294 sunny days per year, so seasonality barely matters. However, permit processing times are shortest in fall and winter. If you want to be generating by summer (when NV Energy bills peak), sign your contract by February or March.'
+      },
     ],
   },
   {
     slug: 'nv-energy-net-metering-explained',
-    title: 'NV Energy Net Metering Explained',
-    description: "How NV Energy's net metering program works, what you get paid for excess solar, and how to maximize your credits.",
-    date: '2025-01-20',
-    readTime: '5 min read',
+    title: 'NV Energy Net Metering: What Las Vegas Solar Owners Need to Know',
+    description: "How NV Energy net metering works in Nevada — credits, billing cycles, the 75% retail rate, rollover rules, and what it means for your solar savings.",
+    publishDate: '2025-02-03',
     tags: ['Nevada', 'Net Metering', 'NV Energy'],
     body: `
-<p>NV Energy's net metering program is one of the most important factors in your solar savings calculation. Here's exactly how it works — and how to maximize it.</p>
+<p>If you're going solar in Las Vegas, Henderson, or anywhere else in NV Energy's service territory, you need to understand net metering — it's the mechanism that determines what happens to the electricity your solar panels produce when you can't use it all in real time.</p>
 
 <h2>What Is Net Metering?</h2>
-<p>Net metering is a billing arrangement where your solar panels can send excess electricity to the grid, and NV Energy credits your account for that energy. When your panels aren't producing (at night, cloudy days), you draw from the grid — and your credits offset what you owe.</p>
+<p>Net metering is a billing arrangement where your utility measures the difference between the electricity you draw from the grid and the electricity you push back to it. When your solar panels are producing more than your home is using — typically midday on sunny days — the surplus flows to the grid and NV Energy credits your account. When your panels aren't producing enough (evenings, cloudy days, peak demand periods), you draw from the grid and use those credits to offset the cost.</p>
+<p>The "net" in net metering refers to that difference — you're billed for net consumption, not gross consumption.</p>
 
-<h2>What Rate Does NV Energy Pay?</h2>
-<p>Nevada's net metering rules require NV Energy to credit solar customers at approximately <strong>75% of the retail electricity rate</strong>. If retail electricity costs $0.12/kWh, you earn about <strong>$0.09/kWh</strong> for excess energy exported.</p>
-<p>This is better than many states (California's NEM 3.0 dropped to as low as $0.02–$0.05/kWh in 2023), making Nevada one of the more favorable net metering states in the West.</p>
-
-<h2>How Credits Work Month to Month</h2>
-<p>Nevada net metering uses a 12-month true-up period:</p>
+<h2>Nevada's Net Metering Rate: 75% of Retail</h2>
+<p>Here's the important detail most homeowners don't hear upfront: Nevada's net metering program credits your exported power at <strong>75% of the retail rate</strong>, not the full retail rate.</p>
+<p>In practice, that means:</p>
 <ul>
-  <li>Each month, credits accumulate if your production exceeds usage</li>
-  <li>Summer production peaks often build large credit balances</li>
-  <li>Winter months draw down those credits</li>
-  <li>At the end of 12 months, any remaining credit balance is paid out (though at a lower rate than the accumulated credit value)</li>
+  <li>If NV Energy charges you $0.125/kWh to buy electricity</li>
+  <li>Your excess solar exports are credited at approximately <strong>$0.094/kWh</strong></li>
+  <li>That's a 25% haircut on the value of power you send to the grid</li>
 </ul>
-<p>The goal of good system design is to size your solar to roughly match your annual consumption — not dramatically over-produce, since end-of-year excess is settled at a lower rate.</p>
+<p>This is different from some other states that offer full retail-rate net metering. The 75% rate was established by the Nevada Public Utilities Commission following a contentious policy battle in 2016. It's the law for new solar customers in Nevada today.</p>
+<p><strong>What this means practically:</strong> Right-sizing your system is important. A system that produces exactly what your home uses over the course of a year is more valuable than an oversized system that exports a lot of excess at a discounted rate.</p>
 
-<h2>How to Maximize Your Net Metering Benefits</h2>
+<h2>How NV Energy Net Metering Credits Work</h2>
+<p>Your solar production and grid consumption are tracked on the same meter. Here's how the billing cycle works:</p>
 <ol>
-  <li><strong>Right-size your system:</strong> Design for 90–100% of annual kWh usage, not 120%+</li>
-  <li><strong>Shift usage to daylight hours:</strong> Run dishwasher, laundry, and EV charging during peak solar production</li>
-  <li><strong>Consider adding battery storage:</strong> Store excess midday production to use at night instead of exporting it at 75% credit</li>
-  <li><strong>Time your large loads:</strong> Pool pumps, A/C pre-cooling — schedule these for 10am–3pm when panels produce most</li>
+  <li><strong>Monthly billing:</strong> Each month, NV Energy calculates your net usage. If you consumed more than you produced, you pay the difference. If you produced more than you consumed, you receive a credit on your account.</li>
+  <li><strong>Credit rollover:</strong> Excess credits roll forward from month to month. They don't expire on a monthly basis — they accumulate in your account.</li>
+  <li><strong>Annual true-up:</strong> Each year, NV Energy does a reconciliation. Any excess credits in your account at the end of the 12-month period are paid out to you at a lower rate (the "excess generation" rate, which is lower than the 75% net metering rate). This is why it's better to size your system to roughly match your annual consumption rather than dramatically exceed it.</li>
+  <li><strong>Tiered rates:</strong> NV Energy uses a tiered rate structure. The net metering credit rate varies slightly depending on which rate tier applies to the excess generation. Your solar advisor can walk you through the specific numbers for your usage level.</li>
 </ol>
 
-<h2>Will NV Energy's Net Metering Change?</h2>
-<p>Nevada's net metering rules are reviewed periodically by the Public Utilities Commission. The current 75% retail rate has been stable since Nevada reversed its 2015 reduction in 2017. There's no scheduled change, but locking in your system before any potential policy shifts protects your rate under grandfathering provisions.</p>
+<h2>System Size Requirements</h2>
+<p>To qualify for NV Energy's net metering program, your system must:</p>
+<ul>
+  <li>Be <strong>25 kW or smaller</strong> (covers all standard residential installations)</li>
+  <li>Be installed by a licensed Nevada contractor</li>
+  <li>Pass NV Energy's interconnection application process</li>
+</ul>
+<p>Virtually all residential solar systems qualify. The 25 kW cap only becomes relevant for very large homes or small commercial properties.</p>
+
+<h2>The Interconnection Process</h2>
+<p>Before your solar panels can connect to the grid and begin receiving net metering credits, your installer must complete NV Energy's interconnection application. The timeline typically runs 2 to 6 weeks after installation is complete. During that window, your system is fully installed but not yet feeding excess power to the grid.</p>
+<p>Your installer handles the application — this is not something you do yourself. A good installer will have established relationships with NV Energy's interconnection team and manage the timeline efficiently.</p>
+
+<h2>Solar-Only vs. Battery + Solar in Nevada</h2>
+<p>Nevada's net metering program makes solar-only systems viable in ways that California's NEM 3.0 does not. Because Nevada still credits exports at 75% of retail (not the 6–8 cents/kWh California uses), the economics of a solar-only system in Las Vegas are strong.</p>
+<p>Battery storage is still worth considering if you want backup power during outages or if you have significant evening usage. But unlike California homeowners, Nevada solar owners aren't financially penalized for exporting — they're just not maximally rewarded for it.</p>
+
+<h2>What To Do With This Information</h2>
+<p>The key takeaway for Las Vegas solar buyers is: <strong>don't size your system to maximize exports, size it to minimize your net annual bill</strong>. A system that covers 95–100% of your annual consumption at the 75% net metering rate is more valuable than one that overproduces by 30% and sends the excess to NV Energy at a discount.</p>
+<p>When reviewing proposals, ask your solar advisor to show you the projected annual net metering credit vs. grid consumption balance. If they're recommending an oversized system without a clear reason, push back.</p>
+<p>Have questions about how net metering would work for your specific home? <a href="/sodsolarsavings">Book a free consultation</a> — I'll run the actual numbers based on your NV Energy bill.</p>
     `,
     faqs: [
-      { question: 'Does NV Energy pay cash for excess solar?', answer: 'Not directly. NV Energy issues bill credits, not checks. At the end of your 12-month true-up period, any remaining credit balance is paid out — but typically at a lower rate than the credits accumulated during the year. This is why right-sizing your system to match your annual usage is important.' },
-      { question: 'What happens to net metering if I sell my house?', answer: 'Your net metering account transfers to the new homeowner. They simply notify NV Energy of the ownership change and the account continues under their name at the same rate terms.' },
+      {
+        question: 'Does NV Energy pay cash for excess solar?',
+        answer: 'Not directly. NV Energy issues bill credits, not checks. At the end of your 12-month true-up period, any remaining credit balance is paid out — but typically at a lower rate than the credits accumulated during the year. This is why right-sizing your system to match your annual usage is important.'
+      },
+      {
+        question: 'What happens to net metering if I sell my house?',
+        answer: 'Your net metering account transfers to the new homeowner. They simply notify NV Energy of the ownership change and the account continues under their name at the same rate terms.'
+      },
     ],
   },
   {
     slug: 'nevada-solar-tax-credit-2025',
-    title: 'Nevada Solar Tax Credit 2025: What You Need to Know',
-    description: 'Every state and federal solar incentive available to Nevada homeowners in 2025 — and how to claim them.',
-    date: '2025-02-01',
-    readTime: '7 min read',
+    title: 'Nevada Solar Incentives & Tax Credits in 2025',
+    description: 'Every solar incentive available to Nevada homeowners in 2025 — federal ITC, property tax exemption, sales tax exemption, and the new Nevada state program.',
+    publishDate: '2025-03-10',
     tags: ['Nevada', 'Tax Credits', 'Incentives'],
     body: `
-<p>Nevada homeowners in 2025 have access to a stacked set of incentives that make going solar more affordable than ever. Here's the complete picture — federal, state, and utility.</p>
+<p>Nevada is one of the better states in the country for solar incentives. Between the federal Investment Tax Credit, two Nevada-specific tax exemptions, NV Energy's net metering program, and a new state incentive introduced in late 2025, there's real money on the table for homeowners who go solar this year. Here's a complete breakdown.</p>
 
-<h2>Federal: 30% Investment Tax Credit (ITC)</h2>
-<p>The biggest incentive is federal. The Inflation Reduction Act locked in a <strong>30% ITC through 2032</strong>. On a $20,000 solar system, that's $6,000 directly off your federal income tax bill — not a deduction, a credit.</p>
+<h2>1. Federal Investment Tax Credit (ITC) — 30% Through 2032</h2>
+<p>The federal solar tax credit — officially the Investment Tax Credit — is the biggest financial incentive for solar homeowners anywhere in the US. It gives you a <strong>30% credit against your federal income tax</strong> equal to your total solar system cost, including panels, inverter, racking, wiring, permits, and installation labor.</p>
 <p><strong>Key details:</strong></p>
 <ul>
-  <li>Applies to systems installed January 1, 2022 through December 31, 2032</li>
-  <li>Covers panels, inverter, mounting, labor, and battery storage (if charged primarily by solar)</li>
-  <li>Non-refundable: reduces taxes owed but doesn't generate a refund</li>
-  <li>Unused credit rolls forward to the following tax year</li>
-  <li>Only available for purchased systems (cash or loan) — not leases or PPAs</li>
+  <li>Available through December 31, 2032 at 30%</li>
+  <li>Drops to 26% in 2033, then 22% in 2034, then expires for residential</li>
+  <li>No income cap for most homeowners</li>
+  <li>Applies to battery storage if it's charged primarily by solar</li>
+  <li>If your credit exceeds your tax liability in year one, the remainder rolls forward to the following year</li>
 </ul>
+<p><strong>Example:</strong> A $18,000 solar system in Las Vegas generates a <strong>$5,400 federal tax credit</strong>. If you owe $4,000 in federal taxes that year, you use $4,000 now and carry $1,400 forward to the next filing year.</p>
+<p>This is not a deduction — it's a direct reduction in your tax bill. The distinction matters: a $5,400 deduction reduces your taxable income by $5,400 (saving you maybe $1,000–$1,500 depending on your bracket). A $5,400 credit reduces your actual tax liability by $5,400.</p>
 
-<h2>Nevada: Sales Tax Exemption</h2>
-<p>Nevada exempts solar equipment from state and local sales tax. In Clark County (Las Vegas), the combined sales tax rate is 8.375%. On a $20,000 system, that's <strong>$1,675 saved</strong> — automatically, with no application required.</p>
-
-<h2>Nevada: Property Tax Exemption</h2>
-<p>NRS 361.079 exempts the added value of solar energy systems from property tax assessment. If your solar system adds $18,000 to your home's appraised value (which it often does), you pay <strong>no additional property tax</strong> on that value. In Clark County with a ~1% effective property tax rate, that's roughly $180/year in avoided tax — or $4,500 over 25 years.</p>
-
-<h2>NV Energy: Net Metering Credits</h2>
-<p>NV Energy credits excess solar production at ~75% of retail rate. With a properly sized system and average Las Vegas production, most homeowners accumulate $800–$1,200 in annual net metering credits.</p>
-
-<h2>How to Claim the Federal ITC</h2>
-<ol>
-  <li>Install your solar system and receive a Certificate of Completion</li>
-  <li>File IRS Form 5695 (Residential Energy Credits) with your federal tax return</li>
-  <li>Report the credit on Schedule 3, Line 5 of Form 1040</li>
-  <li>If the credit exceeds your tax liability, it rolls forward to the next year</li>
-</ol>
-<p>Consult your tax advisor for guidance specific to your situation. Most tax preparation software (TurboTax, H&R Block) handles Form 5695 automatically when you report the solar installation.</p>
-
-<h2>Total Incentive Stack — Example</h2>
-<p>On a $22,000 solar system in Las Vegas:</p>
+<h2>2. Nevada Property Tax Exemption</h2>
+<p>Nevada law (NRS 361.079) exempts the value of a solar energy system from property tax assessment. That means:</p>
 <ul>
-  <li>Federal ITC (30%): -$6,600</li>
-  <li>Sales tax exemption: -$1,843</li>
-  <li>Property tax savings (25 yrs): -$4,500</li>
-  <li>Net metering credits (25 yrs, est.): -$22,500</li>
-  <li><strong>Total incentive value: ~$35,443</strong></li>
+  <li>Your solar installation increases your home's market value (studies show 3–4% increases)</li>
+  <li>But your assessed value for property tax purposes does NOT increase because of solar</li>
+  <li>No paperwork required — the exemption is automatic</li>
 </ul>
+<p>For a Las Vegas home where solar adds $15,000–$25,000 in market value, this exemption saves homeowners <strong>$150–$250 per year</strong> in property taxes they'd otherwise owe — indefinitely, for as long as the system is on the home.</p>
+
+<h2>3. Nevada Sales Tax Exemption</h2>
+<p>Solar energy systems in Nevada are exempt from the state sales and use tax under NRS 374.357. Nevada's combined state and county sales tax rate ranges from 6.85% to 8.375% depending on your county. Clark County (Las Vegas/Henderson) is at 8.375%.</p>
+<p>On a $18,000 solar system, that exemption saves <strong>$1,508</strong> in sales tax that you simply don't pay. The exemption applies automatically at the point of sale — your installer doesn't charge you sales tax on the equipment. Unlike some other states where you need to file for a rebate or exemption certificate, Nevada's solar sales tax exemption is applied by the installer as a matter of law.</p>
+
+<h2>4. NV Energy Net Metering</h2>
+<p>Technically not a tax incentive, but it has real cash value: NV Energy's net metering program credits your account at <strong>75% of the retail rate</strong> for every kilowatt-hour your solar panels produce beyond what your home uses in real time. At current NV Energy rates of ~$0.125/kWh, that's a credit of ~$0.094/kWh. Over a year, a properly sized system can generate $600–$1,200 in net metering credits that offset your utility bills.</p>
+<p>See our full <a href="/blog/nv-energy-net-metering-explained">NV Energy Net Metering explainer</a> for details on how the billing cycle works.</p>
+
+<h2>5. New Nevada State Solar Incentive Program (Late 2025)</h2>
+<p>In late 2025, Nevada introduced an additional state-level solar incentive program targeting low-to-moderate income homeowners. The program provides <strong>direct rebates of $500–$2,500</strong> depending on household income and system size. Eligibility details and the application process are still being finalized. This is worth asking about if your household income is below 200% of the area median income for Clark County — ask Daniel directly for the most current eligibility and application information.</p>
+
+<h2>How Incentives Stack</h2>
+<table>
+  <thead><tr><th>Incentive</th><th>Value</th></tr></thead>
+  <tbody>
+    <tr><td>System cost (6.5 kW)</td><td>$18,525</td></tr>
+    <tr><td>Federal ITC (30%)</td><td>−$5,558</td></tr>
+    <tr><td>Nevada sales tax exemption</td><td>−$1,552</td></tr>
+    <tr><td>Net cost</td><td><strong>$11,415</strong></td></tr>
+    <tr><td>Annual property tax savings</td><td>~$200/yr</td></tr>
+    <tr><td>Annual NV Energy savings</td><td>~$1,800–$2,400/yr</td></tr>
+  </tbody>
+</table>
+<p>Over a 25-year system life, the total value of those savings exceeds $51,000 for most Las Vegas homeowners.</p>
+
+<h2>Important: The ITC Requires Tax Liability</h2>
+<p>The federal ITC is only useful if you have federal tax liability. If you're retired with a low income, or if deductions already reduce your tax bill to near zero, you may not be able to fully use the credit. In that case, the remaining credit carries forward year to year — and a cash purchase may still make strong financial sense. Talk to a tax professional about your specific situation before assuming you'll get the full credit.</p>
+
+<h2>Bottom Line</h2>
+<p>The combination of Nevada's property and sales tax exemptions, the 30% federal ITC, and NV Energy net metering makes Nevada one of the stronger incentive environments in the country. For most Las Vegas and Henderson homeowners, these incentives cut the effective cost of solar by 40–50% compared to the sticker price.</p>
+<p>Want to see exactly what your incentives are worth based on your specific situation? <a href="/sodsolarsavings">Book a free consultation</a> and I'll run the full analysis for you.</p>
     `,
     faqs: [
-      { question: 'Is the 30% federal tax credit refundable?', answer: "No — the ITC is non-refundable. It reduces your federal tax liability dollar-for-dollar, but if the credit is larger than what you owe in taxes, you won't receive the difference as a refund. However, any unused portion rolls forward to the following tax year. Most homeowners with a typical income tax burden can use the full credit within 1–2 years." },
-      { question: 'Does Nevada have a state solar tax credit?', answer: "Nevada doesn't have a state income tax credit for solar. However, the combination of federal ITC (30%), sales tax exemption, and property tax exemption makes Nevada one of the most incentive-rich solar states in the country even without a state income tax credit." },
+      {
+        question: 'Is the 30% federal tax credit refundable?',
+        answer: "No — the ITC is non-refundable. It reduces your federal tax liability dollar-for-dollar, but if the credit is larger than what you owe in taxes, you won't receive the difference as a refund. However, any unused portion rolls forward to the following tax year. Most homeowners with a typical income tax burden can use the full credit within 1–2 years."
+      },
+      {
+        question: 'Does Nevada have a state solar tax credit?',
+        answer: "Nevada doesn't have a state income tax credit for solar. However, the combination of federal ITC (30%), sales tax exemption, and property tax exemption makes Nevada one of the most incentive-rich solar states in the country even without a state income tax credit."
+      },
     ],
   },
   {
     slug: 'best-solar-companies-las-vegas',
-    title: 'Best Solar Companies in Las Vegas — What to Look For',
-    description: 'How to evaluate solar companies in Las Vegas, what questions to ask, and red flags to avoid.',
-    date: '2025-02-10',
-    readTime: '8 min read',
+    title: 'How to Choose a Solar Company in Las Vegas (What to Actually Look For)',
+    description: 'A no-BS guide to choosing a solar installer in Las Vegas — what certifications matter, installer vs. broker, how to read reviews, financing red flags, and what questions to ask.',
+    publishDate: '2025-04-01',
     tags: ['Las Vegas', 'Buying Guide', 'Nevada'],
     body: `
-<p>Las Vegas has dozens of solar companies competing for your business. Here's how to separate the legitimate installers from the predatory ones — and what to ask before signing anything.</p>
+<p>Las Vegas has no shortage of solar companies competing for your business — national brands, regional players, one-truck operations, and independent advisors like me. Some are excellent. Some will leave you with an oversized system, a bad financing deal, or a warranty that's hard to actually use. Here's how to tell the difference.</p>
 
-<h2>What Makes a Solar Company "Good"?</h2>
-<p>The best Las Vegas solar companies share a few common traits:</p>
-<ul>
-  <li><strong>Nevada contractor license:</strong> All solar installers in Nevada must hold a C-2 electrical or C-4 solar contractor license. Verify at the Nevada State Contractors Board (nvcontractorsboard.com)</li>
-  <li><strong>Manufacturer certifications:</strong> Look for installers certified by the panel brands they sell (SunPower Authorized Dealer, Enphase Installer, etc.)</li>
-  <li><strong>Verified reviews:</strong> Check Google, BBB, and the CSLB for complaint history — not just the stars</li>
-  <li><strong>Transparent pricing:</strong> A good company provides itemized quotes, not just a monthly payment number</li>
-  <li><strong>In-house installation:</strong> Companies that subcontract installations have less quality control</li>
-</ul>
+<h2>The Installer vs. Independent Advisor Distinction</h2>
+<p>The first thing to understand is that not everyone selling solar in Las Vegas actually installs it. The industry broadly breaks down into:</p>
+<p><strong>Direct installers:</strong> Companies that employ their own installation crews. They do the whole job — sales, design, permitting, installation, inspection, and interconnection.</p>
+<p><strong>Dealers/Brokers/Independent advisors:</strong> Representatives who aren't tied to one installer. They design and sell the system, then subcontract installation to one or more vetted installers.</p>
+<p>Neither is automatically better. What matters is whether the person designing your system is actually optimizing for your outcome — not their margin. An independent advisor who works with multiple top-rated installers can often get you a better combination of equipment, warranty, and price than a captive sales rep locked into one company's catalog. What you want to avoid is a high-pressure sales rep whose only goal is to close the deal today, regardless of whether the system is right for your home.</p>
 
-<h2>Red Flags to Watch For</h2>
-<ul>
-  <li><strong>High-pressure "today only" pricing</strong> — legitimate solar savings don't expire overnight</li>
-  <li><strong>Lease-only offers</strong> — leases prevent you from claiming the 30% ITC and complicate home sales</li>
-  <li><strong>Door-to-door with no physical office</strong> — verify any company has a real Nevada business address</li>
-  <li><strong>Promised production guarantees without a shade analysis</strong> — production estimates should be based on satellite shading data, not guesses</li>
-  <li><strong>Verbal promises</strong> — anything promised (production, savings, bill amount) must be in the written contract</li>
-</ul>
+<h2>NABCEP Certification: What It Means and Why It Matters</h2>
+<p>The North American Board of Certified Energy Practitioners (NABCEP) runs the professional certification program for solar installers. NABCEP Photovoltaic Installation Professional (PVIP) certification requires significant field experience, passing a rigorous exam, and ongoing continuing education.</p>
+<p>Not every technician on an installation crew needs to be NABCEP certified — but the company's design and project management team should be, or should work with NABCEP-certified engineers for system design.</p>
+<p><strong>What to ask:</strong> "Are your system designs reviewed by a NABCEP-certified engineer?" A reputable installer will say yes without hesitation.</p>
 
-<h2>Questions to Ask Any Solar Company</h2>
+<h2>Checking Reviews — and How to Read Them</h2>
+<p><strong>Look for:</strong> Specific mentions of the experience — the process, the timeline, whether the system performed as promised, how the company handled issues that came up.</p>
+<p><strong>Be skeptical of:</strong> A sudden burst of reviews all in the same month (can be fake), reviews that are vague or sound templated, companies with hundreds of reviews but no responses from the business.</p>
+<p><strong>Check the dates:</strong> A company with 150 great reviews but none in the last 18 months may have changed ownership, lost key staff, or changed business practices.</p>
+<p><strong>Look for negative reviews too</strong> — and how the company responds. Every solar company has some. The response to a complaint tells you more than the complaint itself.</p>
+
+<h2>Equipment: Panels, Inverters, and Warranties</h2>
+<p><strong>Tier 1 panels</strong> (bankable, high-quality manufacturers): REC, Panasonic, Q CELLS, Canadian Solar, Jinko Solar. These come with 25-year product and performance warranties from manufacturers with the financial stability to honor them.</p>
+<p><strong>Inverters:</strong> String inverters (one central unit) are the most common and most economical. Microinverters (one per panel, Enphase is the dominant brand) cost more but provide panel-level monitoring and better performance in partial shading. Power optimizers (SolarEdge) are a middle option. For most Las Vegas homes with unshaded roofs, string inverters are a perfectly good choice.</p>
+<p><strong>What to watch:</strong> "We use the best panels" is meaningless without a brand name and model number. Ask for the spec sheet.</p>
+
+<h2>Financing: What to Actually Look For</h2>
+<p><strong>Cash purchase:</strong> Best ROI, shortest payback, you own the system and keep all incentives. If you have the capital, this is usually the right call.</p>
+<p><strong>Solar loan ($0 down):</strong> You own the system and keep the 30% federal ITC. Monthly payments are often less than your current utility bill. Watch the interest rate (3–7% is normal) and term (10–25 years). Avoid dealers who bury a "dealer fee" in the loan amount — this inflates your financed cost by 20–40% above the system's true price.</p>
+<p><strong>Solar lease / PPA:</strong> You don't own the system — you're paying to use it. The installer keeps the federal tax credit, not you. You may have escalator clauses that increase your payment by 2–3% per year. Leases can complicate a home sale. For most homeowners who qualify for a loan, a lease is not the better choice.</p>
+<p><strong>Red flag:</strong> Any sales rep who won't explain the dealer fee built into the loan amount, or who pivots away from the question.</p>
+
+<h2>Permitting, Interconnection, and Timeline</h2>
+<p>A professional solar installation in Las Vegas involves: design and engineering, permit application with Clark County, installation (typically 1 day), county inspection, NV Energy interconnection application and approval, and Permission to Operate (PTO).</p>
+<p>The full process from contract to PTO typically takes <strong>6 to 12 weeks</strong>. An installer who promises you'll be live in 3 weeks is either very optimistic or not being straight with you.</p>
+
+<h2>Questions to Ask Before You Sign</h2>
 <ol>
-  <li>What is your Nevada contractor license number?</li>
-  <li>Who physically installs my system — your employees or subcontractors?</li>
-  <li>What production guarantee do you offer, and is it written into the contract?</li>
-  <li>Show me the itemized cost breakdown (not just the monthly payment)</li>
-  <li>What monitoring system comes with my install, and how do I access it?</li>
-  <li>Who handles warranty claims if something fails in year 10?</li>
+  <li>What brand and model are the panels, and what's the product warranty?</li>
+  <li>Is the system designed by a NABCEP-certified engineer?</li>
+  <li>What's the total project cost, and is there a dealer fee built into the financing?</li>
+  <li>Who handles permitting and interconnection?</li>
+  <li>What's your production guarantee, and what happens if the system underperforms?</li>
+  <li>Who do I call if something goes wrong in year 7?</li>
+  <li>Are you the installer, or are you subcontracting installation?</li>
 </ol>
 
-<h2>Why Working With an Independent Agent Is Different</h2>
-<p>Most solar companies you encounter are vertically integrated — they have installers, salespeople, and financiers all in-house. That alignment of interests means they're optimizing for their profit, not your savings.</p>
-<p>An independent agent like Daniel Hadobas represents multiple installer relationships and has no inventory to move. His only incentive is putting you in the right system at the right price — because 174 five-star reviews don't survive satisfied customers getting upsold into systems they didn't need.</p>
+<h2>Why Working With an Independent Advisor Makes Sense</h2>
+<p>My approach is simple: I analyze your actual utility usage, design a system that fits your home and your budget, and work with multiple top-rated NABCEP-certified installers to get you the best combination of equipment, warranty, and financing. I don't push one product or one installer — I push the right outcome for you.</p>
+<p>174 five-star Google reviews is the proof. <a href="/sodsolarsavings">Book a free, no-pressure consultation</a> and I'll show you exactly what I'd recommend for your home — and why.</p>
     `,
     faqs: [
-      { question: 'Should I get multiple solar quotes in Las Vegas?', answer: "Yes — always get at least 2–3 quotes. System design and pricing vary significantly between companies. A good independent agent can provide comparison quotes from multiple installers without you having to manage separate sales conversations." },
-      { question: 'What is the difference between a solar lease and a solar loan?', answer: "With a lease, a solar company owns the panels and you pay them monthly for the electricity. You get no tax credits, no home equity, and the panels must be transferred or removed if you sell. With a loan, you own the panels, claim the 30% federal tax credit, and the system increases your home's value. Loans are almost always better for homeowners who own their home." },
+      {
+        question: 'Should I get multiple solar quotes in Las Vegas?',
+        answer: "Yes — always get at least 2–3 quotes. System design and pricing vary significantly between companies. A good independent agent can provide comparison quotes from multiple installers without you having to manage separate sales conversations."
+      },
+      {
+        question: 'What is the difference between a solar lease and a solar loan?',
+        answer: "With a lease, a solar company owns the panels and you pay them monthly for the electricity. You get no tax credits, no home equity, and the panels must be transferred or removed if you sell. With a loan, you own the panels, claim the 30% federal tax credit, and the system increases your home's value. Loans are almost always better for homeowners who own their home."
+      },
     ],
   },
   {
     slug: 'california-solar-incentives-2025',
-    title: 'California Solar Incentives 2025: Complete Guide',
-    description: 'All federal, state, and utility solar incentives for California homeowners in 2025 — including NEM 3.0 and battery rebates.',
-    date: '2025-02-20',
-    readTime: '9 min read',
+    title: 'California Solar Incentives in 2025: NEM 3.0, SGIP, and the Federal Tax Credit',
+    description: 'A complete guide to California solar incentives in 2025 — NEM 3.0 export rates, SGIP battery rebates, the federal ITC, and what\'s different for LA, San Diego, and Riverside.',
+    publishDate: '2025-04-15',
     tags: ['California', 'Incentives', 'NEM 3.0'],
     body: `
-<p>California solar incentives changed significantly in 2023 with NEM 3.0. Here's everything Southern California homeowners need to know going into 2025.</p>
+<p>California solar has a reputation as the gold standard — and it mostly deserves it, though the rules changed significantly in 2023. If you're considering solar in Los Angeles, San Diego, or Riverside, here's everything you need to know about the current incentive landscape.</p>
 
-<h2>Federal: 30% ITC (Same as Every State)</h2>
-<p>California homeowners get the same 30% federal Investment Tax Credit as everyone else. On a $25,000 system (California systems run larger than Nevada), that's <strong>$7,500 back</strong> on your federal taxes. The ITC applies to cash, loan, and now also covers battery storage systems charged primarily by solar.</p>
+<h2>The Big Picture: What Changed in April 2023</h2>
+<p>Until April 2023, California operated under <strong>NEM 2.0</strong> — a net metering framework that compensated solar homeowners at or near the full retail rate for every kilowatt-hour they exported to the grid. With SDG&amp;E charging $0.40/kWh and SCE charging $0.30–$0.35/kWh, that was an extremely generous deal.</p>
+<p><strong>NEM 3.0 changed that.</strong> The California Public Utilities Commission (CPUC) replaced retail-rate export compensation with "Avoided Cost Calculator" (ACC) rates, which currently average <strong>$0.06 to $0.08 per kWh</strong> — a reduction of roughly 75% in the value of exported solar power.</p>
+<p><strong>The solution:</strong> design for self-consumption, not export. Solar plus battery storage is now the recommended approach for California homeowners, and the incentive structure has evolved to support it.</p>
 
-<h2>NEM 3.0 — What Changed in April 2023</h2>
-<p>California's Net Energy Metering 3.0 (officially "Net Billing Tariff") launched April 15, 2023 for new solar customers of PG&E, SCE, and SDG&E. The key change:</p>
-<ul>
-  <li><strong>Old NEM 2.0:</strong> Exported solar credited at retail rate (~$0.25–0.35/kWh)</li>
-  <li><strong>New NEM 3.0:</strong> Exported solar credited at "avoided cost" rate (~$0.02–0.08/kWh)</li>
-</ul>
-<p>This dramatically reduces the value of excess solar sent to the grid. A system designed to export 40% of its production is now much less economical than under NEM 2.0.</p>
+<h2>Federal Investment Tax Credit (ITC) — 30%</h2>
+<p>The 30% federal ITC applies in California exactly as it does everywhere else in the US. It's a dollar-for-dollar credit against your federal income tax equal to 30% of your total system cost — panels, battery, inverter, installation, and permits. Because California solar-plus-battery systems tend to be more expensive than Nevada systems, the absolute value of the ITC is often higher for California homeowners.</p>
+<table>
+  <thead><tr><th>System type</th><th>Installed cost</th><th>Federal ITC (30%)</th></tr></thead>
+  <tbody>
+    <tr><td>7 kW solar only (LA)</td><td>$22,400</td><td>$6,720</td></tr>
+    <tr><td>7 kW solar + 13.5 kWh battery</td><td>$33,000</td><td>$9,900</td></tr>
+    <tr><td>8 kW solar + 13.5 kWh battery (SD)</td><td>$36,000</td><td>$10,800</td></tr>
+  </tbody>
+</table>
+<p>The ITC applies to battery storage if the battery is <strong>charged primarily by the co-located solar system</strong> (&gt;75% solar-charged). Confirm with your tax advisor.</p>
 
-<h2>How to Win Under NEM 3.0</h2>
-<p>The answer is <strong>self-consumption</strong> — use your solar power as it's being generated, and store what you can't use immediately:</p>
-<ul>
-  <li><strong>Add battery storage:</strong> A Tesla Powerwall 3 or Enphase IQ Battery stores midday solar for evening use instead of exporting it at low rates</li>
-  <li><strong>Shift loads to solar hours:</strong> EV charging, laundry, dishwasher — schedule for 10am–2pm</li>
-  <li><strong>Right-size the system:</strong> Under NEM 3.0, bigger is not better. Excess production earns almost nothing; design for 85–90% self-consumption</li>
-</ul>
+<h2>SGIP: California's Battery Storage Rebate</h2>
+<p>The <strong>Self-Generation Incentive Program (SGIP)</strong> is California's battery storage incentive. The program is administered by the state's major utilities (SCE, SDG&amp;E, PG&amp;E, SoCalGas) and provides upfront rebates for qualifying battery storage installations.</p>
+<p><strong>Standard budget rebates:</strong> $200–$400 per kWh of usable battery capacity. For a 13.5 kWh Powerwall, that's $2,700–$5,400.</p>
+<p><strong>Equity budget rebates:</strong> For income-qualified households (under 80% of area median income) and residents in Tier 2 or Tier 3 high fire hazard severity zones, the rebate increases to <strong>$850–$1,000 per kWh</strong>. For a 13.5 kWh Powerwall under the equity budget, that's <strong>$11,475–$13,500 in rebates</strong> — on top of the federal ITC.</p>
+<p>SGIP availability varies by utility territory and budget cycle. SCE and SDG&amp;E equity budgets are currently available; standard budget waitlists exist in some areas.</p>
 
-<h2>California Solar Mandate</h2>
-<p>Since January 1, 2020, all new single-family homes and low-rise multifamily buildings in California must be built with solar panels. If you're in a new development home, you likely already have solar — but you may be in a lease. Buying out that lease and pairing it with storage is often financially advantageous.</p>
+<h2>California Property Tax Exclusion</h2>
+<p>California provides a property tax exclusion for active solar energy systems under Revenue and Taxation Code Section 73. The exclusion prevents solar from triggering a Prop 13 reassessment — meaning your home's assessed value for property tax purposes doesn't increase because you added solar. As of 2025, it remains in effect through at least 2027. For California homeowners where a solar-plus-battery system can add $20,000–$40,000 in market value, this exclusion saves $200–$500 per year in property taxes.</p>
 
-<h2>SGIP — California Battery Storage Rebate</h2>
-<p>The Self-Generation Incentive Program (SGIP) offers rebates for battery storage systems in California. In 2025:</p>
-<ul>
-  <li>Standard residential rebate: $150–200/kWh of storage capacity</li>
-  <li>Equity Resiliency rebate (for qualifying low-income homeowners and those in high fire-risk areas): up to $1,000/kWh</li>
-  <li>A 10 kWh system at the standard rate earns $1,500–$2,000 in rebates</li>
-</ul>
-<p>SGIP rebates are administered by the utilities and have waitlists — the earlier you apply, the better your position.</p>
+<h2>NEM 3.0 by Utility</h2>
+<p><strong>SCE (serving most of Riverside, parts of LA):</strong> NEM 3.0 ACC export rates average $0.06–$0.08/kWh. Time-of-use rates apply — the smartest solar design optimizes around the peak/off-peak rate differential.</p>
+<p><strong>SDG&amp;E (serving San Diego):</strong> Same NEM 3.0 framework, same ACC export rates. But SDG&amp;E's retail rates are the highest in the continental US at $0.40+/kWh, which means the electricity you self-consume is worth twice as much as in other markets. NEM 3.0 actually hurts less in San Diego — the self-consumption savings are so high.</p>
+<p><strong>LADWP (serving City of LA):</strong> LADWP operates under its own net metering program, separate from the CPUC's NEM 3.0 framework. LADWP customers may be on different export rates — confirm with your installer.</p>
 
-<h2>SDG&E, SCE, and LA-DWP: Which Rate Applies to You?</h2>
-<ul>
-  <li><strong>SDG&E (San Diego):</strong> NEM 3.0 applies. Battery storage is especially valuable due to SDG&E's high retail rates ($0.38–0.54/kWh in summer)</li>
-  <li><strong>SCE (Los Angeles, Riverside, Inland Empire):</strong> NEM 3.0 applies. Time-of-use rates favor self-consumption batteries</li>
-  <li><strong>LADWP (City of LA):</strong> Still on NEM 2.0-equivalent rates as of 2025. No NEM 3.0 switch announced. Excellent export rates still apply</li>
-</ul>
+<h2>NEM 2.0 Grandfathering</h2>
+<p>If you already have solar in California under NEM 2.0 (interconnected before April 14, 2023), you are <strong>grandfathered at NEM 2.0 rates for 20 years from your interconnection date</strong>. Your system continues earning retail-rate export credits. Adding battery storage generally doesn't affect your NEM 2.0 status. If you're on NEM 2.0, don't touch your interconnection agreement — it's extremely valuable.</p>
 
-<h2>Daniel Hadobas Serves Southern California</h2>
-<p>Daniel is licensed in California and works with top-rated installers in Los Angeles, San Diego, Riverside, and the Inland Empire. He specializes in NEM 3.0-optimized system designs — the right panel count, right battery size, and right usage strategy for your specific utility and rate plan.</p>
+<h2>Should You Still Go Solar in California?</h2>
+<p>Yes — the economics still work, especially with battery storage. California has the highest electricity rates in the continental US in most metro areas, and those rates are rising every year. The federal ITC and SGIP together can offset 40–60% of a solar-plus-battery system cost for qualifying homeowners.</p>
+<p>The key is designing the system correctly for NEM 3.0: right-sized solar array, adequate battery capacity, and a system tuned for self-consumption rather than export.</p>
+<p><a href="/sodsolarsavings">Book a free consultation</a> and I'll show you exactly how the numbers work for your specific home, utility, and situation in California.</p>
     `,
     faqs: [
-      { question: 'Is solar still worth it in California under NEM 3.0?', answer: "Yes — but the math is different. Under NEM 2.0, oversized systems with high export made sense. Under NEM 3.0, the winning strategy is self-consumption + battery storage. A well-designed system with a battery can still deliver 70–85% reduction in utility bills, especially for SDG&E customers paying $0.40+/kWh." },
-      { question: 'Should I get battery storage with my California solar system?', answer: "Under NEM 3.0, battery storage shifts from optional to highly recommended. Without a battery, midday excess production earns only $0.02–0.08/kWh. With a battery, that same energy offsets $0.35–0.50/kWh of evening usage. The payback on battery addition in California is typically 5–7 years under NEM 3.0." },
+      {
+        question: 'Is solar still worth it in California under NEM 3.0?',
+        answer: "Yes — but the math is different. Under NEM 2.0, oversized systems with high export made sense. Under NEM 3.0, the winning strategy is self-consumption + battery storage. A well-designed system with a battery can still deliver 70–85% reduction in utility bills, especially for SDG&E customers paying $0.40+/kWh."
+      },
+      {
+        question: 'Should I get battery storage with my California solar system?',
+        answer: "Under NEM 3.0, battery storage shifts from optional to highly recommended. Without a battery, midday excess production earns only $0.02–0.08/kWh. With a battery, that same energy offsets $0.35–0.50/kWh of evening usage. The payback on battery addition in California is typically 5–7 years under NEM 3.0."
+      },
     ],
   },
 ];

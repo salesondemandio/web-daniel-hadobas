@@ -9,6 +9,7 @@ import SectionCTA from '../components/SectionCTA.astro';
 import PersonSchema from '../components/PersonSchema.astro';
 import LocalBusinessSchema from '../components/LocalBusinessSchema.astro';
 import FAQSection from '../components/FAQSection.astro';
+import LeadForm from '../components/LeadForm.astro';
 
 const stats = [
   { value: '290+', label: 'Sunny Days Per Year in Las Vegas' },
@@ -23,7 +24,7 @@ const howItWorksSteps = [
   },
   {
     title: 'Permits & Installation',
-    description: "Daniel coordinates permits, HOA approvals, and schedules your installation with Sunder's certified crews. Average install: 1–2 days.",
+    description: "Daniel coordinates permits, HOA approvals, and schedules your installation with Sunsolar Solutions' certified crews. Average install: 1–2 days.",
   },
   {
     title: 'Start Saving Immediately',
@@ -46,7 +47,7 @@ const homeFaqs = [
   },
   {
     question: 'Is Daniel Hadobas a licensed solar contractor?',
-    answer: "Daniel is a licensed solar energy specialist and independent agent with Sunder Energy, one of the nation's top-rated residential solar companies. He handles permitting, HOA approvals, utility interconnection, and monitors your system post-install to ensure everything performs as promised. He has earned 174 five-star reviews from verified homeowners across Nevada and California.",
+    answer: "Daniel is a licensed solar energy specialist with Sunsolar Solutions, Nevada's licensed residential solar installer. He handles permitting, HOA approvals, utility interconnection, and monitors your system post-install to ensure everything performs as promised. He has earned 174 five-star reviews from verified homeowners across Nevada and California.",
   },
   {
     question: 'How many solar panels do I need for a Las Vegas home?',
@@ -58,7 +59,7 @@ const homeFaqs = [
   },
   {
     question: 'What company does Daniel Hadobas work for?',
-    answer: 'Daniel works as an independent licensed agent with Sunder Energy, a national residential solar company with an A+ rating. He previously represented Sunsolar Solutions, which merged into Sunder Energy. When you work with Daniel, you get the same trusted advisor regardless of which company name appears on documents — Daniel handles your account personally from quote to post-install support.',
+    answer: 'Daniel is a licensed solar energy specialist with Sunsolar Solutions. He handles your account personally from quote to post-install support — permitting, HOA approvals, utility interconnection, and ongoing monitoring after install.',
   },
   {
     question: 'What happens to my solar if I sell my house?',
@@ -151,6 +152,9 @@ const serviceAreas = [
       </div>
     </div>
   </section>
+
+  <!-- Lead Form -->
+  <LeadForm />
 
   <!-- FAQ -->
   <FAQSection faqs={homeFaqs} heading="Solar FAQs for Las Vegas Homeowners" />

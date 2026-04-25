@@ -63,9 +63,7 @@ const allTags = [...new Set(blogPosts.flatMap((p) => p.tags))].sort();
               <!-- Content -->
               <div class="flex-1 min-w-0">
                 <div class="flex flex-wrap items-center gap-2 mb-2">
-                  <time datetime={post.date} class="text-xs text-slate-400">{new Date(post.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</time>
-                  <span class="text-slate-300 text-xs">·</span>
-                  <span class="text-xs text-slate-400">{post.readTime}</span>
+                  <time datetime={post.publishDate} class="text-xs text-slate-400">{new Date(post.publishDate).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</time>
                   {post.tags.map((tag) => (
                     <span class="px-2 py-0.5 rounded-full bg-slate-100 text-slate-500 text-xs font-medium">{tag}</span>
                   ))}

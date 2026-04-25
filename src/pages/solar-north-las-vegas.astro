@@ -6,88 +6,72 @@ import LocalBusinessSchema from '../components/LocalBusinessSchema.astro';
 import StatsBar from '../components/StatsBar.astro';
 import FAQSection from '../components/FAQSection.astro';
 import ReviewWidget from '../components/ReviewWidget.astro';
-
-const city = "North Las Vegas";
-const state = "NV";
-
-const stats = [
-  { value: '290+', label: 'Sunny days per year' },
-  { value: '30%', label: 'Federal ITC tax credit' },
-  { value: '$0', label: 'Down payment required' },
-];
-
-const faqs = [
-  {
-    question: `How much does solar save in ${city}?`,
-    answer: `${city} homeowners on NV Energy typically save $150–$350 per month after going solar. Your savings depend on your current bill, system size, and how much electricity you use. Daniel provides a free detailed savings estimate — no obligation, no pressure.`,
-  },
-  {
-    question: `Are there HOA restrictions on solar in ${city}?`,
-    answer: `Nevada law (NRS 278.0208) protects homeowners' right to install solar regardless of HOA rules. No HOA in Nevada can outright prohibit solar installations. Daniel handles all HOA paperwork and submissions as part of his full-service installation.`,
-  },
-  {
-    question: `What is the solar installation process in ${city}?`,
-    answer: `Daniel walks you through a free savings analysis, designs a custom system for your home, handles permits and HOA approval, coordinates installation with Sunder's certified crews, and manages NV Energy interconnection. Most homeowners are generating solar power within 6–10 weeks.`,
-  },
-];
+import { northLasVegasContent as c } from '../data/content/cities/north-las-vegas';
 ---
 
-<BaseLayout
-  title={`Solar Panels ${city}, NV | Daniel Hadobas Solar`}
-  description={`Trusted solar agent serving ${city}, NV. $0 down solar with 30% federal tax credit. Get your free savings quote from Daniel Hadobas — call (702) 765-4527.`}
-  keywords={`solar panels North Las Vegas NV, North Las Vegas solar installation, NV Energy solar North Las Vegas, solar agent North Las Vegas, $0 down solar North Las Vegas`}
->
+<BaseLayout title={c.meta.title} description={c.meta.description} keywords={c.meta.keywords}>
   <Fragment slot="schema">
     <PersonSchema />
-    <LocalBusinessSchema city={city} state={state} />
+    <LocalBusinessSchema city="North Las Vegas" state="NV" description={c.meta.description} />
   </Fragment>
 
-  <section class="bg-brand-dark py-20 px-4">
-    <div class="max-w-4xl mx-auto">
+  <section class="bg-brand-dark py-20 px-4 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-brand-dark to-slate-800 opacity-50" aria-hidden="true"></div>
+    <div class="relative max-w-4xl mx-auto">
       <div class="inline-flex items-center gap-2 bg-brand-orange/20 border border-brand-orange/30 text-brand-orange rounded-full px-4 py-1.5 text-xs font-semibold mb-6">
-        Serving {city}, {state}
+        ⭐ 174 Five-Star Reviews · Serving North Las Vegas, NV
       </div>
-      <h1 class="font-display text-4xl sm:text-5xl font-black text-white mb-4">
-        Solar North <span class="text-brand-orange">Las Vegas</span>, NV
-      </h1>
-      <p class="text-slate-300 text-lg max-w-xl mb-8">
-        Trusted by {city} homeowners. $0 down solar panels with the 30% federal tax credit.
-        Start saving immediately.
-      </p>
-      <CTAButton text="Get Free Savings Quote" size="lg" />
+      <h1 class="font-display text-4xl sm:text-5xl font-black text-white mb-4 leading-[1.1]">{c.hero.h1}</h1>
+      <p class="text-slate-300 text-lg max-w-xl mb-8 leading-relaxed">{c.hero.subheadline}</p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <CTAButton text={c.cta.buttonText} size="lg" />
+        <a href="tel:+17027654527" class="inline-flex items-center gap-2 text-white font-semibold hover:text-brand-orange transition-colors">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 017 2.18 2 2 0 019.09 4v3.09a2 2 0 01-1.42 1.93l-1.8.6a16 16 0 006.62 6.62l.6-1.8a2 2 0 011.92-1.42z"/></svg>
+          (702) 765-4527
+        </a>
+      </div>
     </div>
   </section>
 
-  <section class="max-w-5xl mx-auto px-4 py-12">
-    <StatsBar stats={stats} />
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 py-12">
+    <StatsBar stats={c.stats} />
   </section>
 
-  <section class="py-8 px-4">
+  <section class="py-12 px-4 bg-white">
     <div class="max-w-4xl mx-auto">
-      <h2 class="font-display text-2xl font-bold text-brand-dark mb-3">Solar in {city}, NV</h2>
-      <div class="section-divider mb-4"></div>
-      <p class="text-slate-600 leading-relaxed">
-        {city} residents have access to the same powerful solar incentives and exceptional
-        sunshine that make the Las Vegas metro one of the top solar markets in the country.
-        Daniel Hadobas provides the same trusted, full-service experience that has earned
-        174 five-star reviews across the valley — with $0 down and savings that start on day one.
-      </p>
+      <h2 class="text-2xl font-bold text-brand-dark mb-2">North Las Vegas's Trusted Solar Expert</h2>
+      <p class="text-brand-orange font-semibold mb-6">Daniel Hadobas · 174 Five-Star Google Reviews · Las Vegas Native Since 1996</p>
+      {c.intro.map((para: string) => (
+        <p class="text-slate-600 leading-relaxed mb-4">{para}</p>
+      ))}
     </div>
   </section>
 
-  <section class="py-10 px-4">
+  <section class="py-12 px-4 bg-slate-50">
     <div class="max-w-4xl mx-auto">
-      <ReviewWidget />
+      <h2 class="text-2xl font-bold text-brand-dark mb-8">Nevada Solar Incentives for North Las Vegas Homeowners</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        {c.incentives.map((inc: any) => (
+          <div class="bg-white rounded-xl p-6 border border-slate-100 shadow-sm">
+            <h3 class="font-semibold text-brand-dark mb-2">{inc.title}</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">{inc.description}</p>
+          </div>
+        ))}
+      </div>
     </div>
   </section>
 
-  <FAQSection faqs={faqs} heading={`Solar FAQs — ${city}, ${state}`} />
+  <section class="py-10 px-4 bg-white">
+    <div class="max-w-4xl mx-auto"><ReviewWidget /></div>
+  </section>
+
+  <FAQSection faqs={c.faqs} heading="Solar FAQs — North Las Vegas, NV" />
 
   <section class="bg-brand-dark py-16 px-4 text-center">
     <div class="max-w-2xl mx-auto">
-      <h2 class="font-display text-3xl font-bold text-white mb-4">Go Solar in {city}</h2>
-      <p class="text-slate-300 mb-8">Free quote. No salespeople. Just real numbers.</p>
-      <CTAButton text="Get My Free Quote" size="lg" />
+      <h2 class="font-display text-3xl font-bold text-white mb-4">{c.cta.headline}</h2>
+      <p class="text-slate-300 mb-8">{c.cta.subheadline}</p>
+      <CTAButton text={c.cta.buttonText} size="lg" />
     </div>
   </section>
 </BaseLayout>

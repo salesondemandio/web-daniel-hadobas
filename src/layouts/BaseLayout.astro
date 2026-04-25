@@ -250,6 +250,49 @@ const canonicalClean = canonical.replace(/\/$/, '') || 'https://danielhadobas.co
       menu?.classList.toggle('hidden', isOpen);
       btn.setAttribute('aria-expanded', String(!isOpen));
     });
+
+    // ── Lead & call tracking ──────────────────────────────────────────────────
+    // Append UTM params to every GHL funnel link so GHL contacts have page attribution
+    const pagePath = window.location.pathname;
+    const pageSlug = pagePath.replace(/^\/|\/$/g, '').replace(/-/g, '_') || 'home';
+
+    document.querySelectorAll<HTMLAnchorElement>('a[href*="sodsolarsavings"]').forEach((link) => {
+      try {
+        const url = new URL(link.href);
+        url.searchParams.set('utm_source', 'danielhadobas.com');
+        url.searchParams.set('utm_medium', 'website');
+        url.searchParams.set('utm_content', pageSlug);
+        link.href = url.toString();
+      } catch (_) {}
+    });
+
+    // Track clicks via event delegation — fires before navigation
+    document.addEventListener('click', (e) => {
+      const link = (e.target as Element).closest('a');
+      if (!link) return;
+
+      // Phone call click
+      if (link.href.startsWith('tel:')) {
+        // @ts-ignore
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'phone_call_click', {
+            phone_number: '+17027654527',
+            page_path: pagePath,
+          });
+        }
+      }
+
+      // CTA click → GHL funnel (lead intent)
+      if (link.href.includes('sodsolarsavings')) {
+        // @ts-ignore
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'generate_lead', {
+            method: 'cta_button',
+            page_path: pagePath,
+          });
+        }
+      }
+    });
   </script>
 </body>
 </html>
