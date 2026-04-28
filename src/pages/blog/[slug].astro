@@ -17,22 +17,33 @@ const { post } = Astro.props;
     <PersonSchema />
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
-      "@type": "BlogPosting",
+      "@type": ["BlogPosting", "Article"],
       "headline": post.title,
       "description": post.description,
       "datePublished": post.publishDate,
+      "dateModified": post.publishDate,
       "author": {
         "@type": "Person",
         "name": "Daniel Hadobas",
-        "url": "https://danielhadobas.com/about"
+        "url": "https://danielhadobas.com/about",
+        "jobTitle": "Licensed Solar Energy Specialist"
       },
       "publisher": {
         "@type": "Organization",
         "name": "Daniel Hadobas Solar",
-        "url": "https://danielhadobas.com"
+        "url": "https://danielhadobas.com",
+        "logo": { "@type": "ImageObject", "url": "https://danielhadobas.com/favicon.svg" }
       },
-      "image": "https://danielhadobas.com/images/daniel-hadobas.jpg",
-      "url": `https://danielhadobas.com/blog/${post.slug}`
+      "image": "https://danielhadobas.com/og-v2.jpg",
+      "url": `https://danielhadobas.com/blog/${post.slug}`,
+      "mainEntityOfPage": { "@type": "WebPage", "@id": `https://danielhadobas.com/blog/${post.slug}` },
+      "keywords": post.tags.join(", "),
+      "articleSection": "Solar Energy",
+      "inLanguage": "en-US",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["h1", "h2", ".prose p:first-of-type"]
+      }
     })} />
   </Fragment>
 

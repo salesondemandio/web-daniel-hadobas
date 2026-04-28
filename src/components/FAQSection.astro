@@ -17,6 +17,10 @@ const {
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["details summary", "details > div"]
+  },
   "mainEntity": faqs.map((faq) => ({
     "@type": "Question",
     "name": faq.question,

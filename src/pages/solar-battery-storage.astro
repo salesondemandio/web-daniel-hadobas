@@ -98,6 +98,20 @@ const faqs = [
   },
 ];
 
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'How a Home Battery Earns Its Keep in Las Vegas',
+  description: 'How a properly configured home battery saves money on NV Energy time-of-use rates and provides backup during outages.',
+  totalTime: 'PT0M',
+  step: howItWorks.map((s, i) => ({
+    '@type': 'HowToStep',
+    position: i + 1,
+    name: s.title,
+    text: s.body,
+  })),
+};
+
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
@@ -130,6 +144,7 @@ const schema = {
     <PersonSchema />
     <LocalBusinessSchema city="Las Vegas" state="NV" description={meta.description} slug="solar-battery-storage" />
     <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
   </Fragment>
 
   <!-- Hero -->
