@@ -1,7 +1,7 @@
 export const homeContent = {
   urgencyBanner: "⚠️ Federal Solar Tax Credits May Expire — Lock In 30% Savings Now",
   hero: {
-    headline: "Las Vegas's #1 Rated Solar Agent",
+    headline: "Las Vegas Solar Specialist — Daniel Hadobas",
     subheadline: "174 Five-Star Reviews. $0 Down Solar. Honest math against your real NV Energy bill.",
     ctaText: "Get Your Free Solar Quote"
   },

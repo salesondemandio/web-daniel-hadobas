@@ -5,7 +5,7 @@ export const greenValleyContent = {
     keywords: "solar panels Green Valley NV, Green Valley Henderson solar, solar agent Green Valley Nevada, NV Energy solar Henderson, solar installation Green Valley"
   },
   hero: {
-    h1: "Green Valley Solar Expert — Henderson's Most Trusted Agent",
+    h1: "Green Valley Solar Specialist — Serving Henderson Homeowners",
     subheadline: "Serving Green Valley Ranch, Green Valley, and Henderson since 2020. 174 five-star reviews. $0 down financing available."
   },
   stats: [
