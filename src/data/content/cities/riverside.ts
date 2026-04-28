@@ -42,7 +42,7 @@ export const riversideContent = {
     },
     {
       question: "Is solar worth it in Riverside with SCE rates?",
-      answer: "Yes. Riverside's combination of high SCE rates ($0.28–$0.32/kWh), extreme summer heat, and strong sun exposure makes it one of the better inland solar markets in California. Most homeowners save $150–$280 per month, with payback typically in 7–9 years. Homes with large AC loads, pools, or EVs often save even more."
+      answer: "Yes. Riverside's combination of high SCE rates ($0.28–$0.32/kWh), extreme summer heat, and strong sun exposure makes it one of the better inland solar markets in California. Most homeowners see meaningful savings tied to their SCE bill, with payback typically in 7–9 years. Homes with large AC loads, pools, or EVs often save even more."
     },
     {
       question: "How does SCE net metering work under NEM 3.0?",

@@ -6,12 +6,12 @@ export const summerlinContent = {
   },
   hero: {
     h1: "Summerlin Solar Expert — $0 Down, 174 Five-Star Reviews",
-    subheadline: "Serving Summerlin's master-planned communities since 2020. $150–$400/mo in savings. No pressure, no gimmicks — just results."
+    subheadline: "Serving Summerlin's master-planned communities since 2020. monthly savings tied to your actual bill in savings. No pressure, no gimmicks — just results."
   },
   stats: [
     { value: '290+', label: 'Sunny Days/Year in Summerlin' },
     { value: '174', label: 'Five-Star Google Reviews' },
-    { value: '$400', label: 'Avg Monthly Savings' }
+    { value: '$0', label: 'Down To Get Started' }
   ],
   intro: [
     "Summerlin is the largest master-planned community in the United States, stretching across the western edge of the Las Vegas Valley. With custom homes in prestigious villages like The Ridges, Willow Bend, and The Hills, Summerlin homeowners typically have larger-than-average homes — 2,500 to 4,500 square feet — which means higher energy bills and greater potential savings from solar. Summerlin is served entirely by NV Energy, so residents qualify for Nevada's full suite of solar incentives: the 30% federal tax credit, the Nevada sales tax exemption, NV Energy net metering at 75% of the retail rate, and the state's property tax exemption for solar-added home value.",

@@ -2,13 +2,13 @@ export const homeContent = {
   urgencyBanner: "⚠️ Federal Solar Tax Credits May Expire — Lock In 30% Savings Now",
   hero: {
     headline: "Las Vegas's #1 Rated Solar Agent",
-    subheadline: "174 Five-Star Reviews. $0 Down Solar. $150–$400/mo in Savings.",
+    subheadline: "174 Five-Star Reviews. $0 Down Solar. Honest math against your real NV Energy bill.",
     ctaText: "Get Your Free Solar Quote"
   },
   stats: [
     { value: "290+", label: "Sunny Days Per Year in Las Vegas" },
     { value: "174", label: "Five-Star Google Reviews" },
-    { value: "$400", label: "Average Monthly Savings" }
+    { value: "$0", label: "Down To Get Started" }
   ],
   whyDaniel: {
     headline: "Why Las Vegas Homeowners Choose Daniel",

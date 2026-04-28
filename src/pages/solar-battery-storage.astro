@@ -6,13 +6,13 @@ import LocalBusinessSchema from '../components/LocalBusinessSchema.astro';
 import FAQSection from '../components/FAQSection.astro';
 
 const meta = {
-  title: 'Tesla Powerwall + Solar Battery Storage Las Vegas | Daniel Hadobas',
-  description: 'Tesla Powerwall installation in Las Vegas with Daniel Hadobas. Keep your home running through NV Energy peak rates, summer outages, and grid failures. $0 down, 30% federal tax credit.',
-  keywords: 'Tesla Powerwall Las Vegas, solar battery storage Las Vegas, home battery backup Nevada, NV Energy peak demand, solar battery cost Las Vegas, Powerwall installer Las Vegas',
+  title: 'Solar Battery Storage Las Vegas | Daniel Hadobas',
+  description: 'Home battery storage in Las Vegas with Daniel Hadobas. Keep your home running through NV Energy peak rates, summer outages, and grid failures. $0 down, 30% federal tax credit.',
+  keywords: 'solar battery storage Las Vegas, home battery backup Nevada, NV Energy peak demand, solar battery cost Las Vegas, battery installer Las Vegas, residential battery Nevada',
 };
 
 const stats = [
-  { value: '13.5 kWh', label: 'Per Tesla Powerwall' },
+  { value: '24/7', label: 'Backup Power' },
   { value: '$0', label: 'Down Available' },
   { value: '30%', label: 'Federal Tax Credit' },
 ];
@@ -20,15 +20,15 @@ const stats = [
 const reasons = [
   {
     title: 'NV Energy peak rates double your evening bill',
-    body: 'Time-of-use rates hit hardest 4–9 PM — exactly when your AC is working hardest and your panels stop producing. A Powerwall stores cheap mid-day solar and discharges through peak hours, so you stay off the most expensive kWh of the day.',
+    body: 'Time-of-use rates hit hardest 4–9 PM — exactly when your AC is working hardest and your panels stop producing. A battery stores cheap mid-day solar and discharges through peak hours, so you stay off the most expensive kWh of the day.',
   },
   {
     title: 'Summer outages are getting worse',
-    body: 'Triple-digit Vegas summers stress the grid. When NV Energy goes down, your Powerwall keeps the AC running, the fridge cold, and the WiFi up — automatically, in under a second, without a generator.',
+    body: 'Triple-digit Vegas summers stress the grid. When NV Energy goes down, a properly sized battery keeps the AC running, the fridge cold, and the WiFi up — automatically, in under a second, with no generator.',
   },
   {
     title: 'Demand charges punish unbatteried solar',
-    body: 'NV Energy now bills residential solar customers a demand charge based on your single highest 15-minute draw of the month. One run of the dryer plus the AC kicking on can spike your bill by $40+. A battery flattens those spikes for you.',
+    body: 'NV Energy now bills residential solar customers a demand charge based on your single highest 15-minute draw of the month. One run of the dryer plus the AC kicking on can spike your bill. A battery flattens those spikes for you.',
   },
   {
     title: 'NEM credits are worth less than you think',
@@ -38,63 +38,63 @@ const reasons = [
 
 const sizingTiers = [
   {
-    tier: '1 Powerwall',
-    kwh: '13.5 kWh',
+    tier: 'Single battery',
+    kwh: '~10–14 kWh',
     fits: '~1,500–2,000 sq ft, essentials backup',
-    covers: 'Fridge, WiFi, lights, a few outlets, one AC zone for 6–10 hours',
+    covers: 'Fridge, WiFi, lights, a few outlets, one AC zone for several hours',
   },
   {
-    tier: '2 Powerwalls',
-    kwh: '27 kWh',
+    tier: 'Two batteries',
+    kwh: '~20–28 kWh',
     fits: '~2,000–3,500 sq ft, whole-home backup',
     covers: 'Whole house including AC, EV charger pause, runs through a typical Vegas overnight outage',
   },
   {
-    tier: '3 Powerwalls',
-    kwh: '40.5 kWh',
+    tier: 'Three+ batteries',
+    kwh: '~30+ kWh',
     fits: '3,500+ sq ft or two-AC homes',
     covers: 'Multiple AC zones, EV charging, pool pump, days of essentials-only backup',
   },
 ];
 
 const howItWorks = [
-  { title: 'Solar charges the battery during the day', body: 'Excess production from your panels charges the Powerwall instead of being exported to NV Energy at the discounted rate.' },
+  { title: 'Solar charges the battery during the day', body: 'Excess production from your panels charges the battery instead of being exported to NV Energy at the discounted rate.' },
   { title: 'Battery powers your home during peak hours', body: 'From 4 PM onward, your house runs off stored solar — bypassing NV Energy peak rates and demand charges automatically.' },
-  { title: 'Backup mode kicks in if the grid drops', body: 'When NV Energy goes down, the Powerwall isolates from the grid in under a second and keeps the loads you backed up running until power returns or solar recharges it.' },
+  { title: 'Backup mode kicks in if the grid drops', body: 'When NV Energy goes down, the battery isolates from the grid in under a second and keeps the loads you backed up running until power returns or solar recharges it.' },
 ];
 
 const faqs = [
   {
-    question: 'How much does a Tesla Powerwall cost in Las Vegas?',
-    answer: 'A single Powerwall installation in Las Vegas typically runs $13,000–$18,000 before incentives, including the gateway, install, electrical work, and permitting. After the 30% federal tax credit it nets to $9,100–$12,600. Adding a second Powerwall to the same install adds roughly $9,000–$11,000 (lower per-unit cost on the second). $0 down financing is available — most homeowners pay less monthly than the bill savings.',
+    question: 'How much does home battery storage cost in Las Vegas?',
+    answer: 'A single residential battery installation in Las Vegas typically runs $13,000–$18,000 before incentives, including the gateway, install, electrical work, and permitting. After the 30% federal tax credit it nets to $9,100–$12,600. Adding a second battery to the same install adds roughly $9,000–$11,000 (lower per-unit cost on the second). $0 down financing is available. Daniel quotes the actual brand and configuration that fits your house — not a one-size package.',
   },
   {
     question: 'Does the 30% federal tax credit apply to battery storage?',
-    answer: 'Yes. As of 2023, the Inflation Reduction Act extended the 30% Investment Tax Credit to standalone battery storage as well as solar-paired storage. A $15,000 Powerwall install creates a $4,500 federal tax credit. The credit is non-refundable — it offsets taxes you owe, not cash back.',
+    answer: 'Yes. As of 2023, the Inflation Reduction Act extended the 30% Investment Tax Credit to standalone battery storage as well as solar-paired storage. A $15,000 battery install creates a $4,500 federal tax credit. The credit is non-refundable — it offsets taxes you owe, not cash back.',
   },
   {
-    question: 'How long will a Powerwall run my house in a Las Vegas outage?',
-    answer: "It depends on what you back up. For a typical 2,000 sq ft Vegas home running essentials only (fridge, lights, WiFi, one AC zone), one Powerwall lasts roughly 6–10 hours overnight. Two Powerwalls covers whole-home through a typical Vegas overnight outage even with AC running. If your panels are on the next morning, the system can keep running indefinitely as long as the sun's out.",
+    question: 'How long will a battery run my house in a Las Vegas outage?',
+    answer: "It depends on what you back up and which battery is installed. For a typical 2,000 sq ft Vegas home running essentials only (fridge, lights, WiFi, one AC zone), a single battery generally lasts several hours overnight. Two batteries covers whole-home through a typical Vegas overnight outage even with AC running. If your panels are on the next morning, the system can keep running indefinitely as long as the sun's out.",
   },
   {
-    question: 'Can I get a Powerwall without solar?',
-    answer: "Yes — Tesla Powerwall can be installed standalone for grid backup and demand-charge management, and the 30% federal tax credit still applies. But the math gets dramatically better when paired with solar, because solar charges the battery for free instead of you charging it from the grid. Most Las Vegas Powerwall installs are solar-paired for that reason.",
+    question: 'Can I get a battery without solar?',
+    answer: "Yes — most modern home batteries can be installed standalone for grid backup and demand-charge management, and the 30% federal tax credit still applies. But the math gets dramatically better when paired with solar, because solar charges the battery for free instead of you charging it from the grid. Most Las Vegas battery installs are solar-paired for that reason.",
   },
   {
     question: 'How does battery storage work with NV Energy time-of-use rates?',
-    answer: 'NV Energy peak hours (typically 4–9 PM weekdays in summer) cost dramatically more per kWh than off-peak. A properly configured Powerwall charges from solar mid-day and discharges through the peak window, bypassing the most expensive rates. The Tesla app lets Daniel set the system to "Time-Based Control" so it automatically optimizes against your specific NV Energy rate plan.',
+    answer: 'NV Energy peak hours (typically 4–9 PM weekdays in summer) cost dramatically more per kWh than off-peak. A properly configured battery charges from solar mid-day and discharges through the peak window, bypassing the most expensive rates. Daniel sets the system to optimize against your specific NV Energy rate plan during commissioning.',
   },
   {
-    question: 'How long does Powerwall installation take in Las Vegas?',
-    answer: 'Physical install is typically one day for a single Powerwall, two days for a pair. From signed contract to system commissioning is usually 4–6 weeks: 1–2 weeks for permitting through the city, 1–2 weeks for HOA approval if applicable, and 1–2 weeks for NV Energy interconnection and final inspection. Daniel handles all paperwork end-to-end.',
+    question: 'How long does battery installation take in Las Vegas?',
+    answer: 'Physical install is typically one day for a single battery, two days for a pair. From signed contract to system commissioning is usually 4–6 weeks: 1–2 weeks for permitting through the city, 1–2 weeks for HOA approval if applicable, and 1–2 weeks for NV Energy interconnection and final inspection. Daniel handles all paperwork end-to-end.',
   },
   {
-    question: 'What happens to the Powerwall if I sell my house?',
-    answer: 'A purchased Powerwall transfers with the property and typically increases home value — Vegas appraisers are increasingly recognizing battery + solar as a value-add, especially in HOA neighborhoods where summer outages and high bills are common talking points. Studies show solar-plus-battery homes sell faster than comparable non-solar homes.',
+    question: 'What happens to the battery if I sell my house?',
+    answer: 'A purchased battery transfers with the property and typically increases home value — Vegas appraisers are increasingly recognizing battery + solar as a value-add, especially in HOA neighborhoods where summer outages and high bills are common talking points. Studies show solar-plus-battery homes sell faster than comparable non-solar homes.',
   },
   {
-    question: 'Is Daniel a certified Tesla Powerwall installer?',
-    answer: "Daniel partners with Sunsolar Solutions, a Tesla Powerwall Premier Installer — Tesla's highest installer tier, granted only to companies meeting strict installation, training, and customer-service standards. Every Powerwall job Daniel writes is installed by Sunsolar's Tesla-certified electricians and backed by Tesla's 10-year warranty plus Sunsolar's 25-year workmanship warranty.",
+    question: 'Which battery brand will I get?',
+    answer: "It depends on which licensed installer is handling your job and what's the right fit for your house — the major residential battery brands all have strengths and tradeoffs. Daniel works with multiple top-rated installers across Nevada and California, so he can recommend the brand and configuration that actually matches your home, your roof, and your usage. He'll walk you through the options on the call.",
   },
 ];
 
@@ -115,7 +115,7 @@ const schema = {
     { '@type': 'City', name: 'Summerlin' },
     { '@type': 'State', name: 'Nevada' },
   ],
-  description: 'Tesla Powerwall and solar battery storage installation in Las Vegas. Demand-charge management, peak-rate avoidance, and whole-home backup for NV Energy customers.',
+  description: 'Home battery storage installation in Las Vegas. Demand-charge management, peak-rate avoidance, and whole-home backup for NV Energy customers.',
   offers: {
     '@type': 'Offer',
     priceCurrency: 'USD',
@@ -134,28 +134,34 @@ const schema = {
 
   <!-- Hero -->
   <section class="relative overflow-hidden noise-overlay" style="background-color:#FAFAF8;background-image:radial-gradient(ellipse 80% 60% at 65% 40%, #EFF5EB 0%, #FAFAF8 70%);">
-    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 py-20 sm:py-28">
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-20 lg:py-28">
+      <!-- Mobile photo -->
+      <div class="lg:hidden flex justify-center mb-8">
+        <div class="w-44 h-52 sm:w-52 sm:h-64 rounded-2xl overflow-hidden border-4 border-[#6AB745] shadow-xl bg-slate-100">
+          <img src="/images/daniel.jpg" alt="Daniel Hadobas — Las Vegas solar + battery specialist" class="w-full h-full object-cover object-top" width="208" height="256" loading="eager" fetchpriority="high" />
+        </div>
+      </div>
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
           <div class="inline-flex items-center gap-2 bg-[#6AB745]/15 border border-[#6AB745]/35 text-[#3F6E29] rounded-full px-4 py-1.5 text-xs font-semibold mb-6">
             <span class="w-1.5 h-1.5 rounded-full bg-[#6AB745] animate-pulse"></span>
-            Tesla Powerwall Premier Installer Partner
+            Solar + Battery Storage · Las Vegas, NV
           </div>
           <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl text-slate-900 leading-[1.05] mb-6">
             Keep the lights on when NV Energy can't.
           </h1>
           <p class="text-slate-700 text-lg leading-relaxed mb-6">
-            Tesla Powerwall installation in Las Vegas with Daniel Hadobas. Beat peak rates, escape demand charges, and ride out summer outages — automatically, in under a second, with no generator.
+            Home battery storage in Las Vegas with Daniel Hadobas. Beat peak rates, escape demand charges, and ride out summer outages — automatically, in under a second, with no generator.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 mb-6">
-            <CTAButton text="See My Battery Savings" size="lg" />
+            <CTAButton text="See If Battery Makes Sense" size="lg" />
             <a href="tel:+17029416894" class="inline-flex items-center gap-2 text-slate-900 font-semibold hover:text-[#3F6E29] transition-colors">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 017 2.18 2 2 0 019.09 4v3.09a2 2 0 01-1.42 1.93l-1.8.6a16 16 0 006.62 6.62l.6-1.8a2 2 0 011.92-1.42z"/></svg>
               (702) 941-6894
             </a>
           </div>
           <div class="flex flex-wrap items-center gap-4 text-xs text-slate-500">
-            <span class="flex items-center gap-1.5"><svg width="14" height="14" fill="#6AB745" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> Tesla 10-yr warranty</span>
+            <span class="flex items-center gap-1.5"><svg width="14" height="14" fill="#6AB745" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> Licensed installers</span>
             <span class="flex items-center gap-1.5"><svg width="14" height="14" fill="#6AB745" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> 30% federal tax credit</span>
             <span class="flex items-center gap-1.5"><svg width="14" height="14" fill="#6AB745" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> $0 down available</span>
           </div>
@@ -165,7 +171,7 @@ const schema = {
             <div class="w-80 h-96 rounded-2xl overflow-hidden border-4 border-[#6AB745] shadow-2xl bg-slate-100">
               <img
                 src="/images/daniel.jpg"
-                alt="Daniel Hadobas — Tesla Powerwall installer in Las Vegas"
+                alt="Daniel Hadobas — Las Vegas solar + battery storage specialist"
                 class="w-full h-full object-cover object-top"
                 width="320" height="384"
                 loading="eager"
@@ -173,12 +179,12 @@ const schema = {
               />
             </div>
             <div class="absolute -bottom-4 -left-6 bg-white rounded-xl px-4 py-3 shadow-xl border border-slate-200">
-              <p class="text-xs text-slate-500 font-medium">Powerwall installs</p>
-              <p class="text-slate-900 font-bold text-sm">100+ in Vegas</p>
+              <p class="text-xs text-slate-500 font-medium">Vegas local</p>
+              <p class="text-slate-900 font-bold text-sm">Since 1996</p>
             </div>
             <div class="absolute -top-4 -right-6 bg-[#3F6E29] text-white rounded-xl px-4 py-3 shadow-xl">
-              <p class="text-xs font-semibold opacity-90">Premier Installer</p>
-              <p class="font-bold text-xs">Tesla certified</p>
+              <p class="text-xs font-semibold opacity-90">174 ★★★★★</p>
+              <p class="font-bold text-xs">Google reviews</p>
             </div>
           </div>
         </div>
@@ -232,7 +238,7 @@ const schema = {
     <div class="max-w-5xl mx-auto">
       <div class="text-center mb-12">
         <div class="section-divider mx-auto mb-4"></div>
-        <h2 class="font-display text-3xl sm:text-4xl text-slate-900 mb-3">How a Powerwall earns its keep.</h2>
+        <h2 class="font-display text-3xl sm:text-4xl text-slate-900 mb-3">How a battery earns its keep.</h2>
       </div>
       <div class="relative grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="hidden md:block absolute top-[2.75rem] left-[16.67%] right-[16.67%] h-px bg-[#6AB745]/30" aria-hidden="true"></div>
@@ -254,8 +260,8 @@ const schema = {
     <div class="max-w-5xl mx-auto">
       <div class="text-center mb-12">
         <div class="section-divider mx-auto mb-4"></div>
-        <h2 class="font-display text-3xl sm:text-4xl text-slate-900 mb-3">How many Powerwalls do you need?</h2>
-        <p class="text-slate-600 max-w-2xl mx-auto">Daniel sizes your battery to your actual home and load profile — no overselling, no understating. Here's the rough framework.</p>
+        <h2 class="font-display text-3xl sm:text-4xl text-slate-900 mb-3">How much battery do you need?</h2>
+        <p class="text-slate-600 max-w-2xl mx-auto">Daniel sizes your storage to your actual home and load profile — no overselling, no understating. Here's the rough framework.</p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         {sizingTiers.map((t) => (
@@ -273,23 +279,23 @@ const schema = {
   <!-- Daniel block -->
   <section class="py-20 px-4 border-y border-[#DDE3D8]" style="background-color:#F0F2EE;background-image:radial-gradient(circle at 30% 50%, rgba(106,183,69,0.08) 0%, transparent 60%);">
     <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-      <img src="/images/daniel-with-customer.jpg" alt="Daniel Hadobas reviewing a Tesla Powerwall quote with a Las Vegas homeowner" class="w-full max-w-md rounded-2xl border border-[#E8ECE4] shadow-[0_8px_32px_rgba(5,7,8,0.10)] mx-auto" loading="lazy" />
+      <img src="/images/daniel-with-customer.jpg" alt="Daniel Hadobas reviewing a battery storage quote with a Las Vegas homeowner" class="w-full max-w-md rounded-2xl border border-[#E8ECE4] shadow-[0_8px_32px_rgba(5,7,8,0.10)] mx-auto" loading="lazy" />
       <div>
-        <p class="text-[#6AB745] font-semibold text-sm uppercase tracking-widest mb-2">Why homeowners pick Daniel for Powerwall</p>
+        <p class="text-[#6AB745] font-semibold text-sm uppercase tracking-widest mb-2">Why homeowners pick Daniel for battery storage</p>
         <h2 class="font-display text-3xl text-slate-900 mb-4 leading-tight">No call center. No quotas. The battery sized for your house — not theirs.</h2>
         <p class="text-slate-700 leading-relaxed mb-4">
-          Most Powerwall reps push a one-size-fits-all package and disappear after install.
-          Daniel walks your panel, looks at your last 12 months of NV Energy bills, and sizes
-          the battery to your real load profile — including AC, EV charging, and pool pumps if
-          you have them.
+          Most battery reps push a one-size-fits-all package and disappear after install.
+          Daniel doesn't. He walks your panel, looks at your last 12 months of NV Energy bills,
+          and recommends a brand and configuration that actually fits your real load profile —
+          including AC, EV charging, and pool pumps if you have them.
         </p>
         <p class="text-slate-700 leading-relaxed mb-6">
-          He stays on the account after install, helps you tune the Tesla app for time-of-use
+          He stays on the account after install, helps you tune the system for time-of-use
           rates, and makes sure NV Energy interconnects everything cleanly so you actually
           get the savings on your bill.
         </p>
         <a href="/#get-quote" class="inline-flex items-center gap-2 bg-[#3F6E29] text-white px-7 py-3.5 rounded-lg font-bold cta-glow">
-          See My Battery Savings
+          See If Battery Makes Sense
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
       </div>
@@ -297,18 +303,18 @@ const schema = {
   </section>
 
   <!-- FAQ -->
-  <FAQSection faqs={faqs} heading="Powerwall + Battery Storage FAQs" />
+  <FAQSection faqs={faqs} heading="Battery Storage FAQs" />
 
   <!-- Final CTA -->
   <section class="relative py-20 px-4 overflow-hidden" style="background-color:#6AB745;">
     <div class="relative max-w-3xl mx-auto text-center">
       <h2 class="font-display text-3xl sm:text-5xl text-white mb-4 leading-tight">Get the math on your house.</h2>
       <p class="text-white/90 mb-8 leading-relaxed max-w-xl mx-auto text-lg">
-        Daniel runs your last 12 months of NV Energy bills against a 1-, 2-, or 3-Powerwall configuration and tells you what actually saves you money. If a battery doesn't pay for itself, he'll say so.
+        Daniel runs your last 12 months of NV Energy bills against a battery configuration sized for your home and tells you whether it pays for itself. If it doesn't, he'll say so.
       </p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
         <a href="/#get-quote" class="inline-flex items-center gap-2 bg-white text-[#050708] px-8 py-4 rounded-lg font-bold text-base shadow-[0_8px_24px_rgba(5,7,8,0.20)] hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(5,7,8,0.28)] transition-all duration-200">
-          See My Battery Savings
+          See If Battery Makes Sense
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
         <a href="tel:+17029416894" class="text-white font-semibold hover:text-white/80 transition-colors flex items-center gap-2">

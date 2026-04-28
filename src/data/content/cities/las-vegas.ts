@@ -1,12 +1,12 @@
 export const lasVegasContent = {
   meta: {
     title: "Solar Panels Las Vegas NV | Daniel Hadobas Solar",
-    description: "Get Las Vegas solar panels with $0 down and save $150–$400/mo. 174 five-star reviews. Licensed Nevada solar agent. Free quote today.",
+    description: "Get Las Vegas solar panels with $0 down and save monthly savings tied to your actual bill. 174 five-star reviews. Licensed Nevada solar agent. Free quote today.",
     keywords: "solar panels Las Vegas NV, Las Vegas solar installation, NV Energy solar Las Vegas, solar cost Las Vegas, best solar company Las Vegas, $0 down solar Las Vegas"
   },
   hero: {
     h1: "Solar Panels Las Vegas, NV — $0 Down, Real Savings",
-    subheadline: "Las Vegas gets 290+ sunny days a year. With NV Energy rates climbing past $0.125/kWh, most homeowners save $150–$400 every month after going solar."
+    subheadline: "Las Vegas gets 290+ sunny days a year. With NV Energy rates climbing past $0.125/kWh, most homeowners see what you’d save against your current bill after going solar."
   },
   intro: [
     "Las Vegas is one of the best solar markets in the United States — and for good reason. With over 290 sunny days per year and an average NV Energy rate of $0.125 per kilowatt-hour, the conditions for solar savings are near-perfect. The average Las Vegas household spends around $160 per month on electricity, but homeowners who install solar routinely cut that bill to near zero — and many end up with net metering credits that carry forward through the summer peak months. Over the lifetime of a system, Las Vegas solar owners typically accumulate $51,532 in energy savings, making it one of the strongest financial decisions a homeowner can make.",
