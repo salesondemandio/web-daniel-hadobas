@@ -5,7 +5,12 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   site: 'https://danielhadobas.com',
-  integrations: [sitemap({ lastmod: new Date() })],
+  integrations: [
+    sitemap({
+      lastmod: new Date(),
+      filter: (page) => !page.includes('/solarsavingsresults') && !page.includes('/og-render'),
+    }),
+  ],
   trailingSlash: 'never',
   output: 'static',
   vite: {

@@ -4,7 +4,36 @@ import CTAButton from '../../components/CTAButton.astro';
 import { blogPosts } from '../../data/blog-posts';
 
 const allTags = [...new Set(blogPosts.flatMap((p) => p.tags))].sort();
+
+const blogSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://danielhadobas.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://danielhadobas.com/blog' },
+      ],
+    },
+    {
+      '@type': 'Blog',
+      name: 'Daniel Hadobas Solar Energy Blog',
+      url: 'https://danielhadobas.com/blog',
+      description: 'Expert solar advice for Las Vegas and California homeowners.',
+      author: { '@type': 'Person', name: 'Daniel Hadobas', url: 'https://danielhadobas.com/about' },
+      blogPost: blogPosts.map((p) => ({
+        '@type': 'BlogPosting',
+        headline: p.title,
+        url: `https://danielhadobas.com/blog/${p.slug}`,
+        author: { '@type': 'Person', name: 'Daniel Hadobas' },
+        keywords: p.tags.join(', '),
+      })),
+    },
+  ],
+};
 ---
+
+<script type="application/ld+json" set:html={JSON.stringify(blogSchema)} />
 
 <BaseLayout
   title="Solar Energy Blog | Daniel Hadobas Solar"
@@ -12,13 +41,13 @@ const allTags = [...new Set(blogPosts.flatMap((p) => p.tags))].sort();
   keywords="solar energy blog, Las Vegas solar tips, California solar guide, solar tax credit guide, NV Energy net metering, solar installation advice"
 >
   <!-- Hero -->
-  <section class="bg-brand-dark py-16 px-4">
+  <section class="bg-[#FAFAF8] py-16 px-4">
     <div class="max-w-4xl mx-auto text-center">
       <div class="section-divider mx-auto mb-6"></div>
-      <h1 class="font-display text-4xl sm:text-5xl font-black text-white mb-3">
+      <h1 class="font-display text-4xl sm:text-5xl font-black text-slate-900 mb-3">
         Solar <span class="text-brand-orange">Energy Blog</span>
       </h1>
-      <p class="text-slate-300 text-lg max-w-xl mx-auto">
+      <p class="text-slate-600 text-lg max-w-xl mx-auto">
         Expert guides for Las Vegas and California homeowners going solar — tax credits,
         net metering, cost breakdowns, and real-world savings stories.
       </p>
@@ -26,17 +55,17 @@ const allTags = [...new Set(blogPosts.flatMap((p) => p.tags))].sort();
   </section>
 
   <!-- Tag filter -->
-  <section class="bg-white border-b border-slate-100 py-4 px-4 sticky top-16 z-10">
+  <section class="bg-[#FAFAF8] border-b border-slate-200 py-4 px-4 sticky top-16 z-10">
     <div class="max-w-4xl mx-auto flex flex-wrap gap-2 items-center">
       <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider mr-1">Filter:</span>
       <a
         href="/blog"
-        class="tag-pill px-3 py-1.5 rounded-full text-xs font-semibold border transition-all bg-brand-orange text-white border-brand-orange"
+        class="tag-pill px-3 py-1.5 rounded-full text-xs font-semibold border transition-all bg-brand-orange text-slate-900 border-brand-orange"
         id="tag-all"
       >All</a>
       {allTags.map((tag) => (
         <button
-          class="tag-pill px-3 py-1.5 rounded-full text-xs font-semibold border border-slate-200 text-slate-600 hover:border-brand-orange hover:text-brand-orange transition-all bg-white"
+          class="tag-pill px-3 py-1.5 rounded-full text-xs font-semibold border border-slate-200 text-slate-600 hover:border-brand-orange hover:text-brand-orange transition-all bg-[#FAFAF8]"
           data-tag={tag}
         >{tag}</button>
       ))}
@@ -49,7 +78,7 @@ const allTags = [...new Set(blogPosts.flatMap((p) => p.tags))].sort();
       <div class="grid gap-6" id="post-list">
         {blogPosts.map((post) => (
           <article
-            class="group bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden"
+            class="group bg-[#FAFAF8] rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden"
             data-tags={post.tags.join(',')}
           >
             <a href={`/blog/${post.slug}`} class="block p-6 sm:p-8 flex flex-col sm:flex-row gap-4 sm:gap-6 items-start">
@@ -63,12 +92,12 @@ const allTags = [...new Set(blogPosts.flatMap((p) => p.tags))].sort();
               <!-- Content -->
               <div class="flex-1 min-w-0">
                 <div class="flex flex-wrap items-center gap-2 mb-2">
-                  <time datetime={post.publishDate} class="text-xs text-slate-400">{new Date(post.publishDate).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</time>
+                  <time datetime={post.publishDate} class="text-xs text-slate-500">{new Date(post.publishDate).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</time>
                   {post.tags.map((tag) => (
-                    <span class="px-2 py-0.5 rounded-full bg-slate-100 text-slate-500 text-xs font-medium">{tag}</span>
+                    <span class="px-2 py-0.5 rounded-full bg-white text-slate-500 text-xs font-medium">{tag}</span>
                   ))}
                 </div>
-                <h2 class="font-display font-bold text-xl text-brand-dark group-hover:text-brand-orange transition-colors mb-2">
+                <h2 class="font-display font-bold text-xl text-slate-900 group-hover:text-brand-orange transition-colors mb-2">
                   {post.title}
                 </h2>
                 <p class="text-slate-500 text-sm leading-relaxed">{post.description}</p>
@@ -87,9 +116,9 @@ const allTags = [...new Set(blogPosts.flatMap((p) => p.tags))].sort();
   </section>
 
   <!-- CTA -->
-  <section class="bg-slate-50 py-16 px-4 text-center">
+  <section class="bg-[#FAFAF8] py-16 px-4 text-center">
     <div class="max-w-2xl mx-auto">
-      <h2 class="font-display text-2xl font-bold text-brand-dark mb-3">
+      <h2 class="font-display text-2xl font-bold text-slate-900 mb-3">
         Ready to Go Solar?
       </h2>
       <p class="text-slate-500 mb-8">Get your free savings analysis from Daniel — no commitment required.</p>
@@ -105,16 +134,16 @@ const allTags = [...new Set(blogPosts.flatMap((p) => p.tags))].sort();
 
   function activate(activeTag: string | null) {
     // pill styles
-    allPill.className = allPill.className.replace('bg-brand-orange text-white border-brand-orange', 'bg-white text-slate-600 border-slate-200');
+    allPill.className = allPill.className.replace('bg-brand-orange text-slate-900 border-brand-orange', 'bg-[#FAFAF8] text-slate-600 border-slate-200');
     pills.forEach((p) => {
-      p.className = p.className.replace('bg-brand-orange text-white border-brand-orange', 'bg-white text-slate-600 border-slate-200');
+      p.className = p.className.replace('bg-brand-orange text-slate-900 border-brand-orange', 'bg-[#FAFAF8] text-slate-600 border-slate-200');
     });
     if (!activeTag) {
-      allPill.className = allPill.className.replace('bg-white text-slate-600 border-slate-200', 'bg-brand-orange text-white border-brand-orange');
+      allPill.className = allPill.className.replace('bg-[#FAFAF8] text-slate-600 border-slate-200', 'bg-brand-orange text-slate-900 border-brand-orange');
     } else {
       pills.forEach((p) => {
         if (p.dataset.tag === activeTag) {
-          p.className = p.className.replace('bg-white text-slate-600 border-slate-200', 'bg-brand-orange text-white border-brand-orange');
+          p.className = p.className.replace('bg-[#FAFAF8] text-slate-600 border-slate-200', 'bg-brand-orange text-slate-900 border-brand-orange');
         }
       });
     }

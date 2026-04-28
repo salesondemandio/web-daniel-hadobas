@@ -1,5 +1,4 @@
 ---
-// No props — static schema for Daniel Hadobas
 const schema = {
   "@context": "https://schema.org",
   "@type": "Person",
@@ -7,12 +6,13 @@ const schema = {
   "jobTitle": "Licensed Solar Energy Specialist",
   "description": "Las Vegas-based solar energy specialist with 174 five-star reviews. Licensed agent serving Nevada and California homeowners since 2020.",
   "image": "https://danielhadobas.com/images/daniel-hadobas.jpg",
-  "telephone": "+17027654527",
+  "telephone": "+17029416894",
   "url": "https://danielhadobas.com",
   "knowsAbout": [
     "residential solar installation",
     "NV Energy net metering",
     "solar battery storage",
+    "Tesla Powerwall installation",
     "30% federal solar tax credit",
     "NEM 3.0 California",
     "solar panel financing"
@@ -32,7 +32,17 @@ const schema = {
     "addressLocality": "Las Vegas",
     "addressRegion": "NV",
     "addressCountry": "US"
-  }
+  },
+  "areaServed": [
+    { "@type": "State", "name": "Nevada" },
+    { "@type": "State", "name": "California" },
+    { "@type": "City", "name": "Las Vegas" },
+    { "@type": "City", "name": "Henderson" },
+    { "@type": "City", "name": "North Las Vegas" },
+    { "@type": "City", "name": "Los Angeles" },
+    { "@type": "City", "name": "San Diego" },
+    { "@type": "City", "name": "Riverside" }
+  ]
 };
 ---
 

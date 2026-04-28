@@ -30,20 +30,20 @@ const faqSchema = {
 
 <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 
-<section class="py-16 px-4">
+<section class="py-20 px-4 bg-[#F0F2EE] border-y border-[#DDE3D8]">
   <div class="max-w-3xl mx-auto">
     <div class="text-center mb-10">
       <div class="section-divider mx-auto mb-4"></div>
-      <h2 class="font-display text-3xl font-bold text-brand-dark">{heading}</h2>
+      <h2 class="font-display text-3xl font-bold text-slate-900">{heading}</h2>
     </div>
 
     <div class="space-y-3">
       {faqs.map((faq, index) => (
         <details
-          class="group bg-white rounded-xl border border-slate-100 shadow-sm overflow-hidden"
+          class="group bg-white rounded-xl border border-[#E8ECE4] shadow-[0_2px_8px_rgba(5,7,8,0.05)] open:border-l-[3px] open:border-l-[#6AB745] overflow-hidden"
         >
           <summary
-            class="flex items-center justify-between gap-4 cursor-pointer px-6 py-4 font-semibold text-brand-dark hover:text-brand-orange transition-colors list-none"
+            class="flex items-center justify-between gap-4 cursor-pointer px-6 py-4 font-semibold text-slate-900 hover:text-brand-orange transition-colors list-none"
           >
             <span class="flex items-start gap-3">
               <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-brand-orange/10 text-brand-orange text-xs font-bold shrink-0 mt-0.5" aria-hidden="true">
@@ -52,7 +52,7 @@ const faqSchema = {
               {faq.question}
             </span>
             <svg
-              class="w-5 h-5 shrink-0 text-slate-400 group-open:rotate-180 transition-transform duration-200"
+              class="w-5 h-5 shrink-0 text-slate-500 group-open:rotate-180 transition-transform duration-200"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -64,7 +64,7 @@ const faqSchema = {
               <path d="M6 9l6 6 6-6"/>
             </svg>
           </summary>
-          <div class="px-6 pb-5 pt-1 text-slate-600 leading-relaxed text-sm border-t border-slate-50">
+          <div class="px-6 pb-5 pt-1 text-slate-600 leading-relaxed text-sm border-t border-slate-100">
             {faq.answer}
           </div>
         </details>

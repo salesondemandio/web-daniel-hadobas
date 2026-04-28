@@ -6,13 +6,13 @@ const reviews = googleReviews.map(r => ({ name: r.author, text: r.text, relative
 <!-- Header row -->
 <div class="flex flex-col sm:flex-row items-center justify-between gap-6 mb-10">
   <div class="text-center sm:text-left">
-    <div class="flex items-center gap-2 mb-1" aria-label="5 out of 5 stars">
+    <div class="flex items-center gap-2 mb-1" role="img" aria-label="5 out of 5 stars">
       {Array.from({ length: 5 }).map(() => (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="#FCD34D" aria-hidden="true">
           <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
         </svg>
       ))}
-      <span class="text-4xl font-bold text-brand-dark ml-1">5.0</span>
+      <span class="text-4xl font-bold text-slate-900 ml-1">5.0</span>
     </div>
     <p class="text-slate-600 font-medium">174 Verified Google Reviews</p>
   </div>
@@ -20,7 +20,7 @@ const reviews = googleReviews.map(r => ({ name: r.author, text: r.text, relative
     href="https://www.google.com/maps/place/Daniel+at+Sunsolar+Solutions/@36.1699,-115.1398,15z/data=!4m6!3m5!1s0x80c8c432b48b1c4d:0x7c3bc8df3e6b8d1a!8m2!3d36.1699!4d-115.1398!16s%2Fg%2F11t4s_5zkm"
     target="_blank"
     rel="noopener noreferrer"
-    class="inline-flex items-center gap-2 bg-brand-orange text-white px-6 py-3 rounded-lg font-bold cta-glow text-sm"
+    class="inline-flex items-center gap-2 bg-brand-orange text-slate-900 px-6 py-3 rounded-lg font-bold cta-glow text-sm"
   >
     See All Reviews
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
@@ -30,9 +30,9 @@ const reviews = googleReviews.map(r => ({ name: r.author, text: r.text, relative
 <!-- Review cards -->
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
   {reviews.map((review) => (
-    <article class="bg-white rounded-2xl p-6 shadow-md border border-slate-100 flex flex-col gap-4 hover:shadow-lg transition-shadow duration-200">
+    <article class="bg-white rounded-2xl p-6 shadow-[0_4px_16px_rgba(5,7,8,0.07)] border border-[#E8ECE4] flex flex-col gap-4 hover:shadow-[0_8px_28px_rgba(5,7,8,0.12)] hover:-translate-y-0.5 transition-all duration-300">
       <!-- Stars -->
-      <div class="flex items-center gap-0.5" aria-label="5 stars">
+      <div class="flex items-center gap-0.5" role="img" aria-label="5 stars">
         {Array.from({ length: 5 }).map(() => (
           <svg width="16" height="16" viewBox="0 0 24 24" fill="#FCD34D" aria-hidden="true">
             <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
@@ -46,8 +46,8 @@ const reviews = googleReviews.map(r => ({ name: r.author, text: r.text, relative
       <!-- Reviewer -->
       <footer class="flex items-center justify-between">
         <div>
-          <p class="font-bold text-brand-dark text-sm">{review.name}</p>
-          <p class="text-xs text-slate-400 mt-0.5">Verified Google Review · {review.relative_time}</p>
+          <p class="font-bold text-slate-900 text-sm">{review.name}</p>
+          <p class="text-xs text-slate-500 mt-0.5">Verified Google Review · {review.relative_time}</p>
         </div>
         <!-- Google G icon -->
         <svg width="20" height="20" viewBox="0 0 24 24" aria-label="Google" fill="none">

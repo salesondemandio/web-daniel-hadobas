@@ -30,6 +30,7 @@ const canonicalClean = canonical.replace(/\/$/, '') || 'https://danielhadobas.co
   <meta name="robots" content="index, follow" />
   {keywords && <meta name="keywords" content={keywords} />}
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preload" as="image" href="/images/daniel.jpg" fetchpriority="high" />
 
   <!-- Open Graph -->
   <meta property="og:type" content={ogType} />
@@ -37,11 +38,11 @@ const canonicalClean = canonical.replace(/\/$/, '') || 'https://danielhadobas.co
   <meta property="og:description" content={description} />
   <meta property="og:url" content={canonicalClean} />
   <meta property="og:site_name" content="Daniel Hadobas Solar" />
-  <meta property="og:image" content="https://danielhadobas.com/images/daniel-hadobas.jpg" />
+  <meta property="og:image" content="https://danielhadobas.com/og-v2.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="https://danielhadobas.com/images/daniel-hadobas.jpg" />
+  <meta name="twitter:image" content="https://danielhadobas.com/og-v2.jpg" />
 
   <!-- Google Fonts: Inter (preconnect only; @import in global.css handles load) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -63,13 +64,13 @@ const canonicalClean = canonical.replace(/\/$/, '') || 'https://danielhadobas.co
   <!-- Urgency Bar -->
   <div class="urgency-banner text-white text-center text-xs sm:text-sm font-semibold py-2.5 px-4" role="alert">
     ⚡ Federal Solar Tax Credits May Expire — Lock In Your 30% Credit Now
-    <a href="https://danielhadobas.com/sodsolarsavings" target="_blank" rel="noopener noreferrer" class="underline ml-2 font-bold hover:text-amber-300">
-      Get Free Quote &rarr;
+    <a href="/#get-quote" class="underline ml-2 font-bold hover:text-amber-300">
+      See My Savings &rarr;
     </a>
   </div>
 
   <!-- Navigation -->
-  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-100 shadow-sm">
+  <header class="sticky top-0 z-50 bg-[#050708]/85 backdrop-blur-md backdrop-blur-sm border-b border-white/10 shadow-sm">
     <nav class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
       <!-- Logo -->
       <a href="/" class="flex items-center gap-2 group">
@@ -79,14 +80,14 @@ const canonicalClean = canonical.replace(/\/$/, '') || 'https://danielhadobas.co
             <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke="white" stroke-width="2" stroke-linecap="round"/>
           </svg>
         </div>
-        <span class="font-display font-bold text-brand-dark text-lg leading-tight">
+        <span class="font-display font-bold text-white text-lg leading-tight">
           Daniel Hadobas<br class="hidden sm:block" />
           <span class="text-brand-orange text-sm font-sans font-semibold">Solar</span>
         </span>
       </a>
 
       <!-- Nav links (desktop) -->
-      <ul class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
+      <ul class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
         <li><a href="/" class="hover:text-brand-orange transition-colors">Home</a></li>
         <li><a href="/solar-las-vegas" class="hover:text-brand-orange transition-colors">Las Vegas</a></li>
         <li><a href="/solar-california" class="hover:text-brand-orange transition-colors">California</a></li>
@@ -96,19 +97,19 @@ const canonicalClean = canonical.replace(/\/$/, '') || 'https://danielhadobas.co
 
       <!-- CTA -->
       <a
-        href="https://danielhadobas.com/sodsolarsavings"
-        target="_blank"
-        rel="noopener noreferrer"
+        href="/#get-quote"
+       
+       
         class="hidden sm:inline-flex items-center gap-2 bg-brand-orange text-white px-5 py-2.5 rounded-lg font-semibold text-sm cta-glow"
       >
-        Get Free Quote
+        See My Savings
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
 
       <!-- Mobile menu button -->
       <button
         id="mobile-menu-btn"
-        class="md:hidden p-2 rounded-lg hover:bg-slate-100 transition-colors"
+        class="md:hidden p-2 rounded-lg hover:bg-[#0F1416] transition-colors"
         aria-label="Toggle navigation menu"
         aria-expanded="false"
         aria-controls="mobile-menu"
@@ -122,24 +123,24 @@ const canonicalClean = canonical.replace(/\/$/, '') || 'https://danielhadobas.co
     <!-- Mobile menu -->
     <div
       id="mobile-menu"
-      class="hidden md:hidden bg-white border-t border-slate-100 px-4 pb-4"
+      class="hidden md:hidden bg-[#0B0E10] border-t border-white/10 px-4 pb-4"
       role="navigation"
       aria-label="Mobile navigation"
     >
       <ul class="flex flex-col gap-1 pt-3 text-sm font-medium">
-        <li><a href="/" class="block py-2 px-3 rounded-lg hover:bg-slate-50 hover:text-brand-orange transition-colors">Home</a></li>
-        <li><a href="/solar-las-vegas" class="block py-2 px-3 rounded-lg hover:bg-slate-50 hover:text-brand-orange transition-colors">Las Vegas</a></li>
-        <li><a href="/solar-california" class="block py-2 px-3 rounded-lg hover:bg-slate-50 hover:text-brand-orange transition-colors">California</a></li>
-        <li><a href="/about" class="block py-2 px-3 rounded-lg hover:bg-slate-50 hover:text-brand-orange transition-colors">About</a></li>
-        <li><a href="/blog" class="block py-2 px-3 rounded-lg hover:bg-slate-50 hover:text-brand-orange transition-colors">Blog</a></li>
+        <li><a href="/" class="block py-2 px-3 rounded-lg hover:bg-[#0B0E10] hover:text-brand-orange transition-colors">Home</a></li>
+        <li><a href="/solar-las-vegas" class="block py-2 px-3 rounded-lg hover:bg-[#0B0E10] hover:text-brand-orange transition-colors">Las Vegas</a></li>
+        <li><a href="/solar-california" class="block py-2 px-3 rounded-lg hover:bg-[#0B0E10] hover:text-brand-orange transition-colors">California</a></li>
+        <li><a href="/about" class="block py-2 px-3 rounded-lg hover:bg-[#0B0E10] hover:text-brand-orange transition-colors">About</a></li>
+        <li><a href="/blog" class="block py-2 px-3 rounded-lg hover:bg-[#0B0E10] hover:text-brand-orange transition-colors">Blog</a></li>
         <li class="pt-2">
           <a
-            href="https://danielhadobas.com/sodsolarsavings"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/#get-quote"
+           
+           
             class="flex items-center justify-center gap-2 bg-brand-orange text-white px-4 py-2.5 rounded-lg font-semibold"
           >
-            Get Free Quote
+            See My Savings
           </a>
         </li>
       </ul>
@@ -175,6 +176,7 @@ const canonicalClean = canonical.replace(/\/$/, '') || 'https://danielhadobas.co
         <div>
           <h3 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Service Areas</h3>
           <ul class="space-y-2 text-sm">
+            <li><a href="/solar-battery-storage" class="hover:text-brand-orange transition-colors">Tesla Powerwall + Battery Storage</a></li>
             <li><a href="/solar-las-vegas" class="hover:text-brand-orange transition-colors">Solar Las Vegas, NV</a></li>
             <li><a href="/solar-henderson-nv" class="hover:text-brand-orange transition-colors">Solar Henderson, NV</a></li>
             <li><a href="/solar-summerlin" class="hover:text-brand-orange transition-colors">Solar Summerlin, NV</a></li>
@@ -191,9 +193,9 @@ const canonicalClean = canonical.replace(/\/$/, '') || 'https://danielhadobas.co
           <h3 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Contact &amp; Reviews</h3>
           <ul class="space-y-3 text-sm">
             <li>
-              <a href="tel:+17027654527" class="flex items-center gap-2 hover:text-brand-orange transition-colors">
+              <a href="tel:+17029416894" class="flex items-center gap-2 hover:text-brand-orange transition-colors">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 0117 2.18 2 2 0 0119.08 4v3.09a2 2 0 01-1.42 1.93l-1.8.6a16 16 0 006.62 6.62l.6-1.8a2 2 0 011.92-1.42z"/></svg>
-                (702) 765-4527
+                (702) 941-6894
               </a>
             </li>
             <li class="flex items-center gap-2">
@@ -201,7 +203,7 @@ const canonicalClean = canonical.replace(/\/$/, '') || 'https://danielhadobas.co
               Las Vegas, NV &amp; California
             </li>
             <li class="mt-2 pt-3 border-t border-slate-700">
-              <div class="flex items-center gap-1 mb-1" aria-label="5 stars">
+              <div class="flex items-center gap-1 mb-1" role="img" aria-label="5 stars">
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -212,16 +214,16 @@ const canonicalClean = canonical.replace(/\/$/, '') || 'https://danielhadobas.co
               <p class="text-slate-400 text-xs mt-0.5">Verified Google Reviews</p>
             </li>
             <li class="flex gap-3 pt-2">
-              <a href="https://www.facebook.com/profile.php?id=100089968135364" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="hover:text-brand-orange transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=100089968135364" aria-label="Facebook" class="hover:text-brand-orange transition-colors">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
               </a>
-              <a href="https://www.instagram.com/hadobadass/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="hover:text-brand-orange transition-colors">
+              <a href="https://www.instagram.com/hadobadass/" aria-label="Instagram" class="hover:text-brand-orange transition-colors">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
               </a>
-              <a href="https://www.linkedin.com/in/daniel-hadobas" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="hover:text-brand-orange transition-colors">
+              <a href="https://www.linkedin.com/in/daniel-hadobas" aria-label="LinkedIn" class="hover:text-brand-orange transition-colors">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
               </a>
-              <a href="https://www.google.com/maps/place/Daniel+at+Sunsolar+Solutions" target="_blank" rel="noopener noreferrer" aria-label="Google Business Profile" class="hover:text-brand-orange transition-colors">
+              <a href="https://www.google.com/maps/place/Daniel+at+Sunsolar+Solutions" aria-label="Google Business Profile" class="hover:text-brand-orange transition-colors">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
                   <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
@@ -234,7 +236,7 @@ const canonicalClean = canonical.replace(/\/$/, '') || 'https://danielhadobas.co
         </div>
       </div>
 
-      <div class="border-t border-slate-700 pt-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-500">
+      <div class="border-t border-slate-700 pt-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-400">
         <p>Daniel Hadobas | Licensed Solar Agent | Las Vegas, NV &amp; California</p>
         <p>&copy; 2025 Daniel Hadobas Solar. All rights reserved.</p>
       </div>
@@ -276,7 +278,7 @@ const canonicalClean = canonical.replace(/\/$/, '') || 'https://danielhadobas.co
         // @ts-ignore
         if (typeof gtag !== 'undefined') {
           gtag('event', 'phone_call_click', {
-            phone_number: '+17027654527',
+            phone_number: '+17029416894',
             page_path: pagePath,
           });
         }

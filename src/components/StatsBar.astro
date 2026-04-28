@@ -11,18 +11,20 @@ interface Props {
 const { stats } = Astro.props;
 ---
 
-<div class="bg-brand-dark rounded-2xl px-4 py-8 sm:py-10">
-  <div class={`grid grid-cols-1 sm:grid-cols-${Math.min(stats.length, 4)} gap-6 max-w-4xl mx-auto`}>
-    {stats.map((stat, i) => (
-      <div class="text-center group relative">
-        <p class="font-display text-3xl sm:text-4xl font-bold text-brand-orange group-hover:scale-110 transition-transform duration-200 inline-block">
-          {stat.value}
-        </p>
-        <p class="text-slate-400 text-sm mt-1 font-medium">{stat.label}</p>
-        {i < stats.length - 1 && (
-          <div class="hidden sm:block absolute right-0 top-1/2 -translate-y-1/2 w-px h-8 bg-slate-700" aria-hidden="true"></div>
-        )}
-      </div>
-    ))}
+<section class="bg-[#050708] py-12 sm:py-14" aria-label="Key statistics">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6">
+    <div class={`grid grid-cols-1 sm:grid-cols-${Math.min(stats.length, 4)} gap-8`}>
+      {stats.map((stat, i) => (
+        <div class="text-center relative">
+          <p class="font-display text-4xl sm:text-5xl font-bold text-[#6AB745] leading-none">
+            {stat.value}
+          </p>
+          <p class="text-white/60 text-xs sm:text-sm mt-3 font-medium uppercase tracking-wider">{stat.label}</p>
+          {i < stats.length - 1 && (
+            <div class="hidden sm:block absolute right-0 top-1/2 -translate-y-1/2 w-px h-10 bg-white/10" aria-hidden="true"></div>
+          )}
+        </div>
+      ))}
+    </div>
   </div>
-</div>
+</section>

@@ -7,7 +7,7 @@ interface Props {
 
 const {
   text,
-  href = 'https://danielhadobas.com/sodsolarsavings',
+  href = '/#get-quote',
   size = 'lg',
 } = Astro.props;
 
@@ -18,9 +18,7 @@ const sizeClasses = size === 'lg'
 
 <a
   href={href}
-  target="_blank"
-  rel="noopener noreferrer"
-  class={`inline-flex items-center gap-2 bg-brand-orange text-white rounded-lg font-bold cta-glow ${sizeClasses}`}
+  class={`inline-flex items-center gap-2 bg-brand-orange text-slate-900 rounded-lg font-bold cta-glow ${sizeClasses}`}
 >
   {text}
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">

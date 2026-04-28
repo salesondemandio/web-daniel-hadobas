@@ -89,7 +89,7 @@ const serviceAreas = [
 
 <BaseLayout
   title="Las Vegas Solar Agent — $0 Down Solar | Daniel Hadobas"
-  description="Las Vegas's #1 rated solar agent. 174 five-star reviews. $0 down solar with 30% federal tax credit. Serving Las Vegas NV and California. Call (702) 765-4527."
+  description="Las Vegas's #1 rated solar agent. 174 five-star reviews. $0 down solar with 30% federal tax credit. Serving Las Vegas NV and California. Call (702) 941-6894."
   keywords="solar agent Las Vegas, solar panels Las Vegas NV, $0 down solar Las Vegas, Daniel Hadobas solar, NV Energy solar, federal solar tax credit Nevada, solar installation Las Vegas"
 >
   <Fragment slot="schema">
@@ -99,16 +99,14 @@ const serviceAreas = [
 
   <!-- Hero -->
   <Hero
-    headline="Nevada & California's #1 Rated Solar Agent"
-    subheadline="174 Five-Star Reviews. $0 Down Solar. $150–$400/mo in Savings. Serving Las Vegas, Henderson, Los Angeles, San Diego, and Riverside."
-    ctaText="Get Your Free Quote"
-    ctaHref="https://danielhadobas.com/sodsolarsavings"
+    headline="Cut Your NV Energy Bill to Near Zero — $0 Down."
+    subheadline="Las Vegas homeowners save $150–$400 every month with Daniel Hadobas. 174 five-star reviews. Zero one-stars. Built entirely on referrals — no call center, no quotas."
+    ctaText="See My Monthly Savings"
+    ctaHref="/#get-quote"
   />
 
-  <!-- Stats Bar -->
-  <section class="max-w-6xl mx-auto px-4 sm:px-6 py-12" aria-label="Key statistics">
-    <StatsBar stats={stats} />
-  </section>
+  <!-- Stats Bar (full-bleed dark anchor) -->
+  <StatsBar stats={stats} />
 
   <!-- How It Works -->
   <HowItWorks
@@ -120,32 +118,72 @@ const serviceAreas = [
   <WhyDaniel headline="Why Las Vegas Homeowners Choose Daniel" />
 
   <!-- Reviews -->
-  <section class="py-16 bg-slate-50">
+  <section class="py-16 bg-[#FAFAF8]">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <div class="text-center mb-10">
         <div class="section-divider mx-auto mb-4"></div>
-        <h2 class="text-3xl font-bold text-brand-dark">Trusted by Las Vegas Homeowners</h2>
+        <h2 class="text-3xl font-bold text-slate-900">Trusted by Las Vegas Homeowners</h2>
         <p class="text-slate-500 mt-2 max-w-xl mx-auto">Real reviews from real people who made the switch with Daniel.</p>
       </div>
       <ReviewWidget />
     </div>
   </section>
 
+  <!-- Talk to Daniel — Trust + Trustpilot critic quote -->
+  <section class="py-20 border-y border-[#DDE3D8]" style="background-color:#F0F2EE;background-image:radial-gradient(circle at 30% 50%, rgba(106,183,69,0.08) 0%, transparent 60%);">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="relative">
+          <img
+            src="/images/daniel-with-customer.jpg"
+            alt="Daniel Hadobas reviewing a solar quote at a customer's kitchen table in Las Vegas"
+            class="w-full h-auto rounded-2xl shadow-xl"
+            loading="lazy"
+          />
+          <div class="absolute -bottom-5 -right-5 bg-[#6AB745] text-white rounded-xl px-5 py-3 shadow-lg hidden sm:block">
+            <p class="text-xs font-semibold uppercase tracking-wider opacity-90">Top 1% Nationally</p>
+            <p class="font-bold text-sm">178 installs / yr</p>
+          </div>
+        </div>
+        <div>
+          <p class="text-[#6AB745] font-semibold text-sm uppercase tracking-widest mb-3">No Call Center. No Quotas.</p>
+          <h2 class="text-3xl sm:text-4xl text-slate-900 mb-6 leading-tight">Daniel comes to your kitchen table — and tells you the truth.</h2>
+          <p class="text-slate-600 text-lg leading-relaxed mb-6">
+            Most solar reps work for a call center, hit a quota, and disappear after the install. Daniel doesn't. He's been a Las Vegas resident since 1996, put solar on his own home in 2015, and has built his entire business on referrals from happy neighbors.
+          </p>
+          <blockquote class="border-l-4 border-[#6AB745] pl-5 py-2 mb-6 bg-slate-50 rounded-r-lg">
+            <p class="text-slate-900 text-lg font-medium italic mb-2">
+              "The salesman Daniel was great — no pressure, very knowledgeable, and friendly."
+            </p>
+            <footer class="text-slate-500 text-sm">
+              — Rod D., verified Las Vegas customer
+              <span class="block text-xs mt-1">Posted on Trustpilot — a critical review of the office staff that still went out of its way to praise Daniel by name.</span>
+            </footer>
+          </blockquote>
+          <a href="/#get-quote" class="inline-flex items-center gap-2 bg-[#6AB745] text-white px-7 py-3.5 rounded-lg font-bold cta-glow">
+            See My Monthly Savings
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Service Areas -->
-  <section class="py-16 bg-white">
+  <section class="py-16 bg-[#FAFAF8]">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <div class="text-center mb-10">
         <div class="section-divider mx-auto mb-4"></div>
-        <h2 class="text-3xl font-bold text-brand-dark">Service Areas</h2>
+        <h2 class="text-3xl font-bold text-slate-900">Service Areas</h2>
         <p class="text-slate-500 mt-2">Daniel serves homeowners across Nevada and California</p>
       </div>
       <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 max-w-2xl mx-auto">
         {serviceAreas.map((area) => (
           <a
             href={area.href}
-            class="flex items-center gap-2 bg-slate-50 hover:bg-solar-cream border border-slate-200 hover:border-brand-orange rounded-xl px-4 py-3 text-sm font-medium text-slate-700 hover:text-brand-orange transition-all duration-200 group"
+            class="flex items-center gap-2 bg-[#FAFAF8] hover:bg-white border border-slate-200 hover:border-brand-orange rounded-xl px-4 py-3 text-sm font-medium text-slate-700 hover:text-brand-orange transition-all duration-200 group"
           >
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-400 group-hover:text-brand-orange" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-500 group-hover:text-brand-orange" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
             {area.name}
           </a>
         ))}
@@ -161,9 +199,9 @@ const serviceAreas = [
 
   <!-- Final CTA -->
   <SectionCTA
-    headline="Ready to Cut Your NV Energy Bill?"
-    subheadline="Free savings analysis. No pressure. No obligation. Daniel will show you exactly how much you'll save — and how much you'll get back in tax credits."
-    buttonText="Book My Free Consultation"
-    buttonHref="https://danielhadobas.com/sodsolarsavings"
+    headline="Talk to Daniel — Not a Call Center."
+    subheadline="If solar doesn't save you money, he'll tell you on the call. No pressure. No quotas. Just the math for your home, your roof, your NV Energy bill."
+    buttonText="See My Monthly Savings"
+    buttonHref="/#get-quote"
   />
 </BaseLayout>

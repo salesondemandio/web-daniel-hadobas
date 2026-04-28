@@ -72,7 +72,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>The Bottom Line</h2>
 <p>For most Las Vegas homeowners who own their home, have adequate roof space, and a reasonable credit score, solar makes financial sense. The combination of 290+ annual sunny days, rising NV Energy rates, and Nevada's tax incentives puts Las Vegas near the top of the national solar opportunity list.</p>
-<p>If you want to see the actual numbers for your home — based on your real utility bill, your roof's sun exposure, and current financing options — <a href="/sodsolarsavings">book a free consultation</a>. No pressure, no obligation, just honest math.</p>
+<p>If you want to see the actual numbers for your home — based on your real utility bill, your roof's sun exposure, and current financing options — <a href="/#get-quote">book a free consultation</a>. No pressure, no obligation, just honest math.</p>
     `,
     faqs: [
       {
@@ -138,7 +138,7 @@ export const blogPosts: BlogPost[] = [
 <h2>What To Do With This Information</h2>
 <p>The key takeaway for Las Vegas solar buyers is: <strong>don't size your system to maximize exports, size it to minimize your net annual bill</strong>. A system that covers 95–100% of your annual consumption at the 75% net metering rate is more valuable than one that overproduces by 30% and sends the excess to NV Energy at a discount.</p>
 <p>When reviewing proposals, ask your solar advisor to show you the projected annual net metering credit vs. grid consumption balance. If they're recommending an oversized system without a clear reason, push back.</p>
-<p>Have questions about how net metering would work for your specific home? <a href="/sodsolarsavings">Book a free consultation</a> — I'll run the actual numbers based on your NV Energy bill.</p>
+<p>Have questions about how net metering would work for your specific home? <a href="/#get-quote">Book a free consultation</a> — I'll run the actual numbers based on your NV Energy bill.</p>
     `,
     faqs: [
       {
@@ -212,7 +212,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Bottom Line</h2>
 <p>The combination of Nevada's property and sales tax exemptions, the 30% federal ITC, and NV Energy net metering makes Nevada one of the stronger incentive environments in the country. For most Las Vegas and Henderson homeowners, these incentives cut the effective cost of solar by 40–50% compared to the sticker price.</p>
-<p>Want to see exactly what your incentives are worth based on your specific situation? <a href="/sodsolarsavings">Book a free consultation</a> and I'll run the full analysis for you.</p>
+<p>Want to see exactly what your incentives are worth based on your specific situation? <a href="/#get-quote">Book a free consultation</a> and I'll run the full analysis for you.</p>
     `,
     faqs: [
       {
@@ -279,7 +279,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Why Working With an Independent Advisor Makes Sense</h2>
 <p>My approach is simple: I analyze your actual utility usage, design a system that fits your home and your budget, and work with multiple top-rated NABCEP-certified installers to get you the best combination of equipment, warranty, and financing. I don't push one product or one installer — I push the right outcome for you.</p>
-<p>174 five-star Google reviews is the proof. <a href="/sodsolarsavings">Book a free, no-pressure consultation</a> and I'll show you exactly what I'd recommend for your home — and why.</p>
+<p>174 five-star Google reviews is the proof. <a href="/#get-quote">Book a free, no-pressure consultation</a> and I'll show you exactly what I'd recommend for your home — and why.</p>
     `,
     faqs: [
       {
@@ -338,7 +338,7 @@ export const blogPosts: BlogPost[] = [
 <h2>Should You Still Go Solar in California?</h2>
 <p>Yes — the economics still work, especially with battery storage. California has the highest electricity rates in the continental US in most metro areas, and those rates are rising every year. The federal ITC and SGIP together can offset 40–60% of a solar-plus-battery system cost for qualifying homeowners.</p>
 <p>The key is designing the system correctly for NEM 3.0: right-sized solar array, adequate battery capacity, and a system tuned for self-consumption rather than export.</p>
-<p><a href="/sodsolarsavings">Book a free consultation</a> and I'll show you exactly how the numbers work for your specific home, utility, and situation in California.</p>
+<p><a href="/#get-quote">Book a free consultation</a> and I'll show you exactly how the numbers work for your specific home, utility, and situation in California.</p>
     `,
     faqs: [
       {
