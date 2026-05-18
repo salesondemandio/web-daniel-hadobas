@@ -9,7 +9,8 @@ export const hendersonContent = {
     subheadline: "Henderson homeowners are on NV Energy — the same territory, the same rates, and the same solar incentives as Las Vegas. With 290+ sunny days, going solar just makes sense."
   },
   intro: [
-    "Henderson is one of the fastest-growing cities in Nevada, and its residential solar market is booming alongside that growth. As an NV Energy customer, Henderson homeowners face the same electricity rate structure as Las Vegas — currently averaging $0.125 per kilowatt-hour — and benefit from the same net metering program, the same property tax exemption, and the same sales tax exemption on solar equipment. The combination of abundant sunshine, rising utility rates, and strong incentives makes Henderson an excellent market for solar, with most homeowners saving money against their current NV Energy bill.",
+    `Solar in Henderson, NV typically costs $11,900–$14,000 after the <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener">30% federal tax credit</a> and pays back in 6–9 years on NV Energy bills. Henderson sits in the same NV Energy service territory as Las Vegas, so residents qualify for identical <a href="https://www.nvenergy.com/account-services/energy-pricing-plans/net-metering" target="_blank" rel="noopener">net metering credits at 75% of retail</a>. Most 5–7 kW systems offset the bulk of a household's annual electricity use.`,
+    `Henderson is one of the fastest-growing cities in Nevada, and its residential solar market is booming alongside that growth. As an NV Energy customer, Henderson homeowners face the <a href="https://www.eia.gov/state/?sid=NV" target="_blank" rel="noopener">same electricity rate structure as Las Vegas</a> — currently averaging $0.125 per kilowatt-hour — and benefit from the same net metering program, the same property tax exemption, and the same sales tax exemption on solar equipment. The combination of abundant sunshine, rising utility rates, and strong incentives makes Henderson an excellent market for solar, with most homeowners saving money against their current NV Energy bill.`,
     "Henderson's suburban neighborhoods — from Green Valley and Anthem to Inspirada and Seven Hills — are well-suited to rooftop solar. Newer construction in these areas typically features south- or west-facing roof planes with minimal shading, which maximizes solar production. A properly designed system for the average Henderson home (typically 5 to 7 kW) will cover most or all of the household's electricity needs year-round, with NV Energy net metering credits banking excess summer production to offset winter bills. Most Henderson homeowners see a full payback in 6 to 9 years, followed by years of essentially free electricity."
   ],
   stats: [
@@ -20,19 +21,19 @@ export const hendersonContent = {
   incentives: [
     {
       title: "Federal Investment Tax Credit (ITC)",
-      description: "Henderson homeowners qualify for the same 30% federal solar tax credit as all Nevada residents. On a typical system, that saves $5,000 to $6,000 in federal taxes — available through 2032 with no income cap for most homeowners."
+      description: `Henderson homeowners qualify for the same <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener">30% federal solar tax credit</a> as all Nevada residents. On a typical system, that saves $5,000 to $6,000 in federal taxes — available through 2032 with no income cap for most homeowners.`
     },
     {
       title: "NV Energy Net Metering",
-      description: "Henderson is fully within NV Energy territory. Your excess solar production earns credits at 75% of the retail rate, applied automatically to future bills. Proper system sizing ensures you maximize these credits rather than leaving money on the table."
+      description: `Henderson is fully within <a href="https://www.nvenergy.com/account-services/energy-pricing-plans/net-metering" target="_blank" rel="noopener">NV Energy territory</a>. Your excess solar production earns credits at 75% of the retail rate, applied automatically to future bills. Proper system sizing ensures you maximize these credits rather than leaving money on the table.`
     },
     {
       title: "Nevada Property Tax Exemption",
-      description: "Nevada law protects Henderson solar owners from increased property taxes due to solar. The added value your system brings to your home is fully exempt from property tax assessment."
+      description: `<a href="https://www.leg.state.nv.us/NRS/NRS-361.html#NRS361Sec079" target="_blank" rel="noopener">Nevada law (NRS 361.079)</a> protects Henderson solar owners from increased property taxes due to solar. The added value your system brings to your home is fully exempt from property tax assessment.`
     },
     {
       title: "Nevada Sales Tax Exemption",
-      description: "All solar equipment purchased in Nevada is exempt from the state sales tax — an 8.375% savings applied at purchase. Henderson homeowners see this benefit automatically, with no application required."
+      description: `All solar equipment purchased in Nevada is exempt from the state sales tax under <a href="https://www.leg.state.nv.us/NRS/NRS-374.html" target="_blank" rel="noopener">NRS 374.2911</a> — an 8.375% savings applied at purchase. Henderson homeowners see this benefit automatically, with no application required.`
     }
   ],
   faqs: [

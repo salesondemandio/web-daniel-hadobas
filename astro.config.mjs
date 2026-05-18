@@ -13,6 +13,9 @@ export default defineConfig({
   ],
   trailingSlash: 'never',
   output: 'static',
+  build: {
+    format: 'file',
+  },
   vite: {
     plugins: [tailwindcss()],
   },

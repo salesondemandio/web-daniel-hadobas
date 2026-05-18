@@ -14,25 +14,26 @@ export const summerlinContent = {
     { value: '$0', label: 'Down To Get Started' }
   ],
   intro: [
-    "Summerlin is the largest master-planned community in the United States, stretching across the western edge of the Las Vegas Valley. With custom homes in prestigious villages like The Ridges, Willow Bend, and The Hills, Summerlin homeowners typically have larger-than-average homes — 2,500 to 4,500 square feet — which means higher energy bills and greater potential savings from solar. Summerlin is served entirely by NV Energy, so residents qualify for Nevada's full suite of solar incentives: the 30% federal tax credit, the Nevada sales tax exemption, NV Energy net metering at 75% of the retail rate, and the state's property tax exemption for solar-added home value.",
-    "Summerlin's HOA landscape is more active than most of Las Vegas — many villages have architectural review boards with specific guidelines on panel placement and aesthetics. But Nevada law (NRS 116.2111) prohibits any HOA from outright banning solar panels; they can only regulate placement and appearance. Daniel Hadobas has navigated dozens of Summerlin HOA submissions and handles the entire approval process on your behalf. With an average home value well above the Las Vegas median, Summerlin systems tend to run larger (8–12 kW), delivering proportionally higher savings and faster payback periods."
+    `Solar in Summerlin typically costs $15,960–$23,940 after the <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener">30% federal tax credit</a> on the larger 8–12 kW systems Summerlin homes need. Summerlin is fully NV Energy territory, so residents earn <a href="https://www.nvenergy.com/account-services/energy-pricing-plans/net-metering" target="_blank" rel="noopener">net metering credits at 75% of retail</a>. HOA approval is required in most villages but cannot be denied under Nevada law.`,
+    `Summerlin is the largest master-planned community in the United States, stretching across the western edge of the Las Vegas Valley. With custom homes in prestigious villages like The Ridges, Willow Bend, and The Hills, Summerlin homeowners typically have larger-than-average homes — 2,500 to 4,500 square feet — which means higher energy bills and greater potential savings from solar. Summerlin is served entirely by NV Energy, so residents qualify for Nevada's full suite of solar incentives: the <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener">30% federal tax credit</a>, the Nevada sales tax exemption, NV Energy net metering at 75% of the retail rate, and the state's property tax exemption for solar-added home value.`,
+    `Summerlin's HOA landscape is more active than most of Las Vegas — many villages have architectural review boards with specific guidelines on panel placement and aesthetics. But <a href="https://www.leg.state.nv.us/NRS/NRS-278.html" target="_blank" rel="noopener">Nevada law (NRS 278.0208)</a> prohibits any HOA from outright banning solar panels; they can only regulate placement and appearance. Daniel Hadobas has navigated dozens of Summerlin HOA submissions and handles the entire approval process on your behalf. With an average home value well above the Las Vegas median, Summerlin systems tend to run larger (8–12 kW), delivering proportionally higher savings and faster payback periods.`
   ],
   incentives: [
     {
       title: "30% Federal Investment Tax Credit (ITC)",
-      description: "Summerlin homeowners qualify for the 30% federal solar tax credit on the full installed cost of their system. On a typical 8–12 kW Summerlin system, that's $6,000–$9,000 back in federal taxes. Available through 2032 with no income cap for most homeowners."
+      description: `Summerlin homeowners qualify for the <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener">30% federal solar tax credit</a> on the full installed cost of their system. On a typical 8–12 kW Summerlin system, that's $6,000–$9,000 back in federal taxes. Available through 2032 with no income cap for most homeowners.`
     },
     {
       title: "Nevada Sales Tax Exemption",
-      description: "All solar equipment purchased in Nevada is exempt from the state's 8.375% sales tax. For a larger Summerlin system, this exemption alone saves $1,400–$2,100 at the point of purchase — applied automatically, no paperwork required."
+      description: `All solar equipment purchased in Nevada is exempt from the state's 8.375% sales tax under <a href="https://www.leg.state.nv.us/NRS/NRS-374.html" target="_blank" rel="noopener">NRS 374.2911</a>. For a larger Summerlin system, this exemption alone saves $1,400–$2,100 at the point of purchase — applied automatically, no paperwork required.`
     },
     {
       title: "NV Energy Net Metering (75% Retail)",
-      description: "Summerlin is fully within NV Energy territory. Excess solar production earns credits at 75% of the retail electricity rate, applied to your bill monthly with a 12-month true-up. Right-sizing your system to your annual consumption maximizes the value of these credits."
+      description: `Summerlin is fully within <a href="https://www.nvenergy.com/account-services/energy-pricing-plans/net-metering" target="_blank" rel="noopener">NV Energy territory</a>. Excess solar production earns credits at 75% of the retail electricity rate, applied to your bill monthly with a 12-month true-up. Right-sizing your system to your annual consumption maximizes the value of these credits.`
     },
     {
       title: "Nevada Property Tax Exemption",
-      description: "Under NRS 361.079, the added home value from a solar installation is fully exempt from Nevada property tax assessment. A Summerlin home that gains $15,000–$20,000 in value from solar pays zero additional property tax on that amount."
+      description: `Under <a href="https://www.leg.state.nv.us/NRS/NRS-361.html#NRS361Sec079" target="_blank" rel="noopener">NRS 361.079</a>, the added home value from a solar installation is fully exempt from Nevada property tax assessment. A Summerlin home that gains $15,000–$20,000 in value from solar pays zero additional property tax on that amount.`
     }
   ],
   faqs: [

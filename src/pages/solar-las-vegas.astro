@@ -6,6 +6,7 @@ import LocalBusinessSchema from '../components/LocalBusinessSchema.astro';
 import StatsBar from '../components/StatsBar.astro';
 import FAQSection from '../components/FAQSection.astro';
 import ReviewWidget from '../components/ReviewWidget.astro';
+import ServiceAreaLinks from '../components/ServiceAreaLinks.astro';
 import { lasVegasContent as c } from '../data/content/cities/las-vegas';
 ---
 
@@ -83,6 +84,8 @@ import { lasVegasContent as c } from '../data/content/cities/las-vegas';
   </section>
 
   <FAQSection faqs={c.faqs} heading="Solar FAQs — Las Vegas, NV" />
+
+  <ServiceAreaLinks current="las-vegas" />
 
   <section class="bg-[#FAFAF8] py-16 px-4 text-center">
     <div class="max-w-2xl mx-auto">

@@ -17,7 +17,12 @@ const {
   ogType = 'website',
 } = Astro.props;
 
-const canonicalClean = canonical.replace(/\/$/, '') || 'https://danielhadobas.com';
+const ORIGIN = 'https://danielhadobas.com';
+let _path = (canonical.startsWith('http') ? new URL(canonical).pathname : canonical) || '/';
+_path = _path.replace(/index\.html$/i, '').replace(/\.html$/i, '');
+if (_path.length > 1) _path = _path.replace(/\/+$/, '');
+if (!_path.startsWith('/')) _path = '/' + _path;
+const canonicalClean = _path === '/' ? ORIGIN + '/' : ORIGIN + _path;
 ---
 <!doctype html>
 <html lang="en">
@@ -58,6 +63,9 @@ const canonicalClean = canonical.replace(/\/$/, '') || 'https://danielhadobas.co
     gtag('js', new Date());
     gtag('config', 'G-QTLWYZSFY0');
   </script>
+
+  <!-- AudienceLab identity pixel -->
+  <script src="https://cdn.idpixel.app/v1/idp-analytics-6a0b9cc2fab915af2e99d321.min.js" defer></script>
 </head>
 <body class="min-h-screen flex flex-col">
 

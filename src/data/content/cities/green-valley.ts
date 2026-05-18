@@ -14,25 +14,26 @@ export const greenValleyContent = {
     { value: '$380', label: 'Avg Monthly Savings' }
   ],
   intro: [
-    "Green Valley is Henderson's premier master-planned community — one of the most desirable residential areas in the entire Las Vegas Valley. With single-family homes averaging 2,200 to 3,500 square feet, high household incomes, and a mix of older construction and newer builds in Green Valley Ranch and Whitney Ranch, this is an ideal solar market. NV Energy serves all of Henderson including Green Valley, which means residents qualify for Nevada's full solar incentive stack: 30% federal tax credit, net metering at 75% retail, sales tax exemption on equipment, and a property tax exemption on solar-added home value.",
+    `Solar in Green Valley, NV typically costs $13,965–$19,950 after the <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener">30% federal tax credit</a> on a 7–10 kW system, with payback in 6–9 years on NV Energy bills. Green Valley HOAs may regulate placement under <a href="https://www.leg.state.nv.us/NRS/NRS-278.html" target="_blank" rel="noopener">Nevada law (NRS 278.0208)</a> but cannot deny solar applications. Daniel handles the HOA paperwork as part of every install.`,
+    `Green Valley is Henderson's premier master-planned community — one of the most desirable residential areas in the entire Las Vegas Valley. With single-family homes averaging 2,200 to 3,500 square feet, high household incomes, and a mix of older construction and newer builds in Green Valley Ranch and Whitney Ranch, this is an ideal solar market. <a href="https://www.nvenergy.com/account-services/energy-pricing-plans/net-metering" target="_blank" rel="noopener">NV Energy serves all of Henderson</a> including Green Valley, which means residents qualify for Nevada's full solar incentive stack: 30% federal tax credit, net metering at 75% retail, sales tax exemption on equipment, and a property tax exemption on solar-added home value.`,
     "Daniel Hadobas has been a Las Vegas native since 1996 and knows every neighborhood in Henderson and Green Valley personally. He's not a rotating national sales rep — he's local, he's accountable, and his 174 five-star reviews reflect it. Green Valley homeowners face the same NV Energy rate structure as the rest of Las Vegas, with bills commonly running $250–$380 per month in summer. A properly sized solar system drops that to a $15–$40 monthly residual, with most homeowners achieving full payback in 6–9 years."
   ],
   incentives: [
     {
       title: "30% Federal Investment Tax Credit (ITC)",
-      description: "Green Valley homeowners qualify for the 30% federal solar tax credit on the full installed cost of their system. On a typical 7–10 kW system, that's $5,000–$8,000 back in federal taxes. Available through 2032 with no income cap for most homeowners."
+      description: `Green Valley homeowners qualify for the <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener">30% federal solar tax credit</a> on the full installed cost of their system. On a typical 7–10 kW system, that's $5,000–$8,000 back in federal taxes. Available through 2032 with no income cap for most homeowners.`
     },
     {
       title: "Nevada Sales Tax Exemption",
-      description: "All solar equipment purchased in Nevada is exempt from the state's 8.375% sales tax. For a Green Valley system, this saves $1,200–$2,000 at the point of purchase — applied automatically, no paperwork required."
+      description: `All solar equipment purchased in Nevada is exempt from the state's 8.375% sales tax under <a href="https://www.leg.state.nv.us/NRS/NRS-374.html" target="_blank" rel="noopener">NRS 374.2911</a>. For a Green Valley system, this saves $1,200–$2,000 at the point of purchase — applied automatically, no paperwork required.`
     },
     {
       title: "NV Energy Net Metering (75% Retail)",
-      description: "Henderson and Green Valley are fully within NV Energy territory. Excess solar production earns credits at 75% of the retail electricity rate, applied monthly with a 12-month true-up. Proper system sizing ensures you maximize these credits year-round."
+      description: `Henderson and Green Valley are fully within <a href="https://www.nvenergy.com/account-services/energy-pricing-plans/net-metering" target="_blank" rel="noopener">NV Energy territory</a>. Excess solar production earns credits at 75% of the retail electricity rate, applied monthly with a 12-month true-up. Proper system sizing ensures you maximize these credits year-round.`
     },
     {
       title: "Nevada Property Tax Exemption",
-      description: "Under NRS 361.079, the added home value from a solar installation is fully exempt from Nevada property tax assessment. Green Valley homeowners see their home value rise without any corresponding increase in their annual property tax bill."
+      description: `Under <a href="https://www.leg.state.nv.us/NRS/NRS-361.html#NRS361Sec079" target="_blank" rel="noopener">NRS 361.079</a>, the added home value from a solar installation is fully exempt from Nevada property tax assessment. Green Valley homeowners see their home value rise without any corresponding increase in their annual property tax bill.`
     }
   ],
   faqs: [

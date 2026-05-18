@@ -1,0 +1,8 @@
+# Phantom URLs that returned 200 due to soft-404 bug — explicitly mark Gone
+# so Google/Bing remove them from the index.
+/sodsolarsavings        /  410
+/sodsolarwebinarnv      /  410
+/soddanielhadobas       /  410
+/sodblog922494          /  410
+/solarsavingsresults    /  410
+/sod*                   /  410

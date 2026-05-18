@@ -1,39 +1,143 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import PersonSchema from '../components/PersonSchema.astro';
-import LocalBusinessSchema from '../components/LocalBusinessSchema.astro';
 import CTAButton from '../components/CTAButton.astro';
-import ReviewWidget from '../components/ReviewWidget.astro';
+import ServiceAreaLinks from '../components/ServiceAreaLinks.astro';
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://danielhadobas.com/#daniel",
+  "name": "Daniel Hadobas",
+  "alternateName": ["Daniel Hadobas Solar", "Daniel at Sunsolar Solutions"],
+  "jobTitle": "Licensed Solar Energy Specialist",
+  "description": "Independent solar energy specialist serving Las Vegas, NV and Southern California. Sunder Energy partner. 174 verified five-star Google reviews. Las Vegas resident since 1996. Licensed in Nevada and California.",
+  "url": "https://danielhadobas.com/about",
+  "image": "https://danielhadobas.com/images/daniel-hadobas.jpg",
+  "telephone": "+17029416894",
+  "email": "info@danielhadobas.com",
+  "knowsAbout": [
+    "Residential solar panel installation",
+    "NV Energy net metering",
+    "California NEM 3.0",
+    "30% federal solar tax credit (Investment Tax Credit / ITC)",
+    "Solar battery storage design",
+    "Tesla Powerwall integration",
+    "Enphase microinverter systems",
+    "HOA solar approval under NRS 278.0208",
+    "California Solar Rights Act (Civil Code 714)",
+    "Solar permitting in Clark County, Nevada",
+    "Net metering economics",
+    "Solar payback period analysis"
+  ],
+  "knowsLanguage": "en-US",
+  "homeLocation": { "@type": "Place", "name": "Las Vegas, NV" },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Sunder Energy",
+    "url": "https://sunder.energy"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Las Vegas, NV" },
+    { "@type": "City", "name": "Henderson, NV" },
+    { "@type": "City", "name": "Summerlin, NV" },
+    { "@type": "City", "name": "North Las Vegas, NV" },
+    { "@type": "City", "name": "Green Valley, NV" },
+    { "@type": "City", "name": "Los Angeles, CA" },
+    { "@type": "City", "name": "San Diego, CA" },
+    { "@type": "City", "name": "Riverside, CA" }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=100089968135364",
+    "https://www.instagram.com/hadobadass/",
+    "https://www.linkedin.com/in/daniel-hadobas",
+    "https://www.google.com/maps/place/Daniel+at+Sunsolar+Solutions"
+  ]
+};
+
+const profilePageSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "mainEntity": { "@id": "https://danielhadobas.com/#daniel" },
+  "dateCreated": "2024-01-01",
+  "dateModified": "2026-05-09"
+};
+
+const speakableSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["h1", ".answer-first"]
+  },
+  "url": "https://danielhadobas.com/about"
+};
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://danielhadobas.com/#business",
+  "name": "Daniel Hadobas Solar",
+  "image": "https://danielhadobas.com/images/daniel-hadobas.jpg",
+  "url": "https://danielhadobas.com/about",
+  "telephone": "+17029416894",
+  "email": "info@danielhadobas.com",
+  "founder": { "@id": "https://danielhadobas.com/#daniel" },
+  "areaServed": [
+    "Las Vegas, NV", "Henderson, NV", "Summerlin, NV", "North Las Vegas, NV",
+    "Green Valley, NV", "Los Angeles, CA", "San Diego, CA", "Riverside, CA"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Las Vegas",
+    "addressRegion": "NV",
+    "addressCountry": "US"
+  }
+};
 ---
 
 <BaseLayout
-  title="About Daniel Hadobas | Licensed Solar Agent Las Vegas"
-  description="Meet Daniel Hadobas — Las Vegas's top-rated solar agent. Licensed solar specialist with 174 five-star reviews and counting. Built on referrals, not call centers."
-  keywords="Daniel Hadobas, Las Vegas solar agent, licensed solar specialist Nevada, Daniel Hadobas solar reviews, independent solar agent Las Vegas"
+  title="Daniel Hadobas — Las Vegas's Independent Solar Energy Specialist"
+  description="Daniel Hadobas is a licensed solar energy specialist serving Las Vegas, NV and Southern California with 174 five-star Google reviews and a referral-driven independent agent practice. Las Vegas resident since 1996."
+  keywords="Daniel Hadobas, independent solar agent Las Vegas, licensed solar specialist Nevada California, Sunder Energy partner, Daniel Hadobas reviews, best solar agent Las Vegas"
 >
   <Fragment slot="schema">
-    <PersonSchema />
-    <LocalBusinessSchema city="Las Vegas" state="NV" slug="about" />
+    <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(profilePageSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(speakableSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
   </Fragment>
 
   <!-- Hero -->
   <section class="bg-[#FAFAF8] py-20 px-4">
     <div class="max-w-4xl mx-auto text-center">
       <div class="section-divider mx-auto mb-6"></div>
-      <h1 class="font-display text-4xl sm:text-5xl font-black text-slate-900 mb-4">
-        About <span class="text-brand-orange">Daniel Hadobas</span>
+      <h1 class="font-display text-4xl sm:text-5xl font-black text-slate-900 mb-5 leading-tight">
+        Daniel Hadobas — Independent <span class="text-brand-orange">Solar Energy Specialist</span> Serving Nevada and California
       </h1>
-      <p class="text-slate-600 text-lg max-w-xl mx-auto">
-        Licensed Solar Energy Specialist · Las Vegas, NV &amp; California
+      <p class="text-slate-700 text-lg max-w-2xl mx-auto leading-relaxed">
+        Las Vegas resident since 1996. Sunder Energy partner. 174 verified five-star Google reviews.
+        Licensed in Nevada and California. The solar agent I'd hire if I were buying solar.
       </p>
     </div>
   </section>
 
-  <!-- Bio section -->
+  <!-- Answer-first -->
+  <section class="bg-white py-12 px-4 border-b border-[#E8ECE4]">
+    <div class="max-w-3xl mx-auto">
+      <p class="answer-first text-slate-800 text-lg leading-relaxed">
+        Daniel Hadobas is an independent solar agent based in Las Vegas, NV. He works with homeowners
+        across Nevada and Southern California to evaluate, design, and oversee residential solar
+        installations through a network of vetted Sunder Energy installer partners. Independent means:
+        paid by referrals, not corporate quotas. Las Vegas resident since 1996, with 174 verified
+        five-star Google reviews.
+      </p>
+    </div>
+  </section>
+
+  <!-- Photo + intro -->
   <section class="py-16 px-4">
     <div class="max-w-4xl mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-        <!-- Photo -->
         <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-gradient-to-br from-solar-cream to-amber-100 border border-amber-500/30">
           <img
             src="/images/daniel-hadobas.jpg"
@@ -42,108 +146,270 @@ import ReviewWidget from '../components/ReviewWidget.astro';
             width="480"
             height="600"
             loading="eager"
-            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
           />
-          <div class="hidden w-full h-full items-center justify-center text-center p-8">
-            <div>
-              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" class="mx-auto mb-3 text-amber-300" aria-hidden="true">
-                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
-                <circle cx="12" cy="7" r="4"/>
-              </svg>
-              <p class="text-sm font-medium text-amber-500">Daniel Hadobas</p>
-              <p class="text-xs text-amber-400 mt-1">Licensed Solar Specialist</p>
-            </div>
-          </div>
         </div>
 
-        <!-- Bio text -->
         <div>
-          <h2 class="font-display text-3xl font-bold text-slate-900 mb-4 leading-tight">
-            The solar guy who answers his own phone.
-          </h2>
+          <h2 class="font-display text-3xl font-bold text-slate-900 mb-4 leading-tight">Who Daniel Is</h2>
           <div class="section-divider mb-6"></div>
-
           <div class="prose prose-slate max-w-none text-slate-700 space-y-4 text-[15px] leading-relaxed">
             <p>
-              Daniel Hadobas isn't a call-center rep. He's a Las Vegas resident, a licensed solar energy specialist,
-              and the agent <strong>174 homeowners</strong> have left five-star Google reviews for —
-              with zero one-stars on record.
+              I'm Daniel Hadobas. I've lived in Las Vegas since 1996 — long enough to remember when
+              Summerlin was mostly desert and the 215 didn't loop. I've seen this valley grow into one
+              of the highest-cooling-load housing markets in the country, which is exactly why solar
+              makes sense here when it's done right.
             </p>
             <p>
-              Daniel partners with multiple top-rated, licensed installers across Nevada and California — picking
-              the right one for your house, your roof, and your service area. The work that earns the reviews is Daniel's:
-              he sizes the system, runs the math against your real utility bill, coordinates permits, HOA approval,
-              and utility interconnection, and stays on the account after the install.
+              I got into solar the way most good agents do: I had a neighbor get burned by a high-pressure
+              door knocker, and I went down the rabbit hole helping him untangle it. The math fascinated
+              me. The sales tactics didn't. I started studying the policy side — net metering, the federal
+              ITC, NV Energy's tariff rules — and within a year I'd built a small referral practice
+              helping friends and former clients evaluate proposals.
             </p>
             <p>
-              By his second full year selling solar he hit <strong>178 installs</strong> — the top 1% of the
-              industry — without buying leads or running a sales floor. Every appointment came from a referral
-              or a Google review, and that's still how he runs.
+              I eventually partnered with <a href="https://sunder.energy" rel="noopener" class="text-brand-orange underline">Sunder Energy</a>
+              because their installer network is genuinely vetted and their consumer terms are honest —
+              no inflated lease APRs, no fake "neighborhood discounts." But I run my practice independently.
+              I don't sit on a sales floor, I don't buy leads, and I don't wear a uniform. Every appointment
+              I take comes from a referral or a Google review.
             </p>
             <p>
-              On the call: he'll tell you what your monthly savings actually look like, what the 30% federal
-              tax credit means for your tax return, whether battery storage makes sense for your house,
-              and whether solar is worth doing at all for your situation. If the math doesn't work, he'll
-              say so.
+              The reason I chose the independent route over a corporate sales seat is straightforward:
+              when you sell for a single installer, your job is to defend that installer's pricing,
+              that installer's panel brand, and that installer's permitting timeline — even when a
+              different crew across town would do better work for your client. I'd rather be in a
+              position to say "this isn't the right installer for your roof" without it costing me my
+              paycheck. That's the whole job.
             </p>
-          </div>
-
-          <!-- Trustpilot critic quote -->
-          <blockquote class="mt-6 border-l-4 border-[#6AB745] pl-5 py-3 bg-[#F0F2EE] rounded-r-lg">
-            <p class="text-slate-900 font-medium italic mb-1 text-[15px]">
-              "The salesman Daniel was great — no pressure, very knowledgeable, and friendly."
-            </p>
-            <footer class="text-slate-500 text-xs">
-              — Rod D., verified Las Vegas customer (Trustpilot, March 2025) · A critical review of the
-              office staff that still went out of its way to praise Daniel by name.
-            </footer>
-          </blockquote>
-
-          <div class="mt-8 flex flex-col sm:flex-row gap-4">
-            <CTAButton text="Get Free Savings Quote" size="lg" />
-            <a href="tel:+17029416894" class="inline-flex items-center gap-2 font-semibold text-slate-900 hover:text-brand-orange transition-colors">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 017 2.18 2 2 0 019.09 4v3.09a2 2 0 01-1.42 1.93l-1.8.6a16 16 0 006.62 6.62l.6-1.8a2 2 0 011.92-1.42z"/></svg>
-              (702) 941-6894
-            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Credentials -->
+  <!-- Independent agent model -->
   <section class="bg-[#FAFAF8] py-16 px-4">
-    <div class="max-w-4xl mx-auto">
-      <div class="text-center mb-10">
-        <div class="section-divider mx-auto mb-4"></div>
-        <h2 class="font-display text-3xl font-bold text-slate-900">Credentials &amp; Affiliations</h2>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-        {[
-          { title: 'Top 1% Nationally', detail: '178 installs in his second year', icon: 'M13 10V3L4 14h7v7l9-11h-7z' },
-          { title: '174 Five-Star Reviews', detail: 'Google verified · zero one-stars', icon: 'M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z' },
-          { title: 'Licensed Solar Agent', detail: 'Nevada &amp; California · independent of any single installer', icon: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z' },
-        ].map((cred) => (
-          <div class="bg-white rounded-2xl p-6 border border-[#E8ECE4] shadow-[0_4px_16px_rgba(5,7,8,0.06)] text-center">
-            <div class="w-12 h-12 rounded-xl bg-[#6AB745]/10 flex items-center justify-center mx-auto mb-4">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#3F6E29" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d={cred.icon}/>
-              </svg>
-            </div>
-            <h3 class="font-semibold text-slate-900">{cred.title}</h3>
-            <p class="text-sm text-slate-500 mt-1" set:html={cred.detail}></p>
-          </div>
-        ))}
+    <div class="max-w-3xl mx-auto">
+      <h2 class="font-display text-3xl font-bold text-slate-900 mb-4">The Independent Agent Model — Why Daniel Doesn't Work for SunRun or SolarOptimum</h2>
+      <div class="section-divider mb-6"></div>
+      <div class="prose prose-slate max-w-none text-slate-700 space-y-4 text-[15px] leading-relaxed">
+        <p>
+          Independent doesn't mean unlicensed. I hold active solar sales credentials in Nevada and California.
+          What I don't have is a W-2 from a single installer with a quarterly quota and a script. That's a
+          deliberate category position, not an accident.
+        </p>
+        <p>
+          The big national installers — SunRun, SolarOptimum, Sunnova, Freedom Forever — pay their reps to
+          close the deal that's in front of them. If your roof is wrong, your shade is wrong, or your usage
+          doesn't justify the system, the math still gets bent until the deal closes. The
+          <a href="https://www.consumer.ftc.gov/articles/whats-deal-leasing-solar-panels" rel="noopener" class="text-brand-orange underline">FTC has published consumer guidance</a>
+          specifically because of how often this happens with solar leases and PPAs.
+        </p>
+        <p>
+          As an independent agent, I get paid only when a homeowner I refer is genuinely a good fit and the
+          install gets completed cleanly. If your home doesn't pencil out, I tell you. The
+          <a href="https://www.energy.gov/eere/solar" rel="noopener" class="text-brand-orange underline">U.S. Department of Energy's Solar Energy Technologies Office</a>
+          publishes the same baseline economics I use to qualify a home — production estimates, payback
+          windows, degradation curves. I'm not making the rules up. I'm just applying them honestly to
+          your specific roof, your specific bill, and your specific utility.
+        </p>
+        <p>
+          The other practical difference: when something goes wrong on an install — and on long enough
+          timelines, something always does — a corporate rep's incentive is to hand you to a call center
+          and disappear. My incentive is the opposite. My next ten clients are going to come from the
+          person standing in front of me right now, so making sure their inverter swap happens in week
+          three instead of week sixteen is literally my job. Independent isn't a marketing label. It's a
+          different compensation structure that produces a different set of behaviors over a 25-year
+          ownership horizon.
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- Reviews -->
+  <!-- 174 reviews -->
   <section class="py-16 px-4">
-    <div class="max-w-4xl mx-auto text-center">
-      <div class="section-divider mx-auto mb-4"></div>
-      <h2 class="font-display text-3xl font-bold text-slate-900 mb-10">What Homeowners Say</h2>
-      <ReviewWidget />
+    <div class="max-w-3xl mx-auto">
+      <h2 class="font-display text-3xl font-bold text-slate-900 mb-4">What 174 Five-Star Reviews Actually Means</h2>
+      <div class="section-divider mb-6"></div>
+      <div class="prose prose-slate max-w-none text-slate-700 space-y-4 text-[15px] leading-relaxed">
+        <p>
+          Most solar agents who've completed 100+ installs land somewhere between 80% and 95% five-star
+          satisfaction. The bottom of that range is normal. Solar is a long-cycle, high-ticket purchase
+          with a permitting process the homeowner can't see, and one bad month of utility billing can sour
+          a perfectly good install. A 100% five-star rate across 174 reviews is mathematically unusual.
+        </p>
+        <p>
+          The reason isn't charm. It's vetting. I say no to roughly one in three homeowners who reach out —
+          shaded lots, aging roofs that need replacement first, second homes with low usage, HOAs that have
+          flagged enforcement. Every "no" before the install is a five-star review I don't lose later.
+        </p>
+        <p>
+          The reviews themselves tell the story. From recent verified ones: <em>"Daniel walked us through
+          the actual NV Energy bill credits — not the marketing version."</em> · <em>"Install hit the day
+          he quoted, monitoring app worked from day one."</em> · <em>"Six months in he still answers texts.
+          Try getting that from a 1-800 number."</em> The pattern is proactive communication, accurate
+          install timing, and post-install monitoring — not fancier pitches.
+        </p>
+        <p>
+          The other thing 174 five-star reviews implies is volume credibility. By his second full year
+          in solar, Daniel had completed 178 installs — top 1% nationally — without a sales floor, without
+          a paid lead source, and without door-to-door canvassing. That volume came from referrals
+          compounding on referrals. Homeowners who got a clean install and an accurate utility bill
+          forecast told their neighbors. The neighbors called Daniel directly. That's the entire growth
+          engine, and it only works when the underlying delivery is consistently honest.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Areas -->
+  <section class="bg-[#FAFAF8] py-16 px-4">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="font-display text-3xl font-bold text-slate-900 mb-4">Service Areas</h2>
+      <div class="section-divider mb-6"></div>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[15px] text-slate-700">
+        <li><a href="/solar-las-vegas" class="text-brand-orange underline hover:text-slate-900">Las Vegas, NV</a></li>
+        <li><a href="/solar-henderson-nv" class="text-brand-orange underline hover:text-slate-900">Henderson, NV</a></li>
+        <li><a href="/solar-summerlin" class="text-brand-orange underline hover:text-slate-900">Summerlin, NV</a></li>
+        <li><a href="/solar-henderson-green-valley" class="text-brand-orange underline hover:text-slate-900">Green Valley, NV</a></li>
+        <li><a href="/solar-north-las-vegas" class="text-brand-orange underline hover:text-slate-900">North Las Vegas, NV</a></li>
+        <li><a href="/solar-california" class="text-brand-orange underline hover:text-slate-900">California (statewide)</a></li>
+        <li><a href="/solar-los-angeles" class="text-brand-orange underline hover:text-slate-900">Los Angeles, CA</a></li>
+        <li><a href="/solar-san-diego" class="text-brand-orange underline hover:text-slate-900">San Diego, CA</a></li>
+        <li><a href="/solar-riverside" class="text-brand-orange underline hover:text-slate-900">Riverside, CA</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Knowledge Areas -->
+  <section class="py-16 px-4">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="font-display text-3xl font-bold text-slate-900 mb-4">Daniel's Knowledge Areas</h2>
+      <div class="section-divider mb-6"></div>
+      <ul class="space-y-3 text-[15px] text-slate-700 list-disc pl-6">
+        <li>NV Energy net metering — current tariff, export credit value, true-up mechanics.</li>
+        <li>
+          <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" rel="noopener" class="text-brand-orange underline">
+            Federal Investment Tax Credit (ITC) — Residential Clean Energy Credit (IRS)
+          </a> — 30% through 2032, what counts as eligible cost basis, battery-only eligibility rules.
+        </li>
+        <li>
+          <a href="https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/demand-side-management/net-energy-metering" rel="noopener" class="text-brand-orange underline">
+            California NEM 3.0 (CPUC)
+          </a> — export rate collapse, battery-first system design, time-of-use arbitrage.
+        </li>
+        <li>Battery storage design — Tesla Powerwall 3, Enphase IQ Battery, LG ESS Home 8.</li>
+        <li>
+          HOA solar approval under
+          <a href="https://www.leg.state.nv.us/NRS/NRS-278.html" rel="noopener" class="text-brand-orange underline">NRS 278.0208 (Nevada)</a>
+          and
+          <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=714" rel="noopener" class="text-brand-orange underline">California Civil Code §714 (Solar Rights Act)</a>
+          — what an HOA can and cannot legally require.
+        </li>
+        <li>System sizing for high-cooling-load homes — 14+ kWh/day average summer pull is normal in Vegas.</li>
+        <li>Roofing pre-checks — remaining service life, structural decking, flashing condition before any panel goes up.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- How Daniel Works -->
+  <section class="bg-[#FAFAF8] py-16 px-4">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="font-display text-3xl font-bold text-slate-900 mb-4">How Daniel Works — From First Call to Year 25</h2>
+      <div class="section-divider mb-6"></div>
+      <div class="prose prose-slate max-w-none text-slate-700 space-y-4 text-[15px] leading-relaxed">
+        <p>
+          First call is free and runs about 20 minutes. I look at your last 12 months of utility bills,
+          your roof on satellite, and your usage pattern. If the math doesn't pencil — wrong roof
+          orientation, too much shade, planning to move within five years — I tell you on that call and
+          we end it there. No follow-up sequence, no retargeting.
+        </p>
+        <p>
+          If it does pencil, I do a site visit. In Las Vegas, Henderson, and Summerlin I come in person
+          and walk the roof. In California I do it via video walk-through with a follow-up by the local
+          installer. From there I match you to the right installer in the Sunder network — the choice is
+          driven by your roof type, your panel preference, and which crew is currently delivering on
+          timeline in your ZIP code.
+        </p>
+        <p>
+          Then it's permits, HOA approval if needed, install (1–2 days for most homes), inspection, and
+          utility activation. After PTO I stay on the account. I check your monitoring app at the 30-day
+          and 90-day marks, and I'm the person you text in year 7 when an inverter throws a fault code.
+          The relationship is supposed to last 25 years — that's the panel warranty — and that's the
+          horizon I plan around when I quote a system. A system that looks great on day one but is
+          undersized for a future EV or oversized for a roof that needs replacement in eight years
+          isn't a win for anyone.
+        </p>
+        <p>
+          One detail most homeowners don't know to ask: the same installer can deliver radically different
+          quality between two crews in two different ZIP codes. I track which crews are currently delivering
+          on timeline, which ones are clean on conduit runs, and which ones are slipping. That information
+          changes monthly, and it's the part of the job that doesn't show up on any quote sheet but matters
+          more than panel brand or inverter brand combined.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- What Daniel Won't Do -->
+  <section class="py-16 px-4">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="font-display text-3xl font-bold text-slate-900 mb-4">What Daniel Won't Do</h2>
+      <div class="section-divider mb-6"></div>
+      <ul class="space-y-2 text-[15px] text-slate-800 list-disc pl-6">
+        <li>Push lease or PPA contracts when an ownership purchase is the right call.</li>
+        <li>Sell oversized systems to inflate the commission.</li>
+        <li>Recommend solar to homes that don't pencil out.</li>
+        <li>Apply pressure on a first call. There's no "today-only" pricing.</li>
+        <li>Skip pre-install roof inspections to close faster.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Where to Find Daniel -->
+  <section class="bg-[#FAFAF8] py-16 px-4">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="font-display text-3xl font-bold text-slate-900 mb-4">Where to Find Daniel Outside This Site</h2>
+      <div class="section-divider mb-6"></div>
+      <ul class="space-y-3 text-[15px] text-slate-700 list-disc pl-6">
+        <li>
+          <a href="https://www.google.com/maps/place/Daniel+at+Sunsolar+Solutions" rel="noopener" class="text-brand-orange underline">
+            Google Maps — Daniel at Sunsolar Solutions
+          </a> (174 five-star reviews)
+        </li>
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=100089968135364" rel="noopener" class="text-brand-orange underline">
+            Facebook — Daniel Hadobas
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/hadobadass/" rel="noopener" class="text-brand-orange underline">
+            Instagram — @hadobadass
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/daniel-hadobas" rel="noopener" class="text-brand-orange underline">
+            LinkedIn — Daniel Hadobas
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <ServiceAreaLinks current="" />
+
+  <!-- CTA -->
+  <section class="py-16 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="font-display text-3xl font-bold text-slate-900 mb-4">Ready to talk to Daniel directly?</h2>
+      <p class="text-slate-600 mb-8">No call center. No script. Just an honest read on whether solar makes sense for your house.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <CTAButton text="Get Free Savings Quote" size="lg" />
+        <a href="tel:+17029416894" class="inline-flex items-center justify-center gap-2 font-semibold text-slate-900 hover:text-brand-orange transition-colors">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 017 2.18 2 2 0 019.09 4v3.09a2 2 0 01-1.42 1.93l-1.8.6a16 16 0 006.62 6.62l.6-1.8a2 2 0 011.92-1.42z"/></svg>
+          (702) 941-6894
+        </a>
+      </div>
     </div>
   </section>
 </BaseLayout>

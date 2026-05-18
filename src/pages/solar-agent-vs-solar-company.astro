@@ -1,0 +1,300 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTAButton from '../components/CTAButton.astro';
+import PersonSchema from '../components/PersonSchema.astro';
+import FAQSection from '../components/FAQSection.astro';
+import ServiceAreaLinks from '../components/ServiceAreaLinks.astro';
+
+const faqs = [
+  {
+    question: 'How do solar agents get paid?',
+    answer: 'Independent solar agents are paid a flat referral fee by the installer once a system is installed and inspected. The fee is set per project and does not scale with system size the way a salaried rep\'s commission does. That structure is why I have no incentive to upsize a system past what your bill actually justifies — bigger doesn\'t pay me meaningfully more, but the wrong size loses me the next referral. My business runs on referrals and Google reviews, not quotas.'
+  },
+  {
+    question: 'Are solar agents biased toward certain installers?',
+    answer: 'Every agent has installer relationships, and I work primarily with Sunder Energy\'s partner network because their licensing, warranty, and crew quality across Nevada and California are consistent. The difference from a corporate rep is that I can match the installer to the job — roof complexity, HOA, utility, location — instead of being locked into one employer\'s crew. If a project is a poor fit for my partners, I\'ll say so on the first call rather than force it through.'
+  },
+  {
+    question: 'Why don\'t big solar companies disclose their commission structure?',
+    answer: 'Most large solar companies pay reps a percentage of contract value or system size, sometimes layered with bonuses for lease and PPA conversions. Disclosing it on a sales call would expose the incentive to upsell, push longer contracts, or steer customers into financing products that pay more. The FTC has flagged solar leasing disclosures as a recurring consumer issue. Independent agents have no reason to hide a flat referral fee — there\'s nothing to misalign.'
+  },
+  {
+    question: 'Can I get a better price from a big company by negotiating hard?',
+    answer: 'Sometimes, but the floor is usually set by the company\'s overhead — call centers, national marketing, layered management, and lease financing partners all sit between you and the panels on your roof. That overhead is real money and it\'s baked into the price-per-watt. An independent agent working with a regional installer cuts most of that out structurally, not through a one-time discount. The savings are in the model, not in your negotiation skills.'
+  },
+  {
+    question: 'Do independent solar agents have warranty backing?',
+    answer: 'Yes — the warranties come from the equipment manufacturers (panels, inverters, batteries) and the installer, not the salesperson. Tier-1 panels carry 25-year production warranties, microinverters typically 25 years, and the installer carries a workmanship warranty (usually 10-25 years). That\'s identical whether you bought through a national brand or through me. The agent vs. company question doesn\'t change your warranty paperwork — it changes who picks up the phone when you need to use it.'
+  },
+  {
+    question: 'What happens if my solar agent goes out of business?',
+    answer: 'Your equipment warranties are with the manufacturers. Your workmanship warranty is with the installer. Your interconnection agreement is with NV Energy. None of those depend on the agent staying in business. The thing you lose if an agent disappears is the human who knows your project — which is why working with someone whose business is built on long-term referrals (and who lives in the market) is structurally lower-risk than working with a rep who may be in a different industry next quarter.'
+  }
+];
+---
+
+<BaseLayout
+  title="Solar Agent vs Solar Company — The Honest Difference | Daniel Hadobas"
+  description="Big solar reps earn commission on bigger systems. Independent solar agents earn from referrals. Here's how the incentives actually shape what you're sold."
+  keywords="solar agent vs solar company, independent solar agent, solar sales commission, solar company markup, Daniel Hadobas solar"
+>
+  <Fragment slot="schema">
+    <PersonSchema />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": ["Article", "ComparePage"],
+      "headline": "Solar Agent vs Solar Company — The Honest Difference",
+      "description": "An honest, first-person comparison of the independent solar agent model vs the big solar company model — incentives, pricing, warranties, and what to ask any rep.",
+      "author": { "@type": "Person", "name": "Daniel Hadobas", "url": "https://danielhadobas.com/about" },
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Daniel Hadobas",
+        "jobTitle": "Independent Solar Agent",
+        "description": "Independent licensed solar agent serving Las Vegas and California — referral-driven, no quotas, 174 five-star Google reviews."
+      },
+      "about": ["Solar agent model", "Independent solar consulting", "Solar sales compensation"],
+      "datePublished": "2026-05-09"
+    })} />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["h1", "#answer-first"]
+      }
+    })} />
+  </Fragment>
+
+  <!-- Hero -->
+  <section class="bg-[#FAFAF8] py-20 px-4 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-[#F0F2EE] to-white opacity-50" aria-hidden="true"></div>
+    <div class="relative max-w-4xl mx-auto">
+      <div class="inline-flex items-center gap-2 bg-brand-orange/20 border border-brand-orange/30 text-brand-orange rounded-full px-4 py-1.5 text-xs font-semibold mb-6">
+        The Honest Comparison
+      </div>
+      <h1 class="font-display text-4xl sm:text-5xl font-black text-slate-900 mb-4 leading-[1.1]">
+        Solar Agent vs Solar Company — The Honest Difference
+      </h1>
+      <p class="text-slate-600 text-lg max-w-2xl mb-8 leading-relaxed">
+        Two people can quote you the same panels on the same roof and land $4,000 apart. The reason isn't the hardware — it's how each of them gets paid. Here's the part of the conversation most reps won't have with you.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <CTAButton text="See My Honest Quote" size="lg" />
+        <a href="tel:+17029416894" class="inline-flex items-center gap-2 text-slate-900 font-semibold hover:text-brand-orange transition-colors">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 017 2.18 2 2 0 019.09 4v3.09a2 2 0 01-1.42 1.93l-1.8.6a16 16 0 006.62 6.62l.6-1.8a2 2 0 011.92-1.42z"/></svg>
+          (702) 941-6894
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Answer-first block -->
+  <section class="bg-white py-10 px-4 border-y border-[#E8ECE4]">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-[#6AB745] font-semibold text-sm uppercase tracking-widest mb-3">The Short Answer</p>
+      <p id="answer-first" class="text-slate-900 text-lg leading-relaxed font-medium">
+        Independent solar agents work for you. Salaried company reps work for the company that pays them. The incentive structures shape what gets recommended — system size, financing type, installer choice, and what happens after the install all run through whoever's compensation depends on the sale.
+      </p>
+    </div>
+  </section>
+
+  <!-- Incentive table -->
+  <section class="py-16 px-4 bg-[#FAFAF8]">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="font-display text-3xl font-bold text-slate-900 mb-3">Who Pays Whom — and Why That Matters</h2>
+      <p class="text-slate-600 mb-8 max-w-2xl">Same hardware, two different business models behind the quote. The table below is what you're actually choosing between.</p>
+      <div class="overflow-x-auto rounded-2xl border border-[#E8ECE4] bg-white shadow-[0_4px_16px_rgba(5,7,8,0.06)]">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-[#F0F2EE]">
+            <tr>
+              <th class="p-4 font-semibold text-slate-900 border-b border-[#E8ECE4]"></th>
+              <th class="p-4 font-semibold text-slate-900 border-b border-[#E8ECE4]">Big solar company rep</th>
+              <th class="p-4 font-semibold text-slate-900 border-b border-[#E8ECE4]">Independent solar agent (Daniel)</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-700">
+            <tr class="border-b border-[#E8ECE4]">
+              <td class="p-4 font-semibold text-slate-900">Compensation</td>
+              <td class="p-4">Commission on system size</td>
+              <td class="p-4">Flat referral fee from installer</td>
+            </tr>
+            <tr class="border-b border-[#E8ECE4] bg-[#FAFAF8]">
+              <td class="p-4 font-semibold text-slate-900">Bias toward...</td>
+              <td class="p-4">Bigger systems, faster close</td>
+              <td class="p-4">Right-sized system, repeat referrals</td>
+            </tr>
+            <tr class="border-b border-[#E8ECE4]">
+              <td class="p-4 font-semibold text-slate-900">Who picks the installer</td>
+              <td class="p-4">Their employer</td>
+              <td class="p-4">Match per job (Sunder Energy partner)</td>
+            </tr>
+            <tr class="border-b border-[#E8ECE4] bg-[#FAFAF8]">
+              <td class="p-4 font-semibold text-slate-900">If there's a problem post-install</td>
+              <td class="p-4">Routed through corporate support</td>
+              <td class="p-4">Direct call to me</td>
+            </tr>
+            <tr class="border-b border-[#E8ECE4]">
+              <td class="p-4 font-semibold text-slate-900">Quota pressure</td>
+              <td class="p-4">Yes — monthly</td>
+              <td class="p-4">No</td>
+            </tr>
+            <tr class="border-b border-[#E8ECE4] bg-[#FAFAF8]">
+              <td class="p-4 font-semibold text-slate-900">Tax credit recipient</td>
+              <td class="p-4">You (loan/cash); company (lease/PPA)</td>
+              <td class="p-4">Always you (no leases)</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-semibold text-slate-900">At home sale</td>
+              <td class="p-4">Lease/PPA can complicate</td>
+              <td class="p-4">Owned system transfers cleanly</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 questions -->
+  <section class="py-16 px-4">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="font-display text-3xl font-bold text-slate-900 mb-3">5 Questions That Reveal Their Model</h2>
+      <p class="text-slate-600 mb-8">Ask any solar rep these on the first call. The answers tell you more than the brochure ever will.</p>
+      <ol class="space-y-8">
+        <li>
+          <h3 class="font-semibold text-slate-900 text-lg mb-2"><span class="text-brand-orange">1.</span> "How are you compensated?"</h3>
+          <p class="text-slate-600 leading-relaxed">If the answer is a percentage of the system or contract value, every recommendation that follows points the same direction: bigger. If it's a flat per-project referral fee, the incentive to upsize is gone. A rep who can't answer this clearly is telling you something.</p>
+        </li>
+        <li>
+          <h3 class="font-semibold text-slate-900 text-lg mb-2"><span class="text-brand-orange">2.</span> "Will you tell me what installer you'd use, before I sign?"</h3>
+          <p class="text-slate-600 leading-relaxed">Corporate reps usually can't — the company assigns the crew. An independent agent should be able to name the installer, the licensing, and why that crew fits your roof. Vague answers here mean the install gets handed off to whoever's available.</p>
+        </li>
+        <li>
+          <h3 class="font-semibold text-slate-900 text-lg mb-2"><span class="text-brand-orange">3.</span> "What happens if I want to add a battery in 3 years?"</h3>
+          <p class="text-slate-600 leading-relaxed">A one-shot sales rep won't be there in three years — the company will route you to whoever picks up. Someone whose business is built on referrals expects you to call them back, and will design the system today with that in mind (inverter sizing, battery-ready wiring, panel placement).</p>
+        </li>
+        <li>
+          <h3 class="font-semibold text-slate-900 text-lg mb-2"><span class="text-brand-orange">4.</span> "If I sold my house in 2 years, what would happen with the panels?"</h3>
+          <p class="text-slate-600 leading-relaxed">This flushes out lease and PPA traps fast. A leased or PPA'd system can stall a sale or force the new buyer to qualify for the lease. An owned system (loan or cash) transfers with the title. If the rep waves this off, you're being steered toward a financing product that pays them more.</p>
+        </li>
+        <li>
+          <h3 class="font-semibold text-slate-900 text-lg mb-2"><span class="text-brand-orange">5.</span> "Walk me through the worst install you've seen — and how it got fixed."</h3>
+          <p class="text-slate-600 leading-relaxed">A real answer with names of components, inspectors, and timelines means they've been through it. A rehearsed "we never have problems" answer means they don't see post-install issues — which means they won't be the one helping when you have one.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- The math -->
+  <section class="py-16 px-4 bg-[#FAFAF8]">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="font-display text-3xl font-bold text-slate-900 mb-3">What This Costs You — Real Numbers</h2>
+      <p class="text-slate-600 mb-8">Same 7 kW system. Same Tier-1 panels. Two price-per-watt levels.</p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+        <div class="bg-white rounded-2xl p-6 border border-[#E8ECE4] shadow-[0_4px_16px_rgba(5,7,8,0.06)]">
+          <p class="text-xs uppercase tracking-widest text-slate-500 font-semibold mb-2">Independent agent pricing</p>
+          <p class="text-3xl font-black text-slate-900 mb-1">$2.85<span class="text-base font-medium text-slate-500">/watt</span></p>
+          <p class="text-slate-600 text-sm mb-4">7 kW system gross cost</p>
+          <p class="text-2xl font-bold text-[#3F6E29]">$19,950</p>
+          <p class="text-slate-500 text-sm mt-3">After 30% federal tax credit: <strong class="text-slate-900">$13,965</strong></p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 border border-[#E8ECE4] shadow-[0_4px_16px_rgba(5,7,8,0.06)]">
+          <p class="text-xs uppercase tracking-widest text-slate-500 font-semibold mb-2">Big-company pricing</p>
+          <p class="text-3xl font-black text-slate-900 mb-1">$3.50<span class="text-base font-medium text-slate-500">/watt</span></p>
+          <p class="text-slate-600 text-sm mb-4">7 kW system gross cost</p>
+          <p class="text-2xl font-bold text-slate-900">$24,500</p>
+          <p class="text-slate-500 text-sm mt-3">After 30% federal tax credit: <strong class="text-slate-900">$17,150</strong></p>
+        </div>
+      </div>
+
+      <div class="bg-brand-orange/10 border border-brand-orange/30 rounded-2xl p-6 mb-8">
+        <p class="text-slate-900 font-semibold text-lg">Difference on the same 7 kW system: <span class="text-brand-orange">$4,550 gross · $3,185 after credit.</span></p>
+        <p class="text-slate-600 text-sm mt-2">The 30% <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" class="text-brand-orange underline hover:no-underline" rel="noopener">federal Residential Clean Energy Credit</a> applies to both — but it shrinks a bigger gross number into a bigger net number, so the markup compounds against you, not for you.</p>
+      </div>
+
+      <p class="text-slate-700 leading-relaxed text-[15px]">
+        On the last 6 Las Vegas installs I closed, the price-per-watt averaged <strong>$2.84</strong>. The big-company quotes my clients showed me before coming to me averaged <strong>$3.40–$3.65</strong>. Same panels, same inverters, same neighborhoods. The delta is overhead and commission structure — call centers, national marketing spend, layered sales management, and lease-finance kickbacks all sit between the panel and the homeowner, and they all get paid out of your contract.
+      </p>
+    </div>
+  </section>
+
+  <!-- Why agent model works -->
+  <section class="py-16 px-4">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="font-display text-3xl font-bold text-slate-900 mb-6">Why an Agent Beats a Corporate Sales Org for Most Homeowners</h2>
+      <div class="prose prose-slate max-w-none text-slate-700 space-y-4 text-[15px] leading-relaxed">
+        <p>
+          The agent model exists because residential solar is a long-cycle product. The system you put on your roof today has to keep performing for 25+ years, through battery additions, roof work, home sales, and utility rate changes. A salesperson on a monthly quota is structurally the wrong person to design that — their incentive horizon is the next 30 days, yours is the next 25 years.
+        </p>
+        <p>
+          I don't carry a quota. I don't get bonused on system size. My business runs on referrals — when I do the math right and pick the right installer, the next three jobs come from that homeowner's neighbors, family, and coworkers. That feedback loop is what produced <strong>174 five-star Google reviews</strong> with zero one-stars on record. It only works if I keep being right.
+        </p>
+        <p>
+          On the installer side, I work primarily through the Sunder Energy partner network — licensed crews across Nevada and California, vetted on warranty, install quality, and post-install support. I pick the partner that fits the job, instead of forcing every job through one employer's crew. If a project is a poor fit for any of my partners, I'll tell you on the first call.
+        </p>
+        <p>
+          For unbiased background on residential solar economics, the U.S. Department of Energy maintains a solid consumer overview at <a href="https://www.energy.gov/eere/solar" class="text-brand-orange underline hover:no-underline" rel="noopener">energy.gov/eere/solar</a>, and the FTC has direct guidance on solar leasing pitfalls at <a href="https://www.consumer.ftc.gov/articles/whats-deal-leasing-solar-panels" class="text-brand-orange underline hover:no-underline" rel="noopener">consumer.ftc.gov</a>. Read those before any sales call, mine included.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- When agent isn't right -->
+  <section class="py-16 px-4 bg-[#FAFAF8]">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="font-display text-3xl font-bold text-slate-900 mb-6">When a Big Company Might Actually Be the Better Fit</h2>
+      <div class="prose prose-slate max-w-none text-slate-700 space-y-4 text-[15px] leading-relaxed">
+        <p>
+          The agent model isn't always the right answer. If you live in a market where I don't have a vetted installer relationship, a regional or national company with crews on the ground will out-execute me on logistics. The hardware and warranties land the same way; what changes is who shows up on install day, and proximity matters more than model in that case.
+        </p>
+        <p>
+          Some homeowners specifically want a single corporate point of contact — one 800 number, one branded portal, one vendor name on the invoice for HOA or property-management reasons. That's a legitimate preference. The agent model trades that branded experience for a direct human relationship, and not everyone wants the relationship.
+        </p>
+        <p>
+          And for the simplest possible install — a standard south-facing roof, no HOA, no battery, no shading, owner planning to stay 20+ years — the price gap narrows because there's less room for a customized design to add value. The model still favors agents on price, but the practical difference shrinks.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- First-person case -->
+  <section class="py-16 px-4">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="font-display text-3xl font-bold text-slate-900 mb-6">What I Tell Every Client on the First Call</h2>
+      <div class="prose prose-slate max-w-none text-slate-700 space-y-4 text-[15px] leading-relaxed">
+        <p>
+          I drove out to a Henderson home last month where the homeowner had been quoted just under <strong>$28,000 for a 6 kW system</strong> by a national-brand rep. Same Tier-1 panels I would have used. Same microinverter brand. The roof was a clean, single-plane south-facing pitch — about as easy as installs get in this valley. My number on that house came in at $17,400 with the same hardware, same warranty backing, same monitoring app.
+        </p>
+        <p>
+          I don't tell that story to bash anyone. The other rep wasn't lying — he was doing his job inside a compensation structure that pays him more when the contract is bigger. He'd hit his quota that month. The homeowner would have signed it, paid for it for 20 years, and never known what the spread was. That's the model working as designed for the company. It's just not designed for you.
+        </p>
+        <p>
+          So on every first call, before I quote anything, I tell people three things: how I'm paid (flat referral fee, paid by the installer after install — not by you, not based on size), who the installer will be (named, licensed, with their crew lead's history), and what happens if the math doesn't work (I'll tell you on the call and we won't proceed). If you've already got a competing quote, bring it. I'd rather lose a deal because the other number is genuinely better than win one because you didn't know what to compare.
+        </p>
+        <p>
+          That's the entire pitch. The 174 five-star reviews are the proof it holds up after install — the part of the sale most reps never see, because they're already onto next month's quota.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQSection faqs={faqs} heading="Solar Agent vs Solar Company — FAQs" />
+
+  <!-- CTA -->
+  <section class="bg-[#FAFAF8] py-16 px-4 text-center">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="font-display text-3xl font-bold text-slate-900 mb-4">Get the honest quote first.</h2>
+      <p class="text-slate-600 mb-8">No quota. No call center. Just the number, the installer, and the math — on the first call.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <CTAButton text="Get My Honest Quote" size="lg" />
+        <a href="tel:+17029416894" class="inline-flex items-center gap-2 text-slate-900 font-semibold hover:text-brand-orange transition-colors">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 017 2.18 2 2 0 019.09 4v3.09a2 2 0 01-1.42 1.93l-1.8.6a16 16 0 006.62 6.62l.6-1.8a2 2 0 011.92-1.42z"/></svg>
+          (702) 941-6894
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <ServiceAreaLinks current="" />
+</BaseLayout>

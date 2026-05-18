@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import ServiceAreaLinks from '../components/ServiceAreaLinks.astro';
 import CTAButton from '../components/CTAButton.astro';
 import PersonSchema from '../components/PersonSchema.astro';
 import LocalBusinessSchema from '../components/LocalBusinessSchema.astro';
@@ -85,4 +86,5 @@ import { sanDiegoContent as c } from '../data/content/cities/san-diego';
       <CTAButton text={c.cta.buttonText} size="lg" />
     </div>
   </section>
-</BaseLayout>
+  <ServiceAreaLinks current="san-diego" />
+

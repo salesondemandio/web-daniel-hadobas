@@ -1,3 +1,11 @@
+import { batchMoneyPosts } from './blog-batch-money';
+import { batchTechPosts } from './blog-batch-tech';
+import { batchLocalPosts } from './blog-batch-local';
+import { batchComparePosts } from './blog-batch-compare';
+import { batchDecisionPosts } from './blog-batch-decision';
+import { batchCasesPosts } from './blog-batch-cases';
+import { batchAeoPosts } from './blog-batch-aeo';
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -8,7 +16,7 @@ export interface BlogPost {
   faqs?: { question: string; answer: string }[];
 }
 
-export const blogPosts: BlogPost[] = [
+const originalPosts: BlogPost[] = [
   {
     slug: 'solar-cost-las-vegas-2025',
     title: 'How Much Do Solar Panels Cost in Las Vegas in 2025?',
@@ -352,3 +360,14 @@ export const blogPosts: BlogPost[] = [
     ],
   },
 ];
+
+export const blogPosts: BlogPost[] = [
+  ...originalPosts,
+  ...batchMoneyPosts,
+  ...batchTechPosts,
+  ...batchLocalPosts,
+  ...batchComparePosts,
+  ...batchDecisionPosts,
+  ...batchCasesPosts,
+  ...batchAeoPosts,
+].sort((a, b) => b.publishDate.localeCompare(a.publishDate));

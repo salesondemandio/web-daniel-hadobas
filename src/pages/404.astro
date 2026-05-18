@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Page Not Found | Daniel Hadobas Solar"
+  description="That page doesn't exist. Find Las Vegas solar info or get a free quote."
+>
+  <meta slot="head" name="robots" content="noindex, follow" />
+  <main class="min-h-[70vh] flex items-center justify-center px-6 py-20 bg-[#FAFBF7]">
+    <div class="max-w-2xl text-center">
+      <p class="text-sm font-bold tracking-widest text-brand-orange uppercase mb-4">404 — Page Not Found</p>
+      <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-6 leading-tight">
+        That page doesn't exist.
+      </h1>
+      <p class="text-lg text-slate-600 mb-10">
+        Looking for solar info or a free quote? Try these:
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-10 text-left">
+        <a href="/" class="bg-white border border-[#E8ECE4] rounded-lg p-4 hover:border-brand-orange transition">
+          <div class="font-bold text-slate-900">Home</div>
+          <div class="text-sm text-slate-500">$0 down solar — get a free quote</div>
+        </a>
+        <a href="/solar-las-vegas" class="bg-white border border-[#E8ECE4] rounded-lg p-4 hover:border-brand-orange transition">
+          <div class="font-bold text-slate-900">Solar in Las Vegas</div>
+          <div class="text-sm text-slate-500">NV Energy customers</div>
+        </a>
+        <a href="/solar-henderson-nv" class="bg-white border border-[#E8ECE4] rounded-lg p-4 hover:border-brand-orange transition">
+          <div class="font-bold text-slate-900">Solar in Henderson</div>
+          <div class="text-sm text-slate-500">Henderson + Green Valley</div>
+        </a>
+        <a href="/blog" class="bg-white border border-[#E8ECE4] rounded-lg p-4 hover:border-brand-orange transition">
+          <div class="font-bold text-slate-900">Solar Blog</div>
+          <div class="text-sm text-slate-500">Tax credits, NV Energy net metering</div>
+        </a>
+      </div>
+      <a href="tel:+17029416894" class="inline-flex items-center gap-2 bg-brand-orange text-slate-900 px-8 py-4 rounded-lg font-bold cta-glow">
+        Call (702) 941-6894
+      </a>
+    </div>
+  </main>
+</BaseLayout>

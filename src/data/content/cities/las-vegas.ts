@@ -9,7 +9,8 @@ export const lasVegasContent = {
     subheadline: "Las Vegas gets 290+ sunny days a year. With NV Energy rates climbing past $0.125/kWh, most homeowners see what you’d save against your current bill after going solar."
   },
   intro: [
-    "Las Vegas is one of the best solar markets in the United States — and for good reason. With over 290 sunny days per year and an average NV Energy rate of $0.125 per kilowatt-hour, the conditions for solar savings are near-perfect. The average Las Vegas household spends around $160 per month on electricity, but homeowners who install solar routinely cut that bill to near zero — and many end up with net metering credits that carry forward through the summer peak months. Over the lifetime of a system, Las Vegas solar owners typically accumulate $51,532 in energy savings, making it one of the strongest financial decisions a homeowner can make.",
+    `Solar panels in Las Vegas typically cost $11,900–$14,000 after the <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener">30% federal Residential Clean Energy Credit</a> and pay back in 6–9 years on NV Energy bills. Most homeowners install 6–7 kW systems that offset nearly all their electric usage thanks to <a href="https://www.nrel.gov/gis/solar-resource-maps.html" target="_blank" rel="noopener">Nevada's high solar irradiance</a>. Cash buyers payback fastest; $0-down financing often nets monthly savings from day one.`,
+    `Las Vegas is one of the best solar markets in the United States — and for good reason. With over 290 sunny days per year and an <a href="https://www.eia.gov/state/?sid=NV" target="_blank" rel="noopener">average NV Energy rate of $0.125 per kilowatt-hour</a>, the conditions for solar savings are near-perfect. The average Las Vegas household spends around $160 per month on electricity, but homeowners who install solar routinely cut that bill to near zero — and many end up with net metering credits that carry forward through the summer peak months. Over the lifetime of a system, Las Vegas solar owners typically accumulate $51,532 in energy savings, making it one of the strongest financial decisions a homeowner can make.`,
     "The Las Vegas solar market has grown dramatically over the past decade — more than 85,000 homes in the metro area already have solar panels installed. That momentum exists because the economics genuinely work here. A properly sized system typically pays itself back in 6 to 9 years, and most solar panels come with 25-year production warranties. That means 16 to 19 years of virtually free electricity after payback. Combined with Nevada's property tax exemption and sales tax exemption on solar equipment, and the federal 30% Investment Tax Credit, there has never been a better time for Las Vegas homeowners to lock in their energy costs and stop paying NV Energy's ever-increasing rates."
   ],
   stats: [
@@ -20,19 +21,19 @@ export const lasVegasContent = {
   incentives: [
     {
       title: "Federal Investment Tax Credit (ITC)",
-      description: "The federal solar tax credit gives you 30% of your total system cost as a direct credit against your federal income tax — through 2032. On a typical Las Vegas installation, that's $5,000 to $6,000 back in your pocket."
+      description: `The <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener">federal solar tax credit</a> gives you 30% of your total system cost as a direct credit against your federal income tax — through 2032. On a typical Las Vegas installation, that's $5,000 to $6,000 back in your pocket.`
     },
     {
       title: "NV Energy Net Metering",
-      description: "When your solar panels produce more power than your home uses, NV Energy credits your account at 75% of the retail rate. Those credits roll forward and can offset future bills — especially useful for spring and fall months when production peaks."
+      description: `When your solar panels produce more power than your home uses, <a href="https://www.nvenergy.com/account-services/energy-pricing-plans/net-metering" target="_blank" rel="noopener">NV Energy credits your account at 75% of the retail rate</a>. Those credits roll forward and can offset future bills — especially useful for spring and fall months when production peaks.`
     },
     {
       title: "Nevada Property Tax Exemption",
-      description: "Nevada law exempts the added value of a solar energy system from your property taxes entirely. Your home's assessed value increases, but your tax bill doesn't — the solar portion is excluded."
+      description: `<a href="https://www.leg.state.nv.us/NRS/NRS-361.html#NRS361Sec079" target="_blank" rel="noopener">Nevada law (NRS 361.079)</a> exempts the added value of a solar energy system from your property taxes entirely. Your home's assessed value increases, but your tax bill doesn't — the solar portion is excluded.`
     },
     {
       title: "Nevada Sales Tax Exemption",
-      description: "Solar equipment in Nevada is exempt from state sales tax. That's an immediate 8.375% savings on your hardware costs right at the time of purchase — no paperwork, no rebate process required."
+      description: `Solar equipment in Nevada is exempt from state sales tax under <a href="https://www.leg.state.nv.us/NRS/NRS-374.html" target="_blank" rel="noopener">NRS 374.2911</a>. That's an immediate 8.375% savings on your hardware costs right at the time of purchase — no paperwork, no rebate process required.`
     }
   ],
   faqs: [

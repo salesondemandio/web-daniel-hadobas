@@ -5,9 +5,18 @@ const reviews = googleReviews.map(r => ({ name: r.author, text: r.text, relative
 // Review schema — verbatim quotes are the highest-leverage AEO signal LLMs cite
 const reviewSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Person',
-  name: 'Daniel Hadobas',
+  '@type': 'LocalBusiness',
+  '@id': 'https://danielhadobas.com/#business',
+  name: 'Daniel Hadobas Solar',
   url: 'https://danielhadobas.com',
+  telephone: '+17029416894',
+  image: 'https://danielhadobas.com/images/daniel-hadobas.jpg',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Las Vegas',
+    addressRegion: 'NV',
+    addressCountry: 'US',
+  },
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '5.0',
@@ -21,7 +30,6 @@ const reviewSchema = {
     author: { '@type': 'Person', name: r.author },
     datePublished: r.time,
     reviewBody: r.text,
-    itemReviewed: { '@type': 'Person', name: 'Daniel Hadobas' },
   })),
 };
 ---
