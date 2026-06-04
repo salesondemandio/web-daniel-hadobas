@@ -8,7 +8,7 @@ export const batchCasesPosts: BlogPost[] = [
     publishDate: '2026-01-12',
     tags: ['Case Study', 'Nevada', 'Summerlin', 'Las Vegas'],
     body: `
-<p>A family in Summerlin (3,000 sqft, two adults, two kids, no pool) cut their NV Energy bill from <strong>$310/month down to $23/month</strong> with an 8 kW rooftop system after the 30% federal tax credit. The HOA approval took 18 days. Payback hits at year 6.4. They keep saving for the remaining 19 years of the panel warranty. Below is the full breakdown — what I saw at the site visit, what I designed, what surprised them, and what I'd do differently next time.</p>
+<p>A family in Summerlin (3,000 sqft, two adults, two kids, no pool) cut their NV Energy bill from <strong>$310/month down to $23/month</strong> with an 8 kW rooftop system. The HOA approval took 18 days. With the 30% federal credit gone for purchased systems as of 2026, payback now lands around 10–11 years on a cash buy — though NV Energy's rising rates keep pulling that number down. They keep saving for the remaining 19 years of the panel warranty. Below is the full breakdown — what I saw at the site visit, what I designed, what surprised them, and what I'd do differently next time.</p>
 
 <h2>The Starting Point</h2>
 <p>I drove out to the home on a Tuesday morning. Asphalt-shingle roof, about seven years old, south and west exposures both clean of shade. The family had been in the house six years and watched their summer NV Energy bills creep from $240 in 2020 to $310 in 2025 — and that's not unusual. NV Energy's general residential rate has stepped up in three approved tariffs since 2021, and the Summerlin substation feeds a chunk of the 89135 ZIP that pulls hard during peak summer afternoons.</p>
@@ -26,10 +26,10 @@ export const batchCasesPosts: BlogPost[] = [
     <tr><td>Monthly NV Energy bill</td><td>$310</td><td>$23</td></tr>
     <tr><td>Annual electric cost</td><td>$3,720</td><td>$276</td></tr>
     <tr><td>Year-1 savings</td><td colspan="2">$3,444</td></tr>
-    <tr><td>System cost (gross)</td><td colspan="2">$22,800</td></tr>
-    <tr><td>Federal tax credit (30%)</td><td colspan="2">−$6,840</td></tr>
-    <tr><td>Net cost after ITC</td><td colspan="2">$15,960</td></tr>
-    <tr><td>Simple payback</td><td colspan="2">6.4 years</td></tr>
+    <tr><td>System cost (cash, NV sales-tax exempt)</td><td colspan="2">$22,800</td></tr>
+    <tr><td>Federal tax credit</td><td colspan="2">$0 — expired 12/31/2025 for purchases</td></tr>
+    <tr><td>Net cash cost</td><td colspan="2">$22,800</td></tr>
+    <tr><td>Simple payback</td><td colspan="2">~9–12 years (cash purchase, post-credit)</td></tr>
     <tr><td>25-year lifetime savings (est.)</td><td colspan="2">$92,000+</td></tr>
   </tbody>
 </table>
@@ -55,13 +55,12 @@ export const batchCasesPosts: BlogPost[] = [
   <li>Permits + interconnection fees: $650</li>
   <li>Labor: $7,200</li>
   <li>Margin + overhead: $1,550</li>
-  <li><strong>Gross: $22,800</strong></li>
-  <li><strong>After 30% federal ITC: $15,960</strong></li>
+  <li><strong>Cash price (NV sales-tax exempt): $22,800</strong></li>
 </ul>
-<p>The 30% credit is a dollar-for-dollar reduction on federal tax owed — not a deduction. Details and eligibility are on the <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener">IRS Residential Clean Energy Credit page</a>. If your federal tax liability in the install year is less than $6,840, the unused portion rolls forward. It doesn’t expire and doesn’t require a refund mechanism — your tax software handles it on Form 5695.</p>
+<p>The 30% federal residential solar tax credit (Section 25D) expired December 31, 2025 under the One Big Beautiful Bill Act. As of 2026 it's gone for systems you buy with cash or a loan. The cash price above already reflects Nevada's sales-tax exemption on solar equipment — that's a real ~8.375% saving in Clark County, applied at purchase. The federal credit still applies to lease/PPA (third-party-owned) systems through the end of 2027, so if capturing a federal incentive matters to you, that's the only remaining path.</p>
 
 <h2>Why This Isn't Typical (or Why It Is)</h2>
-<p>This is a fairly typical Summerlin result for a 3,000 sqft home with adequate south/west roof and no major shade. Your numbers will be different. If your bill is $180, your savings will be smaller. If your roof is older or has dormers and obstructions, your design and price will be different. The federal credit math is the same for everyone, but the savings side depends entirely on your usage and roof.</p>
+<p>This is a fairly typical Summerlin result for a 3,000 sqft home with adequate south/west roof and no major shade. Your numbers will be different. If your bill is $180, your savings will be smaller. If your roof is older or has dormers and obstructions, your design and price will be different. The savings side depends entirely on your usage and roof — and with NV Energy rates up about 9.5% in the past year to roughly 17.45¢/kWh, every increase pulls payback forward. Solar locks in your own generation cost as a hedge against those rising rates.</p>
 <p>What makes this case unusually clean: a south-southwest orientation, no shade, a recent roof, a household with daytime-heavy consumption, and an HOA that processed the packet on schedule. Take any of those away and the timeline or numbers shift. If you’ve got two of them, this case is probably 80% representative for you. If you’ve got all four, you’re looking at something close to this.</p>
 
 <p>If you're in the 89135 / 89144 / 89113 area and want me to run your numbers, <a href="/#get-quote">request a quote here</a> and I'll come look at your roof. More Summerlin context on the <a href="/solar-summerlin">Summerlin solar page</a>, or see <a href="/solar-las-vegas">Las Vegas solar overview</a>. Background on me at <a href="/about">About Daniel</a>.</p>
@@ -81,7 +80,7 @@ export const batchCasesPosts: BlogPost[] = [
     publishDate: '2026-01-26',
     tags: ['Case Study', 'Nevada', 'Henderson', 'Las Vegas'],
     body: `
-<p>A homeowner in Henderson's 89052 ZIP — 4,200 sqft, variable-speed pool pump, three-zone AC — cut their NV Energy bill from <strong>$478/month to $77/month</strong> with an 11 kW system. Net cost after the 30% federal credit: $21,945. Annual savings: $4,812. Payback: 4.6 years. This was one of the cleaner pool-home installs I’ve done, and the math is worth walking through because pool homes have a few sizing wrinkles that ordinary residential cases don’t.</p>
+<p>A homeowner in Henderson's 89052 ZIP — 4,200 sqft, variable-speed pool pump, three-zone AC — cut their NV Energy bill from <strong>$478/month to $77/month</strong> with an 11 kW system. Cash cost (Nevada sales-tax exempt): $31,350. Annual savings: $4,812. With the 30% federal credit gone for purchased systems in 2026, payback on a cash buy now runs roughly 9–12 years — though NV Energy's rising rates keep pulling that down. This was one of the cleaner pool-home installs I’ve done, and the math is worth walking through because pool homes have a few sizing wrinkles that ordinary residential cases don’t.</p>
 
 <h2>The Starting Point</h2>
 <p>This was a referral from a previous Henderson install. The pool pump alone was running 8 hours a day in summer and adding roughly 240 kWh/month to the bill. The home pulls from the Black Mountain substation area, and the family had been seeing summer bills above $500 for two consecutive years. They'd already done the easy stuff — LED retrofit, smart thermostat, pool pump on a schedule — and the bill kept climbing because NV Energy rates kept climbing.</p>
@@ -99,10 +98,10 @@ export const batchCasesPosts: BlogPost[] = [
     <tr><td>Monthly NV Energy bill</td><td>$478</td><td>$77</td></tr>
     <tr><td>Annual electric cost</td><td>$5,736</td><td>$924</td></tr>
     <tr><td>Year-1 savings</td><td colspan="2">$4,812</td></tr>
-    <tr><td>System cost (gross)</td><td colspan="2">$31,350</td></tr>
-    <tr><td>Federal tax credit (30%)</td><td colspan="2">−$9,405</td></tr>
-    <tr><td>Net cost after ITC</td><td colspan="2">$21,945</td></tr>
-    <tr><td>Simple payback</td><td colspan="2">4.6 years</td></tr>
+    <tr><td>System cost (cash, NV sales-tax exempt)</td><td colspan="2">$31,350</td></tr>
+    <tr><td>Federal tax credit</td><td colspan="2">$0 — expired 12/31/2025 for purchases</td></tr>
+    <tr><td>Net cash cost</td><td colspan="2">$31,350</td></tr>
+    <tr><td>Simple payback</td><td colspan="2">~9–12 years (cash purchase, post-credit)</td></tr>
     <tr><td>25-year lifetime savings (est.)</td><td colspan="2">$135,000+</td></tr>
   </tbody>
 </table>
@@ -130,13 +129,12 @@ export const batchCasesPosts: BlogPost[] = [
   <li>Permits + interconnection: $720</li>
   <li>Labor: $9,200</li>
   <li>Margin + overhead: $1,650</li>
-  <li><strong>Gross: $31,350</strong></li>
-  <li><strong>After 30% federal ITC: $21,945</strong></li>
+  <li><strong>Cash price (NV sales-tax exempt): $31,350</strong></li>
 </ul>
-<p>See the <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener">IRS Residential Clean Energy Credit guidance</a> for ITC eligibility. The credit applies to all of the line items above — including labor, permits, and electrical work directly required for the solar install.</p>
+<p>The 30% federal residential solar tax credit (Section 25D) expired December 31, 2025 for systems you buy. The cash price above already reflects Nevada's sales-tax exemption on the equipment, applied at purchase. A lease or PPA can still capture a federal incentive through the end of 2027, but on a cash or financed purchase there's no federal credit to subtract anymore.</p>
 
 <h2>Why This Isn't Typical (or Why It Is)</h2>
-<p>Pool homes in Henderson with summer bills over $400 are common. The 4.6-year payback here is faster than typical because the starting bill was high and we sized aggressively. Your home's payback depends on your actual usage and rates. Don't anchor on this number — anchor on your last 12 months of bills. A home with a $250 bill and the same system would see closer to 7–8 year payback. The bill size is the lever.</p>
+<p>Pool homes in Henderson with summer bills over $400 are common. The payback here is faster than typical because the starting bill was high and we sized aggressively. Your home's payback depends on your actual usage and rates. Don't anchor on this number — anchor on your last 12 months of bills. The bill size is the lever, and with the 30% federal credit gone for purchases, the rising-rate math matters more than ever.</p>
 <p>One more dynamic worth flagging: NV Energy has stepped up residential rates in three approved tariffs since 2021, with another rate case pending. If rates climb another 8–12% over the next three years (which the utility’s filings suggest is plausible), the payback on this system compresses further and the lifetime savings number goes up. Solar acts as a hedge against rate increases — the installed cost is fixed, but the avoided cost grows.</p>
 <p>For homes in this size and bill range across 89052, 89074, and 89012, the design pattern repeats: 10–12 kW system, microinverters if there’s shade, no battery, sized to consumption rather than to roof area, with the west-slope production tuned to evening AC and pool-pump load. The specifics vary; the playbook is consistent.</p>
 
@@ -157,14 +155,14 @@ export const batchCasesPosts: BlogPost[] = [
     publishDate: '2026-02-09',
     tags: ['Case Study', 'Nevada', 'Las Vegas'],
     body: `
-<p>An investor in North Las Vegas (single-family rental, 1,950 sqft, long-term tenant on a lease where utilities are tenant-paid) installed a 6 kW system to lower the property's vacancy risk and add to the building basis. Net cost: $11,970. The 30% federal credit was captured by the owner, not the tenant. Payback: 7.2 years on the rental cash-flow improvement. This is a different math than primary-residence solar, and the rules trip people up. Here’s the full picture.</p>
+<p>An investor in North Las Vegas (single-family rental, 1,950 sqft, long-term tenant on a lease where utilities are tenant-paid) installed a 6 kW system to lower the property's vacancy risk and add to the building basis. Cash cost (Nevada sales-tax exempt): $17,100. Important: this is a rental, so the math runs on the <strong>commercial</strong> Investment Tax Credit (Section 48E), not the residential one. The residential credit (Section 25D) expired December 31, 2025 for homeowners who buy — but the commercial ITC for income-producing property is still available in 2026 for projects that begin construction by the current statutory deadline. Payback: 7.2 years on the rental cash-flow improvement. This is a different math than primary-residence solar, and the rules trip people up. Here’s the full picture.</p>
 
 <h2>The Starting Point</h2>
 <p>The investor owns three rentals in 89031 and 89032 and was getting tenant pushback on summer bills. Their tenant on this property was paying $260–$340/month to NV Energy in July and August and renegotiating rent every year because of it. The landlord's calculation was simple: a tenant who can keep their utility bill flat is a tenant who renews. Turnover on this property historically cost about $2,400 in vacancy + cleaning + leasing fees per cycle. Stabilizing the tenant for an extra year was worth real money.</p>
 <p>Twelve-month tenant usage averaged 980 kWh/month — modest, because it's a smaller home with no pool. Roof was a 2018 asphalt shingle in good condition, south-facing. The home itself was a 1990s build with original electrical service that needed a small upgrade to handle the solar interconnection — we caught that on the site visit, and the cost was already baked into the quote.</p>
 
 <h2>How the Tax Credit Works on a Rental</h2>
-<p>This is where it gets interesting and where people get it wrong. The <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener">Residential Clean Energy Credit (Section 25D)</a> is for the owner's primary or secondary residence, not for property held purely for rental. For a rental, you instead use the <strong>commercial Investment Tax Credit (Section 48)</strong> which is also 30% but operates differently — it's depreciable, the property gets a basis adjustment, and it's claimed on Form 3468 not Form 5695.</p>
+<p>This is where it gets interesting and where people get it wrong. The <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener">Residential Clean Energy Credit (Section 25D)</a> was for the owner's primary or secondary residence — and it expired December 31, 2025 for purchased systems. It never applied to property held purely for rental anyway. For a rental, you use the <strong>commercial Investment Tax Credit (Section 48E)</strong> instead, which still exists in 2026: it operates differently — it's depreciable, the property gets a basis adjustment, and it's claimed on Form 3468 not Form 5695. The commercial credit has its own begin-construction deadline under the 2025 law, so the timing window matters — confirm current eligibility with your CPA before you commit.</p>
 <p>For this investor: 30% credit on Form 3468, plus they get to depreciate 85% of the system basis over 5 years (MACRS), plus a one-time bonus depreciation depending on tax year. The combined first-year tax benefit was meaningfully more than 30% — but it requires actual passive income or active material participation to use. We pointed the investor to their CPA for the final structure. I am not a CPA. I’ve seen enough rental solar deals to flag the major levers, but the actual tax filing belongs to a tax professional.</p>
 <p>One thing investors often miss: if you ever convert the rental to a primary residence (or vice versa), the credit treatment retroactively shifts. There are recapture rules. If you’re likely to flip the property within five years, your CPA needs to model that scenario before you commit. We didn’t need to here — the investor’s plan is hold-for-cash-flow, not flip.</p>
 
@@ -179,9 +177,9 @@ export const batchCasesPosts: BlogPost[] = [
     <tr><td>Annual tenant savings</td><td colspan="2">$1,584</td></tr>
     <tr><td>Rent increase agreed</td><td colspan="2">+$110/month</td></tr>
     <tr><td>Landlord cash flow gain</td><td colspan="2">$1,320/year</td></tr>
-    <tr><td>System cost (gross)</td><td colspan="2">$17,100</td></tr>
-    <tr><td>Federal ITC (30%)</td><td colspan="2">−$5,130</td></tr>
-    <tr><td>Net cost</td><td colspan="2">$11,970</td></tr>
+    <tr><td>System cost (cash, NV sales-tax exempt)</td><td colspan="2">$17,100</td></tr>
+    <tr><td>Commercial ITC (Sec 48E, rental only)</td><td colspan="2">−$5,130 (still available in 2026; deadline-gated)</td></tr>
+    <tr><td>Net cost after commercial ITC</td><td colspan="2">$11,970</td></tr>
     <tr><td>Simple payback (cash-flow only)</td><td colspan="2">7.2 years</td></tr>
   </tbody>
 </table>
@@ -206,8 +204,8 @@ export const batchCasesPosts: BlogPost[] = [
   <li>Permits + interconnection: $600</li>
   <li>Labor: $5,400</li>
   <li>Margin + overhead: $800</li>
-  <li><strong>Gross: $17,100</strong></li>
-  <li><strong>After 30% ITC: $11,970</strong></li>
+  <li><strong>Cash price (NV sales-tax exempt): $17,100</strong></li>
+  <li><strong>After commercial Sec 48E ITC (rental only, deadline-gated): $11,970</strong></li>
 </ul>
 
 <h2>Why This Isn't Typical (or Why It Is)</h2>
@@ -217,7 +215,7 @@ export const batchCasesPosts: BlogPost[] = [
 <p>If you own rentals in 89031 / 89032 / 89030 and want to talk through the math, <a href="/#get-quote">request a quote</a>. Or read the broader <a href="/solar-las-vegas">Las Vegas solar guide</a>. Background on me at <a href="/about">about Daniel</a>.</p>
 `,
     faqs: [
-      { question: 'Can I claim the 30% solar tax credit on a rental property?', answer: 'Not under Section 25D (Residential Clean Energy Credit) — that\'s for your own residence. But you can claim a 30% credit under Section 48 (commercial ITC) and also depreciate the system under MACRS. Net first-year tax benefit on a rental is typically larger than for a primary home, if you have passive income to absorb it. Talk to a CPA.' },
+      { question: 'Can I claim a federal solar tax credit on a rental property in 2026?', answer: 'Not under Section 25D (Residential Clean Energy Credit) — that was for your own residence and it expired December 31, 2025 for purchased systems. But income-producing rental property uses the commercial ITC (Section 48E), which is still available in 2026, subject to a begin-construction deadline under the 2025 law. You can also depreciate the system under MACRS. Net first-year tax benefit can be meaningful if you have passive income to absorb it. Confirm current eligibility with a CPA before you commit.' },
       { question: 'Does the tenant or the landlord get the solar savings on a rental?', answer: 'Whoever pays the NV Energy bill captures the direct utility savings. Most landlords pair solar with a small rent increase that\'s less than the tenant\'s utility savings — the tenant nets ahead, the landlord captures part of the value, and turnover risk drops.' },
       { question: 'How does NV Energy net metering work if the home is rented?', answer: 'The NV Energy account is in whoever\'s name pays the utility — usually the tenant on a residential rental. The net-metering credits go to that account. If the tenant moves out, credits do not transfer to a new tenant\'s account.' },
       { question: 'Should I install solar on a rental I might sell in 5 years?', answer: 'It depends on the local market. In Las Vegas, owned solar (not leased) typically increases sale price by roughly the system\'s remaining value. Leased systems often complicate sales. If you might sell within the depreciation recapture window, your CPA needs to model the recapture before you commit.' }
@@ -231,7 +229,7 @@ export const batchCasesPosts: BlogPost[] = [
     publishDate: '2026-02-23',
     tags: ['Case Study', 'Nevada', 'Henderson', 'Las Vegas'],
     body: `
-<p>A homeowner in Green Valley Ranch wanted solar installed in two weeks. Their asphalt-shingle roof was 17 years old, original to the build. I told them to replace the roof first or I wouldn't do the install. Total stack — new roof plus 7 kW solar — came to $27,365 net after the 30% federal credit. They saved $208/month. Payback on solar alone: 5.4 years. Combined payback including the roof: 12 years. This case is about saying no to a customer in the short term to give them a better outcome over the next 25 years.</p>
+<p>A homeowner in Green Valley Ranch wanted solar installed in two weeks. Their asphalt-shingle roof was 17 years old, original to the build. I told them to replace the roof first or I wouldn't do the install. Total stack — new roof plus 7 kW solar — came to $33,350 in cash (Nevada sales-tax exemption applied to the solar equipment). They saved $208/month. With the 30% federal credit gone for purchased systems in 2026, payback on the solar alone now runs roughly 9–12 years on a cash buy — though NV Energy's rising rates keep pulling that down. This case is about saying no to a customer in the short term to give them a better outcome over the next 25 years.</p>
 
 <h2>The Starting Point</h2>
 <p>Two-story home, 2,650 sqft, original 2008 build. The roof was the original 25-year-rated architectural shingle. In Las Vegas heat, that "25-year" rating realistically lasts 17–22 years before granule loss and underlayment fatigue make a re-roof necessary. I climbed it. Granules in the gutters. South-facing slope was visibly faded. Underlayment showing through in two spots near the ridge. The roof was four to six years from a forced replacement no matter what.</p>
@@ -254,16 +252,16 @@ export const batchCasesPosts: BlogPost[] = [
   <tbody>
     <tr><td>New roof</td><td>$13,400</td></tr>
     <tr><td>7 kW solar (gross)</td><td>$19,950</td></tr>
-    <tr><td>Total project</td><td>$33,350</td></tr>
-    <tr><td>30% federal ITC (solar only)</td><td>−$5,985</td></tr>
-    <tr><td>Roof — does NOT qualify for ITC</td><td>$0 credit</td></tr>
-    <tr><td><strong>Net combined cost</strong></td><td><strong>$27,365</strong></td></tr>
+    <tr><td>Total project (cash)</td><td>$33,350</td></tr>
+    <tr><td>Federal ITC</td><td>$0 — expired 12/31/2025 for purchases</td></tr>
+    <tr><td>NV sales-tax exemption (solar equipment)</td><td>applied at purchase</td></tr>
+    <tr><td><strong>Net combined cash cost</strong></td><td><strong>$33,350</strong></td></tr>
     <tr><td>Old NV Energy bill</td><td>$254/month</td></tr>
     <tr><td>New NV Energy bill</td><td>$46/month</td></tr>
     <tr><td>Annual savings</td><td>$2,496</td></tr>
   </tbody>
 </table>
-<p>Note: structural roofing materials don't qualify for the federal ITC even when paired with solar. Only the solar system itself does. See the <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener">IRS guidance</a>. Some homeowners think they can roll a reroof into the credit. They can't. There’s a narrow exception for "solar shingles" and other integrated solar roof products, but a standard reroof under a panel array does not count.</p>
+<p>Note on the federal credit: the 30% residential solar tax credit (Section 25D) expired December 31, 2025 for systems you buy, so there's no federal credit to subtract on a cash purchase in 2026 — for the solar or the roof. (Even when the credit existed, structural roofing materials never qualified; only the solar equipment did.) A lease or PPA can still capture a federal incentive through the end of 2027. For a cash buyer, the surviving Nevada perks carry the value: the sales-tax exemption on solar equipment and the property-tax exemption on the added home value.</p>
 
 <h2>What Surprised the Homeowner</h2>
 <p>How much cooler the upstairs got after the new roof. The old shingles had been radiating heat into the attic; the new ones, plus the ridge vent retrofit, dropped the upstairs by about 4°F in summer. The AC ran less. They saw the savings before the panels were even producing. The new ridge vent alone was probably responsible for a meaningful chunk of the AC reduction — the original construction had inadequate attic ventilation, which is common in 2008-era Las Vegas tract builds.</p>
@@ -283,7 +281,7 @@ export const batchCasesPosts: BlogPost[] = [
 `,
     faqs: [
       { question: 'Should I replace my roof before installing solar?', answer: 'If your roof has more than 12 years of remaining life, install solar now. If it has less than 7 years, replace first. The middle ground (7–12 years) depends on your roof material, condition, and your tolerance for paying $4K–$6K mid-life to remove and reinstall panels for the eventual reroof.' },
-      { question: 'Does a new roof qualify for the federal solar tax credit?', answer: 'Generally no. Structural roofing — shingles, underlayment, decking — does not qualify for the Residential Clean Energy Credit. Only the solar equipment and its directly-related installation costs qualify. There\'s a narrow exception for roof materials that also function as solar (like solar shingles), but standard reroofing does not count.' },
+      { question: 'Does a new roof qualify for the federal solar tax credit?', answer: 'It\'s moot for purchased systems now — the Residential Clean Energy Credit (Section 25D) expired December 31, 2025, so there\'s no federal credit for the solar or the roof on a 2026 cash or financed purchase. Even while the credit existed, structural roofing (shingles, underlayment, decking) never qualified; only the solar equipment did. A lease or PPA can still capture a federal incentive through 2027.' },
       { question: 'How long does an asphalt-shingle roof last in Las Vegas?', answer: 'A 25-year-rated architectural shingle in Las Vegas heat realistically lasts 17–22 years before granule loss and underlayment fatigue justify replacement. Tile roofs last 40+ years; the underlayment under tile lasts 20–25.' },
       { question: 'How much does it cost to remove and reinstall solar panels for a reroof?', answer: 'Typically $3,500–$6,000 for a 6–8 kW system, depending on installer and complexity. That\'s why replacing an aging roof before solar usually saves money in the long run.' }
     ]
@@ -296,7 +294,7 @@ export const batchCasesPosts: BlogPost[] = [
     publishDate: '2026-03-09',
     tags: ['Case Study', 'Nevada', 'Henderson'],
     body: `
-<p>A Sun City Anthem homeowner with a concrete S-tile roof at roughly 4,500 ft elevation installed a 7 kW system. Final cost after the 30% federal credit: <strong>$19,200</strong>. Monthly savings: $182. The HOA cycle ran three weeks. The tile and the elevation both made a real difference in the project — neither in the way the homeowner expected. Tile installs are different beasts from asphalt shingle, and Anthem’s elevation gives a small but measurable production bonus that most installers don’t even mention.</p>
+<p>A Sun City Anthem homeowner with a concrete S-tile roof at roughly 4,500 ft elevation installed a 7 kW system. Cash cost, Nevada sales-tax exempt: <strong>$27,430</strong> (the 30% federal credit expired 12/31/2025 for purchased systems, so there's nothing to subtract on a 2026 cash buy). Monthly savings: $182. The HOA cycle ran three weeks. The tile and the elevation both made a real difference in the project — neither in the way the homeowner expected. Tile installs are different beasts from asphalt shingle, and Anthem’s elevation gives a small but measurable production bonus that most installers don’t even mention.</p>
 
 <h2>The Starting Point</h2>
 <p>2,800 sqft single-story, 2006 build, original concrete S-tile roof in good shape. Two retired homeowners, modest electric usage (~860 kWh/month average) but high summer peaks because of medical equipment that ran 24/7. NV Energy bill averaged $185/month, peaking at $290 in August. The medical equipment created a load floor that didn’t exist in most homes — they couldn’t turn it off, couldn’t time-shift it, couldn’t schedule around it. So the system had to cover that constant draw plus normal household load.</p>
@@ -321,11 +319,11 @@ export const batchCasesPosts: BlogPost[] = [
     <tr><td>Monthly NV Energy bill</td><td>$185</td><td>$3</td></tr>
     <tr><td>Annual electric cost</td><td>$2,220</td><td>$36</td></tr>
     <tr><td>Year-1 savings</td><td colspan="2">$2,184</td></tr>
-    <tr><td>System cost (gross)</td><td colspan="2">$27,430</td></tr>
+    <tr><td>System cost (cash, NV sales-tax exempt)</td><td colspan="2">$27,430</td></tr>
     <tr><td>Tile premium included</td><td colspan="2">~$1,500</td></tr>
-    <tr><td>Federal ITC (30%)</td><td colspan="2">−$8,229</td></tr>
-    <tr><td>Net cost</td><td colspan="2">$19,200</td></tr>
-    <tr><td>Simple payback</td><td colspan="2">8.8 years</td></tr>
+    <tr><td>Federal ITC</td><td colspan="2">$0 — expired 12/31/2025 for purchases</td></tr>
+    <tr><td>Net cash cost</td><td colspan="2">$27,430</td></tr>
+    <tr><td>Simple payback</td><td colspan="2">~9–12 years (cash purchase, post-credit)</td></tr>
   </tbody>
 </table>
 <p>The bill dropped to nearly nothing because their consumption pattern (modest, daytime-heavy from the medical equipment) aligned perfectly with production. They’re net-positive on credits in spring and fall, which carries them through the lower-production winter months.</p>
@@ -345,15 +343,14 @@ export const batchCasesPosts: BlogPost[] = [
   <li>Permits + HOA + interconnection: $850</li>
   <li>Labor (tile premium): $11,400</li>
   <li>Margin + overhead: $1,800</li>
-  <li><strong>Gross: $27,430</strong></li>
-  <li><strong>After 30% ITC: $19,200</strong></li>
+  <li><strong>Cash price (NV sales-tax exempt): $27,430</strong></li>
 </ul>
-<p>ITC eligibility is detailed on the <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener">IRS Residential Clean Energy Credit page</a>.</p>
+<p>The 30% federal residential solar tax credit (Section 25D) expired December 31, 2025 for purchased systems, so there's no federal credit to subtract on a 2026 cash buy. Nevada's sales-tax exemption on solar equipment is already reflected in the price above, and the property-tax exemption keeps the added home value off your assessment. Lease/PPA systems can still claim a federal incentive through the end of 2027.</p>
 
 <h2>Why This Isn't Typical (or Why It Is)</h2>
 <p>If you have a tile roof, expect $0.20–$0.35/W more than the asphalt-shingle benchmark. If you're at elevation (Anthem, parts of Boulder City), expect a small production bonus. If you're in an HOA with a fixed meeting schedule, time your submission. Your bill drop will depend on your consumption profile, which differs from this household. The near-zero residual bill here was a function of modest, daytime-heavy consumption — not the system size.</p>
 
-<p>A separate factor worth mentioning: Sun City Anthem’s population skews older, and many residents I’ve worked with are on fixed retirement incomes. The decision math for them isn’t just about lifetime savings; it’s about whether the system pays back inside the years they expect to be in the home. For an active 65-year-old, an 8.8-year payback works fine. For an active 78-year-old, the math tips toward whether the system adds resale value when the home eventually transfers — which it does in Anthem, where buyers increasingly look for owned solar as a feature. I run that calculation explicitly for every retired Anthem customer rather than assuming the standard payback timeline matches their planning horizon.</p>
+<p>A separate factor worth mentioning: Sun City Anthem’s population skews older, and many residents I’ve worked with are on fixed retirement incomes. The decision math for them isn’t just about lifetime savings; it’s about whether the system pays back inside the years they expect to be in the home. For an active 65-year-old, a 9–12-year payback works fine. For an active 78-year-old, the math tips toward whether the system adds resale value when the home eventually transfers — which it does in Anthem, where buyers increasingly look for owned solar as a feature. I run that calculation explicitly for every retired Anthem customer rather than assuming the standard payback timeline matches their planning horizon.</p>
 
 <p>If you're in Sun City Anthem, Anthem Highlands, or anywhere south of Henderson proper, <a href="/#get-quote">request a quote</a>. See <a href="/solar-henderson-nv">Henderson solar</a> for the wider Henderson-area picture. Or check <a href="/solar-las-vegas">Las Vegas solar</a> for the broader regional context.</p>
 `,
@@ -372,7 +369,7 @@ export const batchCasesPosts: BlogPost[] = [
     publishDate: '2026-03-23',
     tags: ['Case Study', 'California', 'NEM 3.0', 'Battery Storage'],
     body: `
-<p>A Los Angeles homeowner served by LADWP installed an 8 kW solar system paired with a 13.5 kWh battery. Net cost after the 30% federal credit: <strong>$28,420</strong>. Monthly savings: $234 (versus $389 before solar). Under <a href="https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/demand-side-management/net-energy-metering" target="_blank" rel="noopener">CPUC NEM 3.0</a>, panels-only would have been the wrong choice. Battery-first is the right one. This case is about making California solar work in 2026 — which requires unlearning everything you knew about California solar from 2020.</p>
+<p>A Los Angeles homeowner served by LADWP installed an 8 kW solar system paired with a 13.5 kWh battery. Cash cost: <strong>$40,600</strong> (the 30% federal credit expired December 31, 2025 for purchased systems, so there's nothing to subtract on a 2026 cash buy). Monthly savings: $234 (versus $389 before solar). Under <a href="https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/demand-side-management/net-energy-metering" target="_blank" rel="noopener">CPUC NEM 3.0</a>, panels-only would have been the wrong choice. Battery-first is the right one. This case is about making California solar work in 2026 — which requires unlearning everything you knew about California solar from 2020.</p>
 
 <h2>Why California Is Different</h2>
 <p>California has stripped most of the value out of exporting solar back to the grid. Under NEM 2.0 (the old rules), exports paid roughly retail rate. Under NEM 3.0, exports pay an "Avoided Cost Calculator" rate that's typically 75–80% lower than retail. So the old play — oversize the panels and bank credits — doesn't pencil anymore. The right play under NEM 3.0 is: size the panels to your daytime consumption, and store the rest in a battery for evening use.</p>
@@ -395,13 +392,13 @@ export const batchCasesPosts: BlogPost[] = [
     <tr><td>Year-1 savings</td><td colspan="2">$2,808</td></tr>
     <tr><td>Solar (8 kW) gross</td><td colspan="2">$24,000</td></tr>
     <tr><td>Battery (13.5 kWh) gross</td><td colspan="2">$16,600</td></tr>
-    <tr><td>Combined gross</td><td colspan="2">$40,600</td></tr>
-    <tr><td>Federal ITC (30%, both qualify)</td><td colspan="2">−$12,180</td></tr>
-    <tr><td>Net cost</td><td colspan="2">$28,420</td></tr>
-    <tr><td>Simple payback</td><td colspan="2">10.1 years</td></tr>
+    <tr><td>Combined cash cost</td><td colspan="2">$40,600</td></tr>
+    <tr><td>Federal ITC</td><td colspan="2">$0 — expired 12/31/2025 for purchases</td></tr>
+    <tr><td>Net cash cost</td><td colspan="2">$40,600</td></tr>
+    <tr><td>Simple payback</td><td colspan="2">~13–15 years (cash, post-credit; faster with SGIP)</td></tr>
   </tbody>
 </table>
-<p>The 30% federal credit applies to both solar and storage, including standalone storage as of 2023. See the <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener">IRS guidance</a> for the storage rules. Storage of 3 kWh or more is eligible whether or not it’s paired with solar.</p>
+<p>Heads up on the federal credit: the 30% Residential Clean Energy Credit (Section 25D) — which used to cover both solar and storage — expired December 31, 2025 for systems you buy. On a 2026 cash or financed purchase there's no federal credit to claim, for the panels or the battery. A lease or PPA can still capture a federal incentive through the end of 2027. The California-side incentives are unchanged: SGIP rebates for battery storage and NEM 3.0 net-billing still apply, and those are where the value lives now.</p>
 
 <h2>What Surprised the Homeowner</h2>
 <p>That the bill didn't drop to near zero. Coming from Las Vegas-style messaging ("eliminate your bill!"), they expected to see $20-something on the LADWP statement. California rate structures don't work that way — the basic service charge is higher, the time-of-use rates make evening usage expensive even with a battery, and a 13.5 kWh battery doesn't always cover a full evening of summer AC. They went from $389 to $155, which is a 60% reduction. That’s the realistic California outcome under current rules.</p>
@@ -423,15 +420,14 @@ export const batchCasesPosts: BlogPost[] = [
   <li>Permits + interconnection: $1,100</li>
   <li>Labor: $7,800</li>
   <li>Margin + overhead: $1,500</li>
-  <li><strong>Gross: $40,600</strong></li>
-  <li><strong>After 30% ITC: $28,420</strong></li>
+  <li><strong>Cash price: $40,600</strong></li>
 </ul>
 
 <h2>Why This Isn't Typical (or Why It Is)</h2>
 <p>This is typical California-under-NEM-3.0 math, with the LADWP twist. If you're in PG&E, SCE, or SDG&E territory, NEM 3.0 applies more directly and your export rates are even lower than LADWP. The battery-first principle is the same. Don't let an installer sell you a panels-only system in California in 2026 — the math is broken without storage.</p>
 
 <p>A point I make to every California customer: the rules will keep changing. NEM 1.0 was replaced by NEM 2.0 was replaced by NEM 3.0. There will be NEM 4.0 or whatever the CPUC names the next tariff, and it is unlikely to be more generous to solar exporters. The hedge against that uncertainty is to design for self-consumption — a system whose value doesn’t depend heavily on export rates is more robust to future rule changes. Battery-first design isn’t just optimal under current rules; it’s also defensive against future ones.</p>
-<p>And one more practical note. The federal 30% credit is currently scheduled to begin stepping down in 2033, but legislative changes have pulled forward and pushed back ITC schedules in the past. Don’t plan around a future credit that might not exist. The credit math here is based on current law and assumes the customer files for the credit in the install year.</p>
+<p>And one more practical note. The federal 30% residential credit is already gone for purchased systems — it expired December 31, 2025. Don't plan around a federal credit that no longer exists for a cash or financed buy; only lease/PPA arrangements can still capture a federal incentive, and only through the end of 2027. The numbers here reflect current law: no federal credit on the purchase, with California's SGIP and NEM 3.0 carrying the incentive side.</p>
 
 <p>If you're in LADWP, SCE, or anywhere in California, see the <a href="/solar-california">California solar overview</a> or the <a href="/solar-los-angeles">Los Angeles page</a>. Or <a href="/#get-quote">request a quote</a>. Compare with our <a href="/blog/case-san-diego-sdge-77-percent-bill-reduction">San Diego SDG&E case</a> for a different California utility’s math.</p>
 `,
@@ -439,7 +435,7 @@ export const batchCasesPosts: BlogPost[] = [
       { question: 'Does NEM 3.0 apply to LADWP customers?', answer: 'No, technically. NEM 3.0 is the CPUC-mandated tariff for the investor-owned utilities (PG&E, SCE, SDG&E). LADWP is a municipal utility and runs its own net-metering program. But LADWP\'s time-of-use rates still make battery-first design the right approach for most customers.' },
       { question: 'Why is panels-only solar a bad idea in California in 2026?', answer: 'Under NEM 3.0, exporting power back to the grid pays roughly 25% of retail rate. Without a battery, your daytime overproduction is sold at the low export rate, while your evening usage is bought at the high retail rate. The arbitrage cuts your savings dramatically. A battery captures daytime production for evening use at full retail offset.' },
       { question: 'How big a battery do I need for an 8 kW solar system?', answer: 'There\'s no fixed ratio. Size the battery to your evening consumption (4pm–9pm) plus a reserve for outages. Most California homes with 8 kW of panels pair with one or two 13.5 kWh batteries. Heavy AC use or a hot tub pushes you to two.' },
-      { question: 'Does the 30% federal tax credit cover battery storage?', answer: 'Yes. As of 2023, the Residential Clean Energy Credit covers standalone battery storage of 3 kWh or more — you don\'t even need to install solar with it. Pairing solar and battery, both qualify for the 30% credit.' }
+      { question: 'Does the federal tax credit still cover battery storage in 2026?', answer: 'No — not for purchased systems. The Residential Clean Energy Credit (Section 25D), which used to cover solar and standalone storage of 3 kWh or more, expired December 31, 2025. On a 2026 cash or financed purchase there\'s no federal credit for the panels or the battery. A lease or PPA can still capture a federal incentive through the end of 2027. In California, SGIP rebates for storage and NEM 3.0 are unchanged and remain the main incentives.' }
     ]
   },
 
@@ -450,7 +446,7 @@ export const batchCasesPosts: BlogPost[] = [
     publishDate: '2026-04-06',
     tags: ['Case Study', 'California', 'NEM 3.0', 'Battery Storage'],
     body: `
-<p>An SDG&E customer in San Diego on the EV-TOU-5 rate (peak rate around <strong>$0.42/kWh</strong>) installed 7 kW of solar plus a 13.5 kWh battery. Their bill dropped from <strong>$340/month to $79/month</strong> — a 77% reduction. Net cost after the 30% federal credit: $25,830. Payback: 8.2 years. Under NEM 3.0, battery storage is what makes this math work. SDG&E has the steepest peak/off-peak spread of any major California utility, which makes the battery arbitrage especially valuable here.</p>
+<p>An SDG&E customer in San Diego on the EV-TOU-5 rate (peak rate around <strong>$0.42/kWh</strong>) installed 7 kW of solar plus a 13.5 kWh battery. Their bill dropped from <strong>$340/month to $79/month</strong> — a 77% reduction. Cash cost: $36,900 (the 30% federal credit expired December 31, 2025 for purchased systems, so there's nothing to subtract on a 2026 cash buy). Under NEM 3.0, battery storage is what makes this math work. SDG&E has the steepest peak/off-peak spread of any major California utility, which makes the battery arbitrage especially valuable here.</p>
 
 <h2>The Starting Point</h2>
 <p>Single-family home, 2,200 sqft, two adults, one EV charged at home overnight. Pre-solar SDG&E bill averaged $340/month, with summer peaks around $480. They were on EV-TOU-5 because of the EV — peak hours 4pm–9pm at roughly $0.42/kWh, off-peak overnight at roughly $0.16/kWh, super-off-peak weekday midday at about $0.13/kWh.</p>
@@ -469,10 +465,10 @@ export const batchCasesPosts: BlogPost[] = [
     <tr><td>Year-1 savings</td><td>$3,132</td><td></td></tr>
     <tr><td>Solar (7 kW) gross</td><td>$21,000</td><td></td></tr>
     <tr><td>Battery (13.5 kWh) gross</td><td>$15,900</td><td></td></tr>
-    <tr><td>Combined gross</td><td>$36,900</td><td></td></tr>
-    <tr><td>Federal ITC (30%)</td><td>−$11,070</td><td></td></tr>
-    <tr><td>Net cost</td><td>$25,830</td><td></td></tr>
-    <tr><td>Simple payback</td><td>8.2 years</td><td></td></tr>
+    <tr><td>Combined cash cost</td><td>$36,900</td><td></td></tr>
+    <tr><td>Federal ITC</td><td>$0 — expired 12/31/2025</td><td></td></tr>
+    <tr><td>Net cash cost</td><td>$36,900</td><td></td></tr>
+    <tr><td>Simple payback</td><td>~11–13 years (cash, post-credit)</td><td></td></tr>
   </tbody>
 </table>
 
@@ -499,10 +495,9 @@ export const batchCasesPosts: BlogPost[] = [
   <li>Permits + interconnection: $920</li>
   <li>Labor: $6,200</li>
   <li>Margin + overhead: $1,300</li>
-  <li><strong>Gross: $36,900</strong></li>
-  <li><strong>After 30% ITC: $25,830</strong></li>
+  <li><strong>Cash price: $36,900</strong></li>
 </ul>
-<p>ITC eligibility for both solar and storage: <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener">IRS Residential Clean Energy Credit</a>.</p>
+<p>The 30% federal residential credit (Section 25D), which used to cover both solar and storage, expired December 31, 2025 for purchased systems — so there's no federal credit on a 2026 cash or financed buy. Lease/PPA systems can still capture a federal incentive through the end of 2027. In California, SGIP storage rebates and NEM 3.0 net-billing are unchanged and remain the active incentives.</p>
 
 <h2>Why This Isn't Typical (or Why It Is)</h2>
 <p>This is typical for an EV-owning San Diego household on EV-TOU-5 under NEM 3.0. If you're on a flat rate or a different TOU schedule, the math shifts. If you don't have an EV, the rate spread is smaller and the battery payoff is slower. Don't anchor on the 77% number — anchor on your last 12 months of SDG&E bills and your actual rate plan. A SDG&E customer on a non-EV TOU plan with the same system would likely see closer to 65% bill reduction, not 77%.</p>
@@ -516,7 +511,7 @@ export const batchCasesPosts: BlogPost[] = [
 `,
     faqs: [
       { question: 'What is the EV-TOU-5 rate plan from SDG&E?', answer: 'EV-TOU-5 is SDG&E\'s time-of-use rate for households with electric vehicles. Peak hours (4pm–9pm) run roughly $0.42/kWh; off-peak overnight runs around $0.16/kWh; super-off-peak weekday midday is about $0.13/kWh. The huge spread between peak and off-peak makes battery arbitrage valuable.' },
-      { question: 'How much does a 7 kW solar + 13.5 kWh battery system cost in San Diego?', answer: 'Roughly $36,000–$40,000 gross before the federal credit, depending on installer, equipment brand, and roof complexity. After the 30% ITC, net cost is $25,000–$28,000. SDG&E doesn\'t offer additional solar incentives beyond NEM 3.0 itself.' },
+      { question: 'How much does a 7 kW solar + 13.5 kWh battery system cost in San Diego?', answer: 'Roughly $36,000–$40,000 cash, depending on installer, equipment brand, and roof complexity. The 30% federal credit expired December 31, 2025 for purchased systems, so there\'s no federal reduction on a 2026 cash or financed buy. California\'s SGIP rebate can offset part of the battery cost, and NEM 3.0 governs export credit. A lease or PPA can still capture a federal incentive through 2027.' },
       { question: 'Should I get a battery if I\'m on NEM 3.0?', answer: 'Almost always yes if you\'re on a TOU rate with a steep peak premium. Without a battery under NEM 3.0, you\'re selling daytime production for ~$0.06 and buying evening power at $0.40+. A battery captures the spread. The exception: very low evening usage, where the battery rarely discharges enough to pay back.' },
       { question: 'Will an SDG&E customer\'s bill ever go to zero?', answer: 'Almost never. The basic service charge is fixed, and even an oversized system tends to leave residual evening or winter draw. Most well-designed San Diego solar+battery installs land between 60% and 80% bill reduction. Anyone promising zero is either oversizing or not telling you about non-bypassable charges.' }
     ]
@@ -562,10 +557,10 @@ export const batchCasesPosts: BlogPost[] = [
   <tbody>
     <tr><td>Monthly NV Energy bill</td><td>$248</td><td>$31</td></tr>
     <tr><td>Annual savings</td><td colspan="2">$2,604</td></tr>
-    <tr><td>System cost (gross)</td><td colspan="2">$23,200</td></tr>
-    <tr><td>Federal ITC (30%)</td><td colspan="2">−$6,960</td></tr>
-    <tr><td>Net cost</td><td colspan="2">$16,240</td></tr>
-    <tr><td>Simple payback</td><td colspan="2">6.2 years</td></tr>
+    <tr><td>System cost (cash, NV sales-tax exempt)</td><td colspan="2">$23,200</td></tr>
+    <tr><td>Federal ITC</td><td colspan="2">$0 — expired 12/31/2025 for purchases</td></tr>
+    <tr><td>Net cash cost</td><td colspan="2">$23,200</td></tr>
+    <tr><td>Simple payback</td><td colspan="2">~9–12 years (cash purchase, post-credit)</td></tr>
     <tr><td>HOA timeline (denial → approval)</td><td colspan="2">21 days</td></tr>
   </tbody>
 </table>
@@ -585,7 +580,7 @@ export const batchCasesPosts: BlogPost[] = [
   <li>Clark County permit: 8 business days after HOA</li>
   <li>NV Energy interconnection: 14 days after install</li>
 </ul>
-<p>NV Energy net-metering specifics live on their <a href="https://www.nvenergy.com/account-services/energy-pricing-plans/net-metering" target="_blank" rel="noopener">net metering page</a>. ITC details on the <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener">IRS page</a>.</p>
+<p>NV Energy net-metering specifics live on their <a href="https://www.nvenergy.com/account-services/energy-pricing-plans/net-metering" target="_blank" rel="noopener">net metering page</a>. Note: the 30% federal residential solar credit (Section 25D) expired December 31, 2025 for purchased systems — see the <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener">IRS page</a>. Nevada's sales-tax and property-tax exemptions still apply, and lease/PPA systems can capture a federal incentive through 2027.</p>
 
 <h2>Why This Isn't Typical (or Why It Is)</h2>
 <p>About 10–15% of Summerlin sub-association submissions get an initial pushback. Almost all of them resolve once the homeowner provides a clean written response with the statute and an aesthetic compromise. If your HOA denies you and the design genuinely loses more than 10% production or costs more than $1,000 to comply, you have a strong statutory position. If the loss is smaller than that, the law doesn’t protect you and you’ll need to compromise. Either way, don’t lawyer up first — write the letter first.</p>

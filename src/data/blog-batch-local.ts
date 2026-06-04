@@ -28,7 +28,7 @@ export const batchLocalPosts: BlogPost[] = [
 <p>The Vistas and Stonebridge are heavy on concrete S-tile, which means tile-replacement flashings (Quick Mount QBase or Roof Tech) and a slower install. The Paseos and parts of The Mesa run flat concrete tile, which is faster. Reverence is mostly composite shingle on the newer phases — quickest install of the bunch. Sun City Summerlin trends to flat tile and low-slope foam roofs; foam needs a standoff system and an experienced roofer to re-coat penetrations.</p>
 
 <h2>Realistic Summerlin payback math</h2>
-<p>An 8 kW system on a Summerlin tile roof runs about $24,000–$28,000 before the 30% federal credit, so net around $17,000–$20,000. With <a href="https://www.nvenergy.com/account-services/energy-pricing-plans/net-metering" target="_blank" rel="noopener">NV Energy net metering</a> at the current 75% credit tier and Summerlin's typical $220–$340 summer bill, payback lands in the 8–10 year range. Homes with pools (most of The Ridges, half of Red Rock CC) push to 10+ kW systems and shorten payback to 7–9 years because they offset more peak-rate kWh.</p>
+<p>An 8 kW system on a Summerlin tile roof runs about $24,000–$28,000 cash. The 30% federal credit ended December 31, 2025 for systems you buy, so that's the real price now — Nevada's sales-tax exemption is already baked in, but there's no federal credit knocking it down. With <a href="https://www.nvenergy.com/account-services/energy-pricing-plans/net-metering" target="_blank" rel="noopener">NV Energy net metering</a> at the current 75% credit tier and Summerlin's typical $220–$340 summer bill, payback lands at roughly 9–12 years for a cash purchase now that the 30% federal credit has ended — though NV Energy's rising rates keep pulling that number down. Homes with pools (most of The Ridges, half of Red Rock CC) push to 10+ kW systems and shorten payback because they offset more peak-rate kWh.</p>
 
 <h2>Approval timeline I've actually measured</h2>
 <p>Across 14 Summerlin installs in 2024–2025: median 13 days from submission to approval. Sun City Summerlin runs slowest (3-week meeting cycle). The Ridges is the most paperwork-heavy but fast once the package is clean. Reverence has been quickest — usually under 10 days.</p>
@@ -62,10 +62,10 @@ export const batchLocalPosts: BlogPost[] = [
 <p>This is the oldest Henderson zip and where I do the most main-service-panel upgrades. About 60% of homes here still have a Federal Pacific or Zinsco panel that won't pass an NV Energy interconnection inspection. Add $1,800–$3,200 for the upgrade. On the upside, 89002 has very few HOAs — Whitney Ranch is the main one and it's solar-friendly. Roofs are mostly composition shingle, install runs 1 day. Average system 7–9 kW, payback 8–10 years.</p>
 
 <h2>89014 — Green Valley North, Pittman</h2>
-<p>89014 is the bargain zip. Mid-1990s tract homes, mostly comp shingle, 200A panels are usually fine, and the HOAs (Green Valley Estates, Pebble Ridge) approve in under 10 days. I've done 7-day approvals in Pebble Ridge. Bill sizes are smaller than 89052 (older homes, less square footage, fewer pools), so I usually spec 6–7 kW systems averaging $18k–$22k pre-credit.</p>
+<p>89014 is the bargain zip. Mid-1990s tract homes, mostly comp shingle, 200A panels are usually fine, and the HOAs (Green Valley Estates, Pebble Ridge) approve in under 10 days. I've done 7-day approvals in Pebble Ridge. Bill sizes are smaller than 89052 (older homes, less square footage, fewer pools), so I usually spec 6–7 kW systems averaging $18k–$22k cash (the 30% federal credit ended December 31, 2025 for purchased systems, so that's the real price now).</p>
 
 <h2>89052 — Anthem, Seven Hills, MacDonald Highlands</h2>
-<p>This is the highest-bill zip in Henderson. Big custom homes, almost all with pools, summer bills routinely $400–$700. The HOAs are tougher: Anthem Country Club and MacDonald Highlands both want concealed conduit and matching tile flashings. Concrete S-tile is dominant, which means longer installs (2–3 days). Systems run 10–14 kW, $32k–$45k pre-credit. Payback is actually quickest here — 7–8 years — because you're offsetting peak-rate kWh on a high-tier bill.</p>
+<p>This is the highest-bill zip in Henderson. Big custom homes, almost all with pools, summer bills routinely $400–$700. The HOAs are tougher: Anthem Country Club and MacDonald Highlands both want concealed conduit and matching tile flashings. Concrete S-tile is dominant, which means longer installs (2–3 days). Systems run 10–14 kW, $32k–$45k cash. Payback is still quickest here — roughly 9–12 years for a cash purchase now that the 30% federal credit has ended, though NV Energy's rising rates keep pulling that number down, and you're offsetting peak-rate kWh on a high-tier bill.</p>
 
 <h2>89074 — Green Valley Ranch (south), Silver Springs</h2>
 <p>89074 covers the southern half of Green Valley Ranch and parts of Silver Springs. Roofs are split roughly 60/40 flat concrete tile to comp shingle. The District at Green Valley Ranch HOA approves quickly (8–12 days). 200A panels are standard. Systems average 8–10 kW, payback 8–9 years. This is the zip where I see the most pool-pump electrification add-ons.</p>
@@ -88,7 +88,7 @@ export const batchLocalPosts: BlogPost[] = [
 <p>Henderson summer roof-deck temps hit 165°F. Panels lose roughly 0.4% per degree C above 25°C. That's why I always spec panels with a temperature coefficient better than -0.30%/°C in this zip cluster. Cheap panels with -0.40% coefficients will lose a real 8–10% of summer output you'd otherwise keep.</p>
 
 <h2>Realistic Henderson numbers</h2>
-<p>An 8 kW system in 89014 with a $260 average bill: $23k pre-credit, $16k after the 30% federal ITC, payback ~8.5 years. Same system in 89052 with a $475 average bill: 12 kW recommended, $38k pre-credit, $26.6k after credit, payback ~7 years.</p>
+<p>An 8 kW system in 89014 with a $260 average bill: $23k cash (the 30% federal credit ended December 31, 2025 for purchased systems, so there's no reduction off that anymore), payback roughly 9–12 years for a cash purchase now that the credit has ended, though NV Energy's rising rates keep pulling that number down. Same system in 89052 with a $475 average bill: 12 kW recommended, $38k cash, payback toward the lower end of that 9–12 year range because the high-tier bill offsets more peak-rate kWh.</p>
 
 <h2>Get a Henderson-specific quote</h2>
 <p>Drop your zip and last 12 months of NV Energy bills and I'll model it. <a href="/solar-henderson-nv">Henderson solar page</a> or <a href="/#get-quote">request a quote</a>.</p>`,
@@ -122,7 +122,7 @@ export const batchLocalPosts: BlogPost[] = [
 <p>About 60% flat concrete tile (mid-1990s through mid-2000s build), 35% composition shingle (late-2000s phases like Madeira Canyon), 5% flat foam roofs on the custom-lot sections off Horizon Ridge. Flat tile is forgiving; my crew can do a 9 kW install in a day. Foam roofs need a re-coat at penetrations and add half a day plus $400–$700 in roofing labor.</p>
 
 <h2>Realistic GVR payback math</h2>
-<p>Typical GVR home: 2,800 sq ft, pool, summer bill $310–$390 on <a href="https://www.nvenergy.com/account-services/energy-pricing-plans/net-metering" target="_blank" rel="noopener">NV Energy</a>. Recommended system 9–11 kW. Pre-credit $27k–$33k, after the 30% federal ITC $19k–$23k. Payback 7.5–9 years on current net metering. After payback you're netting roughly $2,400–$3,200/year in avoided bills depending on tier exposure.</p>
+<p>Typical GVR home: 2,800 sq ft, pool, summer bill $310–$390 on <a href="https://www.nvenergy.com/account-services/energy-pricing-plans/net-metering" target="_blank" rel="noopener">NV Energy</a>. Recommended system 9–11 kW. Cash price $27k–$33k — the 30% federal credit ended December 31, 2025 for purchased systems, so there's no federal reduction off that now. Payback runs roughly 9–12 years for a cash purchase now that the credit has ended, though NV Energy's rising rates keep pulling that number down. After payback you're netting roughly $2,400–$3,200/year in avoided bills depending on tier exposure.</p>
 
 <h2>Liberty Pointe and Madeira Canyon — sub-HOA notes</h2>
 <p>Liberty Pointe runs its own architectural review on top of master approval. Add 5–7 days. Madeira Canyon doesn't double-review; master approval is enough. If you're in a Toll Brothers pocket near Equestrian Dr, the original CC&Rs reference panel placement guidelines but they're unenforceable under NRS 278.0208 if they cost output.</p>
@@ -143,7 +143,7 @@ export const batchLocalPosts: BlogPost[] = [
       { question: 'Do GVR homes typically need a main panel upgrade?', answer: 'Most homes built post-1995 have 200A panels that handle solar fine. Older Liberty Pointe phases occasionally need a sub-panel for the inverter circuit but rarely a full upgrade.' },
       { question: 'How does Black Mountain shading affect solar in GVR?', answer: 'Only on the easternmost streets — Horizon Ridge near the foothills loses 20–30 min of December afternoon production. I usually compensate with slightly more west-facing panel orientation.' },
       { question: 'Are foam roofs in GVR a problem for solar?', answer: 'They\'re fine but add half a day and $400–$700 in re-coating costs at penetrations. Make sure your installer\'s subcontractor is foam-roof certified.' },
-      { question: 'What system size is typical for a GVR home with a pool?', answer: '9–11 kW is the sweet spot. Pre-credit cost runs $27k–$33k, payback 7.5–9 years on NV Energy net metering at current rates.' }
+      { question: 'What system size is typical for a GVR home with a pool?', answer: '9–11 kW is the sweet spot. Cash cost runs $27k–$33k, and with the 30% federal credit ended for purchased systems, payback is roughly 9–12 years on a cash purchase — though NV Energy\'s rising rates keep pulling that number down.' }
     ]
   },
 
@@ -168,7 +168,7 @@ export const batchLocalPosts: BlogPost[] = [
 <p>Aliante master + the Aliante North/South sub-HOAs run on a slightly slower cycle — 14–18 days because they meet biweekly. They allow ground-mount on lots over 10,000 sq ft, which is unusual for a Vegas HOA. I've done two ground-mount installs in Aliante and both were approved without much fuss.</p>
 
 <h2>Bill profiles</h2>
-<p>North Vegas summer bills run lower than Henderson 89052 because most homes are 1,800–2,500 sq ft tract houses without pools. Average summer bill: $190–$280. Recommended system: 6–8 kW. Pre-credit cost $19k–$24k, after 30% federal ITC $13k–$17k. Payback 8–9 years on <a href="https://www.nvenergy.com/account-services/energy-pricing-plans/net-metering" target="_blank" rel="noopener">NV Energy net metering</a>.</p>
+<p>North Vegas summer bills run lower than Henderson 89052 because most homes are 1,800–2,500 sq ft tract houses without pools. Average summer bill: $190–$280. Recommended system: 6–8 kW. Cash cost $19k–$24k — the 30% federal credit ended December 31, 2025 for purchased systems, so that's the real price now. Payback runs roughly 9–12 years for a cash purchase now that the credit has ended, though NV Energy's rising rates keep pulling that number down. Backed by <a href="https://www.nvenergy.com/account-services/energy-pricing-plans/net-metering" target="_blank" rel="noopener">NV Energy net metering</a>.</p>
 
 <h2>Roofs and install time</h2>
 <p>About 80% composition shingle across these zips, 15% flat concrete tile (older Aliante phases), 5% S-tile (Providence custom lots). Comp shingle installs are 1 day. Tile adds half a day.</p>
@@ -226,13 +226,13 @@ export const batchLocalPosts: BlogPost[] = [
 <p>Boulder City sits in a wind corridor between the Eldorado Valley and Lake Mead. Sustained winds 15–25 mph are normal in spring. I run 150 mph wind calcs on every Boulder City install and use 6-attachment-per-panel layouts instead of the standard 4. Adds about $300 in materials but it's not optional.</p>
 
 <h2>Anthem payback math</h2>
-<p>12 kW system in Anthem CC: $36k pre-credit, $25.2k after 30% ITC, ~$5,800/year offset. Payback 4.3 years on bill, full payback ~8 years including capital cost. Sun City Anthem typically smaller (10 kW), payback 7.5–8.5 years.</p>
+<p>12 kW system in Anthem CC: $36k cash (the 30% federal credit ended December 31, 2025 for purchased systems, so there's no federal reduction off that now), ~$5,800/year offset. Full payback runs roughly 9–12 years on a cash purchase now that the credit has ended, though NV Energy's rising rates keep pulling that number down. Sun City Anthem typically smaller (10 kW), similar payback range.</p>
 
 <h2>Boulder City payback math</h2>
-<p>8 kW system, $24k pre-credit, $16.8k after credit. Average BCEU customer offset: $1,800–$2,200/year (lower rates than NV Energy but 1:1 net metering). Payback 7.5–9 years.</p>
+<p>8 kW system, $24k cash — the 30% federal credit ended December 31, 2025 for purchased systems, so that's the price now. Average BCEU customer offset: $1,800–$2,200/year (lower rates than NV Energy but 1:1 net metering). Payback runs roughly 9–12 years for a cash purchase now that the credit has ended, though rising utility rates keep pulling that number down.</p>
 
-<h2>Federal credit deadline</h2>
-<p>The 30% residential ITC steps down after 2032 under current law but plenty of policy noise around earlier changes. I tell every Anthem/Boulder City client to lock contracts in the year they're ready, not wait.</p>
+<h2>The federal credit has ended — rising rates are the new urgency</h2>
+<p>The 30% federal residential solar credit expired December 31, 2025 for systems a homeowner buys with cash or a loan. A lease or PPA (third-party-owned) setup can still capture a federal incentive through the end of 2027, but for an owned system that money is gone. The real reason to move now isn't a credit deadline — it's that NV Energy rates have climbed about 9.5% in the past year to roughly 17.45¢/kWh. Locking in your own generation cost is the hedge. I tell every Anthem/Boulder City client to move in the year they're ready, not wait for rates to climb further.</p>
 
 <h2>Want a real number?</h2>
 <p>Address + utility bill (NV Energy or BCEU) and I'll send back a quote with the elevation production adjustment factored in. <a href="/solar-henderson-nv">Henderson solar</a> or <a href="/#get-quote">request a quote</a>.</p>`,
@@ -281,7 +281,7 @@ export const batchLocalPosts: BlogPost[] = [
 <p>Same Nevada law applies. <a href="https://www.leg.state.nv.us/NRS/NRS-278.html" target="_blank" rel="noopener">No HOA in Spring Valley or Enterprise can prohibit solar</a>. They can ask for placement and aesthetic adjustments within the 10% production / 10% cost limit.</p>
 
 <h2>Payback example — 89148</h2>
-<p>9 kW system, comp shingle, single-day install. $26.5k pre-credit, $18.5k after 30% federal ITC. Average bill offset $2,400/year. Payback 7.7 years. After payback: roughly $60,000 net benefit over the remaining warranty period.</p>
+<p>9 kW system, comp shingle, single-day install. $26.5k cash — the 30% federal credit ended December 31, 2025 for purchased systems, so that's the real price now. Average bill offset $2,400/year. Payback runs roughly 9–12 years for a cash purchase now that the credit has ended, though NV Energy's rising rates keep pulling that number down. After payback: roughly $60,000 net benefit over the remaining warranty period.</p>
 
 <h2>The pool factor</h2>
 <p>Enterprise pool penetration is around 60% — way higher than 89117. If you have a variable-speed pool pump add 1,500 kWh/year to your sizing. If you have a heated pool add 3,500–5,500 kWh/year.</p>
@@ -321,8 +321,8 @@ export const batchLocalPosts: BlogPost[] = [
 <p>Silverado feeds off the Silverado and Eastern substations. Both well-maintained. PTO times 5–6 weeks. <a href="https://www.nvenergy.com/account-services/energy-pricing-plans/net-metering" target="_blank" rel="noopener">Net metering at the 75% tier</a> applies. Average summer bill $260–$370 for non-pool homes, $360–$480 for pool homes.</p>
 
 <h2>Payback math</h2>
-<p>Non-pool home, 7 kW system: $20.5k pre-credit, $14.4k after 30% ITC. Bill offset ~$2,000/year. Payback 7.2 years.</p>
-<p>Pool home, 10 kW system: $29.5k pre-credit, $20.6k after credit. Bill offset ~$2,800/year. Payback 7.4 years.</p>
+<p>Non-pool home, 7 kW system: $20.5k cash (the 30% federal credit ended December 31, 2025 for purchased systems, so there's no federal reduction off that now). Bill offset ~$2,000/year. Payback roughly 9–12 years for a cash purchase now that the credit has ended, though NV Energy's rising rates keep pulling that number down.</p>
+<p>Pool home, 10 kW system: $29.5k cash. Bill offset ~$2,800/year. Payback in that same 9–12 year range, trending lower because the bigger bill offsets more peak-rate kWh.</p>
 
 <h2>The Eastern Ave noise factor (irrelevant but I'll mention it)</h2>
 <p>Homes backing Eastern Ave or LV Blvd sometimes have 6-foot block walls casting late-afternoon shade in winter on east-side roofs. Doesn't matter for solar (panels go on the south/west), but worth checking if your only viable roof slope is east-facing.</p>
@@ -377,9 +377,9 @@ export const batchLocalPosts: BlogPost[] = [
 <p>Highly variable. Mid-century homes in the Valley are mostly comp shingle. Spanish/Mediterranean homes (Hancock Park, Los Feliz, Silver Lake) are concrete S-tile or clay tile. Hillside homes (Hollywood Hills, Bel Air) often have flat or low-slope roofs needing tilt-leg arrays. Clay tile is the trickiest — it cracks if your installer doesn't use replacement flashings (e.g. tile hooks rated for clay).</p>
 
 <h2>LA payback math by utility</h2>
-<p>LADWP, 7 kW system, $1,800/yr typical bill offset: $21k pre-credit, $14.7k after 30% federal ITC, payback 6.5 years.</p>
-<p>SCE solar-only, same 7 kW: $21k pre-credit, $14.7k after credit, payback 11.5 years (export rate kills it).</p>
-<p>SCE solar + 10 kWh battery: $32k pre-credit, $22.4k after credit, payback 8.7 years.</p>
+<p>LADWP, 7 kW system, $1,800/yr typical bill offset: $21k cash (the 30% federal credit ended December 31, 2025 for owned systems, so there's no federal reduction off that now), payback roughly 9–11 years on a cash purchase.</p>
+<p>SCE solar-only, same 7 kW: $21k cash, payback 14+ years (export rate plus no federal credit).</p>
+<p>SCE solar + 10 kWh battery: $32k cash, payback 11–13 years; California's SGIP battery rebates can shorten that.</p>
 
 <h2>The fire-zone factor</h2>
 <p>Hillside LA homes in CalFire-designated very high fire hazard severity zones need Class A roof assemblies and certain panel types. This affects the Hollywood Hills, parts of Brentwood, Pacific Palisades, and Bel Air. It doesn't kill solar but adds materials cost and review time.</p>
@@ -422,8 +422,8 @@ export const batchLocalPosts: BlogPost[] = [
 <p>San Diego is a roofing patchwork. Coastal zones (La Jolla, Pacific Beach, Encinitas) trend Spanish tile and stucco; inland (Poway, Escondido, Ramona) more comp shingle. The marine layer matters for production modeling — coastal homes lose 8–12% annual production to fog/overcast versus inland. I model coastal and inland systems differently.</p>
 
 <h2>Real payback math</h2>
-<p>Carmel Valley home, 8 kW solar + 13 kWh battery, $380/mo summer bill: $44k pre-credit, $30.8k after 30% federal ITC. Bill offset ~$3,800/yr. Payback 8.1 years.</p>
-<p>Same home, solar-only 8 kW: $24k pre-credit, $16.8k after credit. Bill offset ~$1,400/yr (most exports lost to NEM 3.0). Payback 12 years.</p>
+<p>Carmel Valley home, 8 kW solar + 13 kWh battery, $380/mo summer bill: $44k cash (the 30% federal credit ended December 31, 2025 for owned systems, so there's no federal reduction off that now). Bill offset ~$3,800/yr. Payback roughly 11–12 years on a cash purchase; California's SGIP battery rebate can shorten that.</p>
+<p>Same home, solar-only 8 kW: $24k cash. Bill offset ~$1,400/yr (most exports lost to NEM 3.0). Payback 16+ years — which is exactly why the battery makes the math work here.</p>
 <p>The battery isn't optional anymore in this math.</p>
 
 <h2>SGIP — California's battery rebate</h2>

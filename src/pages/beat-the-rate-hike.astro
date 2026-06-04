@@ -1,0 +1,400 @@
+---
+import LandingLayout from '../layouts/LandingLayout.astro';
+import LeadForm from '../components/LeadForm.astro';
+import PersonSchema from '../components/PersonSchema.astro';
+import VideoTestimonial from '../components/VideoTestimonial.astro';
+
+// Drop a 30-sec customer clip here when ready (e.g. '/videos/daniel-testimonial.mp4').
+// While empty, the section renders nothing — no empty player ships.
+const videoSrc = '';
+
+const phone = '+17029416894';
+const phoneDisplay = '(702) 941-6894';
+
+// Hero chart — illustrative, not a guarantee. Bars = a grid bill trending up
+// year over year; the flat green line = an owned-solar payment that doesn't move.
+const billBars = [42, 50, 58, 67, 78, 90]; // relative heights (%), directional only
+
+// FAQ — single source of truth: drives BOTH the rendered accordion and the
+// FAQPage JSON-LD below, so the two can never drift.
+const faqs = [
+  {
+    q: 'Does solar still make sense in Nevada with the net-metering changes?',
+    a: "Yes. The old full-retail net metering is gone, but the math still works because the real win now is hedging against rising utility rates and using a battery to avoid expensive peak-hour power. Daniel runs your actual numbers under current NV Energy rules — no guesswork.",
+  },
+  {
+    q: 'What does it cost? Is it really $0 down?',
+    a: 'Most homeowners qualify for $0-down financing, so you start without a big upfront check. Daniel shows you the financing payment next to your current bill so you can see the trade before you commit.',
+  },
+  {
+    q: 'How much will I actually save?',
+    a: "It depends on your roof, usage, and bill — anyone who quotes a number sight-unseen is guessing. Daniel gives you a real estimate for YOUR home, and if solar won't beat your NV Energy bill, he'll tell you on the call.",
+  },
+  {
+    q: 'What happens at night or during an outage?',
+    a: 'A battery (like the Tesla Powerwall) stores your daytime production so your home runs on your own power after dark — and keeps the lights on during outages. Daniel sizes it to your usage.',
+  },
+  {
+    q: 'What if I sell my house?',
+    a: "An owned system is a home-value asset and transfers with the sale; financed systems can be paid off or assumed by the buyer. Daniel walks you through the options so it's never a surprise.",
+  },
+  {
+    q: 'How long does it take, and who handles the paperwork?',
+    a: "Daniel manages the NV Energy interconnection, permits, and HOA paperwork end-to-end. You're not chasing forms — that's the whole point of working with a local who's done it hundreds of times.",
+  },
+  {
+    q: 'Why work with Daniel instead of a big national installer?',
+    a: "He's a Las Vegas local who put solar on his own home in 2015, with 174 five-star reviews built on referrals — not call-center quotas. He won't oversell you equipment you don't need.",
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: f.a,
+    },
+  })),
+};
+
+const ratingSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: 'Daniel Hadobas Solar',
+  areaServed: 'Las Vegas, NV',
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '5',
+    reviewCount: '174',
+    bestRating: '5',
+  },
+};
+---
+
+<LandingLayout
+  title="Beat Nevada's Rate Hikes With Solar | Daniel Hadobas"
+  description="Data centers are flooding into Nevada and the grid is being rebuilt to feed them — on your bill. Own your power instead of renting it. Free, no-pressure savings analysis from Daniel Hadobas. 174 five-star reviews."
+  canonical="/beat-the-rate-hike"
+>
+  <PersonSchema slot="schema" />
+  <script type="application/ld+json" slot="schema" set:html={JSON.stringify(faqSchema)} />
+  <!-- ratingValue 5.0 / 174 — matches the sitewide ReviewWidget (Daniel's published GBP figure) -->
+  <script type="application/ld+json" slot="schema" set:html={JSON.stringify(ratingSchema)} />
+
+  <!-- ════════════════════════ HERO ════════════════════════ -->
+  <section class="relative overflow-hidden">
+    <!-- atmospheric depth: radial green glows + grid + grain -->
+    <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+      <div class="absolute -top-40 right-[-10%] w-[640px] h-[640px] rounded-full"
+           style="background:radial-gradient(circle, rgba(106,183,69,0.20) 0%, transparent 62%);filter:blur(8px);"></div>
+      <div class="absolute top-1/2 -left-40 w-[520px] h-[520px] rounded-full"
+           style="background:radial-gradient(circle, rgba(79,138,51,0.16) 0%, transparent 65%);"></div>
+      <div class="absolute inset-0 opacity-[0.04]"
+           style="background-image:linear-gradient(rgba(255,255,255,.6) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.6) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse 80% 60% at 50% 40%,#000 30%,transparent 75%);"></div>
+    </div>
+
+    <div class="relative max-w-6xl mx-auto px-5 sm:px-8 pt-10 pb-20 lg:pt-16 lg:pb-28">
+      <div class="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-12 lg:gap-10 items-center">
+
+        <!-- ── left: copy ── -->
+        <div>
+          <div class="inline-flex items-center gap-2 rounded-full border lp-hairline bg-white/[0.04] px-3.5 py-1.5 text-xs font-medium text-[#8DD66A] mb-7 fade-up fade-up-delay-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#8DD66A] animate-pulse"></span>
+            For Las Vegas &amp; Henderson homeowners
+          </div>
+
+          <h1 class="font-display text-[2.6rem] leading-[1.04] sm:text-6xl sm:leading-[1.02] text-white mb-6 fade-up fade-up-delay-2">
+            Stop renting your power from a grid that's about to get
+            <span class="text-[#8DD66A]">more expensive.</span>
+          </h1>
+
+          <p class="lp-muted text-lg leading-relaxed max-w-xl mb-8 fade-up fade-up-delay-3">
+            Data centers are pouring into Nevada, and the grid is being rebuilt to feed them.
+            That buildout lands on <span class="text-white">your</span> NV Energy bill — and it
+            climbs every year you stay on it. Owning your power is how you opt out.
+          </p>
+
+          <div class="flex flex-col sm:flex-row sm:items-center gap-4 mb-9 fade-up fade-up-delay-4">
+            <a href="#get-quote"
+               class="group inline-flex items-center justify-center gap-2 rounded-xl bg-[#6AB745] px-7 py-4 text-base font-bold text-[#07140D] transition hover:bg-[#7ECC57] lp-glow">
+              Get my free savings analysis
+              <svg class="transition-transform group-hover:translate-x-0.5" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href={`tel:${phone}`}
+               class="inline-flex items-center justify-center gap-2 rounded-xl border lp-hairline px-6 py-4 text-base font-semibold text-white transition hover:border-[#6AB745]/50 hover:text-[#8DD66A]">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 0117 2.18 2 2 0 0119.08 4v3.09a2 2 0 01-1.42 1.93l-1.8.6a16 16 0 006.62 6.62l.6-1.8a2 2 0 011.92-1.42z"/></svg>
+              {phoneDisplay}
+            </a>
+          </div>
+
+          <!-- trust row -->
+          <div class="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm lp-faint fade-up fade-up-delay-4">
+            <span class="flex items-center gap-2 text-white/90">
+              <span class="flex items-center gap-0.5" role="img" aria-label="5 out of 5 stars">
+                {Array.from({ length: 5 }).map(() => (
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="#FCD34D" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                ))}
+              </span>
+              174 five-star reviews
+            </span>
+            <span class="hidden sm:inline">·</span>
+            <span>Vegas native since 1996</span>
+            <span class="hidden sm:inline">·</span>
+            <span>$0 down · no pressure</span>
+          </div>
+        </div>
+
+        <!-- ── right: the memorable visual — bill climbs, your rate stays flat ── -->
+        <div class="fade-up fade-up-delay-3">
+          <div class="relative rounded-3xl border lp-hairline bg-[#0C2014]/70 backdrop-blur p-6 sm:p-8 lp-glow">
+            <div class="flex items-baseline justify-between mb-1">
+              <p class="text-sm font-semibold text-white">Your power, two ways</p>
+              <p class="text-xs lp-faint">next several years</p>
+            </div>
+            <p class="text-xs lp-muted mb-6">Illustrative — the direction, not a quote.</p>
+
+            <!-- chart -->
+            <div class="relative h-52 sm:h-60">
+              <svg viewBox="0 0 320 200" class="w-full h-full" role="img" aria-label="Chart: a grid power bill rising year over year while an owned-solar rate stays flat">
+                <!-- baseline -->
+                <line x1="8" y1="180" x2="312" y2="180" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+                <!-- rising grid-bill bars -->
+                {billBars.map((h, i) => {
+                  const barW = 34;
+                  const gap = 14;
+                  const x = 14 + i * (barW + gap);
+                  const pxH = (h / 100) * 150;
+                  const y = 180 - pxH;
+                  return (
+                    <g aria-hidden="true">
+                      <rect class="lp-bar" x={x} y={y} width={barW} height={pxH} rx="4"
+                            fill="url(#billGrad)" style={`animation-delay:${0.15 * i + 0.3}s`} />
+                    </g>
+                  );
+                })}
+                <!-- flat "your locked rate" line -->
+                <line class="lp-line" x1="14" y1="150" x2="306" y2="150"
+                      stroke="#8DD66A" stroke-width="3" stroke-linecap="round" stroke-dasharray="320" />
+                <defs>
+                  <linearGradient id="billGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#E5705B"/>
+                    <stop offset="100%" stop-color="#7A2E26"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+
+            <!-- legend -->
+            <div class="mt-5 grid grid-cols-2 gap-3 text-xs">
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-sm" style="background:linear-gradient(#E5705B,#7A2E26)"></span>
+                <span class="lp-muted">NV Energy bill — keeps climbing</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-0.5 rounded-full bg-[#8DD66A]"></span>
+                <span class="lp-muted">Your solar payment — fixed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════ PROBLEM / AGITATE ════════════════════ -->
+  <section class="relative py-20 sm:py-24">
+    <div class="max-w-5xl mx-auto px-5 sm:px-8">
+      <div class="max-w-2xl mb-12">
+        <p class="text-[#8DD66A] text-sm font-semibold tracking-wide mb-3">WHY YOUR BILL KEEPS CLIMBING</p>
+        <h2 class="font-display text-3xl sm:text-[2.6rem] leading-[1.1] text-white">
+          The grid is being rebuilt fast — and homeowners foot the bill
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        {[
+          {
+            title: 'Data centers are coming',
+            body: 'Nevada data centers already run about 713 MW and have more than 5,900 MW planned — on track to add roughly 25,590 GWh of demand by 2033 (Desert Research Institute, 2026). The grid has to be expanded to feed them.',
+            icon: 'M3 4h18v6H3zM3 14h18v6H3M7 7h.01M7 17h.01',
+          },
+          {
+            title: 'Your rates climb to pay for it',
+            body: "Utilities recover that buildout through your bill. In 2025 NV Energy requested a ~10.8% ($33/mo) residential increase, regulators approved part of it, and a new daily demand charge starts April 2026. Bills trend one way: up.",
+            icon: 'M3 17l6-6 4 4 8-8M17 7h4v4',
+          },
+          {
+            title: 'The power goes to them, not you',
+            body: 'Nevada sunshine becomes grid power — then a growing share is routed to industrial loads. You pay retail for electricity that’s increasingly spoken for.',
+            icon: 'M13 2L3 14h9l-1 8 10-12h-9z',
+          },
+        ].map((pain) => (
+          <div class="group rounded-2xl border lp-hairline bg-white/[0.03] p-7 transition hover:bg-white/[0.05] hover:border-[#6AB745]/30">
+            <div class="w-11 h-11 rounded-xl bg-[#6AB745]/12 flex items-center justify-center mb-5">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8DD66A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d={pain.icon}/></svg>
+            </div>
+            <h3 class="text-white font-semibold text-lg mb-2.5">{pain.title}</h3>
+            <p class="lp-muted text-sm leading-relaxed">{pain.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════ REFRAME / SOLUTION ════════════════════ -->
+  <section class="relative py-20 sm:py-24 overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+      <div class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-[700px] h-[420px] rounded-full"
+           style="background:radial-gradient(ellipse, rgba(106,183,69,0.14) 0%, transparent 65%);"></div>
+    </div>
+    <div class="relative max-w-3xl mx-auto px-5 sm:px-8 text-center">
+      <p class="text-[#8DD66A] text-sm font-semibold tracking-wide mb-4">THE WAY OUT</p>
+      <h2 class="font-display text-3xl sm:text-5xl leading-[1.08] text-white mb-6">
+        Solar here isn't about going green. It's about opting out of their rate hikes.
+      </h2>
+      <p class="lp-muted text-lg leading-relaxed mb-5">
+        When you own your power, the grid's costs stop being your problem. You generate electricity
+        on your own roof, lock in a fixed monthly payment for decades, and add a battery so the sun still powers
+        your home after dark. Over 300 days of Nevada sunshine a year does the rest.
+      </p>
+      <p class="text-white font-semibold text-lg mb-9">
+        The grid is getting more expensive on purpose. You don't have to come along for the ride.
+      </p>
+      <a href="#get-quote"
+         class="inline-flex items-center gap-2 rounded-xl bg-[#6AB745] px-7 py-4 text-base font-bold text-[#07140D] transition hover:bg-[#7ECC57] lp-glow">
+        Show me what I'd save
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ════════════════════ FORM — placed right after the solution pitch, while intent is highest ════════════════════ -->
+  <LeadForm
+    variant="command"
+    eyebrow="Free Rate-Hedge Analysis"
+    heading="See what owning your power would save you"
+    sub="Takes 60 seconds. No credit check. Daniel calls you within the hour."
+    reassurance="If solar doesn't beat your NV Energy bill, he'll tell you on the call."
+    campaignTag="rate-hike-lp"
+  />
+
+  <!-- ════════════════════ WHY DANIEL ════════════════════ -->
+  <section class="relative py-20 sm:py-24">
+    <div class="max-w-5xl mx-auto px-5 sm:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="flex justify-center lg:justify-start order-1">
+          <div class="relative">
+            <div class="w-72 h-[22rem] rounded-3xl overflow-hidden border lp-hairline bg-[#0C2014] lp-glow">
+              <img src="/images/daniel.jpg" alt="Daniel Hadobas, Las Vegas solar specialist"
+                   class="w-full h-full object-cover object-top" width="288" height="352" loading="lazy" decoding="async" />
+            </div>
+            <div class="absolute -bottom-5 -right-5 rounded-2xl border lp-hairline bg-[#0C2014] px-4 py-3 lp-glow">
+              <div class="flex items-center gap-0.5 mb-1" role="img" aria-label="5 stars">
+                {Array.from({ length: 5 }).map(() => (
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="#FCD34D" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                ))}
+              </div>
+              <p class="text-white font-bold text-sm leading-none">174 reviews</p>
+              <p class="lp-faint text-xs mt-1">Vegas native since 1996</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-2">
+          <p class="text-[#8DD66A] text-sm font-semibold tracking-wide mb-3">WHO YOU'LL TALK TO</p>
+          <h2 class="font-display text-3xl sm:text-[2.5rem] leading-[1.12] text-white mb-5">
+            A local who put solar on his own roof — five years before he ever sold it
+          </h2>
+          <p class="lp-muted leading-relaxed mb-7">
+            Daniel Hadobas has lived in Las Vegas since 1996 and switched his own home to solar in 2015.
+            He knows your neighborhood, your utility, and your HOA — and handles the NV Energy and
+            permit paperwork end-to-end so you don't get stuck.
+          </p>
+          <ul class="space-y-3.5">
+            {[
+              'Independent — reputation built on 174 five-star reviews, not call-center quotas',
+              "Won't oversell you equipment you don't need",
+              "If solar doesn't save you money, he'll tell you on the call",
+              '$0-down options · 25-year panel warranty · Tesla Powerwall battery',
+            ].map((point) => (
+              <li class="flex items-start gap-3">
+                <svg class="mt-0.5 flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8DD66A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                <span class="text-sm leading-relaxed text-white/90">{point}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════ PROOF ════════════════════ -->
+  <section class="relative pb-4">
+    <div class="max-w-4xl mx-auto px-5 sm:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        {[
+          { quote: 'The salesman Daniel was great — no pressure, very knowledgeable, and friendly.', who: 'Rod D., verified customer' },
+          { quote: "He didn't try to over-sell us more equipment than we needed. We were 100% impressed.", who: 'Christine Rodriguez, verified customer' },
+        ].map((r) => (
+          <figure class="rounded-2xl border lp-hairline bg-white/[0.03] p-7">
+            <div class="flex items-center gap-0.5 mb-3.5" role="img" aria-label="5 out of 5 stars">
+              {Array.from({ length: 5 }).map(() => (
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="#FCD34D" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              ))}
+            </div>
+            <blockquote class="text-white/90 leading-relaxed mb-3">"{r.quote}"</blockquote>
+            <figcaption class="text-sm lp-faint">— {r.who}</figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════ VIDEO TESTIMONIAL (renders only when videoSrc is set) ════════════════════ -->
+  <VideoTestimonial
+    src={videoSrc}
+    quote="Daniel walked us through everything and our bill dropped the first month."
+    name="Verified customer, Las Vegas"
+  />
+
+  <!-- ════════════════════ FAQ (objection-crushing) ════════════════════ -->
+  <section class="relative py-20 sm:py-24">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8">
+      <div class="mb-11">
+        <p class="text-[#8DD66A] text-sm font-semibold tracking-wide mb-3">QUESTIONS, ANSWERED</p>
+        <h2 class="font-display text-3xl sm:text-[2.6rem] leading-[1.1] text-white">
+          Straight answers before you ever pick up the phone
+        </h2>
+      </div>
+
+      <div class="space-y-3.5">
+        {faqs.map((f) => (
+          <details class="group rounded-2xl border border-white/10 bg-white/[0.03] transition open:border-l-2 open:border-l-[#6AB745] open:bg-white/[0.05]">
+            <summary class="flex items-center justify-between gap-4 cursor-pointer list-none px-6 py-5 text-white font-semibold">
+              <span>{f.q}</span>
+              <svg class="flex-shrink-0 text-[#8DD66A] transition-transform duration-200 group-open:rotate-180" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </summary>
+            <p class="lp-muted leading-relaxed text-sm px-6 pb-5 -mt-1">{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════ FINAL CTA ════════════════════ -->
+  <section class="relative pb-24 pt-4 text-center">
+    <div class="max-w-2xl mx-auto px-5 sm:px-8">
+      <a href="#get-quote"
+         class="inline-flex items-center gap-2 rounded-xl bg-[#6AB745] px-8 py-4 text-base font-bold text-[#07140D] transition hover:bg-[#7ECC57] lp-glow">
+        Get my free savings analysis
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <p class="lp-faint text-sm mt-4">Or call Daniel directly: <a href="tel:+17029416894" class="text-[#8DD66A] hover:underline">(702) 941-6894</a></p>
+    </div>
+  </section>
+</LandingLayout>

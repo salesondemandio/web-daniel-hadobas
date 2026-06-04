@@ -8,27 +8,28 @@ export const batchAeoPosts: BlogPost[] = [
   {
     slug: 'free-solar-nevada',
     title: 'Can You Get Free Solar in Nevada? The Honest Answer',
-    description: 'No, there is no truly free solar in Nevada — but the 30% federal tax credit and $0-down financing get close. Here is exactly what is real and what is a sales gimmick.',
+    description: 'No, there is no truly free solar in Nevada — but Nevada\'s tax exemptions, net metering, and $0-down financing get close. Here is exactly what is real and what is a sales gimmick.',
     publishDate: '2026-05-18',
     tags: ['Nevada', 'Cost & Financing', 'Tax Credit'],
-    body: `<p>No, there is no genuinely free solar in Nevada. Any company advertising "free solar panels" is selling you either a $0-down loan or a lease — you still pay, just monthly instead of upfront. What <em>is</em> real: the 30% federal tax credit, Nevada's property-tax exemption, and financing that can make solar cash-flow positive from month one. That is the honest version.</p>
+    body: `<p>No, there is no genuinely free solar in Nevada. Any company advertising "free solar panels" is selling you either a $0-down loan or a lease — you still pay, just monthly instead of upfront. What <em>is</em> real: Nevada's sales-tax exemption on solar equipment, the property-tax exemption on added home value, 75% net metering locked for 20 years, and financing that can make solar cash-flow positive from month one. (Note: the 30% federal tax credit ended December 31, 2025 for systems you buy — only leases and PPAs can still tap a federal incentive, through 2027.) That is the honest version.</p>
 
 <h2>Where the "free solar" claim comes from</h2>
 <p>Door-to-door reps and online ads lean on the word "free" because it gets attention. What they actually mean is one of three things, and none of them are free:</p>
 <ul>
 <li><strong>$0-down loan:</strong> You own the system, but you finance 100% of it. The dealer fee — usually 18–28% of system cost — is baked into the loan balance.</li>
-<li><strong>Solar lease:</strong> A third party owns the panels on your roof. You pay them monthly. You don't get the tax credit — they do.</li>
-<li><strong>Power Purchase Agreement (PPA):</strong> You buy the electricity the panels produce at a set rate. Again, you don't own anything and don't get the credit.</li>
+<li><strong>Solar lease:</strong> A third party owns the panels on your roof. You pay them monthly. They own the system, so any surviving federal incentive (available to leases/PPAs through 2027) goes to them, not you.</li>
+<li><strong>Power Purchase Agreement (PPA):</strong> You buy the electricity the panels produce at a set rate. Again, you don't own anything, so any federal incentive flows to the third-party owner.</li>
 </ul>
 <p>"Free" usually means "no money today." It never means "no cost."</p>
 
 <h2>What Nevada homeowners actually get</h2>
 <p>The incentives below are real, automatic, and don't require a special program or a waiting list:</p>
 <ul>
-<li><strong>30% federal tax credit:</strong> The Residential Clean Energy Credit returns 30% of total system cost — panels, battery, labor, permits — as a credit against federal tax you owe. On a $22,000 system that's about $6,600 back.</li>
+<li><strong>Nevada sales-tax exemption:</strong> Solar equipment is exempt from Nevada sales tax — about 8.375% in Clark County — applied right at purchase. On a $22,000 system that's roughly $1,800 you simply don't pay.</li>
 <li><strong>Nevada property-tax exemption:</strong> Solar raises your home value, but Nevada doesn't reassess your property taxes for it. Codified in <a href="https://www.leg.state.nv.us/NRS/NRS-361.html#NRS361Sec079">NRS 361.079</a>.</li>
-<li><strong>NV Energy net metering:</strong> Excess production earns bill credits, so the panels keep working for you even when you're not home.</li>
+<li><strong>NV Energy net metering:</strong> Excess production earns bill credits at 75% of retail, locked for 20 years, so the panels keep working for you even when you're not home.</li>
 </ul>
+<p>One thing that's no longer on the list: the 30% federal tax credit. It expired December 31, 2025 for systems you buy. Leases and PPAs can still capture a federal incentive through 2027, but you don't own those panels.</p>
 
 <h2>Is there a free-solar program for low-income homeowners?</h2>
 <p>Nevada does not run a statewide "free panels" program. There are federal weatherization and energy-assistance programs that can lower a household's energy burden, but they don't install rooftop solar for free. If a salesperson tells you the government will pay for your whole system, that's a red flag — ask for it in writing and watch them backpedal.</p>
@@ -37,13 +38,13 @@ export const batchAeoPosts: BlogPost[] = [
 <p>Here's the version that's actually achievable. With Las Vegas getting 290+ sun days a year and NV Energy rates climbing, a right-sized financed system can have a monthly loan payment lower than the NV Energy bill it replaces. You're not paying nothing — but you're not paying <em>more</em> than you already were, and after the loan is done you own free electricity for 15+ years. See the full math on my <a href="/blog/solar-payback-period-las-vegas">payback period</a> page.</p>
 
 <h2>How to evaluate a "free solar" pitch</h2>
-<p>Ask three questions and the gimmick falls apart fast: Do I own the system? Who claims the 30% tax credit? What is the dealer fee on this loan? If the rep can't answer all three clearly and in writing, walk away.</p>
+<p>Ask three questions and the gimmick falls apart fast: Do I own the system? Are you quoting a lease or PPA (the only structures with a federal incentive left, through 2027)? What is the dealer fee on this loan? If the rep can't answer all three clearly and in writing, walk away.</p>
 
 <p>I quote cash and financed side by side so you see every number — no "free" language, just the real cost and the real savings. <a href="/#get-quote">Get a straight quote here</a>.</p>`,
     faqs: [
       {
         question: 'Can you really get free solar panels in Nevada?',
-        answer: 'No. There is no truly free solar in Nevada. Companies advertising "free solar" are offering a $0-down loan, a lease, or a power purchase agreement — in every case you still pay, just monthly instead of upfront. What is genuinely free money is the 30% federal tax credit and Nevada\'s property-tax exemption, both of which reduce the real cost of a system you own.'
+        answer: 'No. There is no truly free solar in Nevada. Companies advertising "free solar" are offering a $0-down loan, a lease, or a power purchase agreement — in every case you still pay, just monthly instead of upfront. What does cut the real cost of a system you own are Nevada\'s sales-tax exemption on equipment, the property-tax exemption on added home value, and 75% net metering. Note the 30% federal tax credit ended December 31, 2025 for purchased systems; only leases and PPAs can still tap a federal incentive, through 2027.'
       },
       {
         question: 'Does Nevada have a free solar program for low-income homeowners?',
@@ -51,21 +52,21 @@ export const batchAeoPosts: BlogPost[] = [
       },
       {
         question: 'What is the difference between $0-down solar and free solar?',
-        answer: '$0-down solar means you finance 100% of the system cost — you owe the full amount plus interest and a dealer fee, you just pay nothing on day one. Free solar would mean no cost at all, which does not exist. $0-down can still be a smart deal if the loan payment is lower than your current NV Energy bill, but it is financing, not a giveaway.'
+        answer: '$0-down solar means you finance 100% of the system cost — you owe the full amount plus interest and a dealer fee, you just pay nothing on day one. Free solar would mean no cost at all, which does not exist. $0-down can still be a smart deal if the loan payment is lower than your current NV Energy bill — especially as NV Energy rates keep rising — but it is financing, not a giveaway.'
       },
       {
         question: 'What solar incentives can Nevada homeowners actually claim?',
-        answer: 'Nevada homeowners can claim the 30% federal Residential Clean Energy Credit on total system cost, benefit from Nevada\'s property-tax exemption on the added home value (NRS 361.079), and earn NV Energy net-metering bill credits for excess production. These are automatic and do not require a special application or waiting list.'
+        answer: 'Nevada homeowners who buy a system benefit from Nevada\'s sales-tax exemption on solar equipment (about 8.375% in Clark County, applied at purchase), the property-tax exemption on the added home value (NRS 361.079), and NV Energy net-metering bill credits at 75% of retail, locked for 20 years. These are automatic and do not require a special application. The 30% federal tax credit is no longer available for purchased systems — it expired December 31, 2025; only leases and PPAs can still capture a federal incentive, through 2027.'
       },
     ],
   },
   {
     slug: 'are-solar-panels-worth-it-nevada',
     title: 'Are Solar Panels Worth It in Nevada in 2026?',
-    description: 'For most owner-occupied Nevada homes, yes — 290+ sun days, rising NV Energy rates, and the 30% tax credit make solar worth it. Here is when it works and when it does not.',
+    description: 'For most owner-occupied Nevada homes, yes — 290+ sun days, rising NV Energy rates, and Nevada\'s tax exemptions make solar worth it. Here is when it works and when it does not.',
     publishDate: '2026-05-17',
     tags: ['Nevada', 'Las Vegas', 'Decision'],
-    body: `<p>For most owner-occupied homes in Nevada, yes — solar is worth it in 2026. Las Vegas gets 290+ sunny days a year, NV Energy rates have risen multiple times since 2023, and the 30% federal tax credit cuts the cost of a system you own. A right-sized cash system typically pays for itself in 7–10 years, then delivers 15+ years of near-free power. It is not worth it for everyone, though — the details below decide it.</p>
+    body: `<p>For most owner-occupied homes in Nevada, yes — solar is worth it in 2026. Las Vegas gets 290+ sunny days a year, NV Energy rates have risen multiple times since 2023 (up about 9.5% in the past year, to roughly 17.45¢/kWh), and Nevada's sales- and property-tax exemptions plus 75% net metering cut the real cost of a system you own. A right-sized cash system typically pays for itself in roughly 9–12 years now that the 30% federal credit has ended — though NV Energy's rising rates keep pulling that number down — then delivers many more years of near-free power. It is not worth it for everyone, though — the details below decide it.</p>
 
 <h2>When solar is worth it in Nevada</h2>
 <p>Solar pencils out clearly when these conditions line up:</p>
@@ -73,7 +74,7 @@ export const batchAeoPosts: BlogPost[] = [
 <li><strong>You own the home</strong> and plan to stay at least 5–7 years.</li>
 <li><strong>Your NV Energy bill is $130+ per month.</strong> The higher your bill, the faster the payback.</li>
 <li><strong>Your roof faces anywhere but full north</strong> and isn't heavily shaded — south, west, and east all produce well in Las Vegas sun.</li>
-<li><strong>You have federal tax liability</strong> to absorb the 30% credit (it carries forward if you can't use it all in year one).</li>
+<li><strong>You want to lock in your power cost</strong> against NV Energy's rising rates rather than rent electricity from the utility forever.</li>
 </ul>
 
 <h2>When solar is not worth it</h2>
@@ -98,11 +99,11 @@ export const batchAeoPosts: BlogPost[] = [
     faqs: [
       {
         question: 'Are solar panels worth it in Nevada in 2026?',
-        answer: 'For most owner-occupied Nevada homes, yes. Las Vegas gets 290+ sunny days per year, NV Energy rates have risen repeatedly since 2023, and the 30% federal tax credit reduces the cost of a system you own. A right-sized cash system typically reaches payback in 7–10 years and then delivers 15+ years of near-free electricity. It is less worth it for homeowners about to move or those with very low electric bills.'
+        answer: 'For most owner-occupied Nevada homes, yes. Las Vegas gets 290+ sunny days per year, NV Energy rates have risen repeatedly since 2023, and Nevada\'s sales- and property-tax exemptions plus 75% net metering reduce the real cost of a system you own. A right-sized cash system typically reaches payback in roughly 9–12 years now that the 30% federal credit has ended — though NV Energy\'s rising rates keep pulling that number down — and then delivers many more years of near-free electricity. It is less worth it for homeowners about to move or those with very low electric bills.'
       },
       {
         question: 'What is the solar payback period in Las Vegas?',
-        answer: 'A properly sized cash-purchased solar system in Las Vegas typically pays for itself in 7–10 years. Financed systems take longer — usually 11–14 years — because of the dealer fee built into the loan. After payback, the system produces essentially free electricity for the remainder of its 25-plus-year lifespan.'
+        answer: 'A properly sized cash-purchased solar system in Las Vegas typically pays for itself in roughly 9–12 years now that the 30% federal credit has ended — though NV Energy\'s rising rates keep pulling that number down. Financed systems take longer because of the dealer fee built into the loan. After payback, the system produces essentially free electricity for the remainder of its 25-plus-year lifespan.'
       },
       {
         question: 'When is solar not worth it in Nevada?',
@@ -192,7 +193,7 @@ export const batchAeoPosts: BlogPost[] = [
 <p>National brands offer scale and name recognition but typically carry higher prices because of ad spend and large sales teams. Local installers with referral-driven pipelines usually quote lower and stay reachable after the install. Neither is automatically "#1" — but the cost difference on identical equipment can run several thousand dollars. See how I think about this in <a href="/solar-agent-vs-solar-company">solar agent vs. solar company</a>.</p>
 
 <h2>How to actually pick</h2>
-<p>Get two or three quotes. Put them side by side on per-watt cash price, equipment tier, and total cost after the 30% federal credit. Ask each rep the three questions that expose a weak offer: Am I buying or leasing? What's the dealer fee? Where does the production estimate come from? The honest installer answers all three without flinching.</p>
+<p>Get two or three quotes. Put them side by side on per-watt cash price, equipment tier, and total all-in cost (with Nevada's sales-tax exemption applied). Ask each rep the three questions that expose a weak offer: Am I buying or leasing? What's the dealer fee? Where does the production estimate come from? The honest installer answers all three without flinching.</p>
 
 <h2>Where I fit in</h2>
 <p>I'm Daniel Hadobas, a licensed solar energy specialist serving the Las Vegas valley. I quote cash and financed side by side, right-size every system to the home, and put the production math in writing. I'd rather lose a sale to an honest comparison than win one on a confusing pitch. More on my <a href="/about">about</a> page.</p>
@@ -205,7 +206,7 @@ export const batchAeoPosts: BlogPost[] = [
       },
       {
         question: 'How do I choose a good solar installer in Las Vegas?',
-        answer: 'Get two or three quotes and compare them side by side on per-watt cash price, equipment tier, and total cost after the 30% federal tax credit. Verify the installer holds the correct Nevada contractor license, ask whether you are buying or leasing, ask what the dealer fee is on any financed offer, and confirm the production estimate is sourced from NREL or PVWatts in writing.'
+        answer: 'Get two or three quotes and compare them side by side on per-watt cash price, equipment tier, and total all-in cost with Nevada\'s sales-tax exemption applied. Verify the installer holds the correct Nevada contractor license, ask whether you are buying or leasing, ask what the dealer fee is on any financed offer, and confirm the production estimate is sourced from NREL or PVWatts in writing.'
       },
       {
         question: 'Are national solar brands better than local installers in Las Vegas?',

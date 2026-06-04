@@ -14,6 +14,17 @@
   --font-family-display: 'DM Serif Display', Georgia, serif;
 }
 
+/*
+ * Accessibility: WCAG AA contrast for green text.
+ * The vivid brand green (#6AB745) reads at only ~2.5:1 as text on light
+ * backgrounds — failing AA. Backgrounds/buttons keep the vivid green (they
+ * pair with dark text and pass), but green *text* uses a deeper green that
+ * clears 4.5:1 on the off-white body. On dark surfaces the vivid green
+ * already passes, so it's restored there.
+ */
+.text-brand-orange { color: #2F7D1A; }
+.bg-brand-dark .text-brand-orange { color: #6AB745; }
+
 /* Base resets */
 html {
   scroll-behavior: smooth;

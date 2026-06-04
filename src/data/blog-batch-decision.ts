@@ -7,13 +7,13 @@ export const batchDecisionPosts: BlogPost[] = [
     description: 'A straight answer on whether solar pencils out in Las Vegas in 2026 — bills, rebates, payback math, and the cases where I tell homeowners to wait.',
     publishDate: '2025-12-15',
     tags: ['Decision', 'Las Vegas', 'Nevada'],
-    body: `<p><strong>Short answer: yes, for most Las Vegas homeowners with a south, west, or east-facing roof and an NV Energy bill above $120/month — solar pencils out in 2026.</strong> The 30% federal credit is still in effect, panel pricing is at a five-year low, and Vegas sun is the best resource in the country. But it's not universal. If your bill is under $90/month, you have heavy shading, or you're moving in 2 years, I tell people to wait.</p>
+    body: `<p><strong>Short answer: yes, for most Las Vegas homeowners with a south, west, or east-facing roof and an NV Energy bill above $120/month — solar pencils out in 2026.</strong> Panel pricing is at a five-year low, Vegas sun is the best resource in the country, and NV Energy's rising rates make your own generation worth more every year. But it's not universal. If your bill is under $90/month, you have heavy shading, or you're moving in 2 years, I tell people to wait.</p>
 
 <h2>What changed in 2026</h2>
-<p>Three things matter this year. First, the <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" rel="noopener">Residential Clean Energy Credit</a> is still 30% — it doesn't step down until 2033. Second, NV Energy's <a href="https://www.nvenergy.com/account-services/energy-pricing-plans/net-metering" rel="noopener">net metering tier</a> still credits new residential systems at 75% of retail. Third, hardware pricing dropped about 12% from 2024 lows. So the math is friendlier than it was 18 months ago.</p>
+<p>The big one: the 30% federal residential solar tax credit ended December 31, 2025. For a system you buy — cash or loan — there's no more federal credit. A lease or PPA can still capture a federal incentive through the end of 2027, but you don't own the panels. What still helps you in Nevada: the state sales-tax exemption on solar equipment (about 8.375% in Clark County, applied at purchase), the property-tax exemption on the added home value, and NV Energy's <a href="https://www.nvenergy.com/account-services/energy-pricing-plans/net-metering" rel="noopener">net metering tier</a>, which still credits new residential systems at 75% of retail, locked for 20 years. Add rising NV Energy rates and the value story is clear: lock in your own cost as a hedge, don't wait on a credit that's gone.</p>
 
 <h2>The real Vegas payback math</h2>
-<p>On my last 20 systems in the valley, average all-in cost after the 30% credit landed between $13,500 and $19,500 for a 7–10 kW system. Average bill before solar: $215/month. After: $18–$45 (the connection charge plus a small true-up). That's a payback window of 6–9 years on systems warrantied for 25.</p>
+<p>On my last 20 systems in the valley, cash price ran roughly $17,000–$23,000 for a 7–10 kW system (about $2.85/watt, with Nevada's sales-tax exemption already applied). Average bill before solar: $215/month. After: $18–$45 (the connection charge plus a small true-up). That's a payback window of roughly 9–12 years for a cash purchase now that the 30% federal credit has ended — though NV Energy's rising rates keep pulling that number down.</p>
 <p>If you finance through the standard 25-year loan, most of my clients are cash-flow positive from month one — meaning the loan payment is lower than what they were paying NV Energy. That's the test I run before I'll quote anyone.</p>
 
 <h2>When I tell people solar is worth it</h2>
@@ -21,7 +21,7 @@ export const batchDecisionPosts: BlogPost[] = [
 <li>Bill is consistently $130+/month and the home is staying in the family 5+ years</li>
 <li>Roof is 0–12 years old (asphalt) or any age tile/metal</li>
 <li>South, west, or east exposure with under 20% shade at 11am–3pm</li>
-<li>The homeowner files federal taxes with enough liability to use the 30% credit</li>
+<li>You want to lock in your power cost against NV Energy's rising rates instead of renting electricity forever</li>
 </ul>
 
 <h2>When I tell people to wait</h2>
@@ -33,7 +33,7 @@ export const batchDecisionPosts: BlogPost[] = [
 </ul>
 
 <h2>A real example from Henderson</h2>
-<p>Last spring I quoted a couple in Green Valley Ranch. Bill averaged $241/month, 2,400 sq ft single-story, west-facing roof, 8 years old. We installed an 8.4 kW system, 21 panels, all-in $17,800 before the 30% credit. After credit: $12,460. New average bill: $22/month. They'll break even in year 6, then bank ~$28,000 over the next 19 years of warranty. That's a typical Henderson outcome.</p>
+<p>Last spring I quoted a couple in Green Valley Ranch. Bill averaged $241/month, 2,400 sq ft single-story, west-facing roof, 8 years old. We installed an 8.4 kW system, 21 panels, cash price about $23,900 (Nevada sales-tax exemption applied). New average bill: $22/month. They'll break even in roughly year 10 — sooner if NV Energy keeps raising rates — then bank tens of thousands in avoided utility bills over the rest of the 25-year warranty. That's a typical Henderson outcome.</p>
 
 <h2>Where the "it depends" lives</h2>
 <p>Two homes on the same street can produce 30% different output because of roof pitch, vent placement, and a single mature pine tree. That's why I do a roof scan and shade analysis before I quote. The <a href="https://www.energy.gov/eere/solar" rel="noopener">DOE's solar basics</a> covers the principles, but the local install reality is what determines your number.</p>
@@ -47,13 +47,13 @@ export const batchDecisionPosts: BlogPost[] = [
 </ul>
 
 <h2>Common mistakes I see</h2>
-<p>Oversizing systems to "future-proof" for an EV that hasn't been bought. Buying batteries before checking if their use case actually needs one. Signing a 25-year lease when the same system on a loan would be paid off in 9. I walk through all three on every quote.</p>
+<p>Oversizing systems to "future-proof" for an EV that hasn't been bought. Buying batteries before checking if their use case actually needs one. Signing a 25-year lease when the same system on a loan would be paid off well before the warranty runs out. I walk through all three on every quote.</p>
 
 <h2>Bottom line</h2>
 <p>For most Vegas homes in 2026, yes, solar is worth it — but only if the install is sized to your actual usage and your roof can host it for the next 25 years. <a href="/#get-quote">Get a free quote</a> and I'll show you the production model and payback math before you commit.</p>`,
     faqs: [
       { question: 'Is solar still worth it in Las Vegas with NV Energy net metering tiers?', answer: 'Yes. Even at the current 75% retail credit tier, the math works for any home with a $130+/month bill. The credit rate is locked in for 20 years from your interconnection date.' },
-      { question: 'Should I wait for the 30% tax credit to go up?', answer: 'It is not going up. The Residential Clean Energy Credit holds at 30% through 2032, then steps down. Waiting does not help on the credit side.' },
+      { question: 'Can I still get the 30% federal solar tax credit?', answer: 'Not for a system you buy. The 30% federal Residential Clean Energy Credit expired December 31, 2025 for purchased (cash or loan) residential systems. A lease or PPA can still capture a federal incentive through the end of 2027, but you do not own the panels. For owned systems, the value now comes from Nevada\'s sales-tax and property-tax exemptions, 75% net metering, and hedging against rising NV Energy rates.' },
       { question: 'Will solar lower my home value?', answer: 'Owned (not leased) systems consistently appraise positive in Clark County. Leased systems are neutral to slightly negative because they transfer to the buyer. I always recommend ownership for resale.' },
       { question: 'How long do panels actually last in Vegas heat?', answer: 'Modern panels are warrantied for 25 years and tested under IEC 61215. Vegas heat shortens inverter life faster than panel life — plan on one inverter swap around year 12–15.' },
       { question: 'What if my bill is only $80/month?', answer: 'Honestly, I tell you to skip solar and look at attic insulation, a smart thermostat, and AC tune-up first. The payback on a small system gets thin under $90/month.' }
@@ -66,7 +66,7 @@ export const batchDecisionPosts: BlogPost[] = [
     description: 'Perovskite, solid-state batteries, 30% efficient panels — should you wait? An honest look at what is real, what is hype, and what I tell my clients in 2026.',
     publishDate: '2026-01-08',
     tags: ['Decision', 'Las Vegas'],
-    body: `<p><strong>Short answer: don't wait. The "next-gen" panels you're reading about are 3–7 years from residential availability at scale, and waiting that long costs you ~$3,600/year in avoided NV Energy bills plus the 30% federal credit risk.</strong> Today's panels are 21–23% efficient and warrantied for 25 years. The upgrade case for waiting almost never beats the cost of waiting.</p>
+    body: `<p><strong>Short answer: don't wait. The "next-gen" panels you're reading about are 3–7 years from residential availability at scale, and waiting that long costs you ~$3,600/year in avoided NV Energy bills — bills that climb every year as rates rise.</strong> Today's panels are 21–23% efficient and warrantied for 25 years. The upgrade case for waiting almost never beats the cost of waiting.</p>
 
 <h2>What people are waiting for</h2>
 <p>Three technologies dominate the "should I wait" conversation: perovskite tandem cells, solid-state home batteries, and 30%+ efficiency monocrystalline. I'll go through each.</p>
@@ -81,7 +81,7 @@ export const batchDecisionPosts: BlogPost[] = [
 <p>The current top-tier residential panels (Maxeon 7, REC Alpha Pure-RX) are 22.8–23.4%. The jump from 23% to 30% requires the perovskite tandem layer above. So this is the same conversation as point 1.</p>
 
 <h2>The cost of waiting</h2>
-<p>Let me run the math I run for clients who ask. Average Vegas bill on a south-facing 2,200 sq ft home: $200/month. That's $2,400/year going to NV Energy that solar would offset by ~$2,200 of it. Wait three years for "better tech" and you're out $6,600 in avoided bills. Wait five years and the federal credit's first step-down hits in 2033.</p>
+<p>Let me run the math I run for clients who ask. Average Vegas bill on a south-facing 2,200 sq ft home: $200/month. That's $2,400/year going to NV Energy that solar would offset by ~$2,200 of it. Wait three years for "better tech" and you're out $6,600 in avoided bills — more, really, since NV Energy's rates keep climbing. Every year you wait is a year you're paying the utility's rising price instead of your own fixed cost.</p>
 
 <h2>What today's panels actually deliver</h2>
 <p>I install 410–440W monocrystalline panels, IEC 61215 and UL 61730 certified, with 25-year product and performance warranties. Year-25 minimum output guarantee: 87–92% of nameplate. That means a panel I install today will still produce 90% of its first-year output when your kid graduates college. The "old tech" framing doesn't match the reality.</p>
@@ -107,7 +107,7 @@ export const batchDecisionPosts: BlogPost[] = [
     faqs: [
       { question: 'Will solar panel prices keep dropping if I wait?', answer: 'Module prices have stabilized after a 2023 oversupply correction. Soft costs (permitting, labor, sales) have actually risen. Total install cost has been roughly flat for 18 months.' },
       { question: 'Are perovskite panels available for residential install today?', answer: 'A small commercial pilot exists in Europe. No US residential installer I know is offering them in 2026 at warrantied scale.' },
-      { question: 'Will the 30% federal credit go up?', answer: 'No. It is locked at 30% through 2032 by current law. Step-down begins 2033 (26%) and 2034 (22%).' },
+      { question: 'Is the 30% federal solar credit still available if I buy now?', answer: 'No. The 30% federal Residential Clean Energy Credit expired December 31, 2025 for purchased residential systems. Only lease and PPA arrangements can still capture a federal incentive, through the end of 2027. If you buy your system, plan your numbers around Nevada\'s exemptions, net metering, and rising-rate savings — not a federal credit.' },
       { question: 'What if I buy now and better panels come out in 5 years?', answer: 'You can add a second array on remaining roof space. The new panels run on a separate string — no need to replace the original system.' }
     ]
   },
@@ -144,7 +144,7 @@ export const batchDecisionPosts: BlogPost[] = [
 <h2>When I won't install on north</h2>
 <ul>
 <li>Roof is 7/12 or steeper AND south/west/east still has empty space</li>
-<li>The homeowner is buying purely for ROI and the north panels stretch payback past 11 years</li>
+<li>The homeowner is buying purely for ROI and the north panels stretch payback well past the rest of the array</li>
 <li>HOA architectural rules cap total panel count and you'd burn slots on a low-yield slope</li>
 </ul>
 
@@ -152,7 +152,7 @@ export const batchDecisionPosts: BlogPost[] = [
 <p>Most newer Summerlin and Inspirada homes have flat or near-flat roofs. On a flat roof, panels are racked at a tilt — usually 10° or 15° — and almost always pointed south or west regardless of which compass direction the roof "faces." So if your house is described as "north-facing" but the roof is flat, the orientation discussion is moot. We tilt the rack however the engineering says.</p>
 
 <h2>A real Summerlin example</h2>
-<p>Last fall I quoted a home in The Cliffs. Standard 6/12 pitch, true north-facing main slope, narrow east slope, no usable south. I ran the production model: 11.2 kW on north, 2.8 kW on east, total 14 kW system. Production: 19,400 kWh/year — covered 96% of their bill. Payback at 8.4 years vs. the 6.5 he'd have gotten on a south-facing twin. Worth doing? Yes. Same as a south install? No.</p>
+<p>Last fall I quoted a home in The Cliffs. Standard 6/12 pitch, true north-facing main slope, narrow east slope, no usable south. I ran the production model: 11.2 kW on north, 2.8 kW on east, total 14 kW system. Production: 19,400 kWh/year — covered 96% of their bill. Payback lands toward the longer end of the 9–12-year cash-purchase range, versus the shorter end he'd have gotten on a south-facing twin. Worth doing? Yes. Same as a south install? No.</p>
 
 <h2>Microinverters matter more on north</h2>
 <p>String inverters are a poor match for mixed-orientation arrays because the lowest-producing panel drags the string. On any mixed or north-heavy install I default to Enphase microinverters or Tesla optimizers. Each panel produces independently. The cost premium is 6–9% of system price and it's worth it.</p>
@@ -331,7 +331,7 @@ export const batchDecisionPosts: BlogPost[] = [
     body: `<p><strong>Short answer: technically yes, practically almost never. Removing and reinstalling a 7–10 kW solar system costs $8,000–$14,000 — about 60% of what a brand-new system costs in 2026. You also lose the original system warranty in most cases. For 99% of homeowners I work with, leaving panels behind and capitalizing the value into the sale price is the better move.</strong></p>
 
 <h2>The math, plainly</h2>
-<p>A 9 kW system costs about $19,000 installed in Vegas in 2026 (after the 30% federal credit). To remove it, transport it, and reinstall on a new home: $8,000–$14,000. The panels you take have already used 3–8 years of their 25-year warranty. So you're paying ~70% of new-system cost for a system worth ~75% of new. The math doesn't work unless your moving cost is somehow free.</p>
+<p>A 9 kW system costs about $25,600 installed in Vegas in 2026 (cash price, Nevada sales-tax exemption applied — the 30% federal credit ended in 2025). To remove it, transport it, and reinstall on a new home: $8,000–$14,000. The panels you take have already used 3–8 years of their 25-year warranty. So you're paying ~70% of new-system cost for a system worth ~75% of new. The math doesn't work unless your moving cost is somehow free.</p>
 
 <h2>Why moving solar is more expensive than you'd think</h2>
 <ul>
@@ -367,7 +367,7 @@ export const batchDecisionPosts: BlogPost[] = [
 <p>That's it. I've never had a client meet those criteria in 9 years.</p>
 
 <h2>A real Summerlin story</h2>
-<p>Last year a client called me 14 months after his install. He'd accepted a job in Tucson and wanted to take the panels. We ran the numbers: $11,200 to remove and reinstall, plus he'd lose the LG warranty (LG had exited residential by then anyway), plus 6 weeks of no production while we permitted in Pima County. He left them on the house, sold for $24,000 over comp, and bought a fresh 8 kW system in Tucson for $17,400 net. He came out ~$10,000 ahead by leaving them behind.</p>
+<p>Last year a client called me 14 months after his install. He'd accepted a job in Tucson and wanted to take the panels. We ran the numbers: $11,200 to remove and reinstall, plus he'd lose the LG warranty (LG had exited residential by then anyway), plus 6 weeks of no production while we permitted in Pima County. He left them on the house, sold for $24,000 over comp, and bought a fresh 8 kW system in Tucson for about $22,800. He came out thousands ahead by leaving them behind.</p>
 
 <h2>What to ask before you sign anything</h2>
 <ul>
@@ -390,7 +390,7 @@ export const batchDecisionPosts: BlogPost[] = [
       { question: 'How much does it cost to move a solar system?', answer: 'In Vegas, $8,000-14,000 for a 7-10 kW system, plus permitting at the new address. The cost rarely beats just buying new.' },
       { question: 'Does my warranty transfer if I move panels?', answer: 'Most manufacturer warranties void on relocation. Some installers honor the workmanship warranty; almost none of the panel makers do. Confirm with your specific brand before counting on it.' },
       { question: 'Can I sell my panels separately from my house?', answer: 'Legally yes if owned outright, but practically the buyer of your house will discount their offer by more than you would get selling the panels independently. Not worth it.' },
-      { question: 'What if I am moving to a rental — can I take them?', answer: 'I would not recommend installing again on a rental. Solar pays back over 6-9 years; if you do not own the destination, the math fails.' }
+      { question: 'What if I am moving to a rental — can I take them?', answer: 'I would not recommend installing again on a rental. Solar pays back over roughly 9-12 years for a cash purchase now that the 30% federal credit has ended; if you do not own the destination, the math fails.' }
     ]
   },
 
@@ -603,8 +603,8 @@ export const batchDecisionPosts: BlogPost[] = [
 <h2>NEM 3.0 wrinkle</h2>
 <p>California's <a href="https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/demand-side-management/net-energy-metering" rel="noopener">NEM 3.0</a> changed the export economics. The Solar Rights Act protections are unchanged, but the financial case for solar without battery is weaker. HOA approval processes often haven't caught up — some boards still ask "why are you doing this?" The statute doesn't require you to justify the economics.</p>
 
-<h2>Federal credit still applies</h2>
-<p>The <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" rel="noopener">30% federal credit</a> applies in California the same as everywhere. Don't let HOA-related delays push your install past a tax year if you have credit liability planned.</p>
+<h2>Federal credit has ended for owned systems</h2>
+<p>One change to plan around: the <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" rel="noopener">30% federal Residential Clean Energy Credit</a> expired December 31, 2025 for systems you buy — in California the same as everywhere else. A lease or PPA can still capture a federal incentive through the end of 2027. California's own programs are unchanged: SGIP rebates for storage and NEM 3.0 net billing still apply. So the California incentive picture is mostly intact; it's only the federal credit on purchased systems that's gone.</p>
 
 <h2>What to ask your HOA upfront</h2>
 <ul>

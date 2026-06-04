@@ -6,3 +6,6 @@
 /sodblog922494          /  410
 /solarsavingsresults    /  410
 /sod*                   /  410
+
+# Consolidate duplicate "best solar companies" posts (2026 is canonical) — kills cannibalization
+/blog/best-solar-companies-las-vegas    /blog/best-solar-companies-las-vegas-2026    301

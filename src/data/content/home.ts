@@ -1,5 +1,5 @@
 export const homeContent = {
-  urgencyBanner: "⚠️ Federal Solar Tax Credits May Expire — Lock In 30% Savings Now",
+  urgencyBanner: "⚡ NV Energy rates climbed 9.5% last year — lock in your own power cost before the next hike.",
   hero: {
     headline: "Las Vegas Solar Specialist — Daniel Hadobas",
     subheadline: "174 Five-Star Reviews. $0 Down Solar. Honest math against your real NV Energy bill.",

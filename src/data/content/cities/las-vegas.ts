@@ -9,19 +9,19 @@ export const lasVegasContent = {
     subheadline: "Las Vegas gets 290+ sunny days a year. With NV Energy rates climbing past $0.125/kWh, most homeowners see what you’d save against your current bill after going solar."
   },
   intro: [
-    `Solar panels in Las Vegas typically cost $11,900–$14,000 after the <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener">30% federal Residential Clean Energy Credit</a> and pay back in 6–9 years on NV Energy bills. Most homeowners install 6–7 kW systems that offset nearly all their electric usage thanks to <a href="https://www.nrel.gov/gis/solar-resource-maps.html" target="_blank" rel="noopener">Nevada's high solar irradiance</a>. Cash buyers payback fastest; $0-down financing often nets monthly savings from day one.`,
+    `Solar panels in Las Vegas typically cost $17,000–$20,000 for a 6–7 kW system (Nevada's sales-tax exemption is already applied; the 30% federal credit ended Dec 31, 2025). Payback now runs roughly 9–12 years for a cash purchase — though NV Energy's rising rates keep pulling that number down. Most homeowners install 6–7 kW systems that offset nearly all their electric usage thanks to <a href="https://www.nrel.gov/gis/solar-resource-maps.html" target="_blank" rel="noopener">Nevada's high solar irradiance</a>. Cash buyers pay back fastest; $0-down financing often nets monthly savings from day one.`,
     `Las Vegas is one of the best solar markets in the United States — and for good reason. With over 290 sunny days per year and an <a href="https://www.eia.gov/state/?sid=NV" target="_blank" rel="noopener">average NV Energy rate of $0.125 per kilowatt-hour</a>, the conditions for solar savings are near-perfect. The average Las Vegas household spends around $160 per month on electricity, but homeowners who install solar routinely cut that bill to near zero — and many end up with net metering credits that carry forward through the summer peak months. Over the lifetime of a system, Las Vegas solar owners typically accumulate $51,532 in energy savings, making it one of the strongest financial decisions a homeowner can make.`,
-    "The Las Vegas solar market has grown dramatically over the past decade — more than 85,000 homes in the metro area already have solar panels installed. That momentum exists because the economics genuinely work here. A properly sized system typically pays itself back in 6 to 9 years, and most solar panels come with 25-year production warranties. That means 16 to 19 years of virtually free electricity after payback. Combined with Nevada's property tax exemption and sales tax exemption on solar equipment, and the federal 30% Investment Tax Credit, there has never been a better time for Las Vegas homeowners to lock in their energy costs and stop paying NV Energy's ever-increasing rates."
+    "The Las Vegas solar market has grown dramatically over the past decade — more than 85,000 homes in the metro area already have solar panels installed. That momentum exists because the economics genuinely work here. A properly sized system pays itself back in roughly 9 to 12 years for a cash purchase now that the 30% federal credit has ended — though NV Energy's rising rates keep pulling that number down. Most solar panels come with 25-year production warranties, so you get years of virtually free electricity after payback. Combined with Nevada's property tax exemption, the sales tax exemption on solar equipment, and net metering at 75% of retail, going solar is the best way for Las Vegas homeowners to lock in their own generation cost and hedge against NV Energy's ever-increasing rates."
   ],
   stats: [
     { value: "290+", label: "Sunny Days Per Year" },
     { value: "$0", label: "Down to Get Started" },
-    { value: "6–9 yrs", label: "Average Payback Period" }
+    { value: "9–12 yrs", label: "Average Payback Period" }
   ],
   incentives: [
     {
-      title: "Federal Investment Tax Credit (ITC)",
-      description: `The <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener">federal solar tax credit</a> gives you 30% of your total system cost as a direct credit against your federal income tax — through 2032. On a typical Las Vegas installation, that's $5,000 to $6,000 back in your pocket.`
+      title: "Federal Tax Credit — Expired Dec 31, 2025 for Purchases",
+      description: `The 30% federal solar tax credit ended December 31, 2025 for systems you buy with cash or a loan. If you lease or sign a PPA, a third-party-owned system may still capture a federal incentive through the end of 2027. For most Las Vegas homeowners who buy, the real value now comes from Nevada's sales-tax and property-tax exemptions, net metering, and locking in your own generation cost against rising NV Energy rates.`
     },
     {
       title: "NV Energy Net Metering",
@@ -39,11 +39,11 @@ export const lasVegasContent = {
   faqs: [
     {
       question: "How much does solar cost in Las Vegas?",
-      answer: "The average Las Vegas solar installation runs $2.85 per watt before incentives. For a typical 6–7 kW system, that's $17,100–$20,000 before the 30% federal tax credit. After the ITC, most homeowners pay $11,900–$14,000. $0 down financing is available, so many homeowners start saving from month one with no upfront cost."
+      answer: "The average Las Vegas solar installation runs $2.85 per watt before incentives. For a typical 6–7 kW system, that's $17,000–$20,000 — Nevada's sales-tax exemption is already applied, and the 30% federal credit ended Dec 31, 2025, so there's no further reduction for a cash or loan purchase. $0 down financing is available, so many homeowners start saving from month one with no upfront cost."
     },
     {
       question: "Is solar worth it in Las Vegas?",
-      answer: "Yes — Las Vegas is one of the most solar-favorable markets in the country. With 290+ sunny days per year, average electricity bills around $160/month, and a 6–9 year payback period, the math works for most homeowners. Factor in $51,532 in lifetime savings and Nevada's tax exemptions, and it's one of the strongest financial decisions you can make."
+      answer: "Yes — Las Vegas is one of the most solar-favorable markets in the country. With 290+ sunny days per year, average electricity bills around $160/month, and a roughly 9–12 year payback for a cash purchase now that the 30% federal credit has ended — though NV Energy's rising rates keep pulling that number down — the math works for most homeowners. Factor in $51,532 in lifetime savings and Nevada's tax exemptions, and it's one of the strongest financial decisions you can make."
     },
     {
       question: "How does NV Energy net metering work?",
@@ -51,7 +51,7 @@ export const lasVegasContent = {
     },
     {
       question: "How long does solar take to pay off in Nevada?",
-      answer: "Most Las Vegas homeowners see a payback period of 6 to 9 years. The exact timeline depends on your current electricity usage, system size, roof orientation, and financing method. Cash purchases pay back faster; financed systems often show immediate monthly savings even before the ITC arrives."
+      answer: "Most Las Vegas homeowners see a payback period of roughly 9 to 12 years for a cash purchase now that the 30% federal credit has ended — though NV Energy's rising rates keep pulling that number down. The exact timeline depends on your current electricity usage, system size, roof orientation, and financing method. Cash purchases pay back faster; financed systems often show immediate monthly savings."
     },
     {
       question: "Do solar panels increase home value in Las Vegas?",
@@ -59,7 +59,7 @@ export const lasVegasContent = {
     },
     {
       question: "What solar incentives are available in Nevada in 2025?",
-      answer: "Nevada homeowners can take advantage of: (1) the federal 30% Investment Tax Credit through 2032, (2) NV Energy net metering at 75% retail rate, (3) Nevada's property tax exemption on solar system value, and (4) Nevada's sales tax exemption on solar equipment. A new Nevada state incentive program was also introduced in late 2025 — ask Daniel for current eligibility details."
+      answer: "The 30% federal Investment Tax Credit ended December 31, 2025 for systems you buy — only leased or PPA (third-party-owned) systems may still capture a federal incentive through 2027. Nevada homeowners who buy can still take advantage of: (1) NV Energy net metering at 75% retail rate, locked for 20 years, (2) Nevada's property tax exemption on solar system value, and (3) Nevada's sales tax exemption on solar equipment. Ask Daniel for current eligibility details."
     }
   ],
   cta: {

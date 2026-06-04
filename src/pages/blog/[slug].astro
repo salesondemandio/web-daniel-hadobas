@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import CTAButton from '../../components/CTAButton.astro';
 import PersonSchema from '../../components/PersonSchema.astro';
 import FAQSection from '../../components/FAQSection.astro';
+import ITCNotice from '../../components/ITCNotice.astro';
 import { blogPosts } from '../../data/blog-posts';
 
 export function getStaticPaths() {
@@ -10,6 +11,16 @@ export function getStaticPaths() {
 }
 
 const { post } = Astro.props;
+
+// The 30% federal residential ITC (Section 25D) expired Dec 31, 2025 (OBBBA).
+// Older posts were written while it was active and bake it into cost/savings
+// figures. Flag any post that references the federal credit with a dated
+// correction notice, and reflect the update in schema dateModified.
+const mentionsFederalCredit = /tax credit|\bITC\b|investment tax credit|federal credit/i.test(
+  post.body + ' ' + (post.faqs ?? []).map((f) => f.question + ' ' + f.answer).join(' ')
+);
+const itcUpdateDate = '2026-05-26';
+const dateModified = mentionsFederalCredit ? itcUpdateDate : post.publishDate;
 ---
 
 <BaseLayout title={`${post.title} | Daniel Hadobas Solar`} description={post.description} keywords={post.tags.join(', ') + ', solar Las Vegas, Daniel Hadobas solar'} ogType="article">
@@ -21,7 +32,7 @@ const { post } = Astro.props;
       "headline": post.title,
       "description": post.description,
       "datePublished": post.publishDate,
-      "dateModified": post.publishDate,
+      "dateModified": dateModified,
       "author": {
         "@type": "Person",
         "name": "Daniel Hadobas",
@@ -83,6 +94,9 @@ const { post } = Astro.props;
 
   <!-- Article body -->
   <article class="py-12 px-4">
+    {mentionsFederalCredit && (
+      <div class="max-w-3xl mx-auto"><ITCNotice /></div>
+    )}
     <div class="max-w-3xl mx-auto prose prose-slate prose-headings:font-display prose-headings:text-slate-900 prose-a:text-brand-orange prose-strong:text-slate-900 max-w-none" set:html={post.body} />
   </article>
 

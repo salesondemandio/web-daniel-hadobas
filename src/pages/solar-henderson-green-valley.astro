@@ -8,6 +8,7 @@ import StatsBar from '../components/StatsBar.astro';
 import FAQSection from '../components/FAQSection.astro';
 import ReviewWidget from '../components/ReviewWidget.astro';
 import { greenValleyContent as c } from '../data/content/cities/green-valley';
+import ITCNotice from '../components/ITCNotice.astro';
 ---
 
 <BaseLayout title={c.meta.title} description={c.meta.description} keywords={c.meta.keywords}>
@@ -78,6 +79,7 @@ import { greenValleyContent as c } from '../data/content/cities/green-valley';
     <div class="max-w-4xl mx-auto"><ReviewWidget /></div>
   </section>
 
+  <section class="px-4"><div class="max-w-3xl mx-auto"><ITCNotice /></div></section>
   <FAQSection faqs={c.faqs} heading="Solar FAQs — Green Valley & Henderson, NV" />
 
   <section class="bg-[#FAFAF8] py-16 px-4 text-center">

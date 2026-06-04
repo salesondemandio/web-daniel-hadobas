@@ -22,7 +22,7 @@ export const batchComparePosts: BlogPost[] = [
 <thead><tr><th>Factor</th><th>Big Solar Company</th><th>Independent Solar Agent</th></tr></thead>
 <tbody>
 <tr><td>Pricing model</td><td>Single in-house price book</td><td>Multiple installers, competitive bids</td></tr>
-<tr><td>Who keeps the federal tax credit</td><td>Lease/PPA — company keeps it. Cash/loan — you keep it.</td><td>Same rules apply, but I steer most clients toward ownership so <em>you</em> claim the <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" rel="nofollow">30% Residential Clean Energy Credit</a></td></tr>
+<tr><td>Federal tax credit status</td><td>Gone for cash/loan (expired 12/31/2025). Lease/PPA may still qualify through 2027 — company keeps it.</td><td>Same rules apply. I steer most clients toward ownership for the Nevada exemptions and net-metering value — the <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" rel="nofollow">30% federal credit</a> ended for purchases at the close of 2025</td></tr>
 <tr><td>Install quality control</td><td>Whoever the company schedules — sometimes subcontracted</td><td>I pick the installer per job and I'm there if something goes sideways</td></tr>
 <tr><td>Customer service responsiveness</td><td>Call center, ticket queue</td><td>My cell phone</td></tr>
 <tr><td>System size pressure</td><td>Rep commission scales with kW</td><td>I size to your usage, not to my paycheck</td></tr>
@@ -41,14 +41,14 @@ export const batchComparePosts: BlogPost[] = [
 <p>If you want competitive pricing, ownership-first financing, and a human being who answers the phone when your inverter throws a fault code three years from now, the agent model is built for that. The <a href="https://www.energy.gov/eere/solar" rel="nofollow">U.S. Department of Energy</a> has good background on what to look for in a solar partner — most of it lines up with how I work.</p>
 
 <h2>Financing — where the wedge gets sharp</h2>
-<p>The <a href="https://www.consumer.ftc.gov/articles/whats-deal-leasing-solar-panels" rel="nofollow">FTC has a clear primer on solar leases</a>. Read it before you sign anything. The short version: with a lease or PPA, the company owns the panels and claims the tax credit. With a loan or cash, you own the panels and you claim the credit. The math almost always favors ownership for homeowners with tax liability.</p>
+<p>The <a href="https://www.consumer.ftc.gov/articles/whats-deal-leasing-solar-panels" rel="nofollow">FTC has a clear primer on solar leases</a>. Read it before you sign anything. The short version: the 30% federal tax credit expired December 31, 2025 for systems you buy with cash or a loan. It still lives — through the end of 2027 — only on lease and PPA deals, where the third party owns the panels and keeps the credit. For most homeowners, ownership still wins: you capture Nevada's sales-tax and property-tax exemptions, full net-metering value, and you lock in your own generation cost as a hedge against rising NV Energy rates.</p>
 
 <h2>How I actually work a quote</h2>
 <ol>
 <li>Pull twelve months of NV Energy usage</li>
 <li>Size the system to offset 90–110% of that usage — not 130%</li>
 <li>Get bids from two or three installers I trust</li>
-<li>Walk you through ownership vs lease side-by-side, with the credit math</li>
+<li>Walk you through ownership vs lease side-by-side, with the real Nevada-incentive and net-metering math</li>
 <li>If you move forward, I stay on the project until PTO</li>
 </ol>
 
@@ -61,7 +61,7 @@ export const batchComparePosts: BlogPost[] = [
       { question: 'Should I use a solar agent or a solar company?', answer: "If you want competitive pricing, ownership-first financing, and a single point of contact who isn't on quota, an independent agent is usually the better fit. If you want one integrated brand for panels, inverter, and warranty, a vertically integrated company can be simpler." },
       { question: 'Is a solar agent cheaper than a solar company?', answer: "Often, yes — because an agent shops multiple installers instead of marking up a single in-house price book. But cheaper isn't the only point. The bigger difference is the incentive structure behind the quote." },
       { question: 'Do solar agents charge a fee?', answer: "I don't charge the homeowner. I'm paid by the installer when a project closes, the same way an insurance broker is paid by the carrier." },
-      { question: 'Who keeps the federal solar tax credit — me or the solar company?', answer: 'If you buy the system with cash or a loan, you keep the 30% Residential Clean Energy Credit. If you sign a lease or PPA, the third-party owner keeps it. This is the single biggest reason I push ownership for clients with tax liability.' },
+      { question: 'Can I still get the federal solar tax credit?', answer: "Not if you buy. The 30% Residential Clean Energy Credit expired December 31, 2025 for systems bought with cash or a loan. It survives only on third-party-owned lease and PPA deals through the end of 2027, where the company keeps it. For owned systems I now lean on Nevada's surviving incentives — the sales-tax exemption, the property-tax exemption, and 20-year locked net metering." },
       { question: 'Can a solar agent get me a better warranty?', answer: "Warranties come from the equipment manufacturer and the installer, not the agent. What I can do is steer you toward installers whose workmanship warranty actually gets honored — that's where the real differences show up." },
     ],
   },
@@ -72,7 +72,7 @@ export const batchComparePosts: BlogPost[] = [
     description: "SunRun vs an independent solar agent: I break down the real differences in pricing, ownership, the tax credit, and what happens when you sell your home.",
     publishDate: '2026-02-10',
     tags: ['Comparison', 'Solar Companies', 'Cost & Financing'],
-    body: `<p><strong>Quick answer:</strong> SunRun is the largest residential solar company in the U.S. and is heavily oriented around leases and PPAs. An independent agent like me works with multiple installers and tends to push ownership financing so you keep the federal tax credit. If you want zero-down with no upfront cash and don't care about the credit, SunRun's model fits cleanly. If you have tax liability and want long-term equity in the system, the agent model usually pencils better.</p>
+    body: `<p><strong>Quick answer:</strong> SunRun is the largest residential solar company in the U.S. and is heavily oriented around leases and PPAs. An independent agent like me works with multiple installers and tends to push ownership financing so you keep the equity and the surviving Nevada incentives. Heads up: the 30% federal tax credit expired December 31, 2025 for purchased systems — it now survives only on lease/PPA deals through 2027, where SunRun keeps it. If you want zero-down with no upfront cash, SunRun's model fits cleanly. If you want long-term equity in the system, the agent model usually pencils better.</p>
 
 <h2>Who SunRun is</h2>
 <p>SunRun is a publicly traded company — you can read their model and risk factors directly in their <a href="https://www.sec.gov" rel="nofollow">SEC filings</a>. Their core product historically has been third-party-owned solar: lease and Power Purchase Agreement (PPA). They install, they own the panels, you pay a monthly bill that's lower than your projected utility bill.</p>
@@ -86,7 +86,7 @@ export const batchComparePosts: BlogPost[] = [
 <thead><tr><th>Factor</th><th>SunRun</th><th>Independent Agent (me)</th></tr></thead>
 <tbody>
 <tr><td>Pricing model</td><td>National price book; lease/PPA dominant</td><td>Multiple installers bid the job</td></tr>
-<tr><td>Who keeps the federal tax credit</td><td>SunRun, on lease/PPA</td><td>You, on cash or loan — see <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" rel="nofollow">IRS Residential Clean Energy Credit</a></td></tr>
+<tr><td>Federal tax credit status</td><td>Survives on lease/PPA through 2027 — SunRun keeps it</td><td>Gone for cash/loan since 12/31/2025 — see <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" rel="nofollow">IRS Residential Clean Energy Credit</a></td></tr>
 <tr><td>Install quality control</td><td>SunRun crews or sub-contracted partners</td><td>I pick the installer per job</td></tr>
 <tr><td>Customer service responsiveness</td><td>Corporate call center</td><td>Direct line to me</td></tr>
 <tr><td>System size pressure</td><td>Rep commission scales with size</td><td>I size to actual usage</td></tr>
@@ -98,11 +98,11 @@ export const batchComparePosts: BlogPost[] = [
 <p>The <a href="https://www.consumer.ftc.gov/articles/whats-deal-leasing-solar-panels" rel="nofollow">FTC's consumer guide on solar leases</a> is the best neutral resource I've found. The key points:</p>
 <ul>
 <li>The third party — not you — owns the panels</li>
-<li>The third party — not you — claims the federal tax credit</li>
+<li>The third party — not you — claims any federal credit (lease/PPA still qualify through 2027; purchases no longer do)</li>
 <li>Most leases have an annual escalator clause (typically 1.9–2.9%)</li>
 <li>The lease must transfer at home sale, which sometimes spooks buyers</li>
 </ul>
-<p>If you don't have federal tax liability — say you're retired and on a fixed income — a lease or PPA can actually make sense because you couldn't use the 30% credit anyway. That's a legitimate fit. But if you have tax liability and a 7–10 year horizon, ownership almost always wins on lifetime cost.</p>
+<p>A lease or PPA can still capture a federal incentive through the end of 2027 — but the third party pockets it, not you. For a purchase, that 30% federal credit is simply gone after December 31, 2025. Even so, with a 7–10 year horizon ownership almost always wins on lifetime cost: you keep Nevada's sales-tax and property-tax exemptions, full net-metering value, and you lock your own generation cost against rising NV Energy rates.</p>
 
 <h2>NV Energy net metering and how that interacts</h2>
 <p>Nevada's net metering rates are set by the PUCN and administered by NV Energy. <a href="https://www.nvenergy.com/account-services/energy-pricing-plans/net-metering" rel="nofollow">NV Energy publishes the current rates here</a>. The economics work the same whether you lease or own — but ownership lets you capture the full upside.</p>
@@ -126,11 +126,11 @@ export const batchComparePosts: BlogPost[] = [
 <p><a href="/about">More about how I work</a> · <a href="/solar-las-vegas">Las Vegas solar guide</a> · <a href="/solar-california">California solar</a></p>
 
 <h2>Closing</h2>
-<p>I'm not anti-SunRun. They're a serious operator with a real product. I just think most LV homeowners with tax liability are better served by ownership financing through a local agent than by a national lease. If you want me to run the math on your specific bill, <a href="/#get-quote">request a quote here</a>.</p>`,
+<p>I'm not anti-SunRun. They're a serious operator with a real product. I just think most LV homeowners are better served by ownership financing through a local agent — keeping the equity, Nevada's tax exemptions, and full net-metering value — than by a national lease. If you want me to run the math on your specific bill, <a href="/#get-quote">request a quote here</a>.</p>`,
     faqs: [
       { question: 'Is SunRun better than an independent solar agent?', answer: "Better depends on what you're optimizing for. SunRun wins on brand and national footprint. An independent agent wins on pricing flexibility, ownership financing, and direct accountability." },
-      { question: 'Does SunRun keep the solar tax credit?', answer: 'On a SunRun lease or PPA, yes — the third-party owner claims the 30% federal Residential Clean Energy Credit. On a SunRun loan or cash purchase, you claim it. Always confirm in writing which financing structure is being proposed.' },
-      { question: 'Should I lease solar from SunRun or buy from an independent installer?', answer: "If you have federal tax liability and plan to stay 7+ years, buying through an independent agent usually wins on lifetime cost. If you have no tax liability or want zero responsibility for the system, a lease can fit." },
+      { question: 'Does SunRun keep the solar tax credit?', answer: 'On a SunRun lease or PPA, yes — the third-party owner claims the federal credit, which lease/PPA deals can still capture through the end of 2027. On a SunRun loan or cash purchase, there is no federal credit anymore: it expired December 31, 2025 for purchased systems. Always confirm in writing which financing structure is being proposed.' },
+      { question: 'Should I lease solar from SunRun or buy from an independent installer?', answer: "If you plan to stay 7+ years, buying through an independent agent usually wins on lifetime cost — you keep the equity, Nevada's tax exemptions, and full net-metering value. If you want zero upfront cost and zero responsibility for the system, a lease can fit, and lease/PPA is also the only structure still tied to a federal incentive through 2027." },
       { question: 'Does a SunRun lease hurt my home sale?', answer: 'It can. The lease must be transferred to the buyer or bought out, and some buyers walk when they see a 20-year third-party agreement. Owned systems convey cleanly with the house.' },
       { question: 'Are SunRun prices higher than independent installers?', answer: 'In my experience pricing the same job through both, the national-brand price tends to be higher per watt than a competitively bid local installer. Get both quotes and compare apples to apples.' },
     ],
@@ -155,7 +155,7 @@ export const batchComparePosts: BlogPost[] = [
 <thead><tr><th>Factor</th><th>Tesla Solar</th><th>Traditional LV Installer</th></tr></thead>
 <tbody>
 <tr><td>Pricing model</td><td>Fixed online configurator</td><td>Custom bid, negotiable</td></tr>
-<tr><td>Who keeps the federal tax credit</td><td>You, on cash/loan; Tesla on lease — see <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" rel="nofollow">IRS guidance</a></td><td>Same — you on cash/loan</td></tr>
+<tr><td>Federal tax credit status</td><td>Gone for cash/loan since 12/31/2025; survives on lease through 2027 (Tesla keeps it) — see <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" rel="nofollow">IRS guidance</a></td><td>Same — no credit on a purchase</td></tr>
 <tr><td>Install quality control</td><td>Tesla or Tesla-certified crew</td><td>Local crew you can vet locally</td></tr>
 <tr><td>Customer service responsiveness</td><td>App + ticket queue</td><td>Phone call to a local rep</td></tr>
 <tr><td>System size pressure</td><td>Low — fixed configurator</td><td>Depends on rep comp; agent model removes it</td></tr>
@@ -200,7 +200,7 @@ export const batchComparePosts: BlogPost[] = [
     faqs: [
       { question: 'Is Tesla Solar cheaper than a traditional installer?', answer: 'On simple roofs with the base equipment package, Tesla often advertises a competitive price per watt. On complex roofs or upgraded equipment, a competitively bid local installer frequently lands lower. Get both quotes.' },
       { question: 'Should I get Tesla Solar if I have a Tesla car?', answer: "Owning a Tesla doesn't change the solar economics. The integration is convenient if you want everything in one app, but it's a preference, not a financial argument." },
-      { question: 'Does Tesla Solar lease or only sell?', answer: 'Tesla offers both purchase and a subscription/lease option in some markets. The financing structure determines who claims the 30% federal tax credit — you on a purchase, Tesla on a subscription.' },
+      { question: 'Does Tesla Solar lease or only sell?', answer: 'Tesla offers both purchase and a subscription/lease option in some markets. The financing structure now decides whether any federal credit exists at all: the 30% credit expired December 31, 2025 for purchases, but lease/subscription deals can still capture it through 2027 — and Tesla, not you, keeps it.' },
       { question: 'Are Tesla solar panels better than other brands?', answer: 'Tesla currently sources panels from third-party manufacturers. Panel quality is comparable to other Tier-1 brands. The differentiator is the system integration with Powerwall, not the panel itself.' },
       { question: 'How long does Tesla Solar take to install in Las Vegas?', answer: 'It varies. I have clients who waited 3+ months for Tesla install slots in LV. Local installers in the same period were quoting 4–6 weeks. Always ask for a written install date before signing.' },
     ],
@@ -226,7 +226,7 @@ export const batchComparePosts: BlogPost[] = [
 <thead><tr><th>Factor</th><th>SolarOptimum</th><th>Independent Agent</th></tr></thead>
 <tbody>
 <tr><td>Pricing model</td><td>Single in-house price book</td><td>Multiple installer bids</td></tr>
-<tr><td>Who keeps the federal tax credit</td><td>You on cash/loan; finance partner on lease — <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" rel="nofollow">IRS Clean Energy Credit</a></td><td>Same rules; I push ownership</td></tr>
+<tr><td>Federal tax credit status</td><td>Gone for cash/loan since 12/31/2025; finance partner keeps it on lease/PPA through 2027 — <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" rel="nofollow">IRS Clean Energy Credit</a></td><td>Same rules; I push ownership for the Nevada exemptions and net-metering value</td></tr>
 <tr><td>Install quality control</td><td>In-house crews</td><td>Installer chosen per job</td></tr>
 <tr><td>Customer service responsiveness</td><td>Corporate office</td><td>My direct line</td></tr>
 <tr><td>System size pressure</td><td>In-house rep commission</td><td>Sized to your actual usage</td></tr>
@@ -250,7 +250,7 @@ export const batchComparePosts: BlogPost[] = [
 <li>Is the proposed system the Panasonic flagship line with the 25-year combined warranty, or a different tier?</li>
 <li>Is the install in-house or subcontracted on this specific job?</li>
 <li>What's the workmanship warranty length and who backs it?</li>
-<li>Lease or purchase? Be precise about who claims the tax credit.</li>
+<li>Lease or purchase? A purchase no longer carries a federal credit (expired 12/31/2025); only lease/PPA still does, through 2027 — and the finance partner keeps it.</li>
 </ol>
 
 <h2>How to actually compare</h2>
@@ -294,7 +294,7 @@ export const batchComparePosts: BlogPost[] = [
 <thead><tr><th>Factor</th><th>Sunder Dealer Model</th><th>In-House Solar Company</th></tr></thead>
 <tbody>
 <tr><td>Pricing model</td><td>Bid by installer partner</td><td>Single in-house price book</td></tr>
-<tr><td>Who keeps the federal tax credit</td><td>You on cash/loan — see the <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" rel="nofollow">IRS credit rules</a></td><td>Same — depends on financing</td></tr>
+<tr><td>Federal tax credit status</td><td>Gone for cash/loan since 12/31/2025; lease/PPA only through 2027 — see the <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" rel="nofollow">IRS credit rules</a></td><td>Same — depends on financing</td></tr>
 <tr><td>Install quality control</td><td>Installer partner — vetted by the network</td><td>In-house or sub</td></tr>
 <tr><td>Customer service responsiveness</td><td>Direct to your agent</td><td>Corporate channel</td></tr>
 <tr><td>System size pressure</td><td>Agent paid on referral, not kW commission</td><td>Rep commission scales with size</td></tr>
@@ -325,7 +325,7 @@ export const batchComparePosts: BlogPost[] = [
 <ol>
 <li>Who is the licensed installer on this job? (Not the dealer — the installer.)</li>
 <li>What's the workmanship warranty and who backs it?</li>
-<li>What's the financing structure and who claims the tax credit?</li>
+<li>What's the financing structure? A purchase no longer carries a federal credit; only a lease/PPA does, through 2027 — and the provider keeps it.</li>
 <li>What's the install timeline?</li>
 <li>What happens if the inverter fails in year 8?</li>
 </ol>
@@ -334,7 +334,7 @@ export const batchComparePosts: BlogPost[] = [
 <p>Whether you go dealer-network or in-house, the system has to interconnect with NV Energy under their <a href="https://www.nvenergy.com/account-services/energy-pricing-plans/net-metering" rel="nofollow">net metering tariff</a>. The installer files this paperwork. Make sure whoever you sign with has filed dozens of these in NV — not just California or Texas.</p>
 
 <h2>How I work in this ecosystem</h2>
-<p>I'm an independent agent. I work with installers I've vetted personally. When a homeowner comes to me, I'm not trying to "sell Sunder" — I'm trying to land you on the right installer for your roof, your usage, and your budget, and to keep you on ownership financing so the tax credit stays in your pocket.</p>
+<p>I'm an independent agent. I work with installers I've vetted personally. When a homeowner comes to me, I'm not trying to "sell Sunder" — I'm trying to land you on the right installer for your roof, your usage, and your budget, and to keep you on ownership financing so the equity, Nevada's tax exemptions, and full net-metering value stay in your pocket.</p>
 
 <h2>Closing</h2>
 <p>"Sunder vs other solar companies" is the wrong frame. The real frame is: dealer/agent model vs in-house company model. Both can deliver a good system. <a href="/about">Here's how I work specifically</a>, and <a href="/#get-quote">here's how to get a quote</a> if you want to see the agent model on paper.</p>`,
@@ -384,7 +384,7 @@ export const batchComparePosts: BlogPost[] = [
 </ol>
 
 <h2>The financing wedge — same as every post</h2>
-<p>I'll repeat this because it's the single biggest dollar item: the <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" rel="nofollow">30% federal Residential Clean Energy Credit</a> goes to the system owner. On cash or loan, that's you. On a lease or PPA, that's the third-party owner. The <a href="https://www.consumer.ftc.gov/articles/whats-deal-leasing-solar-panels" rel="nofollow">FTC's solar lease primer</a> walks through the implications. For most homeowners with tax liability, ownership is the better lifetime cost.</p>
+<p>I'll repeat this because the rules just changed: the <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" rel="nofollow">30% federal Residential Clean Energy Credit</a> expired December 31, 2025 for systems you buy with cash or a loan. It survives only on lease and PPA deals through the end of 2027 — and there the third-party owner keeps it, not you. The <a href="https://www.consumer.ftc.gov/articles/whats-deal-leasing-solar-panels" rel="nofollow">FTC's solar lease primer</a> walks through the implications. For most homeowners, ownership is still the better lifetime cost: you keep Nevada's sales-tax and property-tax exemptions, full net-metering value, and you lock your own generation cost against rising NV Energy rates.</p>
 
 <h2>The "best for X" honest list</h2>
 <p>Instead of a ranking, here are the categories I think about:</p>
@@ -419,25 +419,25 @@ export const batchComparePosts: BlogPost[] = [
     description: 'Solar lease vs loan vs PPA — the honest pros and cons of each financing structure, who keeps the tax credit, and which one fits your situation.',
     publishDate: '2026-04-01',
     tags: ['Comparison', 'Cost & Financing'],
-    body: `<p><strong>Quick answer:</strong> A solar loan or cash purchase puts the system in your name and lets you claim the 30% federal tax credit. A lease puts the system in a third party's name — they claim the credit and you pay a fixed (usually escalating) monthly bill. A PPA is similar to a lease but you pay per kWh produced rather than a flat monthly amount. For homeowners with federal tax liability, ownership wins on lifetime cost. For homeowners with no tax liability or no upfront cash flexibility, a lease or PPA can still pencil.</p>
+    body: `<p><strong>Quick answer:</strong> A solar loan or cash purchase puts the system in your name. The 30% federal tax credit that used to come with ownership expired December 31, 2025 — so a purchase today leans on Nevada's surviving incentives and net-metering value instead. A lease puts the system in a third party's name; they keep any federal incentive (lease/PPA still qualify through 2027) and you pay a fixed (usually escalating) monthly bill. A PPA is similar but you pay per kWh produced. For most homeowners, ownership still wins on lifetime cost. For those with no upfront cash flexibility, a lease or PPA can still pencil — and it's now the only structure tied to a federal incentive.</p>
 
 <h2>The three structures, plain English</h2>
 
 <h3>Cash / loan (ownership)</h3>
-<p>You buy the system outright with cash or with a solar loan. You own the panels. You claim the 30% federal <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" rel="nofollow">Residential Clean Energy Credit</a>. You receive any state and utility incentives. Your monthly bill is the loan payment (if financed) and a small NV Energy minimum.</p>
+<p>You buy the system outright with cash or with a solar loan. You own the panels. The 30% federal <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" rel="nofollow">Residential Clean Energy Credit</a> no longer applies — it expired December 31, 2025 for purchased systems — but you still get Nevada's sales-tax and property-tax exemptions plus 20-year locked net metering. Your monthly bill is the loan payment (if financed) and a small NV Energy minimum.</p>
 
 <h3>Lease</h3>
-<p>A third party owns the panels on your roof. You pay them a fixed monthly bill, usually with a 1.9–2.9% annual escalator. They claim the tax credit and any incentives. At end of term (typically 20–25 years), you can buy out the system, extend, or have it removed. The <a href="https://www.consumer.ftc.gov/articles/whats-deal-leasing-solar-panels" rel="nofollow">FTC's solar lease primer</a> covers the consumer-protection angle.</p>
+<p>A third party owns the panels on your roof. You pay them a fixed monthly bill, usually with a 1.9–2.9% annual escalator. They claim any federal incentive (lease/PPA still qualify through the end of 2027) and other incentives. At end of term (typically 20–25 years), you can buy out the system, extend, or have it removed. The <a href="https://www.consumer.ftc.gov/articles/whats-deal-leasing-solar-panels" rel="nofollow">FTC's solar lease primer</a> covers the consumer-protection angle.</p>
 
 <h3>PPA (Power Purchase Agreement)</h3>
-<p>Similar to a lease, but instead of a fixed monthly payment, you pay per kWh the system produces — usually at a rate below current utility rates, with an annual escalator. The third party owns the system and claims the credit.</p>
+<p>Similar to a lease, but instead of a fixed monthly payment, you pay per kWh the system produces — usually at a rate below current utility rates, with an annual escalator. The third party owns the system and keeps any federal incentive (lease/PPA still qualify through 2027).</p>
 
 <h2>Side-by-side</h2>
 <table>
 <thead><tr><th>Factor</th><th>Cash / Loan</th><th>Lease</th><th>PPA</th></tr></thead>
 <tbody>
 <tr><td>Pricing model</td><td>Fixed install price; loan amortizes</td><td>Flat monthly bill, with escalator</td><td>$/kWh, with escalator</td></tr>
-<tr><td>Who keeps the federal tax credit</td><td>You</td><td>Third party</td><td>Third party</td></tr>
+<tr><td>Federal tax credit status</td><td>None — expired 12/31/2025 for purchases</td><td>Third party keeps it (through 2027)</td><td>Third party keeps it (through 2027)</td></tr>
 <tr><td>Install quality control</td><td>You pick the installer</td><td>Lease provider's installer network</td><td>PPA provider's installer network</td></tr>
 <tr><td>Customer service responsiveness</td><td>Installer or agent</td><td>Lease provider call center</td><td>PPA provider call center</td></tr>
 <tr><td>System size pressure</td><td>Sized to your usage</td><td>Often sized larger — more revenue for provider</td><td>Same dynamic as lease</td></tr>
@@ -449,19 +449,19 @@ export const batchComparePosts: BlogPost[] = [
 </table>
 
 <h2>Pros and cons — cash / loan</h2>
-<p><strong>Pros:</strong> Lowest lifetime cost. You claim the 30% federal credit. You own an asset that adds resale value. No third-party agreement on your house. Clean home sale.</p>
-<p><strong>Cons:</strong> Either a cash outlay or a loan on your credit profile. You're responsible for the system after the workmanship warranty period. If you have no federal tax liability, the 30% credit may not be fully usable in the first year (it can carry forward, but check with a CPA).</p>
+<p><strong>Pros:</strong> Lowest lifetime cost. You own an asset that adds resale value. You keep Nevada's sales-tax and property-tax exemptions and full net-metering value, and you lock your own generation cost as a hedge against rising NV Energy rates. No third-party agreement on your house. Clean home sale.</p>
+<p><strong>Cons:</strong> Either a cash outlay or a loan on your credit profile. You're responsible for the system after the workmanship warranty period. The 30% federal credit that once offset roughly a third of the cost is gone — it expired December 31, 2025 for purchases — so the payback math now rests on utility savings and the Nevada exemptions alone.</p>
 
 <h2>Pros and cons — lease</h2>
 <p><strong>Pros:</strong> $0 down. Provider handles maintenance. Predictable monthly bill (with the escalator caveat).</p>
-<p><strong>Cons:</strong> Highest lifetime cost in most scenarios. You don't own the asset. The third party — not you — claims the tax credit. Lease must be transferred or bought out at home sale. The annual escalator can outpace utility rate increases in some years.</p>
+<p><strong>Cons:</strong> Highest lifetime cost in most scenarios. You don't own the asset. The third party — not you — keeps any federal incentive (lease/PPA still qualify through 2027). Lease must be transferred or bought out at home sale. The annual escalator can outpace utility rate increases in some years.</p>
 
 <h2>Pros and cons — PPA</h2>
 <p><strong>Pros:</strong> $0 down. Pay only for what's produced (so an underperforming system costs you less). Provider handles maintenance.</p>
 <p><strong>Cons:</strong> Same ownership and tax credit issues as a lease. The $/kWh rate can rise faster than utility rates in some years. Same home-sale complications.</p>
 
-<h2>The tax credit math, made concrete</h2>
-<p>Take a typical Las Vegas system: 8 kW, $24,000 installed. The 30% federal credit on ownership is $7,200. On a lease or PPA, that $7,200 goes to the third party. That single line item is the biggest single driver of "ownership wins for most homeowners with tax liability."</p>
+<h2>The ownership math, made concrete</h2>
+<p>Take a typical Las Vegas system: 8 kW, about $22,800 installed (Nevada's sales-tax exemption already applied — that exemption alone saves roughly $1,900 at Clark County's ~8.375% rate). There's no longer a 30% federal credit to subtract; it expired December 31, 2025 for purchases. What you do keep on an owned system: that sales-tax exemption, the property-tax exemption on the added home value, and 20-year locked net metering at 75% of retail. On a lease or PPA, the third party keeps any federal incentive instead of you. Payback on a cash purchase now runs roughly 9–12 years now that the 30% federal credit has ended — though NV Energy's rising rates keep pulling that number down.</p>
 
 <h2>NV Energy net metering interacts with all three</h2>
 <p>Whether you own, lease, or PPA, the system interconnects under <a href="https://www.nvenergy.com/account-services/energy-pricing-plans/net-metering" rel="nofollow">NV Energy's net metering tariff</a>. The credit you receive for excess production is the same regardless of financing — but on a lease or PPA, that net metering credit effectively flows through to the third party (because you're paying them a fixed bill regardless).</p>
@@ -469,22 +469,22 @@ export const batchComparePosts: BlogPost[] = [
 <h2>Who should do which</h2>
 <ul>
 <li><strong>Cash:</strong> If you have the cash and don't need the liquidity elsewhere — usually wins on IRR.</li>
-<li><strong>Loan:</strong> The default for most homeowners with federal tax liability. Captures the credit, builds equity in the system.</li>
-<li><strong>Lease:</strong> Homeowners with no federal tax liability (retired, low taxable income), or those who want zero responsibility for maintenance.</li>
+<li><strong>Loan:</strong> The default for most homeowners. Builds equity in the system and keeps Nevada's exemptions and net-metering value in your name.</li>
+<li><strong>Lease:</strong> Homeowners who want zero upfront cost or zero responsibility for maintenance — and it's now the only structure still tied to a federal incentive (through 2027), which the provider keeps.</li>
 <li><strong>PPA:</strong> Same fit as lease, but for those who'd rather pay-per-production than a flat fee.</li>
 </ul>
 
 <h2>What I push by default</h2>
-<p>Loan, with cash if the homeowner has it. The math almost always favors ownership for clients with tax liability, and I want them to claim the credit — not the finance company. I'll walk a client into a lease only if it's genuinely the right fit (which is rarer than the industry implies).</p>
+<p>Loan, with cash if the homeowner has it. The math almost always favors ownership — I want clients keeping the equity, Nevada's exemptions, and full net-metering value, not handing a lease provider the only surviving federal incentive. I'll walk a client into a lease only if it's genuinely the right fit (which is rarer than the industry implies).</p>
 
 <h2>Closing</h2>
 <p>Lease, loan, or PPA isn't a personality test — it's a math problem with a few personal-situation inputs. <a href="/solar-las-vegas">Here's how the math runs in Las Vegas specifically</a>. If you want me to model your bill against all three structures, <a href="/#get-quote">request a quote</a>.</p>`,
     faqs: [
-      { question: 'Is a solar loan better than a lease?', answer: "For most homeowners with federal tax liability, yes. The loan lets you claim the 30% federal credit and own the asset. The lease gives the credit to the third party and you pay a monthly bill with an annual escalator." },
-      { question: 'Who keeps the solar tax credit on a lease?', answer: 'The third-party owner of the system — not you. This is the single biggest reason ownership financing usually wins on lifetime cost.' },
+      { question: 'Is a solar loan better than a lease?', answer: "For most homeowners, yes. The loan lets you own the asset and keep Nevada's tax exemptions and full net-metering value. The 30% federal credit that used to favor loans expired December 31, 2025 for purchases, so the case for ownership now rests on equity and utility savings — not the credit. A lease gives any surviving federal incentive to the third party and you pay a monthly bill with an annual escalator." },
+      { question: 'Can I still get the solar tax credit?', answer: 'Only on a lease or PPA, and only through the end of 2027 — and there the third-party owner keeps it, not you. For a system you buy with cash or a loan, the 30% federal credit expired December 31, 2025 and is gone.' },
       { question: 'What is a solar PPA and how is it different from a lease?', answer: 'A PPA charges per kWh the system produces, while a lease charges a flat monthly amount. Both are third-party-owned. Both have annual escalators. The PPA gives you some downside protection if the system underperforms.' },
-      { question: 'Can I pay off a solar loan early?', answer: "Most reputable solar loans allow early payoff with no prepayment penalty, but always confirm in writing. A common gotcha is the loan structure that assumes you'll apply the tax credit toward principal in month 18; if you don't, your payment can re-amortize higher." },
-      { question: 'Should I lease solar if I have no tax liability?', answer: 'Possibly. If you genuinely cannot use the 30% credit (and cannot carry it forward usefully), a lease or PPA gets you the production benefit without leaving the credit on the table. Talk to a CPA before committing either way.' },
+      { question: 'Can I pay off a solar loan early?', answer: "Most reputable solar loans allow early payoff with no prepayment penalty, but always confirm in writing. Watch out for older loan structures that assumed you'd apply a 30% tax-credit lump sum toward principal around month 18 — that credit no longer exists for purchases, so make sure the loan is underwritten without it or your payment can re-amortize higher." },
+      { question: 'Should I lease solar instead of buying?', answer: 'Possibly, if you want zero upfront cost or zero maintenance responsibility. A lease or PPA is also now the only structure still tied to a federal incentive (through 2027) — though the provider keeps it, not you. For most owners, the Nevada exemptions, net-metering value, and equity from a purchase still win. Talk to a CPA before committing either way.' },
       { question: 'Does a solar lease hurt my home sale?', answer: 'It can. The buyer must qualify to assume the lease, or you must buy it out at closing. Owned systems convey with the property and typically increase resale value. Plan for this if you might sell in the next decade.' },
     ],
   },
@@ -506,7 +506,7 @@ export const batchComparePosts: BlogPost[] = [
 <thead><tr><th>Factor</th><th>Roof-Mount</th><th>Ground-Mount</th></tr></thead>
 <tbody>
 <tr><td>Pricing model</td><td>~$2.80–$3.50/W installed (NV typical 2026)</td><td>~$3.50–$4.80/W installed</td></tr>
-<tr><td>Who keeps the federal tax credit</td><td>Same — depends on financing, see <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" rel="nofollow">IRS guidance</a></td><td>Same</td></tr>
+<tr><td>Federal tax credit status</td><td>Gone for purchases since 12/31/2025; lease/PPA only through 2027 — see <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" rel="nofollow">IRS guidance</a></td><td>Same</td></tr>
 <tr><td>Install quality control</td><td>Roof penetrations require skilled flashing</td><td>Ground anchors require proper soil prep</td></tr>
 <tr><td>Customer service responsiveness</td><td>Same — installer-dependent</td><td>Same</td></tr>
 <tr><td>System size pressure</td><td>Limited by roof area</td><td>Limited only by land + budget</td></tr>
@@ -596,7 +596,7 @@ export const batchComparePosts: BlogPost[] = [
 <tbody>
 <tr><td>Pricing model — solar without battery</td><td>Strong; ~12–15 year payback</td><td>Weaker; payback often 12–18+ years</td></tr>
 <tr><td>Pricing model — solar + battery</td><td>Battery was optional</td><td>Battery now standard for good economics</td></tr>
-<tr><td>Who keeps the federal tax credit</td><td>Same — see <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" rel="nofollow">IRS rules</a> (battery qualifies if meets threshold)</td><td>Same</td></tr>
+<tr><td>Federal tax credit status</td><td>Expired 12/31/2025 for purchased systems; lease/PPA only through 2027 — see <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" rel="nofollow">IRS rules</a></td><td>Same</td></tr>
 <tr><td>Install quality control</td><td>Same — installer-dependent</td><td>Same; design complexity higher</td></tr>
 <tr><td>Customer service responsiveness</td><td>Same</td><td>Same</td></tr>
 <tr><td>System size pressure</td><td>Reps still pushed bigger systems</td><td>Now reps push bigger battery — same dynamic</td></tr>
@@ -628,7 +628,7 @@ export const batchComparePosts: BlogPost[] = [
 </ul>
 
 <h2>The financing wedge — same in CA as in NV</h2>
-<p>Cash or loan keeps the 30% federal credit in your pocket. Lease or PPA gives it to the third party. The <a href="https://www.consumer.ftc.gov/articles/whats-deal-leasing-solar-panels" rel="nofollow">FTC's solar lease primer</a> applies the same way in CA. With NEM 3.0 making the math tighter, ownership matters even more — the credit is a much larger percentage of total project economics now.</p>
+<p>The 30% federal credit expired December 31, 2025 for systems you buy — it now survives only on lease and PPA deals through the end of 2027, where the third party keeps it. The <a href="https://www.consumer.ftc.gov/articles/whats-deal-leasing-solar-panels" rel="nofollow">FTC's solar lease primer</a> applies the same way in CA. California's own incentives are unchanged: SGIP rebates for batteries and NEM 3.0 net billing still apply. With NEM 3.0 making the math tighter, getting the battery design right — and capturing SGIP where you qualify — matters more than ever now that the federal credit is off the table for purchases.</p>
 
 <h2>California Solar Rights Act</h2>
 <p>If you're in an HOA-governed community in IE, the <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=714" rel="nofollow">California Solar Rights Act (Civil Code 714)</a> protects your right to install solar despite most HOA restrictions. HOAs can impose reasonable aesthetic conditions but cannot prohibit. Useful to know if your HOA is being difficult.</p>
@@ -647,7 +647,7 @@ export const batchComparePosts: BlogPost[] = [
     faqs: [
       { question: 'Is solar still worth it in Riverside under NEM 3.0?', answer: 'Yes — but the design has to be right. A solar + battery system tuned to your SCE TOU rate plan still produces strong lifetime savings. Solar without a battery has gotten weaker under NEM 3.0 and often no longer pencils for new installs.' },
       { question: 'Do I need a battery with solar in the Inland Empire?', answer: 'Functionally, yes. Without a battery, NEM 3.0 export rates are too low to capture the full value of midday production. A correctly sized battery shifts that production into the SCE evening peak where rates are highest.' },
-      { question: 'How much does solar cost in the Inland Empire in 2026?', answer: 'A typical 8 kW solar + 13.5 kWh battery system in IE runs roughly $38,000–$48,000 installed before incentives. The 30% federal tax credit drops that to roughly $26,600–$33,600 net for ownership-financed systems.' },
+      { question: 'How much does solar cost in the Inland Empire in 2026?', answer: 'A typical 8 kW solar + 13.5 kWh battery system in IE runs roughly $38,000–$48,000 installed. The 30% federal tax credit that used to cut that price expired December 31, 2025 for purchased systems, so cash buyers now pay close to the sticker. California SGIP battery rebates can still offset part of the battery cost where you qualify, and a lease or PPA remains the only path still tied to a federal incentive (through 2027), which the provider keeps.' },
       { question: 'Should I go with a national installer or a local IE solar company?', answer: 'IE has strong local installers, and the agent model lets you compare 2–3 of them on the same scope. National brands offer integration but often less flexibility on NEM 3.0 design. I recommend competitive bids regardless.' },
       { question: 'Does NEM 3.0 apply to existing solar customers in Riverside?', answer: 'No. If your system was interconnected under NEM 2.0, you remain on NEM 2.0 for 20 years from your original interconnection date. NEM 3.0 applies to new interconnections only.' },
       { question: 'Can my HOA in Corona or Moreno Valley block my solar install?', answer: 'No. The California Solar Rights Act protects your right to install rooftop solar. HOAs can impose reasonable aesthetic conditions but cannot prohibit the install or impose restrictions that significantly increase cost or decrease performance.' },

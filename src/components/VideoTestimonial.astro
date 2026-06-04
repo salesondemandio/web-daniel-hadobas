@@ -1,0 +1,73 @@
+---
+// Video testimonial section for the landing page (command-center dark skin).
+// Click-to-play: shows a poster + play button, only loads the <video> on click
+// so it never hurts page-load. Renders nothing if no `src` is passed.
+interface Props {
+  src?: string;        // e.g. '/videos/daniel-testimonial.mp4'
+  poster?: string;     // e.g. '/images/testimonial-poster.jpg'
+  quote?: string;      // short caption under the video
+  name?: string;       // who's speaking
+  eyebrow?: string;
+  heading?: string;
+}
+
+const {
+  src = '',
+  poster = '/images/daniel.jpg',
+  quote = '',
+  name = '',
+  eyebrow = 'SEE IT FOR YOURSELF',
+  heading = 'A real customer, a real bill',
+} = Astro.props;
+---
+
+{src && (
+  <section class="relative py-20 sm:py-24">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8 text-center">
+      <p class="text-[#8DD66A] text-sm font-semibold tracking-wide mb-3">{eyebrow}</p>
+      <h2 class="font-display text-3xl sm:text-[2.6rem] leading-[1.1] text-white mb-8">{heading}</h2>
+
+      <div
+        id="vt-wrap"
+        class="relative mx-auto aspect-video w-full max-w-2xl overflow-hidden rounded-3xl border border-white/10 lp-glow bg-[#0C2014]"
+        data-src={src}
+      >
+        <img src={poster} alt="" class="absolute inset-0 h-full w-full object-cover opacity-70" loading="lazy" decoding="async" />
+        <button
+          id="vt-play"
+          type="button"
+          aria-label="Play video testimonial"
+          class="group absolute inset-0 flex items-center justify-center"
+        >
+          <span class="flex h-20 w-20 items-center justify-center rounded-full bg-[#6AB745] text-[#07140D] shadow-xl transition group-hover:scale-105 group-hover:bg-[#7ECC57]">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          </span>
+        </button>
+      </div>
+
+      {quote && (
+        <figure class="mt-7">
+          <blockquote class="text-white/90 text-lg leading-relaxed">"{quote}"</blockquote>
+          {name && <figcaption class="lp-faint text-sm mt-2">— {name}</figcaption>}
+        </figure>
+      )}
+    </div>
+  </section>
+
+  <script>
+    // Swap the poster/button for a real, controllable <video> on first click.
+    const wrap = document.getElementById('vt-wrap');
+    const btn = document.getElementById('vt-play');
+    btn?.addEventListener('click', () => {
+      const url = wrap?.getAttribute('data-src');
+      if (!wrap || !url) return;
+      const video = document.createElement('video');
+      video.src = url;
+      video.controls = true;
+      video.autoplay = true;
+      video.playsInline = true;
+      video.className = 'absolute inset-0 h-full w-full bg-black';
+      wrap.replaceChildren(video);
+    });
+  </script>
+)}

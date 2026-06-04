@@ -1,7 +1,7 @@
 export const summerlinContent = {
   meta: {
     title: "Solar Panels Summerlin NV — $0 Down | Daniel Hadobas",
-    description: "Summerlin's top-rated solar agent. 174 five-star reviews. $0 down solar, 30% federal tax credit. Serving Summerlin master-planned community. Call (702) 941-6894.",
+    description: "Summerlin's top-rated solar agent. 174 five-star reviews. $0 down solar, Nevada tax exemptions + net metering. Serving Summerlin master-planned community. Call (702) 941-6894.",
     keywords: "solar panels Summerlin NV, Summerlin solar installation, solar agent Summerlin Las Vegas, HOA solar Summerlin, NRS 116 solar Nevada"
   },
   hero: {
@@ -14,14 +14,14 @@ export const summerlinContent = {
     { value: '$0', label: 'Down To Get Started' }
   ],
   intro: [
-    `Solar in Summerlin typically costs $15,960–$23,940 after the <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener">30% federal tax credit</a> on the larger 8–12 kW systems Summerlin homes need. Summerlin is fully NV Energy territory, so residents earn <a href="https://www.nvenergy.com/account-services/energy-pricing-plans/net-metering" target="_blank" rel="noopener">net metering credits at 75% of retail</a>. HOA approval is required in most villages but cannot be denied under Nevada law.`,
-    `Summerlin is the largest master-planned community in the United States, stretching across the western edge of the Las Vegas Valley. With custom homes in prestigious villages like The Ridges, Willow Bend, and The Hills, Summerlin homeowners typically have larger-than-average homes — 2,500 to 4,500 square feet — which means higher energy bills and greater potential savings from solar. Summerlin is served entirely by NV Energy, so residents qualify for Nevada's full suite of solar incentives: the <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener">30% federal tax credit</a>, the Nevada sales tax exemption, NV Energy net metering at 75% of the retail rate, and the state's property tax exemption for solar-added home value.`,
+    `Solar in Summerlin typically costs $22,800–$34,200 for the larger 8–12 kW systems Summerlin homes need (Nevada's sales-tax exemption is already applied; the 30% federal credit ended Dec 31, 2025). Summerlin is fully NV Energy territory, so residents earn <a href="https://www.nvenergy.com/account-services/energy-pricing-plans/net-metering" target="_blank" rel="noopener">net metering credits at 75% of retail</a>. HOA approval is required in most villages but cannot be denied under Nevada law.`,
+    `Summerlin is the largest master-planned community in the United States, stretching across the western edge of the Las Vegas Valley. With custom homes in prestigious villages like The Ridges, Willow Bend, and The Hills, Summerlin homeowners typically have larger-than-average homes — 2,500 to 4,500 square feet — which means higher energy bills and greater potential savings from solar. Summerlin is served entirely by NV Energy, so residents qualify for Nevada's suite of solar incentives: the Nevada sales tax exemption, NV Energy net metering at 75% of the retail rate, and the state's property tax exemption for solar-added home value. (The 30% federal tax credit ended Dec 31, 2025 for systems you buy; only leased or PPA systems may still capture a federal incentive through 2027.)`,
     `Summerlin's HOA landscape is more active than most of Las Vegas — many villages have architectural review boards with specific guidelines on panel placement and aesthetics. But <a href="https://www.leg.state.nv.us/NRS/NRS-278.html" target="_blank" rel="noopener">Nevada law (NRS 278.0208)</a> prohibits any HOA from outright banning solar panels; they can only regulate placement and appearance. Daniel Hadobas has navigated dozens of Summerlin HOA submissions and handles the entire approval process on your behalf. With an average home value well above the Las Vegas median, Summerlin systems tend to run larger (8–12 kW), delivering proportionally higher savings and faster payback periods.`
   ],
   incentives: [
     {
-      title: "30% Federal Investment Tax Credit (ITC)",
-      description: `Summerlin homeowners qualify for the <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener">30% federal solar tax credit</a> on the full installed cost of their system. On a typical 8–12 kW Summerlin system, that's $6,000–$9,000 back in federal taxes. Available through 2032 with no income cap for most homeowners.`
+      title: "Federal Tax Credit — Expired Dec 31, 2025 for Purchases",
+      description: `The 30% federal solar tax credit ended December 31, 2025 for systems you buy with cash or a loan. A leased or PPA (third-party-owned) system may still capture a federal incentive through the end of 2027. For Summerlin homeowners who buy, the real value now comes from Nevada's sales-tax and property-tax exemptions, net metering at 75% of retail, and locking in your own generation cost against rising NV Energy rates.`
     },
     {
       title: "Nevada Sales Tax Exemption",
@@ -39,7 +39,7 @@ export const summerlinContent = {
   faqs: [
     {
       question: "How much does solar cost in Summerlin?",
-      answer: "Summerlin homes tend to be larger than the Las Vegas average, so systems typically run 8–12 kW. At roughly $2.85 per watt before incentives, expect $22,800–$34,200 before the 30% federal tax credit — and $15,960–$23,940 after. $0 down financing is available, so many Summerlin homeowners start saving immediately with no upfront cost."
+      answer: "Summerlin homes tend to be larger than the Las Vegas average, so systems typically run 8–12 kW. At roughly $2.85 per watt before incentives, expect $22,800–$34,200 — Nevada's sales-tax exemption is already applied, and the 30% federal credit ended Dec 31, 2025, so there's no further reduction for a cash or loan purchase. $0 down financing is available, so many Summerlin homeowners start saving immediately with no upfront cost."
     },
     {
       question: "Does my Summerlin HOA allow solar panels?",

@@ -9,19 +9,19 @@ export const northLasVegasContent = {
     subheadline: "North Las Vegas homeowners sit at one of the highest elevations in the valley — more sun exposure, hotter summers, and bigger electricity bills that solar is built to eliminate."
   },
   intro: [
-    `Solar in North Las Vegas typically costs $13,965–$17,955 after the <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener">30% federal tax credit</a> on the 7–9 kW systems most homes need to offset heavier AC loads. Payback runs 6–9 years on NV Energy bills, with <a href="https://www.nvenergy.com/account-services/energy-pricing-plans/net-metering" target="_blank" rel="noopener">net metering credits at 75% of retail</a> banking spring production for peak summer use.`,
+    `Solar in North Las Vegas typically costs $19,950–$25,650 for the 7–9 kW systems most homes need to offset heavier AC loads (Nevada's sales-tax exemption is already applied; the 30% federal credit ended Dec 31, 2025). Payback runs roughly 9–12 years for a cash purchase — though NV Energy's rising rates keep pulling that number down — with <a href="https://www.nvenergy.com/account-services/energy-pricing-plans/net-metering" target="_blank" rel="noopener">net metering credits at 75% of retail</a> banking spring production for peak summer use.`,
     `North Las Vegas is one of the fastest-growing cities in the country, and its residential solar market is accelerating right alongside that growth. As an NV Energy customer, North Las Vegas homeowners face the <a href="https://www.eia.gov/state/?sid=NV" target="_blank" rel="noopener">same rate structure as the rest of the valley</a> — currently averaging $0.125 per kilowatt-hour — but the city's slightly higher desert elevation and <a href="https://www.nrel.gov/gis/solar-resource-maps.html" target="_blank" rel="noopener">intense summer solar irradiance</a> often push electricity bills higher than metro-average. Air conditioning demand in North Las Vegas regularly drives summer bills to $250–$400 per month, which makes solar's return on investment even stronger here than in many surrounding areas.`,
-    "North Las Vegas neighborhoods — from Aliante and Eldorado to Sunny Springs and the newer developments near Craig Ranch — feature the wide roof planes and south-facing exposures that maximize solar production. A properly sized system for a North Las Vegas home (typically 7 to 9 kW to offset heavier AC loads) will cover most or all of the household's electricity needs year-round. NV Energy's net metering program banks excess spring and fall production as credits, which then offset the peak summer draw. Most North Las Vegas homeowners see a full payback in 6 to 9 years, followed by years of essentially free electricity on panels warrantied for 25 years."
+    "North Las Vegas neighborhoods — from Aliante and Eldorado to Sunny Springs and the newer developments near Craig Ranch — feature the wide roof planes and south-facing exposures that maximize solar production. A properly sized system for a North Las Vegas home (typically 7 to 9 kW to offset heavier AC loads) will cover most or all of the household's electricity needs year-round. NV Energy's net metering program banks excess spring and fall production as credits, which then offset the peak summer draw. Most North Las Vegas homeowners see a full payback in roughly 9 to 12 years for a cash purchase now that the 30% federal credit has ended — though NV Energy's rising rates keep pulling that number down — followed by years of essentially free electricity on panels warrantied for 25 years."
   ],
   stats: [
     { value: "290+", label: "Sunny Days Per Year" },
     { value: "$0", label: "Down to Get Started" },
-    { value: "6–9 yrs", label: "Average Payback Period" }
+    { value: "9–12 yrs", label: "Average Payback Period" }
   ],
   incentives: [
     {
-      title: "Federal Investment Tax Credit (ITC)",
-      description: `North Las Vegas homeowners qualify for the full <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener">30% federal solar tax credit</a> through 2032. On a typical 7–9 kW system, that's $6,000 to $8,000 back against your federal income tax — no income cap for most homeowners, no application, automatically claimed on your tax return.`
+      title: "Federal Tax Credit — Expired Dec 31, 2025 for Purchases",
+      description: `The 30% federal solar tax credit ended December 31, 2025 for systems you buy with cash or a loan. A leased or PPA (third-party-owned) system may still capture a federal incentive through the end of 2027. For North Las Vegas homeowners who buy, the real value now comes from Nevada's sales-tax and property-tax exemptions, net metering at 75% of retail, and locking in your own generation cost against rising NV Energy rates.`
     },
     {
       title: "NV Energy Net Metering",
@@ -39,11 +39,11 @@ export const northLasVegasContent = {
   faqs: [
     {
       question: "How much does solar cost in North Las Vegas, NV?",
-      answer: "North Las Vegas solar costs average $2.85 per watt installed. A 7–9 kW system to handle heavier AC loads runs $19,950–$25,650 before incentives, and $13,965–$17,955 after the 30% federal tax credit. $0 down financing is available — many homeowners start saving from month one with no upfront cost."
+      answer: "North Las Vegas solar costs average $2.85 per watt installed. A 7–9 kW system to handle heavier AC loads runs $19,950–$25,650, with Nevada's sales-tax exemption already applied; the 30% federal credit ended Dec 31, 2025, so there's no further reduction for a cash or loan purchase. $0 down financing is available — many homeowners start saving from month one with no upfront cost."
     },
     {
       question: "Is solar worth it in North Las Vegas?",
-      answer: "Especially so. North Las Vegas homeowners often have higher-than-average electricity bills due to summer heat and elevation, which means a larger solar offset and stronger monthly savings. With 290+ sunny days, NV Energy rates at $0.125/kWh, and a 6–9 year payback, the economics are compelling — most homeowners accumulate $51,000+ in lifetime savings."
+      answer: "Especially so. North Las Vegas homeowners often have higher-than-average electricity bills due to summer heat and elevation, which means a larger solar offset and stronger monthly savings. With 290+ sunny days, NV Energy rates at $0.125/kWh and rising, and a roughly 9–12 year payback for a cash purchase now that the 30% federal credit has ended — though those rising rates keep pulling that number down — the economics are compelling. Most homeowners accumulate $51,000+ in lifetime savings."
     },
     {
       question: "Does North Las Vegas use NV Energy?",
@@ -51,7 +51,7 @@ export const northLasVegasContent = {
     },
     {
       question: "What solar incentives are available to North Las Vegas homeowners?",
-      answer: "North Las Vegas residents qualify for: (1) the 30% federal Investment Tax Credit through 2032, (2) NV Energy net metering at 75% retail rate, (3) Nevada's property tax exemption on solar-added home value, and (4) Nevada's sales tax exemption on solar equipment. Combined, these incentives can offset 40–50% of total system cost."
+      answer: "The 30% federal Investment Tax Credit ended December 31, 2025 for systems you buy — only leased or PPA systems may still capture a federal incentive through 2027. North Las Vegas residents who buy still qualify for: (1) NV Energy net metering at 75% retail rate, locked for 20 years, (2) Nevada's property tax exemption on solar-added home value, and (3) Nevada's sales tax exemption on solar equipment — an immediate 8.375% off your hardware at purchase."
     },
     {
       question: "Do solar panels increase home value in North Las Vegas?",

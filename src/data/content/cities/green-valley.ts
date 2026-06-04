@@ -1,7 +1,7 @@
 export const greenValleyContent = {
   meta: {
     title: "Solar Panels Green Valley Henderson NV — $0 Down | Daniel Hadobas",
-    description: "Green Valley's top-rated solar agent. 174 five-star reviews. $0 down solar, 30% federal tax credit. Serving Henderson & Green Valley, NV. Call (702) 941-6894.",
+    description: "Green Valley's top-rated solar agent. 174 five-star reviews. $0 down solar, Nevada tax exemptions + net metering. Serving Henderson & Green Valley, NV. Call (702) 941-6894.",
     keywords: "solar panels Green Valley NV, Green Valley Henderson solar, solar agent Green Valley Nevada, NV Energy solar Henderson, solar installation Green Valley"
   },
   hero: {
@@ -14,14 +14,14 @@ export const greenValleyContent = {
     { value: '$380', label: 'Avg Monthly Savings' }
   ],
   intro: [
-    `Solar in Green Valley, NV typically costs $13,965–$19,950 after the <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener">30% federal tax credit</a> on a 7–10 kW system, with payback in 6–9 years on NV Energy bills. Green Valley HOAs may regulate placement under <a href="https://www.leg.state.nv.us/NRS/NRS-278.html" target="_blank" rel="noopener">Nevada law (NRS 278.0208)</a> but cannot deny solar applications. Daniel handles the HOA paperwork as part of every install.`,
-    `Green Valley is Henderson's premier master-planned community — one of the most desirable residential areas in the entire Las Vegas Valley. With single-family homes averaging 2,200 to 3,500 square feet, high household incomes, and a mix of older construction and newer builds in Green Valley Ranch and Whitney Ranch, this is an ideal solar market. <a href="https://www.nvenergy.com/account-services/energy-pricing-plans/net-metering" target="_blank" rel="noopener">NV Energy serves all of Henderson</a> including Green Valley, which means residents qualify for Nevada's full solar incentive stack: 30% federal tax credit, net metering at 75% retail, sales tax exemption on equipment, and a property tax exemption on solar-added home value.`,
-    "Daniel Hadobas has been a Las Vegas native since 1996 and knows every neighborhood in Henderson and Green Valley personally. He's not a rotating national sales rep — he's local, he's accountable, and his 174 five-star reviews reflect it. Green Valley homeowners face the same NV Energy rate structure as the rest of Las Vegas, with bills commonly running $250–$380 per month in summer. A properly sized solar system drops that to a $15–$40 monthly residual, with most homeowners achieving full payback in 6–9 years."
+    `Solar in Green Valley, NV typically costs $19,950–$28,500 for a 7–10 kW system (Nevada's sales-tax exemption is already applied; the 30% federal credit ended Dec 31, 2025), with payback in roughly 9–12 years for a cash purchase — though NV Energy's rising rates keep pulling that number down. Green Valley HOAs may regulate placement under <a href="https://www.leg.state.nv.us/NRS/NRS-278.html" target="_blank" rel="noopener">Nevada law (NRS 278.0208)</a> but cannot deny solar applications. Daniel handles the HOA paperwork as part of every install.`,
+    `Green Valley is Henderson's premier master-planned community — one of the most desirable residential areas in the entire Las Vegas Valley. With single-family homes averaging 2,200 to 3,500 square feet, high household incomes, and a mix of older construction and newer builds in Green Valley Ranch and Whitney Ranch, this is an ideal solar market. <a href="https://www.nvenergy.com/account-services/energy-pricing-plans/net-metering" target="_blank" rel="noopener">NV Energy serves all of Henderson</a> including Green Valley, which means residents qualify for Nevada's solar incentive stack: net metering at 75% retail, sales tax exemption on equipment, and a property tax exemption on solar-added home value. (The 30% federal tax credit ended Dec 31, 2025 for systems you buy; only leased or PPA systems may still capture a federal incentive through 2027.)`,
+    "Daniel Hadobas has been a Las Vegas native since 1996 and knows every neighborhood in Henderson and Green Valley personally. He's not a rotating national sales rep — he's local, he's accountable, and his 174 five-star reviews reflect it. Green Valley homeowners face the same NV Energy rate structure as the rest of Las Vegas, with bills commonly running $250–$380 per month in summer. A properly sized solar system drops that to a $15–$40 monthly residual, with most homeowners achieving full payback in roughly 9–12 years for a cash purchase now that the 30% federal credit has ended — though NV Energy's rising rates keep pulling that number down."
   ],
   incentives: [
     {
-      title: "30% Federal Investment Tax Credit (ITC)",
-      description: `Green Valley homeowners qualify for the <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener">30% federal solar tax credit</a> on the full installed cost of their system. On a typical 7–10 kW system, that's $5,000–$8,000 back in federal taxes. Available through 2032 with no income cap for most homeowners.`
+      title: "Federal Tax Credit — Expired Dec 31, 2025 for Purchases",
+      description: `The 30% federal solar tax credit ended December 31, 2025 for systems you buy with cash or a loan. A leased or PPA (third-party-owned) system may still capture a federal incentive through the end of 2027. For Green Valley homeowners who buy, the real value now comes from Nevada's sales-tax and property-tax exemptions, net metering at 75% of retail, and locking in your own generation cost against rising NV Energy rates.`
     },
     {
       title: "Nevada Sales Tax Exemption",
@@ -39,7 +39,7 @@ export const greenValleyContent = {
   faqs: [
     {
       question: "How much does solar cost in Green Valley Henderson?",
-      answer: "Green Valley homes typically support 7–10 kW systems. At roughly $2.85 per watt before incentives, that's $19,950–$28,500 before the 30% federal tax credit — and $13,965–$19,950 after. $0 down financing is available, and most Green Valley homeowners start saving from their very first month."
+      answer: "Green Valley homes typically support 7–10 kW systems. At roughly $2.85 per watt before incentives, that's $19,950–$28,500 — Nevada's sales-tax exemption is already applied, and the 30% federal credit ended Dec 31, 2025, so there's no further reduction for a cash or loan purchase. $0 down financing is available, and most Green Valley homeowners start saving from their very first month."
     },
     {
       question: "Does my Green Valley HOA allow solar?",

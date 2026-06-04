@@ -46,7 +46,7 @@ export const batchTechPosts: BlogPost[] = [
 
 <h2>Battery Storage Changes the Math Entirely</h2>
 <p>If you add a battery, you stop caring about the 75% export rate for the energy you can shift. A Powerwall or Enphase IQ Battery soaks up midday surplus and discharges it during your evening usage — that energy is now offsetting full retail, not earning the 75% credit. The economics flip from "export and credit" to "self-consume and avoid import."</p>
-<p>For most Las Vegas homes, batteries don't pencil out on net metering arbitrage alone — Tier 4 at 75% isn't punitive enough. They pencil out on outage protection, EV charging, and the federal storage ITC. See my <a href="/solar-battery-storage">battery storage page</a> for the full breakdown.</p>
+<p>For most Las Vegas homes, batteries don't pencil out on net metering arbitrage alone — Tier 4 at 75% isn't punitive enough. They pencil out on outage protection and EV charging — note the 30% federal credit that used to cover storage ended December 31, 2025 for purchased systems, so don't bank on it anymore. See my <a href="/solar-battery-storage">battery storage page</a> for the full breakdown.</p>
 
 <h2>Common Mistakes I See on NV Energy Bills</h2>
 <ul>
@@ -314,7 +314,7 @@ export const batchTechPosts: BlogPost[] = [
 <p>Q.TRON uses N-type TOPCon cells. Coefficient is decent at -0.30%/°C, the warranty is honest, and Qcells is one of the largest panel manufacturers globally — backed by Hanwha. They've been in the U.S. residential market for over a decade with low warranty-claim friction. For homeowners who want quality without paying the HJT premium, this is what I quote. Most of my Henderson and <a href="/solar-summerlin">Summerlin</a> systems run on Q.TRON.</p>
 
 <h2>Silfab Elite — Strong Product Warranty, Built in North America</h2>
-<p>Silfab manufactures in Washington state and Toronto. The Elite series uses N-type TOPCon with a 30-year product warranty — five years longer than most. Performance warranty is slightly weaker (86.4% at year 25) but the product warranty matters more in practice because most warranty failures are physical (junction box, encapsulant delamination, frame defects), not power degradation. Worth considering if domestic content matters to you for IRA-related ITC adders.</p>
+<p>Silfab manufactures in Washington state and Toronto. The Elite series uses N-type TOPCon with a 30-year product warranty — five years longer than most. Performance warranty is slightly weaker (86.4% at year 25) but the product warranty matters more in practice because most warranty failures are physical (junction box, encapsulant delamination, frame defects), not power degradation. Worth considering if buying North-American-made hardware matters to you on its own merits — note the federal residential credit that once carried domestic-content adders ended December 31, 2025 for purchased systems.</p>
 
 <h2>Panasonic EverVolt HK Black — Aesthetic Premium</h2>
 <p>HJT cells, all-black backsheet and frame, lower wattage per panel because the cells are slightly smaller. You'll need a few more panels to hit the same kW. The look is the cleanest of the five. If your HOA or your own taste demands an all-black aesthetic and you don't want to compromise on heat tolerance, this is the pick. Premium pricing — typically 8–12% above REC Alpha Pure.</p>
@@ -439,11 +439,11 @@ export const batchTechPosts: BlogPost[] = [
 <h2>Cost Difference in Real Numbers</h2>
 <p>For a 7 kW Las Vegas system:</p>
 <ul>
-  <li>String + optimizers: roughly $19,400 before federal ITC</li>
-  <li>Microinverters (Enphase IQ8): roughly $20,650 before federal ITC</li>
-  <li>Difference: about $1,250, or $875 after the 30% ITC</li>
+  <li>String + optimizers: roughly $19,400</li>
+  <li>Microinverters (Enphase IQ8): roughly $20,650</li>
+  <li>Difference: about $1,250</li>
 </ul>
-<p>For an unshaded south-facing roof with one plane, that $875 buys you 0.5–1% better lifetime production — not a great trade. For a multi-plane or shaded roof, the same $875 buys 3–5% better production over 25 years (roughly $4,000–$6,500 of energy value). Easy decision.</p>
+<p>These are cash prices — the 30% federal tax credit ended December 31, 2025 for systems you buy, so there's no credit knocking it down anymore. For an unshaded south-facing roof with one plane, that $1,250 buys you 0.5–1% better lifetime production — not a great trade. For a multi-plane or shaded roof, the same $1,250 buys 3–5% better production over 25 years (roughly $4,000–$6,500 of energy value). Easy decision.</p>
 
 <h2>Rapid Shutdown and Code Compliance</h2>
 <p>Both architectures comply with NEC 2017+ rapid shutdown rules. Microinverters meet it natively (no DC on the roof). String systems meet it via rapid shutdown devices on each panel or via Tesla's combined RSD-string approach. Don't let an installer use rapid shutdown as a reason to push you toward one architecture over the other — they both pass.</p>
@@ -525,8 +525,8 @@ export const batchTechPosts: BlogPost[] = [
 <h2>How Long Does a Battery Run Your House?</h2>
 <p>Usable capacity divided by load. A 13.5 kWh Powerwall 3 supporting a 1.5 kW average overnight load runs ~9 hours. With AC running heavy at 4 kW average, it lasts 3.4 hours. With essentials only at 600W, it lasts 22 hours. These numbers assume the battery starts full — which on a sunny day, paired with a solar array and the right management settings, it usually does.</p>
 
-<h2>The Battery Federal Tax Credit Stays Strong</h2>
-<p>Standalone or solar-paired battery storage qualifies for the 30% federal Investment Tax Credit through 2032. That's about $3,500 back on a Powerwall 3, or $1,650 back on an Enphase 5P. Same eligibility rules as solar — you need the federal tax liability to use the credit, but it rolls forward if you can't use it all year one. The DOE outlines the broader policy at <a href="https://www.energy.gov/eere/solar" target="_blank" rel="noopener">energy.gov/eere/solar</a>.</p>
+<h2>The Federal Battery Tax Credit Has Ended</h2>
+<p>Heads up: the 30% federal Residential Clean Energy Credit that covered standalone and solar-paired battery storage expired December 31, 2025 for systems a homeowner buys with cash or a loan. So don't budget a credit back on a Powerwall 3 or an Enphase 5P anymore — the cash price is the price. A lease or PPA (third-party-owned) setup can still capture a federal incentive through the end of 2027, but for an owned battery that money is gone. The case for storage now rests on outage protection, EV charging, and self-consumption value, not a tax break. The DOE outlines the broader policy at <a href="https://www.energy.gov/eere/solar" target="_blank" rel="noopener">energy.gov/eere/solar</a>.</p>
 
 <h2>Where Batteries Actually Pencil Out in Nevada vs. California</h2>
 <p>Two very different cases:</p>
@@ -667,7 +667,7 @@ export const batchTechPosts: BlogPost[] = [
 </ol>
 
 <h2>The Bottom Line</h2>
-<p>If you buy a Tier 1 panel with a 25-year linear performance warranty and a strong product warranty (REC, Qcells, Silfab, Panasonic, Maxeon all qualify), you can expect 30+ years of useful production with one inverter replacement and minimal maintenance. The federal tax credit, NV Energy net metering, and Nevada's incentive structure are all sized around a 25-year payback model — so even at the warranty floor, the math still works. <a href="/#get-quote">Want me to spec a system built to last?</a></p>
+<p>If you buy a Tier 1 panel with a 25-year linear performance warranty and a strong product warranty (REC, Qcells, Silfab, Panasonic, Maxeon all qualify), you can expect 30+ years of useful production with one inverter replacement and minimal maintenance. NV Energy net metering and Nevada's sales-tax and property-tax exemptions are all sized around a 25-year payback model — so even at the warranty floor, the math still works. (The 30% federal credit ended December 31, 2025 for purchased systems, so it's no longer part of that math.) <a href="/#get-quote">Want me to spec a system built to last?</a></p>
     `,
     faqs: [
       {
@@ -794,7 +794,7 @@ export const batchTechPosts: BlogPost[] = [
   <li>NV Energy will not issue PTO without a passed inspection. No PTO = no net metering. You can't legally turn the system on.</li>
   <li>Home insurance can deny solar-related claims (fire, electrical) on unpermitted work.</li>
   <li>Future home sale will surface the unpermitted addition during disclosure or appraisal — buyers walk or demand price reductions.</li>
-  <li>Federal ITC requires the system to be "placed in service" — which permitting authorities use to mean a final inspected and PTO-approved install.</li>
+  <li>If you go the lease or PPA route to capture the federal incentive still available through 2027, the system has to be "placed in service" — which means a final inspected and PTO-approved install. Skip the permit and you forfeit that path.</li>
 </ul>
 <p>Don't skip permits. Ever.</p>
 
@@ -877,7 +877,7 @@ export const batchTechPosts: BlogPost[] = [
 
 <h2>What NEM 3.0 Does Not Change</h2>
 <ul>
-  <li>The 30% federal Investment Tax Credit still applies to both solar and battery — including standalone batteries added to an existing solar system.</li>
+  <li>NEM 3.0 didn't touch the federal credit — but note the 30% Residential Clean Energy Credit itself ended December 31, 2025 for owned solar and batteries (cash or loan). Only lease/PPA setups can still capture a federal incentive, through end of 2027.</li>
   <li>California's property tax exclusion for solar (no reassessment) still applies.</li>
   <li>Sales tax exemptions for solar-attached batteries still apply.</li>
   <li>Existing NEM 2.0 customers are grandfathered for 20 years from their original interconnection date.</li>
@@ -897,15 +897,14 @@ export const batchTechPosts: BlogPost[] = [
 <ul>
   <li>6.4 kW solar array (sized for daytime self-consumption + battery charging).</li>
   <li>One Powerwall 3 (13.5 kWh).</li>
-  <li>Project cost: $33,800 before federal ITC.</li>
-  <li>After 30% ITC: $23,660.</li>
+  <li>Project cost: $33,800 cash (the 30% federal credit ended December 31, 2025 for owned systems, so there's no reduction off this for a purchase).</li>
   <li>Year-1 utility bill savings: $2,650 (vs. $3,180 pre-rate-change).</li>
-  <li>Payback: ~9 years.</li>
+  <li>Payback: ~12 years on a cash purchase now that the federal credit has ended, though SGIP battery rebates and rising utility rates pull that down.</li>
 </ul>
 <p>For PG&E and SCE territories — where retail rates are higher and TOU peaks are more punishing than SMUD — battery payback is faster. SDG&E territory is the most punishing retail rate environment in the state and also the strongest case for solar+storage.</p>
 
 <h2>Standalone Battery Adders — A NEM 3.0 Adjacent Trick</h2>
-<p>If you already have NEM 2.0 solar and want to add storage without losing your grandfathering, install the battery as a standalone, AC-coupled system without modifying your solar interconnection. You keep your NEM 2.0 status and gain the federal ITC on the battery (30%). The battery uses your existing grid connection but doesn't change your solar export tariff. This is one of the cleanest moves available to existing California solar homeowners in 2026.</p>
+<p>If you already have NEM 2.0 solar and want to add storage without losing your grandfathering, install the battery as a standalone, AC-coupled system without modifying your solar interconnection. You keep your NEM 2.0 status. (The 30% federal credit that used to apply to an owned battery ended December 31, 2025, so a cash or financed battery no longer earns it.) The battery uses your existing grid connection but doesn't change your solar export tariff. This is one of the cleanest moves available to existing California solar homeowners in 2026.</p>
 
 <h2>The Bottom Line</h2>
 <p>NEM 3.0 is workable. It rewards solar+storage and punishes solar-only. The headline export rates are misleading — most exports pay $0.05–$0.10/kWh, not the dramatic peak numbers — so design your system around self-consumption and battery time-shift, not around chasing export revenue. <a href="/#get-quote">Want me to model a NEM 3.0 system for your home?</a> Send me a year of bills and your TOU rate plan and I'll come back with three options.</p>
@@ -917,7 +916,7 @@ export const batchTechPosts: BlogPost[] = [
       },
       {
         question: 'Should I install solar in California under NEM 3.0?',
-        answer: 'Yes, but pair it with a battery. Solar+storage payback in PG&E, SCE, and SDG&E territory is 7–10 years for typical homes — competitive with NEM 2.0 paybacks but with a higher upfront cost. Solar-only payback under NEM 3.0 stretches to 12–16 years for many homes, making battery-paired installs the obvious choice. The 30% federal Investment Tax Credit applies to both solar and battery, which softens the upfront cost meaningfully.'
+        answer: 'Yes, but pair it with a battery. Solar+storage payback in PG&E, SCE, and SDG&E territory is 7–10 years for typical homes — competitive with NEM 2.0 paybacks but with a higher upfront cost. Solar-only payback under NEM 3.0 stretches to 12–16 years for many homes, making battery-paired installs the obvious choice. Note the 30% federal credit ended December 31, 2025 for owned systems, so those paybacks now assume a cash purchase with no federal reduction; only lease/PPA setups can still capture a federal incentive through 2027, and California\'s SGIP battery rebates remain in play.'
       },
       {
         question: 'What is the ACC Plus adder and how long does it last?',
@@ -929,7 +928,7 @@ export const batchTechPosts: BlogPost[] = [
       },
       {
         question: 'Can I add a battery to an existing NEM 2.0 system without losing grandfathering?',
-        answer: 'Yes, in most cases. An AC-coupled battery added downstream of your existing solar inverter doesn\'t require you to re-apply for interconnection, so you keep your NEM 2.0 status. The battery still qualifies for the 30% federal ITC if it\'s charged at least 75% from solar. This is one of the highest-value moves available to NEM 2.0 California homeowners in 2026 — you keep retail-rate exports and gain peak-shaving and outage protection.'
+        answer: 'Yes, in most cases. An AC-coupled battery added downstream of your existing solar inverter doesn\'t require you to re-apply for interconnection, so you keep your NEM 2.0 status. (The 30% federal credit that used to cover an owned battery ended December 31, 2025, so a cash or financed battery no longer earns it.) This is still one of the highest-value moves available to NEM 2.0 California homeowners in 2026 — you keep retail-rate exports and gain peak-shaving and outage protection.'
       },
       {
         question: 'Does NEM 3.0 apply to all California utilities?',

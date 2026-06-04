@@ -9,19 +9,19 @@ export const hendersonContent = {
     subheadline: "Henderson homeowners are on NV Energy — the same territory, the same rates, and the same solar incentives as Las Vegas. With 290+ sunny days, going solar just makes sense."
   },
   intro: [
-    `Solar in Henderson, NV typically costs $11,900–$14,000 after the <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener">30% federal tax credit</a> and pays back in 6–9 years on NV Energy bills. Henderson sits in the same NV Energy service territory as Las Vegas, so residents qualify for identical <a href="https://www.nvenergy.com/account-services/energy-pricing-plans/net-metering" target="_blank" rel="noopener">net metering credits at 75% of retail</a>. Most 5–7 kW systems offset the bulk of a household's annual electricity use.`,
+    `Solar in Henderson, NV typically costs $17,000–$20,000 for a 6–7 kW system (Nevada's sales-tax exemption is already applied; the 30% federal credit ended Dec 31, 2025) and pays back in roughly 9–12 years for a cash purchase — though NV Energy's rising rates keep pulling that number down. Henderson sits in the same NV Energy service territory as Las Vegas, so residents qualify for identical <a href="https://www.nvenergy.com/account-services/energy-pricing-plans/net-metering" target="_blank" rel="noopener">net metering credits at 75% of retail</a>. Most 5–7 kW systems offset the bulk of a household's annual electricity use.`,
     `Henderson is one of the fastest-growing cities in Nevada, and its residential solar market is booming alongside that growth. As an NV Energy customer, Henderson homeowners face the <a href="https://www.eia.gov/state/?sid=NV" target="_blank" rel="noopener">same electricity rate structure as Las Vegas</a> — currently averaging $0.125 per kilowatt-hour — and benefit from the same net metering program, the same property tax exemption, and the same sales tax exemption on solar equipment. The combination of abundant sunshine, rising utility rates, and strong incentives makes Henderson an excellent market for solar, with most homeowners saving money against their current NV Energy bill.`,
-    "Henderson's suburban neighborhoods — from Green Valley and Anthem to Inspirada and Seven Hills — are well-suited to rooftop solar. Newer construction in these areas typically features south- or west-facing roof planes with minimal shading, which maximizes solar production. A properly designed system for the average Henderson home (typically 5 to 7 kW) will cover most or all of the household's electricity needs year-round, with NV Energy net metering credits banking excess summer production to offset winter bills. Most Henderson homeowners see a full payback in 6 to 9 years, followed by years of essentially free electricity."
+    "Henderson's suburban neighborhoods — from Green Valley and Anthem to Inspirada and Seven Hills — are well-suited to rooftop solar. Newer construction in these areas typically features south- or west-facing roof planes with minimal shading, which maximizes solar production. A properly designed system for the average Henderson home (typically 5 to 7 kW) will cover most or all of the household's electricity needs year-round, with NV Energy net metering credits banking excess summer production to offset winter bills. Most Henderson homeowners see a full payback in roughly 9 to 12 years for a cash purchase now that the 30% federal credit has ended — though NV Energy's rising rates keep pulling that number down — followed by years of essentially free electricity."
   ],
   stats: [
     { value: "290+", label: "Sunny Days Per Year" },
     { value: "$0", label: "Down to Get Started" },
-    { value: "6–9 yrs", label: "Average Payback Period" }
+    { value: "9–12 yrs", label: "Average Payback Period" }
   ],
   incentives: [
     {
-      title: "Federal Investment Tax Credit (ITC)",
-      description: `Henderson homeowners qualify for the same <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener">30% federal solar tax credit</a> as all Nevada residents. On a typical system, that saves $5,000 to $6,000 in federal taxes — available through 2032 with no income cap for most homeowners.`
+      title: "Federal Tax Credit — Expired Dec 31, 2025 for Purchases",
+      description: `The 30% federal solar tax credit ended December 31, 2025 for systems you buy with cash or a loan. A leased or PPA (third-party-owned) system may still capture a federal incentive through the end of 2027. For Henderson homeowners who buy, the real value now comes from Nevada's sales-tax and property-tax exemptions, net metering at 75% of retail, and locking in your own generation cost against rising NV Energy rates.`
     },
     {
       title: "NV Energy Net Metering",
@@ -39,11 +39,11 @@ export const hendersonContent = {
   faqs: [
     {
       question: "How much does solar cost in Henderson, NV?",
-      answer: "Henderson solar costs are nearly identical to Las Vegas — approximately $2.85 per watt before incentives. A 6–7 kW system runs $17,100–$20,000 before the 30% federal tax credit, and $11,900–$14,000 after. $0 down financing means many Henderson homeowners start saving from their very first month with no out-of-pocket cost."
+      answer: "Henderson solar costs are nearly identical to Las Vegas — approximately $2.85 per watt before incentives. A 6–7 kW system runs $17,000–$20,000, with Nevada's sales-tax exemption already applied; the 30% federal credit ended Dec 31, 2025, so there's no further reduction for a cash or loan purchase. $0 down financing means many Henderson homeowners start saving from their very first month with no out-of-pocket cost."
     },
     {
       question: "Is solar worth it in Henderson, Nevada?",
-      answer: "Absolutely. Henderson's climate is identical to Las Vegas — 290+ sunny days, intense summer sun, and high air conditioning usage that drives energy bills up. With NV Energy rates at $0.125/kWh and rising, solar pays back in 6–9 years and delivers $51,000+ in lifetime savings for most households."
+      answer: "Absolutely. Henderson's climate is identical to Las Vegas — 290+ sunny days, intense summer sun, and high air conditioning usage that drives energy bills up. With NV Energy rates at $0.125/kWh and rising, solar pays back in roughly 9–12 years for a cash purchase now that the 30% federal credit has ended — though those rising rates keep pulling that number down — and delivers $51,000+ in lifetime savings for most households."
     },
     {
       question: "Does Henderson use NV Energy?",
@@ -51,7 +51,7 @@ export const hendersonContent = {
     },
     {
       question: "What solar incentives are available to Henderson homeowners?",
-      answer: "Henderson residents qualify for: (1) the 30% federal Investment Tax Credit, (2) NV Energy net metering at 75% retail rate, (3) Nevada's property tax exemption on solar value, and (4) Nevada's sales tax exemption on solar equipment. These incentives combined can offset 40–50% of your total system cost."
+      answer: "The 30% federal Investment Tax Credit ended December 31, 2025 for systems you buy — only leased or PPA systems may still capture a federal incentive through 2027. Henderson residents who buy still qualify for: (1) NV Energy net metering at 75% retail rate, locked for 20 years, (2) Nevada's property tax exemption on solar value, and (3) Nevada's sales tax exemption on solar equipment — an immediate 8.375% off your hardware at purchase."
     },
     {
       question: "Do solar panels increase home value in Henderson?",
