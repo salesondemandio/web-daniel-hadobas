@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap');
-
+/* Google Fonts are loaded non-render-blocking from the <head> (see BaseLayout/LandingLayout).
+   A remote CSS @import here serialized download->parse->fetch before first paint and was the
+   dominant cause of the ~4.3s mobile LCP. */
 @import "tailwindcss";
 
 @theme {
@@ -10,8 +11,31 @@
   --color-solar-gold: #4F8A33;         /* deeper green for gradients */
   --color-solar-cream: #F0F2EE;        /* card surface tint */
 
-  --font-family-sans: 'Inter', sans-serif;
-  --font-family-display: 'DM Serif Display', Georgia, serif;
+  --font-family-sans: 'Inter', 'Inter Fallback', sans-serif;
+  --font-family-display: 'DM Serif Display', 'DM Serif Fallback', Georgia, serif;
+}
+
+/*
+ * Metric-adjusted fallback fonts — eliminate layout shift (CLS) when the web
+ * fonts swap in. The fallback (Arial/Georgia) is scaled to occupy the same
+ * box as the real font, so text doesn't reflow on load. Fixes the blog-index
+ * (0.123) and blog-post (0.264 desktop) CLS, which was pure font-swap reflow.
+ */
+@font-face {
+  font-family: 'Inter Fallback';
+  src: local('Arial');
+  ascent-override: 90.49%;
+  descent-override: 22.56%;
+  line-gap-override: 0.00%;
+  size-adjust: 107.06%;
+}
+@font-face {
+  font-family: 'DM Serif Fallback';
+  src: local('Georgia');
+  ascent-override: 92.00%;
+  descent-override: 28.00%;
+  line-gap-override: 0.00%;
+  size-adjust: 108.00%;
 }
 
 /*

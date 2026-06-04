@@ -27,10 +27,14 @@ const geoCoords: Record<string, { latitude: number; longitude: number }> = {
   'Green Valley': { latitude: 36.0153, longitude: -115.0633 },
 };
 
+// Canonical, stable identity for the SINGLE business across every page.
+// Per-page relevance is carried by areaServed (not by mutating name/address),
+// so Google resolves one entity instead of ~10 near-duplicates.
 const schema = {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "ProfessionalService"],
-  "name": `Daniel Hadobas Solar — ${city}, ${state}`,
+  "@id": "https://danielhadobas.com/#business",
+  "name": "Daniel Hadobas Solar",
   "description": description,
   "url": pageUrl,
   "telephone": "+17029416894",
@@ -38,15 +42,18 @@ const schema = {
   "image": "https://danielhadobas.com/images/daniel-hadobas.jpg",
   "address": {
     "@type": "PostalAddress",
-    "addressLocality": city,
-    "addressRegion": state,
+    "addressLocality": "Las Vegas",
+    "addressRegion": "NV",
     "addressCountry": "US"
   },
-  "geo": geoCoords[city] ? {
+  "geo": {
     "@type": "GeoCoordinates",
-    "latitude": geoCoords[city].latitude,
-    "longitude": geoCoords[city].longitude
-  } : undefined,
+    "latitude": 36.1699,
+    "longitude": -115.1398
+  },
+  "areaServed": geoCoords[city]
+    ? { "@type": "City", "name": city, "geo": { "@type": "GeoCoordinates", "latitude": geoCoords[city].latitude, "longitude": geoCoords[city].longitude } }
+    : { "@type": "City", "name": city },
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
     "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
@@ -60,6 +67,8 @@ const schema = {
     "bestRating": "5",
     "worstRating": "1"
   },
+  "founder": { "@id": "https://danielhadobas.com/#daniel" },
+  "employee": { "@id": "https://danielhadobas.com/#daniel" },
   "sameAs": [
     "https://www.facebook.com/profile.php?id=100089968135364",
     "https://www.instagram.com/hadobadass/",

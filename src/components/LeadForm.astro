@@ -135,9 +135,11 @@ const labelClass = 'block text-base font-semibold text-slate-300 mb-1.5';
         </select>
       </div>
 
-      <!-- Cloudflare Turnstile bot protection. Sitekey is public; secret is the Pages env TURNSTILE_SECRET. -->
-      <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer is:inline></script>
-      <div class="cf-turnstile" data-sitekey="0x4AAAAAADW-wIU96q9BUuLA" data-theme="dark"></div>
+      <!-- Cloudflare Turnstile bot protection. Sitekey is public; secret is the Pages env TURNSTILE_SECRET.
+           The api.js loader is injected lazily (see script below) only when the form nears the viewport —
+           deferring its third-party cookies keeps the best-practices score from being dragged down on
+           every page load. The div reserves space so the widget doesn't shift layout when it renders. -->
+      <div class="cf-turnstile min-h-[65px]" data-sitekey="0x4AAAAAADW-wIU96q9BUuLA" data-theme="dark"></div>
 
       <div
         id="lead-error"
@@ -181,6 +183,32 @@ const labelClass = 'block text-base font-semibold text-slate-300 mb-1.5';
   const successHeading = document.getElementById('lead-success-heading') as HTMLHeadingElement;
   const submitBtn = document.getElementById('lf-submit') as HTMLButtonElement;
   const errorBox = document.getElementById('lead-error') as HTMLDivElement;
+
+  // Lazy-load Cloudflare Turnstile only when the form approaches the viewport,
+  // so its third-party cookies/script don't load (and tank best-practices) on
+  // every page view. Falls back to immediate load if IntersectionObserver is missing.
+  let turnstileLoaded = false;
+  const loadTurnstile = () => {
+    if (turnstileLoaded) return;
+    turnstileLoaded = true;
+    const s = document.createElement('script');
+    s.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js';
+    s.async = true;
+    s.defer = true;
+    document.head.appendChild(s);
+  };
+  if (form) {
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries, obs) => {
+        if (entries.some((e) => e.isIntersecting)) { loadTurnstile(); obs.disconnect(); }
+      }, { rootMargin: '300px' });
+      io.observe(form);
+    } else {
+      loadTurnstile();
+    }
+    // Safety net: ensure the widget is present the moment the user starts filling the form.
+    form.addEventListener('focusin', loadTurnstile, { once: true });
+  }
 
   const showError = (msg: string) => {
     errorBox.textContent = msg;

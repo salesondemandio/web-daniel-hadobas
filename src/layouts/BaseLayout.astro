@@ -49,9 +49,11 @@ const canonicalClean = _path === '/' ? ORIGIN + '/' : ORIGIN + _path;
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="https://danielhadobas.com/og-v2.jpg" />
 
-  <!-- Google Fonts: Inter (preconnect only; @import in global.css handles load) -->
+  <!-- Google Fonts: Inter + DM Serif Display — loaded non-render-blocking (preload as style, swap to stylesheet on load) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" /></noscript>
 
   <slot name="schema" />
 

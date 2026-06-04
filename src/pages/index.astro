@@ -93,6 +93,8 @@ const serviceAreas = [
   keywords="solar agent Las Vegas, solar panels Las Vegas NV, $0 down solar Las Vegas, Daniel Hadobas solar, NV Energy solar, federal solar tax credit Nevada, solar installation Las Vegas"
 >
   <Fragment slot="schema">
+    <!-- Preload the hero LCP image so it's not discovered late after CSS/layout -->
+    <link rel="preload" as="image" href="/images/daniel.jpg" fetchpriority="high" />
     <PersonSchema />
     <LocalBusinessSchema city="Las Vegas" state="NV" slug="home" />
   </Fragment>
