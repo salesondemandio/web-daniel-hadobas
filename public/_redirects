@@ -9,3 +9,7 @@
 
 # Consolidate duplicate "best solar companies" posts (2026 is canonical) — kills cannibalization
 /blog/best-solar-companies-las-vegas    /blog/best-solar-companies-las-vegas-2026    301
+/blog/best-solar-company-las-vegas      /blog/best-solar-companies-las-vegas-2026    301
+
+# Consolidate the old annual cost guide into the current evergreen URL.
+/blog/solar-cost-las-vegas-2025         /blog/solar-cost-las-vegas-2026               301

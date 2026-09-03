@@ -17,8 +17,11 @@ import { newsTahoePosts } from './blog-news-tahoe';
 export interface BlogPost {
   slug: string;
   title: string;
+  seoTitle?: string;
   description: string;
+  seoDescription?: string;
   publishDate: string;
+  modifiedDate?: string;
   tags: string[];
   body: string;
   faqs?: { question: string; answer: string }[];
@@ -240,8 +243,9 @@ const originalPosts: BlogPost[] = [
   },
   {
     slug: 'nevada-solar-tax-credit-2025',
-    title: 'Nevada Solar Incentives & Tax Credits in 2025',
-    description: 'Every solar incentive available to Nevada homeowners in 2025 — federal ITC, property tax exemption, sales tax exemption, and the new Nevada state program.',
+    title: 'Nevada Solar Incentives and Tax Credits in 2026',
+    seoTitle: 'Nevada Solar Incentives 2026: Credits and Exemptions',
+    description: 'See the Nevada solar incentives available in 2026, including property-tax and sales-tax exemptions, NV Energy net metering, and the expired federal credit.',
     publishDate: '2025-03-10',
     tags: ['Nevada', 'Tax Credits', 'Incentives'],
     body: `
@@ -370,6 +374,12 @@ const originalPosts: BlogPost[] = [
   },
 ];
 
+const redirectedBlogSlugs = new Set([
+  'best-solar-company-las-vegas',
+  'best-solar-companies-las-vegas',
+  'solar-cost-las-vegas-2025',
+]);
+
 export const blogPosts: BlogPost[] = [
   ...originalPosts,
   ...batchMoneyPosts,
@@ -387,4 +397,6 @@ export const blogPosts: BlogPost[] = [
   ...extraPosts6,
   ...batchGridPosts,
   ...newsTahoePosts,
-].sort((a, b) => b.publishDate.localeCompare(a.publishDate));
+]
+  .filter((post) => !redirectedBlogSlugs.has(post.slug))
+  .sort((a, b) => b.publishDate.localeCompare(a.publishDate));

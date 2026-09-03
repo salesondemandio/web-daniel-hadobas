@@ -26,8 +26,9 @@ wrangler pages deploy dist --branch=main
 
 ## Stack
 
-- [Astro 4](https://astro.build) — static site generator
-- [Tailwind CSS](https://tailwindcss.com) — styling
+- [Astro 6.4.8](https://astro.build) — static site generator
+- [Tailwind CSS 4.2.3](https://tailwindcss.com) with `@tailwindcss/vite` 4.2.3 — styling
+- Vite 7.3.6 (single resolved version via the `^7.3.2` package override) with vitefu 1.1.3
 - TypeScript — strict mode
 - Cloudflare Pages — hosting
 

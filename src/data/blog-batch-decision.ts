@@ -549,6 +549,7 @@ export const batchDecisionPosts: BlogPost[] = [
   {
     slug: 'california-solar-rights-act-civil-code-714',
     title: 'The California Solar Rights Act — What Civil Code 714 Means for You',
+    seoTitle: 'California Solar Rights Act: Civil Code 714 Explained',
     description: 'California Civil Code 714 protects your right to install rooftop solar even when your HOA objects. What is protected, what is not, and how the approval process works.',
     publishDate: '2026-05-08',
     tags: ['Decision', 'California', 'HOA'],

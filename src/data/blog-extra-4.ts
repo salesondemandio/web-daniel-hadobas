@@ -4,6 +4,7 @@ export const extraPosts4: BlogPost[] = [
   {
     slug: 'tesla-powerwall-las-vegas',
     title: 'Is a Tesla Powerwall Worth It in Las Vegas? Honest Math',
+    seoTitle: 'Tesla Powerwall Las Vegas: 2026 Cost and Honest Math',
     description: 'Tesla Powerwall in Las Vegas: real installed cost, what 13.5 kWh actually does, and honest alternatives. Vendor-neutral advice.',
     publishDate: '2026-05-20',
     tags: ['Battery & Backup', 'Las Vegas', 'Nevada'],

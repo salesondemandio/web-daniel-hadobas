@@ -20,10 +20,47 @@ const mentionsFederalCredit = /tax credit|\bITC\b|investment tax credit|federal 
   post.body + ' ' + (post.faqs ?? []).map((f) => f.question + ' ' + f.answer).join(' ')
 );
 const itcUpdateDate = '2026-05-26';
-const dateModified = mentionsFederalCredit ? itcUpdateDate : post.publishDate;
+const declaredModifiedDate = post.modifiedDate ?? post.publishDate;
+const dateModified = mentionsFederalCredit && declaredModifiedDate < itcUpdateDate
+  ? itcUpdateDate
+  : declaredModifiedDate;
+
+const shortBrand = ' | Daniel Hadobas';
+const pageTitle = post.seoTitle
+  ?? (post.title.length + shortBrand.length <= 60 ? `${post.title}${shortBrand}` : post.title);
+const pageDescription = post.seoDescription ?? post.description;
+
+const topicText = `${post.title} ${post.tags.join(' ')}`.toLowerCase();
+const serviceGuide = topicText.includes('san diego')
+  ? { href: '/solar-san-diego', label: 'Solar in San Diego' }
+  : topicText.includes('los angeles')
+    ? { href: '/solar-los-angeles', label: 'Solar in Los Angeles' }
+    : topicText.includes('riverside')
+      ? { href: '/solar-riverside', label: 'Solar in Riverside' }
+      : topicText.includes('california') || topicText.includes('nem 3.0') || topicText.includes('sgip')
+        ? { href: '/solar-california', label: 'Solar in California' }
+        : topicText.includes('green valley')
+          ? { href: '/solar-henderson-green-valley', label: 'Solar in Green Valley' }
+          : topicText.includes('henderson') || topicText.includes('anthem')
+            ? { href: '/solar-henderson-nv', label: 'Solar in Henderson' }
+            : topicText.includes('summerlin')
+              ? { href: '/solar-summerlin', label: 'Solar in Summerlin' }
+              : topicText.includes('battery') || topicText.includes('powerwall')
+                ? { href: '/solar-battery-storage', label: 'Solar battery storage in Las Vegas' }
+                : { href: '/solar-las-vegas', label: 'Solar in Las Vegas' };
+
+const relatedPosts = blogPosts
+  .filter((candidate) => candidate.slug !== post.slug)
+  .map((candidate) => ({
+    ...candidate,
+    relevance: candidate.tags.filter((tag) => post.tags.includes(tag)).length,
+  }))
+  .filter((candidate) => candidate.relevance > 0)
+  .sort((a, b) => b.relevance - a.relevance || b.publishDate.localeCompare(a.publishDate))
+  .slice(0, 3);
 ---
 
-<BaseLayout title={`${post.title} | Daniel Hadobas Solar`} description={post.description} keywords={post.tags.join(', ') + ', solar Las Vegas, Daniel Hadobas solar'} ogType="article">
+<BaseLayout title={pageTitle} description={pageDescription} keywords={post.tags.join(', ') + ', solar Las Vegas, Daniel Hadobas solar'} ogType="article">
   <Fragment slot="schema">
     <PersonSchema />
     <script type="application/ld+json" set:html={JSON.stringify({
@@ -56,6 +93,15 @@ const dateModified = mentionsFederalCredit ? itcUpdateDate : post.publishDate;
         "cssSelector": ["h1", "h2", ".prose p:first-of-type"]
       }
     })} />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://danielhadobas.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Solar Blog", "item": "https://danielhadobas.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://danielhadobas.com/blog/${post.slug}` }
+      ]
+    })} />
   </Fragment>
 
   <!-- Header -->
@@ -66,7 +112,10 @@ const dateModified = mentionsFederalCredit ? itcUpdateDate : post.publishDate;
         Back to Blog
       </a>
       <div class="flex flex-wrap items-center gap-2 text-xs text-slate-500 mb-4">
-        <time datetime={post.publishDate}>{new Date(post.publishDate).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</time>
+        <time datetime={post.publishDate}>{new Date(post.publishDate).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}</time>
+        {dateModified !== post.publishDate && (
+          <><span>·</span><span>Updated <time datetime={dateModified}>{new Date(dateModified).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}</time></span></>
+        )}
         <span>·</span>
         <span>By Daniel Hadobas</span>
         {post.tags.map((tag) => (
@@ -97,12 +146,36 @@ const dateModified = mentionsFederalCredit ? itcUpdateDate : post.publishDate;
     {mentionsFederalCredit && (
       <div class="max-w-3xl mx-auto"><ITCNotice /></div>
     )}
-    <div class="max-w-3xl mx-auto prose prose-slate prose-headings:font-display prose-headings:text-slate-900 prose-a:text-brand-orange prose-strong:text-slate-900 max-w-none" set:html={post.body} />
+    <div class="article-body max-w-3xl mx-auto text-slate-700" set:html={post.body} />
+    <aside class="max-w-3xl mx-auto mt-10 rounded-xl border border-[#DDE3D8] bg-[#F0F2EE] p-6" aria-label="Local solar guide">
+      <p class="text-xs font-bold uppercase tracking-wider text-[#4F7F36] mb-2">Local planning guide</p>
+      <p class="text-slate-700">
+        Ready to apply this to your home? Start with Daniel's complete
+        <a class="font-semibold text-brand-orange hover:underline" href={serviceGuide.href}>{serviceGuide.label}</a>
+        guide for local costs, utility rules, and next steps.
+      </p>
+    </aside>
   </article>
 
   <!-- FAQs -->
   {post.faqs && post.faqs.length > 0 && (
     <FAQSection faqs={post.faqs} heading="Frequently Asked Questions" />
+  )}
+
+  {relatedPosts.length > 0 && (
+    <section class="bg-white py-14 px-4 border-b border-[#E8ECE4]" aria-labelledby="related-reading">
+      <div class="max-w-4xl mx-auto">
+        <h2 id="related-reading" class="font-display text-2xl font-bold text-slate-900 mb-6">Related solar guides</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {relatedPosts.map((related) => (
+            <a href={`/blog/${related.slug}`} class="group rounded-xl border border-[#E8ECE4] bg-[#FAFAF8] p-5 hover:border-brand-orange transition-colors">
+              <p class="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-2">{related.tags[0]}</p>
+              <h3 class="font-semibold text-slate-900 leading-snug group-hover:text-brand-orange transition-colors">{related.title}</h3>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
   )}
 
   <!-- CTA -->
@@ -114,3 +187,59 @@ const dateModified = mentionsFederalCredit ? itcUpdateDate : post.publishDate;
     </div>
   </section>
 </BaseLayout>
+
+<style>
+  :global(.article-body) {
+    font-size: 1.0625rem;
+    line-height: 1.8;
+  }
+
+  :global(.article-body > * + *) {
+    margin-top: 1.25rem;
+  }
+
+  :global(.article-body h2) {
+    margin-top: 2.75rem;
+    font-family: var(--font-display, Georgia, serif);
+    font-size: clamp(1.65rem, 3vw, 2rem);
+    font-weight: 800;
+    line-height: 1.2;
+    color: #0f172a;
+  }
+
+  :global(.article-body h3) {
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0f172a;
+  }
+
+  :global(.article-body ul),
+  :global(.article-body ol) {
+    padding-left: 1.5rem;
+  }
+
+  :global(.article-body ul) {
+    list-style: disc;
+  }
+
+  :global(.article-body ol) {
+    list-style: decimal;
+  }
+
+  :global(.article-body li + li) {
+    margin-top: 0.5rem;
+  }
+
+  :global(.article-body a) {
+    color: #c85f15;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+
+  :global(.article-body strong) {
+    color: #0f172a;
+  }
+</style>

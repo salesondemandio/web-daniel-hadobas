@@ -86,10 +86,14 @@ export const batchGridPosts: BlogPost[] = [
   {
     slug: 'does-nv-energy-buy-back-solar',
     title: 'Does NV Energy Buy Back Solar Power? (2026 Net-Metering Rates)',
+    seoTitle: 'Does NV Energy Buy Back Solar? 2026 Rates Explained',
     description: 'Yes — NV Energy credits excess rooftop solar at 75% of the retail rate under net metering, locked for 20 years. Here is exactly how the buyback works in Las Vegas.',
     publishDate: '2026-05-22',
+    modifiedDate: '2026-09-02',
     tags: ['Nevada', 'Las Vegas', 'Net Metering'],
-    body: `<p>Yes, NV Energy buys back excess solar power. Under Nevada's net-metering program, surplus electricity your panels send to the grid is credited to your account at <strong>75% of the retail rate</strong> for new customers, and that rate is locked for 20 years from your interconnection date. The credit offsets the power you pull from the grid at night, so a well-sized system can zero out most of your annual bill.</p>
+    body: `<p><strong>Yes. NV Energy gives bill credits for excess solar power sent to the grid.</strong> New Nevada customers currently enter Tier 4, which credits exports at <strong>75% of the retail rate</strong>. The Public Utilities Commission of Nevada says customers keep that tier for 20 years at the original installation location.</p>
+
+<p><em>Last verified September 2, 2026 against the <a href="https://prod.puc.nv.gov/renewables/net-metering-in-nevada/" target="_blank" rel="noopener">Public Utilities Commission of Nevada net-metering page</a>.</em></p>
 
 <h2>How the buyback actually works</h2>
 <p>NV Energy doesn't cut you a check each month. Instead, every kilowatt-hour you export earns a bill credit valued at 75% of retail. When you draw power from the grid — overnight, on cloudy days, during peak summer evenings — those credits are applied against what you owe. The math nets out month to month:</p>
@@ -98,13 +102,22 @@ export const batchGridPosts: BlogPost[] = [
 <li><strong>Use more than you export:</strong> banked credits are drawn down before you pay cash.</li>
 <li><strong>Basic service charge:</strong> a fixed monthly connection fee still applies regardless of net usage.</li>
 </ul>
-<p>This is governed by <a href="/blog/nv-energy-rule-15-explained">NV Energy Rule 15</a>, the interconnection and net-metering tariff.</p>
+<p>This is governed by <a href="/blog/nv-energy-rule-15-explained">NV Energy Rule 15</a>, the interconnection and net-metering tariff. NV Energy also publishes its current program information on its <a href="https://www.nvenergy.com/cleanenergy/solar" target="_blank" rel="noopener">Solar and Energy Storage page</a>.</p>
 
 <h2>Why it's 75% and not 100%</h2>
 <p>Before 2016, Nevada paid the full retail rate. After the <a href="/blog/nevada-net-metering-controversy">2015 net-metering controversy</a> and the 2017 AB 405 reset, credits were set on a declining tiered schedule — 95% of retail for the earliest adopters, stepping down to 75% as capacity filled. New Las Vegas customers enroll at the current 75% tier. The credit is still well above the wholesale rate solar customers were briefly cut to in 2016.</p>
 
-<h2>The part most people miss: the 20-year lock</h2>
-<p>The buyback rate is fixed for 20 years at your installation location. Because the credit is pegged to <em>retail</em> rates, the dollar value of your exported power rises automatically every time NV Energy raises rates — and with <a href="/blog/data-centers-nevada-power-bills-solar">data centers pushing record demand</a>, residential rates hit 17.45 cents/kWh in early 2026, up 9.5% in a year. Pairing solar with a <a href="/blog/battery-storage-powerwall-vs-enphase-vs-lg">home battery</a> lets you store rather than export, sidestepping the 25% haircut entirely on the power you self-consume.</p>`,
+<h2>The part most people miss: the 20-year tier lock</h2>
+<p>The PUCN states that Tier 4 customers keep the 75% credit tier for 20 years at the location where the system was installed. That does not mean every future bill will be identical. Retail rates, fixed charges, usage, and tariff details can still change. It means the export-credit percentage is protected unless Nevada law changes.</p>
+
+<h2>Net metering or a battery: which is better?</h2>
+<p>Net metering and battery storage solve different problems. Net metering gives value to surplus power sent to the grid. A <a href="/solar-battery-storage">home battery in Las Vegas</a> keeps more of that power at home for later use and can provide backup power when properly configured. The right choice depends on your hourly usage, rate plan, backup needs, and installed cost. Start with your last 12 months of NV Energy bills rather than a generic savings estimate.</p>
+
+<h2>Official sources</h2>
+<ul>
+<li><a href="https://prod.puc.nv.gov/renewables/net-metering-in-nevada/" target="_blank" rel="noopener">Public Utilities Commission of Nevada: Net Metering in Nevada</a></li>
+<li><a href="https://www.nvenergy.com/cleanenergy/solar" target="_blank" rel="noopener">NV Energy: Solar and Energy Storage</a></li>
+</ul>`,
     faqs: [
       {
         question: 'Does NV Energy buy back solar power?',
@@ -112,11 +125,11 @@ export const batchGridPosts: BlogPost[] = [
       },
       {
         question: 'How much does NV Energy pay for excess solar in 2026?',
-        answer: 'New net-metering customers are credited at 75% of the retail rate per kilowatt-hour exported. Since retail residential rates reached about 17.45 cents/kWh in early 2026, the export credit is roughly 13 cents/kWh — and it rises automatically as retail rates increase, because the credit is locked to retail for 20 years.',
+        answer: 'New net-metering customers currently enter Tier 4 and receive bill credits at 75% of the retail rate for exported electricity. The exact dollar value depends on the applicable NV Energy retail rate. The Public Utilities Commission of Nevada says Tier 4 customers keep that credit tier for 20 years at the original installation location.',
       },
       {
         question: 'Should I add a battery instead of exporting to NV Energy?',
-        answer: 'Often, yes. Because exported power is credited at 75% of retail but power you use yourself avoids the full retail rate, storing your surplus in a home battery and using it at night captures more value than exporting it. A battery also provides backup during outages. The right choice depends on your usage pattern and budget.',
+        answer: 'It depends. Exported power currently receives a 75% retail-rate credit, while a battery can keep surplus solar available for later use and provide backup power when properly configured. Compare your hourly usage, rate plan, backup priorities, installed cost, and battery warranty before deciding.',
       },
     ],
   },

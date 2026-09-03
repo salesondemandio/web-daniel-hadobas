@@ -4,6 +4,7 @@ export const batchMoneyPosts: BlogPost[] = [
   {
     slug: 'solar-cost-las-vegas-2026',
     title: 'How Much Does Solar Cost in Las Vegas in 2026?',
+    seoTitle: 'Solar Panel Cost Las Vegas 2026: Prices and Payback',
     description: 'Real solar cost in Las Vegas in 2026: gross price, cash price, payback math, and what changes panel-to-panel. Get a quote.',
     publishDate: '2025-12-03',
     tags: ['Las Vegas', 'Cost & Financing', 'Tax Credit'],
@@ -305,7 +306,7 @@ export const batchMoneyPosts: BlogPost[] = [
 <p>For everyone else, it's a worse deal.</p>
 
 <h2>HELOC vs $0-down solar loan</h2>
-<p>HELOCs at 8–9% almost always beat $0-down solar loans at 5.99% because the solar loan principal is inflated by a 18–28% dealer fee. Compare total paid, not the rate. I cover this in detail in <a href="/zero-down-solar-las-vegas-explained">$0 Down Solar Explained</a>.</p>
+<p>HELOCs at 8–9% almost always beat $0-down solar loans at 5.99% because the solar loan principal is inflated by a 18–28% dealer fee. Compare total paid, not the rate. I cover this in detail in <a href="/blog/zero-down-solar-las-vegas-explained">$0 Down Solar Explained</a>.</p>
 
 <h2>Cash vs HELOC — small gap</h2>
 <p>If you have the cash and no better use for it, write the check. If you'd rather keep liquidity and your HELOC rate is under 9%, HELOC is fine. The gap is usually $5,000–$8,000 over 25 years on an 8 kW system. Not nothing, but not the dealmaker.</p>
@@ -371,7 +372,7 @@ export const batchMoneyPosts: BlogPost[] = [
 <p>Cash payback in Las Vegas runs roughly 9–12 years for a cash purchase now that the 30% federal credit has ended — though NV Energy's rising rates keep pulling that number down. After payback, you're into 15+ years of essentially free electricity under the panels' warranty.</p>
 
 <h2>California neighbors — same federal change, different state incentives</h2>
-<p>If you own across the border, the federal 30% credit also expired December 31, 2025 for owned systems. But California's SGIP battery rebate and NEM 3.0 rules are unchanged — see <a href="/sgip-battery-rebate-california">SGIP Battery Rebate California</a>. The federal piece is gone there too; the state programs still pay.</p>
+<p>If you own across the border, the federal 30% credit also expired December 31, 2025 for owned systems. But California's SGIP battery rebate and NEM 3.0 rules are unchanged — see <a href="/blog/sgip-battery-rebate-california">SGIP Battery Rebate California</a>. The federal piece is gone there too; the state programs still pay.</p>
 
 <h2>Do I still need a CPA?</h2>
 <p>For a 2026 purchase, there's no federal solar credit to file, so there's no Form 5695 step for the panels. Nevada's exemptions are applied at purchase and on your property assessment — your installer handles the sales-tax exemption, and the property-tax exemption is automatic. If you're on a lease/PPA or have a complex situation, a quick CPA check is still cheap insurance.</p>
@@ -527,7 +528,7 @@ export const batchMoneyPosts: BlogPost[] = [
 <p>Some "25-year production guarantees" carry $0/kWh of underproduction value or require you to submit annual claims with three notarized witnesses (not literally, but close). Read the guarantee language. A real guarantee says "if production falls below X kWh, we cut you a check at $Y/kWh, no questions, no annual paperwork."</p>
 
 <h2>12. Loan dealer fees</h2>
-<p>Already covered in <a href="/zero-down-solar-las-vegas-explained">$0 Down Solar Explained</a> — the 18–28% dealer fee on a $0-down solar loan is the biggest hidden cost in the industry. Inflated principal is the silent killer of financed solar economics.</p>
+<p>Already covered in <a href="/blog/zero-down-solar-las-vegas-explained">$0 Down Solar Explained</a> — the 18–28% dealer fee on a $0-down solar loan is the biggest hidden cost in the industry. Inflated principal is the silent killer of financed solar economics.</p>
 
 <h2>13. Battery decommissioning</h2>
 <p>15–20 years out, the battery hits end of life. Removal and disposal currently runs $500–$1,500. Recycling infrastructure for lithium home batteries is improving, but it's a real future cost. Not relevant to year-1 economics, but worth knowing.</p>
@@ -628,7 +629,7 @@ export const batchMoneyPosts: BlogPost[] = [
 <p>NV Energy has been pushing more residential customers onto time-of-use plans. Peak rates (4–9 PM in summer) can be 2–3x off-peak. Solar without a battery doesn't fully solve this because production drops as peak begins. Solar + battery does — you store afternoon production and discharge during peak. This is increasingly the right setup for Vegas homes.</p>
 
 <h2>What I tell every client</h2>
-<p>The hardest part of the solar decision in Nevada in 2026 isn't whether the math works. It does. It's whether you trust NV Energy rates to stay flat or fall — and the historical record says they don't. Solar is a 25-year asset on a roof in 290-sun-day country. The hedge isn't speculative. It's just arithmetic. More on the numbers in <a href="/solar-payback-period-las-vegas">Solar Payback Period in Las Vegas</a>.</p>
+<p>The hardest part of the solar decision in Nevada in 2026 isn't whether the math works. It does. It's whether you trust NV Energy rates to stay flat or fall — and the historical record says they don't. Solar is a 25-year asset on a roof in 290-sun-day country. The hedge isn't speculative. It's just arithmetic. More on the numbers in <a href="/blog/solar-payback-period-las-vegas">Solar Payback Period in Las Vegas</a>.</p>
 
 <p>Want to see your specific NV Energy bill modeled against a system on your roof? <a href="/#get-quote">Request a quote here</a>.</p>`,
     faqs: [

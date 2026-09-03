@@ -478,6 +478,7 @@ export const batchTechPosts: BlogPost[] = [
   {
     slug: 'battery-storage-powerwall-vs-enphase-vs-lg',
     title: 'Battery Storage 2026 — Powerwall vs Enphase vs LG',
+    seoTitle: 'Best Home Battery 2026: Powerwall vs Enphase vs LG',
     description: 'Tesla Powerwall vs Enphase IQ Battery vs LG ESS — capacity, power, backup behavior, warranty, and which one fits your home in 2026.',
     publishDate: '2026-01-18',
     tags: ['Battery Storage', 'Equipment', 'Technical'],
@@ -828,6 +829,7 @@ export const batchTechPosts: BlogPost[] = [
   {
     slug: 'nem-3-export-rates-california-2026',
     title: 'NEM 3.0 Export Rates Explained — What You Actually Get Paid in 2026',
+    seoTitle: 'California NEM 3.0 Export Rates in 2026: What Solar Pays',
     description: 'NEM 3.0 export rates explained — California avoided cost rates, time-of-export pricing, and what California solar exports actually pay in 2026.',
     publishDate: '2026-03-08',
     tags: ['California', 'NEM 3.0', 'Net Metering', 'Technical'],

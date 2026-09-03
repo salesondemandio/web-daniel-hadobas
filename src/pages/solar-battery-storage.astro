@@ -6,33 +6,33 @@ import LocalBusinessSchema from '../components/LocalBusinessSchema.astro';
 import FAQSection from '../components/FAQSection.astro';
 
 const meta = {
-  title: 'Solar Battery Storage Las Vegas | Daniel Hadobas',
-  description: 'Home battery storage in Las Vegas with Daniel Hadobas. Keep your home running through NV Energy peak rates, summer outages, and grid failures. $0 down financing, Nevada tax exemptions.',
+  title: 'Solar Battery Storage Las Vegas: Backup and Savings',
+  description: 'Compare home battery storage in Las Vegas for solar self-use, outage backup, sizing, and NV Energy net metering. Get a bill-based recommendation.',
   keywords: 'solar battery storage Las Vegas, home battery backup Nevada, NV Energy peak demand, solar battery cost Las Vegas, battery installer Las Vegas, residential battery Nevada',
 };
 
 const stats = [
   { value: '24/7', label: 'Backup Power' },
   { value: '$0', label: 'Down Available' },
-  { value: '4–9 PM', label: 'Beat NV Energy Peak' },
+  { value: '10–14 kWh', label: 'Typical Single Battery' },
 ];
 
 const reasons = [
   {
-    title: 'NV Energy peak rates double your evening bill',
-    body: 'Time-of-use rates hit hardest 4–9 PM — exactly when your AC is working hardest and your panels stop producing. A battery stores cheap mid-day solar and discharges through peak hours, so you stay off the most expensive kWh of the day.',
+    title: 'Keep more of your solar for later',
+    body: 'New NV Energy net-metering customers currently receive export credits at 75% of the retail rate. A battery can store part of your daytime surplus for use after the panels stop producing.',
   },
   {
-    title: 'Summer outages are getting worse',
-    body: 'Triple-digit Vegas summers stress the grid. When NV Energy goes down, a properly sized battery keeps the AC running, the fridge cold, and the WiFi up — automatically, in under a second, with no generator.',
+    title: 'Choose the loads that need backup',
+    body: 'A properly designed system can keep selected circuits running during an outage. Runtime depends on battery capacity, solar production, and the appliances you choose to back up.',
   },
   {
-    title: 'Demand charges punish unbatteried solar',
-    body: 'NV Energy now bills residential solar customers a demand charge based on your single highest 15-minute draw of the month. One run of the dryer plus the AC kicking on can spike your bill. A battery flattens those spikes for you.',
+    title: 'Optimize an eligible time-of-use plan',
+    body: 'If your NV Energy rate plan prices electricity differently by time of day, a compatible battery can be configured around those periods. Savings depend on the plan and your actual usage pattern.',
   },
   {
-    title: 'NEM credits are worth less than you think',
-    body: "NV Energy net metering credits export power back at roughly 75% of retail. A battery lets you self-consume that solar instead of selling it cheap and buying it back at full price after sundown. The economics shifted; battery+solar is the new default.",
+    title: 'Size storage from your real usage',
+    body: 'Battery value changes with AC demand, pool equipment, EV charging, outage priorities, and available solar. A load-based design is more useful than a one-size package.',
   },
 ];
 
@@ -163,10 +163,10 @@ const schema = {
             Solar + Battery Storage · Las Vegas, NV
           </div>
           <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl text-slate-900 leading-[1.05] mb-6">
-            Keep the lights on when NV Energy can't.
+            Solar battery storage in Las Vegas
           </h1>
           <p class="text-slate-700 text-lg leading-relaxed mb-6">
-            Home battery storage in Las Vegas with Daniel Hadobas. Beat peak rates, escape demand charges, and ride out summer outages — automatically, in under a second, with no generator.
+            Compare storage for solar self-use and outage backup. Daniel reviews your NV Energy bills, critical loads, and current rate plan before recommending a battery size.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 mb-6">
             <CTAButton text="See If Battery Makes Sense" size="lg" />
@@ -204,6 +204,19 @@ const schema = {
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="py-14 px-4 bg-white border-y border-[#E8ECE4]" aria-labelledby="battery-answer">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-[#3F6E29] font-semibold text-sm uppercase tracking-widest mb-2">Straight answer</p>
+      <h2 id="battery-answer" class="font-display text-3xl text-slate-900 mb-4">Is a home battery worth it in Las Vegas?</h2>
+      <p class="text-slate-700 text-lg leading-relaxed mb-4">
+        A battery can be worth considering when backup power matters, when you want to use more of your own solar after sunset, or when your rate plan rewards shifting usage. It is not automatically the best financial choice for every home. Compare the installed cost, usable capacity, warranty, supported loads, and your hourly electricity use.
+      </p>
+      <p class="text-slate-600 leading-relaxed">
+        The <a class="font-semibold text-brand-orange hover:underline" href="https://prod.puc.nv.gov/renewables/net-metering-in-nevada/" target="_blank" rel="noopener">Public Utilities Commission of Nevada</a> confirms that new net-metering customers currently receive Tier 4 credits at 75% of the retail rate for exports. See Daniel's <a class="font-semibold text-brand-orange hover:underline" href="/blog/does-nv-energy-buy-back-solar">NV Energy buyback guide</a> for the billing details.
+      </p>
     </div>
   </section>
 

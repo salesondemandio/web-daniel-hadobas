@@ -4,6 +4,16 @@ interface Env {
   TURNSTILE_SECRET?: string;
 }
 
+const AVERAGE_MONTHLY_BILL_FIELD_ID = "0zDOToQa6m4ldK51n38H";
+
+const ELECTRIC_BILL_VALUES: Record<string, number> = {
+  "$100–$150": 125,
+  "$150–$200": 175,
+  "$200–$300": 250,
+  "$300–$400": 350,
+  "$400+": 400,
+};
+
 const ALLOWED_ORIGINS = new Set([
   "https://danielhadobas.com",
   "https://www.danielhadobas.com",
@@ -107,7 +117,8 @@ export const onRequestPost: PagesFunction<Env> = async (ctx) => {
   const { value: cleanPhone, valid: phoneValid } = sanitizePhone(body.phone ?? "");
   const cleanEmail = body.email ? sanitizeEmail(body.email) : "";
   const cleanAddress = body.address ? sanitizeShort(body.address, 200) : "";
-  const cleanElectricBill = body.electricBill ? sanitizeShort(body.electricBill, 40) : "";
+  const electricBillLabel = body.electricBill ? sanitizeShort(body.electricBill, 40) : "";
+  const cleanElectricBill = ELECTRIC_BILL_VALUES[electricBillLabel] ?? null;
 
   // campaignTag: only pass through if in the allowlist
   const rawTag = body.campaignTag ? String(body.campaignTag) : "";
@@ -130,7 +141,9 @@ export const onRequestPost: PagesFunction<Env> = async (ctx) => {
 
   const tags = ["website-lead", "solar-consultation", ...(campaignTag ? [campaignTag] : [])];
 
-  const ghlRes = await fetch("https://services.leadconnectorhq.com/contacts/", {
+  // Upsert follows the sub-account's email/phone duplicate rules and avoids
+  // overwriting an existing contact's tags with a manual PATCH.
+  const ghlRes = await fetch("https://services.leadconnectorhq.com/contacts/upsert", {
     method: "POST",
     headers: {
       Authorization: `Bearer ${pitToken}`,
@@ -144,10 +157,11 @@ export const onRequestPost: PagesFunction<Env> = async (ctx) => {
       email: cleanEmail || undefined,
       locationId,
       source: "danielhadobas.com",
-      tags,
+      address1: cleanAddress || undefined,
       customFields: [
-        ...(cleanAddress ? [{ key: "address", field_value: cleanAddress }] : []),
-        ...(cleanElectricBill ? [{ key: "monthly_electric_bill", field_value: cleanElectricBill }] : []),
+        ...(cleanElectricBill !== null
+          ? [{ id: AVERAGE_MONTHLY_BILL_FIELD_ID, field_value: cleanElectricBill }]
+          : []),
       ],
     }),
   });
@@ -163,36 +177,34 @@ export const onRequestPost: PagesFunction<Env> = async (ctx) => {
   }
 
   if (!ghlRes.ok) {
-    // Duplicate contact — merge tags via PATCH then return success
-    if (ghlRes.status === 400 && ghlData?.meta?.contactId) {
-      const contactId = ghlData.meta.contactId as string;
-      try {
-        const patchRes = await fetch(`https://services.leadconnectorhq.com/contacts/${contactId}`, {
-          method: "PATCH",
-          headers: {
-            Authorization: `Bearer ${pitToken}`,
-            "Content-Type": "application/json",
-            Version: "2021-07-28",
-          },
-          body: JSON.stringify({ tags }),
-        });
-        if (!patchRes.ok) {
-          console.error("GHL tag merge PATCH failed, status:", patchRes.status);
-        }
-      } catch {
-        console.error("GHL tag merge PATCH threw, contact tags may be stale");
-      }
-      return new Response(JSON.stringify({ success: true, contactId }), {
-        headers: { "Content-Type": "application/json", ...cors },
-      });
-    }
-    console.error("GHL contact create failed, status:", ghlRes.status);
+    console.error("GHL contact upsert failed, status:", ghlRes.status);
     return new Response(JSON.stringify({ success: false, error: "Submission failed. Please call us directly." }), {
       status: 500, headers: { "Content-Type": "application/json", ...cors },
     });
   }
 
-  return new Response(JSON.stringify({ success: true, contactId: ghlData.contact?.id }), {
+  const contactId = ghlData.contact?.id as string | undefined;
+  if (!contactId) {
+    console.error("GHL upsert succeeded without a contact ID");
+    return new Response(JSON.stringify({ success: false, error: "Submission failed. Please call us directly." }), {
+      status: 500, headers: { "Content-Type": "application/json", ...cors },
+    });
+  }
+
+  const tagRes = await fetch(`https://services.leadconnectorhq.com/contacts/${contactId}/tags`, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${pitToken}`,
+      "Content-Type": "application/json",
+      Version: "2021-07-28",
+    },
+    body: JSON.stringify({ tags }),
+  });
+  if (!tagRes.ok) {
+    console.error("GHL contact tag addition failed, status:", tagRes.status);
+  }
+
+  return new Response(JSON.stringify({ success: true, contactId }), {
     headers: { "Content-Type": "application/json", ...cors },
   });
 };

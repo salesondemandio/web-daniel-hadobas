@@ -9,6 +9,13 @@ import FAQSection from '../components/FAQSection.astro';
 import ReviewWidget from '../components/ReviewWidget.astro';
 import { hendersonContent as c } from '../data/content/cities/henderson';
 import ITCNotice from '../components/ITCNotice.astro';
+
+const planningGuides = [
+  { href: '/blog/solar-henderson-zip-by-zip', label: 'Henderson solar by ZIP code' },
+  { href: '/solar-henderson-green-valley', label: 'Solar in Green Valley and Green Valley Ranch' },
+  { href: '/solar-battery-storage', label: 'Solar battery storage for NV Energy homes' },
+  { href: '/blog/does-nv-energy-buy-back-solar', label: 'How NV Energy credits excess solar' },
+];
 ---
 
 <BaseLayout title={c.meta.title} description={c.meta.description} keywords={c.meta.keywords}>
@@ -31,6 +38,18 @@ import ITCNotice from '../components/ITCNotice.astro';
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 017 2.18 2 2 0 019.09 4v3.09a2 2 0 01-1.42 1.93l-1.8.6a16 16 0 006.62 6.62l.6-1.8a2 2 0 011.92-1.42z"/></svg>
           (702) 941-6894
         </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 px-4 bg-white border-y border-[#E8ECE4]" aria-labelledby="henderson-guides">
+    <div class="max-w-4xl mx-auto">
+      <h2 id="henderson-guides" class="text-2xl font-bold text-slate-900 mb-3">Plan a Henderson solar project</h2>
+      <p class="text-slate-600 mb-6">Start with the guide closest to your neighborhood, storage needs, or NV Energy billing question.</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        {planningGuides.map((guide) => (
+          <a href={guide.href} class="rounded-xl border border-[#E8ECE4] bg-[#FAFAF8] px-5 py-4 font-semibold text-slate-900 hover:border-brand-orange hover:text-brand-orange transition-colors">{guide.label}</a>
+        ))}
       </div>
     </div>
   </section>
