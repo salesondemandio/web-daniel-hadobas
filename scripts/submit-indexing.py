@@ -1,9 +1,13 @@
 from google.oauth2 import service_account
 import google.auth.transport.requests
-import urllib.request, json, sys
+import urllib.request, json, sys, os
+
+# Same service account seo-cli uses; dev/tools/seo-aeo-agent (and its Windows key path) was retired.
+KEY = os.environ.get('SEO_SA_KEY') or os.path.expanduser(
+    '~/Library/Application Support/Sales On Demand/seo-cli/service-account.json')
 
 creds = service_account.Credentials.from_service_account_file(
-    r'C:\dev\tools\seo-aeo-agent\seo-agent-key.json',
+    KEY,
     scopes=['https://www.googleapis.com/auth/indexing']
 )
 creds.refresh(google.auth.transport.requests.Request())
