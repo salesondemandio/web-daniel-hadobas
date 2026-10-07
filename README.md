@@ -8,18 +8,27 @@ Built to rank for local solar keywords and convert organic traffic into consulta
 
 ## Quick Start
 
+Requires Node.js 22.12.0 or newer.
+
 ```bash
-npm install
+npm ci
 npm run dev       # http://localhost:4321
 npm run build
 npm run preview
 ```
 
+GitHub Actions runs `npm ci` and `npm run build` on pushes to `main` and pull requests targeting `main`.
+
 ## Deploy
 
 ```bash
-npm run build
-wrangler pages deploy dist --branch=main
+npm run deploy
+```
+
+This runs the canonical command from `package.json`:
+
+```bash
+astro build && wrangler pages deploy dist --branch=main --project-name=web-daniel-hadobas
 ```
 
 ---
