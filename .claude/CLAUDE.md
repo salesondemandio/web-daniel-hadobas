@@ -3,7 +3,7 @@
 **Project:** Daniel Hadobas Solar — Personal brand SEO site
 **Description:** Multi-location Astro site targeting residential solar leads in Las Vegas NV and California
 **Target User:** Homeowners in NV + CA searching for solar installation
-**Stack:** Astro 4, Tailwind CSS, TypeScript, Cloudflare Pages
+**Stack:** Astro + Tailwind CSS + TypeScript; use `package.json` and its lockfile for exact versions. Cloudflare Pages deployment.
 **Repo:** salesondemandio/web-daniel-hadobas (TBD)
 **Deploy:** CF Pages project `web-daniel-hadobas` → danielhadobas.com
 
