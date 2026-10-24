@@ -86,10 +86,10 @@ export const batchGridPosts: BlogPost[] = [
   {
     slug: 'does-nv-energy-buy-back-solar',
     title: 'Does NV Energy Buy Back Solar Power? (2026 Net-Metering Rates)',
-    seoTitle: 'Does NV Energy Buy Back Solar? 2026 Rates Explained',
+    seoTitle: 'NV Energy Solar Buy Back & Net Metering Rates (2026)',
     description: 'Yes — NV Energy credits excess rooftop solar at 75% of the retail rate under net metering, locked for 20 years. Here is exactly how the buyback works in Las Vegas.',
     publishDate: '2026-05-22',
-    modifiedDate: '2026-09-02',
+    modifiedDate: '2026-10-23',
     tags: ['Nevada', 'Las Vegas', 'Net Metering'],
     body: `<p><strong>Yes. NV Energy gives bill credits for excess solar power sent to the grid.</strong> New Nevada customers currently enter Tier 4, which credits exports at <strong>75% of the retail rate</strong>. The Public Utilities Commission of Nevada says customers keep that tier for 20 years at the original installation location.</p>
 
@@ -113,6 +113,9 @@ export const batchGridPosts: BlogPost[] = [
 <h2>Net metering or a battery: which is better?</h2>
 <p>Net metering and battery storage solve different problems. Net metering gives value to surplus power sent to the grid. A <a href="/solar-battery-storage">home battery in Las Vegas</a> keeps more of that power at home for later use and can provide backup power when properly configured. The right choice depends on your hourly usage, rate plan, backup needs, and installed cost. Start with your last 12 months of NV Energy bills rather than a generic savings estimate.</p>
 
+<h2>Is there an NV Energy solar rebate?</h2>
+<p>No cash rebate. Net metering is a bill credit, not a rebate check, and the 30% federal tax credit ended December 31, 2025 for systems you buy. The incentives Nevada homeowners still get are covered in the <a href="/blog/nevada-solar-tax-credit-2025">Nevada solar incentives guide</a>, and the <a href="/blog/federal-solar-tax-credit-2026-claim">federal credit changes</a> are explained separately. If rising rates are why you are looking, see <a href="/beat-the-rate-hike">how to beat Nevada's rate hikes with solar</a>.</p>
+
 <h2>Official sources</h2>
 <ul>
 <li><a href="https://prod.puc.nv.gov/renewables/net-metering-in-nevada/" target="_blank" rel="noopener">Public Utilities Commission of Nevada: Net Metering in Nevada</a></li>
@@ -126,6 +129,14 @@ export const batchGridPosts: BlogPost[] = [
       {
         question: 'How much does NV Energy pay for excess solar in 2026?',
         answer: 'New net-metering customers currently enter Tier 4 and receive bill credits at 75% of the retail rate for exported electricity. The exact dollar value depends on the applicable NV Energy retail rate. The Public Utilities Commission of Nevada says Tier 4 customers keep that credit tier for 20 years at the original installation location.',
+      },
+      {
+        question: 'Does NV Energy offer a rebate for solar panels?',
+        answer: 'Net metering is not a rebate. NV Energy does not send you a check for your panels; it gives you bill credits for the solar you export. The 30% federal tax credit also ended December 31, 2025 for systems you buy. What Nevada homeowners still get is the property-tax exemption, the sales-tax exemption on qualifying equipment and 20 years of locked net-metering credits..',
+      },
+      {
+        question: 'Does the power company pay you for solar in Nevada?',
+        answer: 'Not in cash. NV Energy credits each exported kWh at 75% of the retail rate, and those credits reduce what you owe for power you pull from the grid at night. You are paid in a lower bill, not a payout.',
       },
       {
         question: 'Should I add a battery instead of exporting to NV Energy?',

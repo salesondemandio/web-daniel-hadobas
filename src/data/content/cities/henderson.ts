@@ -1,7 +1,7 @@
 export const hendersonContent = {
   meta: {
-    title: "Solar Panels Henderson NV | Daniel Hadobas Solar",
-    description: "Solar panels in Henderson, NV with $0 down. Same NV Energy territory, same great incentives. 174 five-star reviews. Get a free quote from a local expert.",
+    title: "Solar Panels Henderson NV: Compare Solar Companies (2026)",
+    description: "Comparing solar companies in Henderson, NV? 2026 cost by system size, how to vet installers, lease vs buy, and NV Energy net metering. 174 five-star reviews.",
     keywords: "solar panels Henderson NV, Henderson Nevada solar, NV Energy solar Henderson, solar installation Henderson, solar agent Henderson NV"
   },
   hero: {

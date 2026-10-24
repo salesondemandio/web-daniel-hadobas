@@ -1,7 +1,7 @@
 export const lasVegasContent = {
   meta: {
-    title: "Solar Panels Las Vegas NV | Daniel Hadobas Solar",
-    description: "Get Las Vegas solar panels with $0 down and save monthly savings tied to your actual bill. 174 five-star reviews. Licensed Nevada solar agent. Free quote today.",
+    title: "Solar Panels Las Vegas NV: 2026 Cost & Local Solar Agent",
+    description: "Solar panels in Las Vegas cost about $2.60–$3.40 per watt in 2026. See prices by system size, how buying works with NV Energy, and get a free quote. 174 five-star reviews.",
     keywords: "solar panels Las Vegas NV, Las Vegas solar installation, NV Energy solar Las Vegas, solar cost Las Vegas, best solar company Las Vegas, $0 down solar Las Vegas"
   },
   hero: {

@@ -55,7 +55,7 @@ import ITCNotice from '../components/ITCNotice.astro';
       <h2 class="text-2xl font-bold text-slate-900 mb-2">San Diego's Trusted Solar Advisor — 174 Five-Star Reviews</h2>
       <p class="text-brand-orange font-semibold mb-6">Daniel Hadobas · Independent Agent · SDG&amp;E Rate Expert</p>
       {c.intro.map((para: string) => (
-        <p class="text-slate-600 leading-relaxed mb-4">{para}</p>
+        <p class="text-slate-600 leading-relaxed mb-4 [&_a]:text-brand-orange [&_a]:underline" set:html={para} />
       ))}
     </div>
   </section>
@@ -67,7 +67,7 @@ import ITCNotice from '../components/ITCNotice.astro';
         {c.incentives.map((inc: any) => (
           <div class="bg-[#FAFAF8] rounded-xl p-6 border border-slate-200 shadow-sm">
             <h3 class="font-semibold text-slate-900 mb-2">{inc.title}</h3>
-            <p class="text-slate-600 text-sm leading-relaxed">{inc.description}</p>
+            <p class="text-slate-600 text-sm leading-relaxed [&_a]:text-brand-orange [&_a]:underline" set:html={inc.description} />
           </div>
         ))}
       </div>

@@ -279,6 +279,7 @@ export const batchTechPosts: BlogPost[] = [
   {
     slug: 'best-solar-panels-las-vegas-climate',
     title: 'The Best Solar Panels for the Las Vegas Climate in 2026',
+    seoTitle: 'Best Solar Panels for Las Vegas Heat (2026 Brands Compared)',
     description: 'The best solar panels for Las Vegas in 2026 — heat tolerance, warranty, real-world performance. REC, Qcells, Silfab, Panasonic, Maxeon compared.',
     publishDate: '2025-12-19',
     tags: ['Nevada', 'Equipment', 'Technical', 'Las Vegas'],
@@ -829,7 +830,7 @@ export const batchTechPosts: BlogPost[] = [
   {
     slug: 'nem-3-export-rates-california-2026',
     title: 'NEM 3.0 Export Rates Explained — What You Actually Get Paid in 2026',
-    seoTitle: 'California NEM 3.0 Export Rates in 2026: What Solar Pays',
+    seoTitle: 'NEM 3.0 Export Rates 2026: What California Solar Pays',
     description: 'NEM 3.0 export rates explained — California avoided cost rates, time-of-export pricing, and what California solar exports actually pay in 2026.',
     publishDate: '2026-03-08',
     tags: ['California', 'NEM 3.0', 'Net Metering', 'Technical'],

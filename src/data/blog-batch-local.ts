@@ -401,13 +401,27 @@ export const batchLocalPosts: BlogPost[] = [
   {
     slug: 'solar-san-diego-sdge-nem-3',
     title: 'Solar in San Diego — SDG&E and NEM 3.0 in 2026',
+    seoTitle: 'NEM 3 San Diego: SDG&E Net Metering & Solar in 2026',
+    seoDescription: 'How SDG&E net metering works under NEM 3.0 in San Diego: export credits, the annual true-up bill, why a battery matters and real 2026 solar savings.',
     description: 'Solar in San Diego SDG&E NEM 3.0 in 2026: how the export rate cuts changed the math, why batteries are now mandatory, and real payback numbers.',
     publishDate: '2026-05-01',
+    modifiedDate: '2026-10-23',
     tags: ['California', 'NEM 3.0', 'Local Guide'],
     body: `<p><strong>Solar in San Diego on SDG&E in 2026 only makes financial sense paired with a battery — <a href="https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/demand-side-management/net-energy-metering" target="_blank" rel="noopener">NEM 3.0</a> dropped export credits about 75% and SDG&E has the highest residential rates in the continental US, so self-consuming what you produce is now where the savings live.</strong> Solar + battery in San Diego pays back in 7–9 years. Solar alone pays back in 12–15.</p>
 
 <h2>SDG&E rate context</h2>
 <p>SDG&E residential rates are the most expensive in the continental US — peak Time-of-Use rates routinely exceed $0.55–$0.60/kWh in summer afternoons. That's the good news for solar: every kWh you self-consume is enormous savings. The bad news: NEM 3.0 export credits are around $0.05–$0.10/kWh average, so unsaved exports are nearly worthless.</p>
+
+<h2>What is an SDG&E true-up bill?</h2>
+<p>Your SDG&E solar bill runs on a 12-month cycle. Each month, any export credits you earn carry forward. At the end of the cycle SDG&E sends an annual <strong>true-up</strong> statement that settles the year: credits are applied against the months you owed, and any balance you still owe is due then. Unused credits do not roll into the next year. Any true excess generation is bought back at a low wholesale rate. (Source: <a href="https://www.sdge.com/solar/net-energy-metering/UnderstandingYourNEMBill" target="_blank" rel="noopener">SDG&E, Understanding Your NEM Bill</a>.)</p>
+<p><strong>Why are SDG&E true-up charges so high?</strong> Under NEM 3.0, exports earn only about $0.05–$0.10/kWh, while the power you buy back in the evening costs several times that. A system that exports at noon and imports at 6 p.m. builds a balance all year, and the bill lands at true-up. A new EV, pool pump or added AC load makes it worse, and so does a system that's underproducing.</p>
+<p><strong>How to keep your true-up low:</strong></p>
+<ul>
+<li>Pair the system with a battery so midday solar covers your evening peak instead of being exported for pennies.</li>
+<li>Shift EV charging and other big loads into the hours your rate plan prices lowest.</li>
+<li>Size the system to your real usage, including any EV or pool you're adding.</li>
+<li>Check the year-to-date totals on your monthly bill so the true-up isn't a surprise.</li>
+</ul>
 
 <h2>Why batteries became mandatory</h2>
 <p>Pre-NEM 3.0, you'd export midday at retail rate and pull back at night for free (net zero). Now you export at 7 cents and buy back at 50+ cents. The only fix is to store your midday production and discharge it during the 4pm–9pm peak window. A 10–13 kWh battery covers most San Diego households for the peak period.</p>

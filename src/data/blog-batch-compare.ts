@@ -6,6 +6,7 @@ export const batchComparePosts: BlogPost[] = [
     title: "Solar Agent vs Solar Company: What's the Real Difference?",
     description: "Solar agent vs solar company — I'm Daniel, an independent solar agent in Las Vegas. Here's the honest difference in pricing, incentives, and who actually owns your project.",
     publishDate: '2026-02-01',
+    modifiedDate: '2026-10-23',
     tags: ['Comparison', 'Solar Companies', 'Las Vegas'],
     body: `<p><strong>Quick answer:</strong> A solar company employs salaried or commissioned reps who sell that company's product. A solar agent — like me — is independent, works with multiple installers, and gets paid on referrals rather than per-watt commission. For most homeowners who want unbiased financing options and no quota pressure, the agent model wins. For homeowners who want a single throat to choke for a 25-year warranty, a single integrated company can be simpler.</p>
 
@@ -56,7 +57,9 @@ export const batchComparePosts: BlogPost[] = [
 <p>If you're new here, start with <a href="/about">my about page</a> or read the <a href="/solar-las-vegas">Las Vegas solar overview</a>. If you're outside Nevada, I also work the <a href="/solar-california">California market</a>.</p>
 
 <h2>Bottom line</h2>
-<p>"Solar agent vs solar company" isn't really a quality fight — it's a structural one. Different incentives produce different conversations. If you want a quote where the person across the table doesn't get a bigger check for selling you a bigger system, <a href="/#get-quote">grab a quote from me here</a>.</p>`,
+<p>"Solar agent vs solar company" isn't really a quality fight — it's a structural one. Different incentives produce different conversations. If you want a quote where the person across the table doesn't get a bigger check for selling you a bigger system, <a href="/#get-quote">grab a quote from me here</a>.</p>
+<p>For a one-page summary, see <a href="/solar-agent-vs-solar-company">solar agent vs solar company: the honest difference</a>.</p>
+`,
     faqs: [
       { question: 'Should I use a solar agent or a solar company?', answer: "If you want competitive pricing, ownership-first financing, and a single point of contact who isn't on quota, an independent agent is usually the better fit. If you want one integrated brand for panels, inverter, and warranty, a vertically integrated company can be simpler." },
       { question: 'Is a solar agent cheaper than a solar company?', answer: "Often, yes — because an agent shops multiple installers instead of marking up a single in-house price book. But cheaper isn't the only point. The bigger difference is the incentive structure behind the quote." },
@@ -277,7 +280,9 @@ export const batchComparePosts: BlogPost[] = [
   {
     slug: 'sunder-energy-vs-other-solar-companies',
     title: 'Sunder Energy vs Other Solar Companies — A Reality Check',
+    seoTitle: 'Sunder Energy Solar Reviews: How the Company Works (2026)',
     description: 'Sunder Energy vs other solar companies — how the dealer/agent model differs from in-house sales, and what to actually look for in any solar quote.',
+    seoDescription: 'Sunder Energy (Sunder Solar) explained by an independent agent: how the company works, what reviews say, dealer vs in-house installers, and what to check in any quote.',
     publishDate: '2026-03-10',
     tags: ['Comparison', 'Solar Companies'],
     body: `<p><strong>Quick answer:</strong> Sunder Energy is a national solar dealer organization — they don't install solar themselves; they connect homeowners with vetted installer partners through a network of independent agents. That model is closer to how I work than to how a company like SunRun or SolarOptimum works. The "Sunder vs other companies" question is really "agent/dealer model vs in-house company model" — and the answer depends on whether you want competitive bidding or single-vendor integration.</p>
@@ -352,6 +357,7 @@ export const batchComparePosts: BlogPost[] = [
     title: 'The Best Solar Companies in Las Vegas in 2026 (My Honest Pick List)',
     description: "The best solar companies in Las Vegas in 2026 — what I look for when picking install partners, the questions that separate good from great, and how I vet installers.",
     publishDate: '2026-03-20',
+    modifiedDate: '2026-10-23',
     tags: ['Comparison', 'Solar Companies', 'Las Vegas', 'Nevada'],
     body: `<p><strong>Quick answer:</strong> There is no single "best" solar company in Las Vegas. There are installers I work with, installers I won't work with, and installers I'd send my mom to but only on specific roof types. Below is my honest framework — the criteria I use to pick the install partner for each homeowner — instead of a ranked list that pretends one company is best for everyone. If you want the short version: I prioritize licensed local crews, real workmanship warranties, NV Energy interconnection experience, and ownership-friendly financing.</p>
 
@@ -403,7 +409,9 @@ export const batchComparePosts: BlogPost[] = [
 <p>I'm not naming a "best" company because I don't think one exists. I'm telling you the criteria I score on, and I'm telling you that I personally bid each homeowner's job to 2–3 installers I've vetted against those criteria. The homeowner picks. <a href="/about">Here's more on how I work</a>.</p>
 
 <h2>Closing</h2>
-<p>If you want a "top 10" list, you can find ten of them on Google. If you want the framework I actually use to pick installers for my own clients in LV, this post is it. Want me to bid your specific roof? <a href="/#get-quote">Request a quote here</a> and I'll run it against my installer bench.</p>`,
+<p>If you want a "top 10" list, you can find ten of them on Google. If you want the framework I actually use to pick installers for my own clients in LV, this post is it. Want me to bid your specific roof? <a href="/#get-quote">Request a quote here</a> and I'll run it against my installer bench.</p>
+<p>Deciding between a solar agent and a single installer? Read <a href="/solar-agent-vs-solar-company">solar agent vs solar company</a>, or the <a href="/solar-henderson-nv">Henderson solar company guide</a>.</p>
+`,
     faqs: [
       { question: 'Who is the best solar company in Las Vegas in 2026?', answer: "There isn't one. The best installer depends on your roof type, your usage, your financing preference, and the install timeline you need. I score installers on license, interconnection volume, warranty, crew composition, and pricing transparency, then pick per job." },
       { question: 'Are local Las Vegas solar installers better than national companies?', answer: 'On NV Energy interconnection speed, local crews almost always win. On brand stability and integrated monitoring, national companies often win. Both can deliver a good install — the question is which trade-off matters more.' },
@@ -416,8 +424,11 @@ export const batchComparePosts: BlogPost[] = [
   {
     slug: 'solar-lease-vs-loan-vs-ppa-pros-cons',
     title: 'Solar Lease vs Loan vs PPA — A Pros and Cons Table',
+    seoTitle: 'Solar Lease vs PPA vs Purchase: Which Is Better? (2026)',
     description: 'Solar lease vs loan vs PPA — the honest pros and cons of each financing structure, who keeps the tax credit, and which one fits your situation.',
+    seoDescription: 'Solar lease vs PPA vs buying outright, side by side: monthly cost, who owns the system, escalators, home-sale problems and which one actually saves more in 2026.',
     publishDate: '2026-04-01',
+    modifiedDate: '2026-10-23',
     tags: ['Comparison', 'Cost & Financing'],
     body: `<p><strong>Quick answer:</strong> A solar loan or cash purchase puts the system in your name. The 30% federal tax credit that used to come with ownership expired December 31, 2025 — so a purchase today leans on Nevada's surviving incentives and net-metering value instead. A lease puts the system in a third party's name; they keep any federal incentive (lease/PPA still qualify through 2027) and you pay a fixed (usually escalating) monthly bill. A PPA is similar but you pay per kWh produced. For most homeowners, ownership still wins on lifetime cost. For those with no upfront cash flexibility, a lease or PPA can still pencil — and it's now the only structure tied to a federal incentive.</p>
 
@@ -431,6 +442,18 @@ export const batchComparePosts: BlogPost[] = [
 
 <h3>PPA (Power Purchase Agreement)</h3>
 <p>Similar to a lease, but instead of a fixed monthly payment, you pay per kWh the system produces — usually at a rate below current utility rates, with an annual escalator. The third party owns the system and keeps any federal incentive (lease/PPA still qualify through 2027).</p>
+
+<h2>Solar lease vs PPA: what's the difference?</h2>
+<p>A lease and a PPA both put a company's panels on your roof for $0 down. The only real difference is how you pay. With a <strong>lease</strong> you pay a flat monthly amount no matter how much the system produces. With a <strong>PPA</strong> you pay a set price per kWh the system actually produces. Both usually carry an annual escalator, both leave ownership with the provider, and both have to be transferred or bought out when you sell the house.</p>
+
+<h2>Is it better to buy solar or sign a PPA?</h2>
+<p>For most homeowners who can buy with cash or a loan, buying wins on lifetime cost. You own the system, you keep Nevada's sales-tax and property-tax exemptions and the full net-metering value, and nobody's escalator raises your price every year. A PPA can still make sense if you have no cash and don't want a loan, or you don't want to own or maintain anything on your roof.</p>
+<ul>
+<li><strong>The downside of a PPA:</strong> you don't own the system, the per-kWh rate usually rises every year, the provider keeps any federal incentive, and the contract follows the house when you sell.</li>
+<li><strong>Does a PPA increase home value?</strong> Generally no. The system isn't yours, so it doesn't count as equity. A buyer has to agree to take over the contract, or you buy it out.</li>
+<li><strong>Why can a house with solar be harder to sell?</strong> Usually because of a lease or PPA, not the panels. Some buyers or lenders won't take on the contract. An owned, paid-off system conveys cleanly.</li>
+</ul>
+<p>Comparing a loan with paying cash? See <a href="/blog/solar-lease-vs-loan-vs-cash-nevada">solar lease vs loan vs cash in Nevada</a>.</p>
 
 <h2>Side-by-side</h2>
 <table>

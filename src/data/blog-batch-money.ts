@@ -4,14 +4,31 @@ export const batchMoneyPosts: BlogPost[] = [
   {
     slug: 'solar-cost-las-vegas-2026',
     title: 'How Much Does Solar Cost in Las Vegas in 2026?',
-    seoTitle: 'Solar Panel Cost Las Vegas 2026: Prices and Payback',
+    seoTitle: 'How Much Do Solar Panels Cost in Las Vegas? 2026 Prices',
     description: 'Real solar cost in Las Vegas in 2026: gross price, cash price, payback math, and what changes panel-to-panel. Get a quote.',
+    seoDescription: 'Solar panels in Las Vegas cost $2.60–$3.40 per watt in 2026 — about $20,800–$27,200 for an 8 kW system. Prices by system size, battery add-on cost and payback.',
     publishDate: '2025-12-03',
+    modifiedDate: '2026-10-23',
     tags: ['Las Vegas', 'Cost & Financing', 'Tax Credit'],
     body: `<p>In 2026, a typical Las Vegas solar install runs $2.60–$3.40 per watt, which puts an 8 kW system at roughly $20,800–$27,200 cash (after Nevada's sales-tax exemption). Add a battery and you're looking at another $9,000–$14,000. Heads up: the 30% federal tax credit ended December 31, 2025 for systems you buy, so don't let an old quote shave 30% off your number. The actual price depends on roof complexity, panel tier, and whether you finance.</p>
 
 <h2>The honest baseline number</h2>
 <p>When I run quotes for Las Vegas homeowners, the most common system size lands between 7 and 10 kW. That's enough to offset a $180–$260 monthly NV Energy bill on a 1,800–2,400 sq ft single-family home. The price-per-watt range above isn't marketing — it's what installers in the valley are actually quoting in late 2025 and early 2026, and the lower end usually means a simpler roof and a Tier-2 panel, not a worse install.</p>
+
+<h2>Solar cost by system size in Las Vegas (2026)</h2>
+<p>Here's that same $2.60–$3.40 per watt range applied to the system sizes I quote most often. These are cash prices before any battery. Your exact number comes from your roof and your bill.</p>
+<table>
+<thead><tr><th>System size</th><th>Typical home / NV Energy bill</th><th>Cash price range</th></tr></thead>
+<tbody>
+<tr><td>5 kW</td><td>Smaller home or condo, ~$100–$140/mo bill</td><td>~$13,000–$17,000</td></tr>
+<tr><td>6 kW</td><td>~1,400–1,700 sq ft, ~$140–$180/mo bill</td><td>~$15,600–$20,400</td></tr>
+<tr><td>8 kW</td><td>~1,800–2,200 sq ft, ~$180–$230/mo bill</td><td>~$20,800–$27,200</td></tr>
+<tr><td>10 kW</td><td>~2,200–2,600 sq ft, ~$230–$280/mo bill</td><td>~$26,000–$34,000</td></tr>
+<tr><td>12 kW</td><td>Larger home, pool or EV, $280+/mo bill</td><td>~$31,200–$40,800</td></tr>
+</tbody>
+</table>
+<p><strong>How much does solar cost for a 2,000 sq ft house in Las Vegas?</strong> Most 2,000 sq ft homes in the valley need about 7–9 kW, so expect roughly $18,000–$31,000 cash, with 8 kW (about $20,800–$27,200) the most common size. A pool, an EV or a west-facing roof pushes it higher.</p>
+<p>National cost sites often show lower averages because they blend in cheaper states and simpler roofs. The numbers above are what local installers quote on itemized Las Vegas jobs.</p>
 
 <h2>What's in the price</h2>
 <p>Most homeowners think they're paying for panels. They're not — panels are roughly 12–15% of total system cost. The rest breaks down like this:</p>
@@ -79,6 +96,7 @@ export const batchMoneyPosts: BlogPost[] = [
   {
     slug: 'solar-payback-period-las-vegas',
     title: 'Solar Payback Period in Las Vegas — Real Numbers from 2026 Installs',
+    seoTitle: 'Solar Payback Period in Las Vegas: Is It Worth It in 2026?',
     description: 'Real solar payback period in Las Vegas, broken down by cash, loan, and lease. Numbers from actual 2026 installs. Run your own.',
     publishDate: '2025-12-15',
     tags: ['Las Vegas', 'Cost & Financing', 'Net Metering'],
@@ -574,6 +592,7 @@ export const batchMoneyPosts: BlogPost[] = [
     title: 'NV Energy Rate Hikes 2024–2026 — Why Solar Locks In Your Costs',
     description: 'NV Energy rate hikes 2024–2026 explained — and why solar in Las Vegas is the only real hedge. See the rate history.',
     publishDate: '2026-03-04',
+    modifiedDate: '2026-10-23',
     tags: ['Nevada', 'Las Vegas', 'Net Metering'],
     body: `<p>NV Energy has filed and received approval for multiple rate increases since 2023, with another general rate case pending in 2026. For a typical Las Vegas household, the cumulative effect since 2022 is roughly 14–22% higher monthly bills before any usage change. Solar caps your generation cost at year-1 rates — that's the actual hedge.</p>
 
@@ -631,7 +650,9 @@ export const batchMoneyPosts: BlogPost[] = [
 <h2>What I tell every client</h2>
 <p>The hardest part of the solar decision in Nevada in 2026 isn't whether the math works. It does. It's whether you trust NV Energy rates to stay flat or fall — and the historical record says they don't. Solar is a 25-year asset on a roof in 290-sun-day country. The hedge isn't speculative. It's just arithmetic. More on the numbers in <a href="/blog/solar-payback-period-las-vegas">Solar Payback Period in Las Vegas</a>.</p>
 
-<p>Want to see your specific NV Energy bill modeled against a system on your roof? <a href="/#get-quote">Request a quote here</a>.</p>`,
+<p>Want to see your specific NV Energy bill modeled against a system on your roof? <a href="/#get-quote">Request a quote here</a>.</p>
+<p>Ready to lock in your rate? See <a href="/beat-the-rate-hike">how to beat Nevada's rate hikes with solar</a>.</p>
+`,
     faqs: [
       {
         question: 'How much have NV Energy rates increased since 2022?',

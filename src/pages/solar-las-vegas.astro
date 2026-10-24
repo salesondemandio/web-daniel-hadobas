@@ -15,6 +15,8 @@ const planningGuides = [
   { href: '/blog/best-solar-companies-las-vegas-2026', label: 'How to compare Las Vegas solar companies' },
   { href: '/solar-battery-storage', label: 'Solar battery storage in Las Vegas' },
   { href: '/blog/does-nv-energy-buy-back-solar', label: 'NV Energy net-metering credits' },
+  { href: '/solar-agent-vs-solar-company', label: 'Solar agent vs solar company' },
+  { href: '/beat-the-rate-hike', label: 'Beat NV Energy rate hikes with solar' },
 ];
 ---
 
@@ -75,8 +77,40 @@ const planningGuides = [
     <div class="max-w-4xl mx-auto">
       <h2 class="text-2xl font-bold text-slate-900 mb-6">Why Go Solar in Las Vegas?</h2>
       {c.intro.map((para) => (
-        <p class="text-slate-600 leading-relaxed mb-4">{para}</p>
+        <p class="text-slate-600 leading-relaxed mb-4 [&_a]:text-brand-orange [&_a]:underline" set:html={para} />
       ))}
+    </div>
+  </section>
+
+  <section class="py-12 px-4 bg-white border-y border-[#E8ECE4]" aria-labelledby="lv-cost">
+    <div class="max-w-4xl mx-auto">
+      <h2 id="lv-cost" class="text-2xl font-bold text-slate-900 mb-4">How Much Do Solar Panels Cost in Las Vegas?</h2>
+      <p class="text-slate-600 leading-relaxed mb-4">In 2026, installed solar in Las Vegas runs about $2.60–$3.40 per watt with Nevada's sales-tax exemption applied. The 30% federal credit ended December 31, 2025 for systems you buy, so these are real cash prices.</p>
+      <div class="overflow-x-auto mb-4">
+        <table class="w-full text-sm text-left border border-[#E8ECE4] rounded-xl">
+          <thead class="bg-[#FAFAF8] text-slate-900"><tr><th class="p-3">System size</th><th class="p-3">Monthly NV Energy bill it offsets</th><th class="p-3">Cash price range</th></tr></thead>
+          <tbody class="text-slate-600">
+            <tr class="border-t border-[#E8ECE4]"><td class="p-3">5 kW</td><td class="p-3">~$100–$140</td><td class="p-3">~$13,000–$17,000</td></tr>
+            <tr class="border-t border-[#E8ECE4]"><td class="p-3">7 kW</td><td class="p-3">~$160–$200</td><td class="p-3">~$18,200–$23,800</td></tr>
+            <tr class="border-t border-[#E8ECE4]"><td class="p-3">9 kW</td><td class="p-3">~$210–$260</td><td class="p-3">~$23,400–$30,600</td></tr>
+            <tr class="border-t border-[#E8ECE4]"><td class="p-3">12 kW</td><td class="p-3">$280+ (pool, EV, large home)</td><td class="p-3">~$31,200–$40,800</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-slate-600 leading-relaxed">Full breakdown: <a class="text-brand-orange hover:underline" href="/blog/solar-cost-las-vegas-2026">Las Vegas solar cost in 2026</a> · <a class="text-brand-orange hover:underline" href="/blog/solar-payback-period-las-vegas">payback period</a> · <a class="text-brand-orange hover:underline" href="/blog/tesla-powerwall-las-vegas">adding a Powerwall</a>.</p>
+    </div>
+  </section>
+
+  <section class="py-12 px-4 bg-[#FAFAF8]" aria-labelledby="lv-process">
+    <div class="max-w-4xl mx-auto">
+      <h2 id="lv-process" class="text-2xl font-bold text-slate-900 mb-4">Buying Solar Panels in Las Vegas: How It Works</h2>
+      <ol class="list-decimal pl-6 space-y-2 text-slate-600">
+        <li><strong class="text-slate-900">Bill review.</strong> Daniel looks at 12 months of your NV Energy usage to size the system to what you actually use.</li>
+        <li><strong class="text-slate-900">Side-by-side quotes.</strong> Cash, loan and lease options from vetted, NABCEP-certified installers, with the dealer fee visible.</li>
+        <li><strong class="text-slate-900">Design, permits and HOA.</strong> Nevada law (NRS 278.0208) limits how far an HOA can block rooftop solar.</li>
+        <li><strong class="text-slate-900">Install and NV Energy interconnection.</strong> Once NV Energy approves the system, net metering credits your exports at 75% of the retail rate, locked for 20 years.</li>
+      </ol>
+      <p class="text-slate-600 leading-relaxed mt-4">Not sure who to hire? Read <a class="text-brand-orange hover:underline" href="/solar-agent-vs-solar-company">solar agent vs solar company</a> and <a class="text-brand-orange hover:underline" href="/blog/solar-lease-vs-loan-vs-ppa-pros-cons">lease vs PPA vs buying</a>.</p>
     </div>
   </section>
 
@@ -90,7 +124,7 @@ const planningGuides = [
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
             </div>
             <h3 class="font-semibold text-slate-900 mb-2">{inc.title}</h3>
-            <p class="text-slate-600 text-sm leading-relaxed">{inc.description}</p>
+            <p class="text-slate-600 text-sm leading-relaxed [&_a]:text-brand-orange [&_a]:underline" set:html={inc.description} />
           </div>
         ))}
       </div>

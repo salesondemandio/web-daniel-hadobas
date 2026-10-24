@@ -50,7 +50,7 @@ import ITCNotice from '../components/ITCNotice.astro';
       <h2 class="text-2xl font-bold text-slate-900 mb-2">California Solar Expert — Licensed Agent, Real Results</h2>
       <p class="text-brand-orange font-semibold mb-6">Daniel Hadobas · 174 Five-Star Google Reviews · Independent Solar Advisor</p>
       {c.intro.map((para: string) => (
-        <p class="text-slate-600 leading-relaxed mb-4">{para}</p>
+        <p class="text-slate-600 leading-relaxed mb-4 [&_a]:text-brand-orange [&_a]:underline" set:html={para} />
       ))}
     </div>
   </section>

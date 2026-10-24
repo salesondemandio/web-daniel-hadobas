@@ -65,6 +65,7 @@ export const batchAeoPosts: BlogPost[] = [
     title: 'Are Solar Panels Worth It in Nevada in 2026?',
     description: 'For most owner-occupied Nevada homes, yes — 290+ sun days, rising NV Energy rates, and Nevada\'s tax exemptions make solar worth it. Here is when it works and when it does not.',
     publishDate: '2026-05-17',
+    modifiedDate: '2026-10-23',
     tags: ['Nevada', 'Las Vegas', 'Decision'],
     body: `<p>For most owner-occupied homes in Nevada, yes — solar is worth it in 2026. Las Vegas gets 290+ sunny days a year, NV Energy rates have risen multiple times since 2023 (up about 9.5% in the past year, to roughly 17.45¢/kWh), and Nevada's sales- and property-tax exemptions plus 75% net metering cut the real cost of a system you own. A right-sized cash system typically pays for itself in roughly 9–12 years now that the 30% federal credit has ended — though NV Energy's rising rates keep pulling that number down — then delivers many more years of near-free power. It is not worth it for everyone, though — the details below decide it.</p>
 
@@ -95,7 +96,9 @@ export const batchAeoPosts: BlogPost[] = [
 <h2>The honest bottom line</h2>
 <p>If you own your Las Vegas or Henderson home, have a real NV Energy bill, and aren't about to move — solar is worth it, and the 2026 numbers are better than they were a few years ago. If you're financing a system bigger than your home needs, it's not. The difference is the design, not the technology.</p>
 
-<p>Want your actual numbers instead of an industry average? <a href="/#get-quote">Get a free, no-pressure analysis</a> and I'll show you the payback math for your specific home.</p>`,
+<p>Want your actual numbers instead of an industry average? <a href="/#get-quote">Get a free, no-pressure analysis</a> and I'll show you the payback math for your specific home.</p>
+<p>If NV Energy's rising rates are the reason you're asking, see <a href="/beat-the-rate-hike">how solar beats Nevada's rate hikes</a>.</p>
+`,
     faqs: [
       {
         question: 'Are solar panels worth it in Nevada in 2026?',

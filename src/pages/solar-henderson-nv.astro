@@ -75,8 +75,59 @@ const planningGuides = [
       <h2 class="text-2xl font-bold text-slate-900 mb-2">Henderson's Trusted Solar Expert</h2>
       <p class="text-brand-orange font-semibold mb-6">Daniel Hadobas · 174 Five-Star Google Reviews · Las Vegas Native Since 1996</p>
       {c.intro.map((para: string) => (
-        <p class="text-slate-600 leading-relaxed mb-4">{para}</p>
+        <p class="text-slate-600 leading-relaxed mb-4 [&_a]:text-brand-orange [&_a]:underline" set:html={para} />
       ))}
+    </div>
+  </section>
+
+  <section class="py-12 px-4 bg-white border-y border-[#E8ECE4]" aria-labelledby="choose-henderson">
+    <div class="max-w-4xl mx-auto">
+      <h2 id="choose-henderson" class="text-2xl font-bold text-slate-900 mb-4">How to Choose a Solar Company in Henderson, NV</h2>
+      <p class="text-slate-600 leading-relaxed mb-4">Henderson has dozens of solar companies, and most of them sell the same panels. What separates a good deal from a bad one is who designs the system, who installs it, who services it later, and how it's financed. Before you sign with anyone, check these five things:</p>
+      <ol class="list-decimal pl-6 space-y-2 text-slate-600 mb-6">
+        <li><strong class="text-slate-900">A licensed Nevada contractor and NABCEP-certified installers.</strong> Ask for the contractor license number and look it up on the Nevada State Contractors Board site.</li>
+        <li><strong class="text-slate-900">Written warranties.</strong> Separate panel, inverter and workmanship warranties, and who honors them if the sales company disappears.</li>
+        <li><strong class="text-slate-900">A system sized to your NV Energy bill.</strong> Bring 12 months of usage. Oversized systems mean more revenue for the seller and slower payback for you.</li>
+        <li><strong class="text-slate-900">Cash and financed prices side by side.</strong> "$0 down" loans often hide an 18–28% dealer fee in the price.</li>
+        <li><strong class="text-slate-900">No pressure to sign the same day.</strong> A real quote is still good next week.</li>
+      </ol>
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm text-left border border-[#E8ECE4] rounded-xl">
+          <thead class="bg-[#FAFAF8] text-slate-900">
+            <tr><th class="p-3">Type of company</th><th class="p-3">Best for</th><th class="p-3">Watch out for</th></tr>
+          </thead>
+          <tbody class="text-slate-600">
+            <tr class="border-t border-[#E8ECE4]"><td class="p-3"><span class="font-semibold text-slate-900">Independent solar agent</span><br />Quotes several installers and equipment brands, then manages the project for you</td><td class="p-3">Homeowners who want options and one point of contact</td><td class="p-3">Make sure the installer behind the quote is named in the contract</td></tr>
+            <tr class="border-t border-[#E8ECE4]"><td class="p-3"><span class="font-semibold text-slate-900">Single local installer</span><br />Sells and installs its own crews and preferred equipment</td><td class="p-3">Simple roofs, buyers set on one brand</td><td class="p-3">You only see one price and one equipment lineup</td></tr>
+            <tr class="border-t border-[#E8ECE4]"><td class="p-3"><span class="font-semibold text-slate-900">National lease / PPA provider</span><br />Owns the panels on your roof; you pay monthly or per kWh</td><td class="p-3">$0 upfront with no ownership or maintenance</td><td class="p-3">Annual escalators, highest lifetime cost, contract follows the house when you sell</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-slate-600 leading-relaxed mb-2">More detail on each choice:</p>
+      <ul class="list-disc pl-6 space-y-1 text-slate-600">
+        <li><a class="text-brand-orange hover:underline" href="/blog/solar-agent-vs-solar-company-difference">Solar agent vs solar company: the difference</a></li>
+        <li><a class="text-brand-orange hover:underline" href="/blog/solar-lease-vs-loan-vs-cash-nevada">Solar lease vs loan vs cash in Nevada</a></li>
+        <li><a class="text-brand-orange hover:underline" href="/blog/zero-down-solar-las-vegas-explained">What "$0 down" solar really means</a></li>
+        <li><a class="text-brand-orange hover:underline" href="/blog/best-solar-companies-las-vegas-2026">Best solar companies in Las Vegas and Henderson (2026)</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="py-12 px-4 bg-[#FAFAF8]" aria-labelledby="henderson-cost">
+    <div class="max-w-4xl mx-auto">
+      <h2 id="henderson-cost" class="text-2xl font-bold text-slate-900 mb-4">Solar Panel Cost in Henderson, NV (2026)</h2>
+      <p class="text-slate-600 leading-relaxed mb-4">Henderson pricing matches Las Vegas: roughly $2.60–$3.40 per watt installed, with Nevada's sales-tax exemption applied and no 30% federal credit for systems you buy in 2026.</p>
+      <div class="overflow-x-auto mb-4">
+        <table class="w-full text-sm text-left border border-[#E8ECE4] rounded-xl bg-white">
+          <thead class="text-slate-900"><tr><th class="p-3">System size</th><th class="p-3">Typical Henderson home</th><th class="p-3">Cash price range</th></tr></thead>
+          <tbody class="text-slate-600">
+            <tr class="border-t border-[#E8ECE4]"><td class="p-3">6 kW</td><td class="p-3">Townhome or ~1,500 sq ft</td><td class="p-3">~$15,600–$20,400</td></tr>
+            <tr class="border-t border-[#E8ECE4]"><td class="p-3">8 kW</td><td class="p-3">~1,800–2,200 sq ft (most common)</td><td class="p-3">~$20,800–$27,200</td></tr>
+            <tr class="border-t border-[#E8ECE4]"><td class="p-3">10 kW</td><td class="p-3">~2,400 sq ft+, pool or EV</td><td class="p-3">~$26,000–$34,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-slate-600 leading-relaxed">A battery adds about $11,000–$15,000. See the full <a class="text-brand-orange hover:underline" href="/blog/solar-cost-las-vegas-2026">Las Vegas and Henderson solar cost breakdown</a> and the <a class="text-brand-orange hover:underline" href="/blog/solar-payback-period-las-vegas">payback period math</a>.</p>
     </div>
   </section>
 
@@ -87,7 +138,7 @@ const planningGuides = [
         {c.incentives.map((inc: any) => (
           <div class="bg-[#FAFAF8] rounded-xl p-6 border border-slate-200 shadow-sm">
             <h3 class="font-semibold text-slate-900 mb-2">{inc.title}</h3>
-            <p class="text-slate-600 text-sm leading-relaxed">{inc.description}</p>
+            <p class="text-slate-600 text-sm leading-relaxed [&_a]:text-brand-orange [&_a]:underline" set:html={inc.description} />
           </div>
         ))}
       </div>

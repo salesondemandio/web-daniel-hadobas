@@ -4,14 +4,19 @@ export const extraPosts4: BlogPost[] = [
   {
     slug: 'tesla-powerwall-las-vegas',
     title: 'Is a Tesla Powerwall Worth It in Las Vegas? Honest Math',
-    seoTitle: 'Tesla Powerwall Las Vegas: 2026 Cost and Honest Math',
+    seoTitle: 'Tesla Powerwall Cost in Las Vegas (2026) — Worth It?',
     description: 'Tesla Powerwall in Las Vegas: real installed cost, what 13.5 kWh actually does, and honest alternatives. Vendor-neutral advice.',
     publishDate: '2026-05-20',
+    modifiedDate: '2026-10-23',
     tags: ['Battery & Backup', 'Las Vegas', 'Nevada'],
     body: `<p>A Tesla Powerwall 3 in Las Vegas runs about $10,000–$15,000 installed, and that's the real cash price now — the 30% federal tax credit that used to cover batteries ended December 31, 2025 for systems you buy. It holds 13.5 kWh of usable energy, which is enough to run your essentials overnight and keep the lights on during an NV Energy outage. Whether it's worth it depends on your goals — and I'll show you the honest math, including when a different battery wins.</p>
 
 <h2>What a Powerwall 3 actually is</h2>
 <p>The Powerwall 3 is a 13.5 kWh lithium battery with a built-in solar inverter. That last part matters — it means new solar installs can skip a separate inverter and route panels straight through the battery. It outputs up to 11.5 kW continuous, so it can run a Vegas AC unit, fridge, and most of your home at once. One unit covers backup for essentials. Whole-home backup for a big house usually needs two.</p>
+
+<h2>Tesla solar in Las Vegas: buying from Tesla vs an independent agent</h2>
+<p>You can buy a Powerwall, or a full Tesla solar system, straight from Tesla Energy, or have one installed through a local installer. I'm an independent agent, so I quote Powerwall alongside Enphase and Franklin batteries and the panels that fit your roof, then compare cash, loan and lease prices side by side. Buying direct gets you one brand and one price. Going through an agent gets you options and someone local who manages permits, your HOA and NV Energy interconnection. More on that in <a href="/blog/tesla-solar-vs-traditional-installer-las-vegas">Tesla solar vs a traditional installer in Las Vegas</a>.</p>
+<p><strong>What's the best home battery in Henderson, NV?</strong> The same answer as Las Vegas, since Henderson is the same NV Energy territory with the same heat. For most homes that's a single Powerwall 3 for value, or Enphase if you want modular capacity. See <a href="/solar-battery-storage">solar battery storage in Las Vegas and Henderson</a> for sizing.</p>
 
 <h2>The honest cost in Las Vegas</h2>
 <p>Installed pricing in the valley lands at $10,000–$15,000 for a single Powerwall 3. The spread comes from whether it goes in alongside new solar (cheaper, shared labor) or as a retrofit (adds $1,500–$2,500 for extra electrical work). That's the cash price — the 30% federal credit that used to cover batteries ended December 31, 2025 for systems you buy, so there's no federal reduction off that anymore. A lease or PPA can still capture a federal incentive through end of 2027, but not an owned battery.</p>
