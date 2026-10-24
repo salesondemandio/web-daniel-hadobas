@@ -67,7 +67,9 @@ export const batchGridPosts: BlogPost[] = [
 <p>Whatever tier you enroll in is locked for 20 years at the installed location. New Las Vegas customers today interconnect at the current tier (75% of retail) under <a href="/blog/nv-energy-rule-15-explained">Rule 15</a>.</p>
 
 <h2>Where it stands in 2026</h2>
-<p>Net metering in Nevada is stable but not static. Rates and structures remain subject to PUCN review, and utility filings continue to propose changes such as demand charges. The practical takeaway for homeowners is unchanged from the 2015 lesson: the value of locking in today's 20-year rate rises as retail electricity prices climb — and with <a href="/blog/data-centers-nevada-power-bills-solar">data-center demand driving record load growth</a>, those prices are climbing fast.</p>`,
+<p>Net metering in Nevada is stable but not static. Rates and structures remain subject to PUCN review, and utility filings continue to propose changes such as demand charges. The practical takeaway for homeowners is unchanged from the 2015 lesson: the value of locking in today's 20-year rate rises as retail electricity prices climb — and with <a href="/blog/data-centers-nevada-power-bills-solar">data-center demand driving record load growth</a>, those prices are climbing fast.</p>
+<p>How it works today: <a href="/blog/does-nv-energy-buy-back-solar">NV Energy solar buyback and net metering rates</a>.</p>
+`,
     faqs: [
       {
         question: 'What was the Nevada solar net-metering controversy?',
@@ -120,7 +122,9 @@ export const batchGridPosts: BlogPost[] = [
 <ul>
 <li><a href="https://prod.puc.nv.gov/renewables/net-metering-in-nevada/" target="_blank" rel="noopener">Public Utilities Commission of Nevada: Net Metering in Nevada</a></li>
 <li><a href="https://www.nvenergy.com/cleanenergy/solar" target="_blank" rel="noopener">NV Energy: Solar and Energy Storage</a></li>
-</ul>`,
+</ul>
+<p>Go deeper: the <a href="/blog/nv-energy-net-metering-deep-dive">full NV Energy net metering deep dive</a>, the <a href="/blog/nevada-net-metering-controversy">history of Nevada net metering</a>, and whether a <a href="/blog/tesla-powerwall-las-vegas">Tesla Powerwall in Las Vegas</a> beats exporting.</p>
+`,
     faqs: [
       {
         question: 'Does NV Energy buy back solar power?',

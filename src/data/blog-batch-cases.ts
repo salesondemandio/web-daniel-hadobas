@@ -139,6 +139,7 @@ export const batchCasesPosts: BlogPost[] = [
 <p>For homes in this size and bill range across 89052, 89074, and 89012, the design pattern repeats: 10–12 kW system, microinverters if there’s shade, no battery, sized to consumption rather than to roof area, with the west-slope production tuned to evening AC and pool-pump load. The specifics vary; the playbook is consistent.</p>
 
 <p>If you're in 89052, 89074, or 89012 and want me to look at your roof, <a href="/#get-quote">request a quote here</a>. More Henderson detail at <a href="/solar-henderson-nv">Henderson solar</a>. Or see the <a href="/solar-las-vegas">Las Vegas solar overview</a>.</p>
+<p>Planning your own project? See <a href="/solar-henderson-nv">solar panels in Henderson, NV</a>.</p>
 `,
     faqs: [
       { question: 'Does a pool pump change my solar system size?', answer: 'A variable-speed pump at 1.5 kW × 8 hours/day adds about 360 kWh/month in summer. That moves system sizing up by roughly 1.5–2 kW. The right answer is to look at your actual NV Energy bills, not estimate the pump load — bills already include it.' },
@@ -430,6 +431,7 @@ export const batchCasesPosts: BlogPost[] = [
 <p>And one more practical note. The federal 30% residential credit is already gone for purchased systems — it expired December 31, 2025. Don't plan around a federal credit that no longer exists for a cash or financed buy; only lease/PPA arrangements can still capture a federal incentive, and only through the end of 2027. The numbers here reflect current law: no federal credit on the purchase, with California's SGIP and NEM 3.0 carrying the incentive side.</p>
 
 <p>If you're in LADWP, SCE, or anywhere in California, see the <a href="/solar-california">California solar overview</a> or the <a href="/solar-los-angeles">Los Angeles page</a>. Or <a href="/#get-quote">request a quote</a>. Compare with our <a href="/blog/case-san-diego-sdge-77-percent-bill-reduction">San Diego SDG&E case</a> for a different California utility’s math.</p>
+<p>More detail: <a href="/blog/nem-3-export-rates-california-2026">how NEM 3.0 export rates work</a>.</p>
 `,
     faqs: [
       { question: 'Does NEM 3.0 apply to LADWP customers?', answer: 'No, technically. NEM 3.0 is the CPUC-mandated tariff for the investor-owned utilities (PG&E, SCE, SDG&E). LADWP is a municipal utility and runs its own net-metering program. But LADWP\'s time-of-use rates still make battery-first design the right approach for most customers.' },

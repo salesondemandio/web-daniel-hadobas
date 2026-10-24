@@ -229,7 +229,8 @@ const originalPosts: BlogPost[] = [
 <p>The key takeaway for Las Vegas solar buyers is: <strong>don't size your system to maximize exports, size it to minimize your net annual bill</strong>. A system that covers 95–100% of your annual consumption at the 75% net metering rate is more valuable than one that overproduces by 30% and sends the excess to NV Energy at a discount.</p>
 <p>When reviewing proposals, ask your solar advisor to show you the projected annual net metering credit vs. grid consumption balance. If they're recommending an oversized system without a clear reason, push back.</p>
 <p>Have questions about how net metering would work for your specific home? <a href="/#get-quote">Book a free consultation</a> — I'll run the actual numbers based on your NV Energy bill.</p>
-    `,
+<p>Short version with 2026 rates: <a href="/blog/does-nv-energy-buy-back-solar">does NV Energy buy back solar?</a></p>
+`,
     faqs: [
       {
         question: 'Does NV Energy pay cash for excess solar?',
@@ -360,7 +361,8 @@ const originalPosts: BlogPost[] = [
 <p>Yes — the economics still work, especially with battery storage. California has the highest electricity rates in the continental US in most metro areas, and those rates are rising every year. Even with the federal ITC expired for purchases, SGIP alone can offset a large share of a solar-plus-battery system cost for qualifying households, and the value of self-consumption under NEM 3.0 keeps climbing as rates rise.</p>
 <p>The key is designing the system correctly for NEM 3.0: right-sized solar array, adequate battery capacity, and a system tuned for self-consumption rather than export.</p>
 <p><a href="/#get-quote">Book a free consultation</a> and I'll show you exactly how the numbers work for your specific home, utility, and situation in California.</p>
-    `,
+<p>More detail: <a href="/blog/nem-3-export-rates-california-2026">what NEM 3.0 exports actually pay</a>.</p>
+`,
     faqs: [
       {
         question: 'Is solar still worth it in California under NEM 3.0?',

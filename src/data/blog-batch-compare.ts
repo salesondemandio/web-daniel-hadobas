@@ -426,7 +426,7 @@ export const batchComparePosts: BlogPost[] = [
     title: 'Solar Lease vs Loan vs PPA — A Pros and Cons Table',
     seoTitle: 'Solar Lease vs PPA vs Purchase: Which Is Better? (2026)',
     description: 'Solar lease vs loan vs PPA — the honest pros and cons of each financing structure, who keeps the tax credit, and which one fits your situation.',
-    seoDescription: 'Solar lease vs PPA vs buying outright, side by side: monthly cost, who owns the system, escalators, home-sale problems and which one actually saves more in 2026.',
+    seoDescription: 'Solar lease vs PPA vs loan or cash purchase: who owns the system, how you pay, who keeps incentives now that the federal credit ended, and a pros and cons table for Nevada homeowners.',
     publishDate: '2026-04-01',
     modifiedDate: '2026-10-23',
     tags: ['Comparison', 'Cost & Financing'],
@@ -666,7 +666,9 @@ export const batchComparePosts: BlogPost[] = [
 </ol>
 
 <h2>Closing</h2>
-<p>Solar in Riverside and the Inland Empire still works. NEM 3.0 made it harder but not unprofitable — it just demands a better-designed system, usually with a battery. <a href="/solar-california">Here's my California solar overview</a>. If you want me to bid your IE address against my installer bench, <a href="/#get-quote">request a quote here</a>.</p>`,
+<p>Solar in Riverside and the Inland Empire still works. NEM 3.0 made it harder but not unprofitable — it just demands a better-designed system, usually with a battery. <a href="/solar-california">Here's my California solar overview</a>. If you want me to bid your IE address against my installer bench, <a href="/#get-quote">request a quote here</a>.</p>
+<p>More detail: <a href="/blog/nem-3-export-rates-california-2026">SCE NEM 3.0 export rates</a>.</p>
+`,
     faqs: [
       { question: 'Is solar still worth it in Riverside under NEM 3.0?', answer: 'Yes — but the design has to be right. A solar + battery system tuned to your SCE TOU rate plan still produces strong lifetime savings. Solar without a battery has gotten weaker under NEM 3.0 and often no longer pencils for new installs.' },
       { question: 'Do I need a battery with solar in the Inland Empire?', answer: 'Functionally, yes. Without a battery, NEM 3.0 export rates are too low to capture the full value of midday production. A correctly sized battery shifts that production into the SCE evening peak where rates are highest.' },

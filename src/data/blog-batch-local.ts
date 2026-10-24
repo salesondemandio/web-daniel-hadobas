@@ -91,7 +91,9 @@ export const batchLocalPosts: BlogPost[] = [
 <p>An 8 kW system in 89014 with a $260 average bill: $23k cash (the 30% federal credit ended December 31, 2025 for purchased systems, so there's no reduction off that anymore), payback roughly 9–12 years for a cash purchase now that the credit has ended, though NV Energy's rising rates keep pulling that number down. Same system in 89052 with a $475 average bill: 12 kW recommended, $38k cash, payback toward the lower end of that 9–12 year range because the high-tier bill offsets more peak-rate kWh.</p>
 
 <h2>Get a Henderson-specific quote</h2>
-<p>Drop your zip and last 12 months of NV Energy bills and I'll model it. <a href="/solar-henderson-nv">Henderson solar page</a> or <a href="/#get-quote">request a quote</a>.</p>`,
+<p>Drop your zip and last 12 months of NV Energy bills and I'll model it. <a href="/solar-henderson-nv">Henderson solar page</a> or <a href="/#get-quote">request a quote</a>.</p>
+<p>Planning your own project? See <a href="/solar-henderson-nv">Henderson solar companies and costs</a>.</p>
+`,
     faqs: [
       { question: 'Which Henderson zip code is best for solar?', answer: '89052 has the highest bills and shortest payback (7–8 years) but the toughest HOAs. 89014 is the easiest install and cheapest system. They\'re both good, just different.' },
       { question: 'Do older Henderson homes need a panel upgrade for solar?', answer: 'In 89002, about 60% of homes do. Federal Pacific and Zinsco panels can\'t be interconnected. Budget $1,800–$3,200 for the upgrade if your home is pre-1990.' },
@@ -137,7 +139,9 @@ export const batchLocalPosts: BlogPost[] = [
 <p>GVR is in CCSD Zone 2 (mostly Foothill, Green Valley HS feeders). Install crews avoid the 7:15–8:15am school traffic on Pecos and Green Valley Pkwy — we start at 9am sharp and finish by 4pm to dodge afternoon pickup.</p>
 
 <h2>What to send me for a real quote</h2>
-<p>Address, last 12 months of NV Energy bills (or the kWh totals), and a photo of your main panel. I'll have a line-item proposal back in 24 hours. <a href="/solar-henderson-nv">Henderson page</a> or <a href="/#get-quote">request a quote</a>.</p>`,
+<p>Address, last 12 months of NV Energy bills (or the kWh totals), and a photo of your main panel. I'll have a line-item proposal back in 24 hours. <a href="/solar-henderson-nv">Henderson page</a> or <a href="/#get-quote">request a quote</a>.</p>
+<p>Planning your own project? See <a href="/solar-henderson-nv">Henderson solar panel installation</a>.</p>
+`,
     faqs: [
       { question: 'Is the Green Valley Ranch HOA hard on solar approvals?', answer: 'No — they have a reputation that doesn\'t match my experience. Clean submittals get approved in 8–12 days. The main thing they\'ll catch is street-facing conduit, which is fixable.' },
       { question: 'Do GVR homes typically need a main panel upgrade?', answer: 'Most homes built post-1995 have 200A panels that handle solar fine. Older Liberty Pointe phases occasionally need a sub-panel for the inverter circuit but rarely a full upgrade.' },
@@ -402,7 +406,7 @@ export const batchLocalPosts: BlogPost[] = [
     slug: 'solar-san-diego-sdge-nem-3',
     title: 'Solar in San Diego — SDG&E and NEM 3.0 in 2026',
     seoTitle: 'NEM 3 San Diego: SDG&E Net Metering & Solar in 2026',
-    seoDescription: 'How SDG&E net metering works under NEM 3.0 in San Diego: export credits, the annual true-up bill, why a battery matters and real 2026 solar savings.',
+    seoDescription: 'Is solar worth it on SDG&E under NEM 3.0? 2026 export credits, how the annual true-up bill works, battery sizing, SGIP rebates and real San Diego payback numbers.',
     description: 'Solar in San Diego SDG&E NEM 3.0 in 2026: how the export rate cuts changed the math, why batteries are now mandatory, and real payback numbers.',
     publishDate: '2026-05-01',
     modifiedDate: '2026-10-23',
@@ -450,7 +454,9 @@ export const batchLocalPosts: BlogPost[] = [
 <p>San Diego County uses SolarAPP+ for standard residential — permit in 1–3 days. SDG&E PTO averages 4–6 weeks. HOA 14–21 days. Total contract-to-operating: 8–10 weeks.</p>
 
 <h2>Want a real San Diego number?</h2>
-<p>Send address + last 12 months SDG&E bills. I'll model with battery and without so you can see the difference. <a href="/solar-san-diego">San Diego solar page</a> or <a href="/#get-quote">request a quote</a>.</p>`,
+<p>Send address + last 12 months SDG&E bills. I'll model with battery and without so you can see the difference. <a href="/solar-san-diego">San Diego solar page</a> or <a href="/#get-quote">request a quote</a>.</p>
+<p>More detail: <a href="/blog/nem-3-export-rates-california-2026">SDG&E export rates under NEM 3.0</a>.</p>
+`,
     faqs: [
       { question: 'Is solar still worth it in San Diego under NEM 3.0?', answer: 'With a battery, yes — payback 7–9 years. Without a battery, 12–15 years. SDG&E\'s high rates make self-consumption the primary savings driver now.' },
       { question: 'How much battery do I need in San Diego?', answer: '10–13 kWh covers most households for the 4pm–9pm peak window. Bigger homes with EVs or pools may want 20+ kWh.' },

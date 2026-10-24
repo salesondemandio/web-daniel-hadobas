@@ -31,6 +31,7 @@ const pageTitle = post.seoTitle
 const pageDescription = post.seoDescription ?? post.description;
 
 const topicText = `${post.title} ${post.tags.join(' ')}`.toLowerCase();
+const isCalifornia = ['california', 'san diego', 'los angeles', 'riverside', 'nem 3.0', 'sgip'].some((term) => topicText.includes(term));
 const serviceGuide = topicText.includes('san diego')
   ? { href: '/solar-san-diego', label: 'Solar in San Diego' }
   : topicText.includes('los angeles')
@@ -144,7 +145,7 @@ const relatedPosts = blogPosts
   <!-- Article body -->
   <article class="py-12 px-4">
     {mentionsFederalCredit && (
-      <div class="max-w-3xl mx-auto"><ITCNotice /></div>
+      <div class="max-w-3xl mx-auto"><ITCNotice state={isCalifornia ? 'CA' : 'NV'} /></div>
     )}
     <div class="article-body max-w-3xl mx-auto text-slate-700" set:html={post.body} />
     <aside class="max-w-3xl mx-auto mt-10 rounded-xl border border-[#DDE3D8] bg-[#F0F2EE] p-6" aria-label="Local solar guide">

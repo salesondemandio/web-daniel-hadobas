@@ -28,6 +28,7 @@ export const batchMoneyPosts: BlogPost[] = [
 </tbody>
 </table>
 <p><strong>How much does solar cost for a 2,000 sq ft house in Las Vegas?</strong> Most 2,000 sq ft homes in the valley need about 7–9 kW, so expect roughly $18,000–$31,000 cash, with 8 kW (about $20,800–$27,200) the most common size. A pool, an EV or a west-facing roof pushes it higher.</p>
+<p><strong>What moves your price:</strong> roof type, pitch and shading, panel and inverter brand, main-panel upgrades, battery add-ons, HOA and permit requirements, and whether you pay cash or finance (loans often carry a dealer fee). These ranges are a starting point. Your actual quote depends on your home.</p>
 <p>National cost sites often show lower averages because they blend in cheaper states and simpler roofs. The numbers above are what local installers quote on itemized Las Vegas jobs.</p>
 
 <h2>What's in the price</h2>
@@ -58,7 +59,7 @@ export const batchMoneyPosts: BlogPost[] = [
 <p>A single 13.5 kWh battery (Tesla Powerwall 3, Enphase IQ 5P stack, Franklin aPower) installed runs $11,000–$15,000 in 2026. With the federal credit gone for purchased systems, that's your real number — no 30% reduction. Most of my Vegas clients add one battery, not two — the second battery rarely pencils unless you're on a well or running medical equipment.</p>
 
 <h2>Payback period</h2>
-<p>Cash payback in Las Vegas is roughly 9–12 years for a cash purchase now that the 30% federal credit has ended — though NV Energy's rising rates keep pulling that number down. After that you're into 15+ years of basically free electricity. Financed payback is longer because of the dealer fee. I break this down per-quote so you see your number, not an industry average.</p>
+<p>Cash payback in Las Vegas is roughly 9–12 years for a cash purchase now that the 30% federal credit has ended — though NV Energy's rising rates keep pulling that number down. After that you're into 15+ years of basically free electricity. Financed payback is longer because of the dealer fee. I break this down per-quote so you see your number, not an industry average. The full math is in <a href="/blog/solar-payback-period-las-vegas">solar payback period in Las Vegas</a>; for financing tradeoffs see <a href="/blog/solar-lease-vs-loan-vs-cash-nevada">lease vs loan vs cash in Nevada</a>, and for battery pricing see <a href="/blog/tesla-powerwall-las-vegas">Tesla Powerwall cost in Las Vegas</a>. Pricing is the same in Henderson: see <a href="/solar-henderson-nv">solar panel cost in Henderson</a>.</p>
 
 <h2>Common mistake — oversizing</h2>
 <p>I see this on every third quote a homeowner brings me from another company: the system is 30% bigger than the home actually uses. NV Energy's <a href="https://www.nvenergy.com/account-services/energy-pricing-plans/net-metering">net metering rules</a> only credit you for excess generation at a reduced rate, so producing more than you consume is mostly wasted money. Right-sizing matters more than maxing out the roof.</p>
@@ -750,7 +751,9 @@ export const batchMoneyPosts: BlogPost[] = [
 <h2>Why I cover SGIP from Nevada</h2>
 <p>I install across the Nevada–California border for clients with second homes and clients in Inyo, Mono, and San Bernardino counties — areas with HFTD Tier 2/3 designations and real PSPS exposure. The economics of California battery storage in 2026 now rest on two levers for owners: SGIP and NEM 3.0 self-consumption (the federal 30% credit expired December 31, 2025 for purchased systems). Done right, an equity-tier SGIP rebate can still make out-of-pocket on storage in California lower than in Nevada. Done wrong, you miss the rebate window entirely.</p>
 
-<p>Have a California address and want to know which SGIP tier you qualify for? <a href="/#get-quote">Request a quote here</a> and I'll run the eligibility check before quoting hardware.</p>`,
+<p>Have a California address and want to know which SGIP tier you qualify for? <a href="/#get-quote">Request a quote here</a> and I'll run the eligibility check before quoting hardware.</p>
+<p>More detail: <a href="/blog/nem-3-export-rates-california-2026">NEM 3.0 export rates</a>.</p>
+`,
     faqs: [
       {
         question: 'How much is the SGIP rebate for a Tesla Powerwall in California?',
