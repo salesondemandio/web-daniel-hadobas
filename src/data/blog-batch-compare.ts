@@ -280,12 +280,14 @@ export const batchComparePosts: BlogPost[] = [
   {
     slug: 'sunder-energy-vs-other-solar-companies',
     title: 'Sunder Energy vs Other Solar Companies — A Reality Check',
-    seoTitle: 'Sunder Energy Solar Reviews: How the Company Works (2026)',
+    seoTitle: 'Sunder Energy Reviews & SunPower Acquisition (2026 Update)',
     description: 'Sunder Energy vs other solar companies — how the dealer/agent model differs from in-house sales, and what to actually look for in any solar quote.',
     seoDescription: 'Sunder Energy (Sunder Solar) explained by an independent agent: how the company works, what reviews say, dealer vs in-house installers, and what to check in any quote.',
     publishDate: '2026-03-10',
     tags: ['Comparison', 'Solar Companies'],
     body: `<p><strong>Quick answer:</strong> Sunder Energy is a national solar dealer organization — they don't install solar themselves; they connect homeowners with vetted installer partners through a network of independent agents. That model is closer to how I work than to how a company like SunRun or SolarOptimum works. The "Sunder vs other companies" question is really "agent/dealer model vs in-house company model" — and the answer depends on whether you want competitive bidding or single-vendor integration.</p>
+
+<p><strong>2026 update:</strong> SunPower (Nasdaq: SPWR) announced it was acquiring Sunder Energy on September 22, 2025, closed the deal that same month, and said it finished integrating Sunder on March 13, 2026. Sunder's network of independent sales reps now sells for SunPower. Sunder is still a sales organization, not an installer, so the installer named on your contract is who actually does the work. (Sources: <a href="https://investors.sunpower.com/news-releases/news-release-details/sunpower-closes-sunder-energy-acquisition" target="_blank" rel="noopener">SunPower: closes Sunder acquisition</a>; <a href="https://investors.sunpower.com/news-releases/news-release-details/sunpower-completes-integration-sunder-energy" target="_blank" rel="noopener">SunPower: completes Sunder integration</a>.)</p>
 
 <h2>What Sunder Energy actually is</h2>
 <p>Sunder is a dealer org. They don't own installation crews. Instead, they have a network of independent agents (full disclosure: I work with installers who are part of this ecosystem) who match homeowners to installer partners. The agent gets paid on referral when a project closes. The installer does the work. The homeowner gets a bid from the installer that won the matching.</p>
@@ -323,8 +325,17 @@ export const batchComparePosts: BlogPost[] = [
 </ul>
 
 <h2>The fair criticisms of any dealer-network model</h2>
-<p>I'll be honest about this because Charles told me to be honest. Any large dealer network — Sunder included — has variability. Some agents are excellent. Some are new. The network is only as good as the agents in it and the installers they route to. The <a href="https://www.bbb.org" rel="nofollow">BBB profile</a> of any network or installer you're considering is worth looking up before signing.</p>
+<p>Any large dealer network — Sunder included — has variability. Some agents are excellent. Some are new. The network is only as good as the agents in it and the installers they route to. The <a href="https://www.bbb.org" rel="nofollow">BBB profile</a> of any network or installer you're considering is worth looking up before signing.</p>
 <p>The right defense against variability is the same as it is anywhere: get the proposal in writing, compare it to one or two other bids, and make sure the install company — not just the dealer — is licensed and bonded in Nevada.</p>
+
+<h2>Sunder Energy reviews and complaints: what to check before you sign</h2>
+<p>Reviews of Sunder show up on Yelp, Nextdoor, Reddit and the BBB. Most of them describe one rep and one installer, not the whole company, so read them that way. Before you sign with any Sunder or SunPower rep:</p>
+<ul>
+<li><strong>Get the installer's name on the contract</strong> and look up its license on the <a href="https://www.nscb.nv.gov/" target="_blank" rel="noopener">Nevada State Contractors Board</a> site.</li>
+<li><strong>Get the workmanship warranty in writing</strong>, plus who services the system if the sales company changes hands (as Sunder just did).</li>
+<li><strong>Ask for the cash price and the financed price</strong> side by side, so the dealer fee is visible.</li>
+<li><strong>Check the rep's history.</strong> Search their name plus "solar" and read the reviews that mention them by name.</li>
+</ul>
 
 <h2>What to ask any solar rep, dealer or in-house</h2>
 <ol>

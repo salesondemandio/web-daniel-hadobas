@@ -909,6 +909,14 @@ export const batchTechPosts: BlogPost[] = [
 <h2>Standalone Battery Adders — A NEM 3.0 Adjacent Trick</h2>
 <p>If you already have NEM 2.0 solar and want to add storage without losing your grandfathering, install the battery as a standalone, AC-coupled system without modifying your solar interconnection. You keep your NEM 2.0 status. (The 30% federal credit that used to apply to an owned battery ended December 31, 2025, so a cash or financed battery no longer earns it.) The battery uses your existing grid connection but doesn't change your solar export tariff. This is one of the cleanest moves available to existing California solar homeowners in 2026.</p>
 
+<h2>Non-Export (Zero-Export) Solar Systems in California</h2>
+<p>A non-export system is solar, storage or both, set up so it never sends power to the grid. A certified power control system or inverter setting holds exports at zero, and anything you don't use is stored in a battery or curtailed. It still needs utility interconnection approval under <a href="https://www.cpuc.ca.gov/Rule21/" target="_blank" rel="noopener">Rule 21</a>, but no export tariff applies.</p>
+<ul>
+<li><strong>Why people choose it:</strong> to add panels or storage without exporting at NEM 3.0's low rates, or to expand a home that already has older solar.</li>
+<li><strong>The tradeoff:</strong> any production beyond what you use and can store is wasted, so sizing to your load and battery matters even more than on a normal NEM 3.0 system.</li>
+<li><strong>Before you add anything to a NEM 1.0 or 2.0 system,</strong> get your utility's answer in writing on whether the change affects your grandfathered status. The rules depend on the utility and on how the new equipment is interconnected.</li>
+</ul>
+
 <h2>The Bottom Line</h2>
 <p>NEM 3.0 is workable. It rewards solar+storage and punishes solar-only. The headline export rates are misleading — most exports pay $0.05–$0.10/kWh, not the dramatic peak numbers — so design your system around self-consumption and battery time-shift, not around chasing export revenue. <a href="/#get-quote">Want me to model a NEM 3.0 system for your home?</a> Send me a year of bills and your TOU rate plan and I'll come back with three options.</p>
     `,

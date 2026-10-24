@@ -16,7 +16,7 @@ export const riversideContent = {
   stats: [
     { value: "$0.28–$0.32", label: "SCE Rate per kWh in Riverside" },
     { value: "$0", label: "Down to Get Started" },
-    { value: "7–9 yrs", label: "Average Payback Period" }
+    { value: "9–12 yrs", label: "Average Payback Period" }
   ],
   incentives: [
     {
@@ -37,6 +37,10 @@ export const riversideContent = {
     }
   ],
   faqs: [
+    {
+      question: "Can you put solar on a mobile or manufactured home in Riverside County?",
+      answer: "Yes, but it needs a permit and inspection from the California Department of Housing and Community Development (HCD), not just the city or county, because HCD regulates manufactured homes. The roof also has to be able to carry the panels. Make sure your installer is licensed and pulls the HCD permit; work that isn't attached to the home, like a ground mount or a main-panel upgrade, may also need a local permit.",
+    },
     {
       question: "How much does solar cost in Riverside, CA?",
       answer: "Riverside solar installations run $2.90–$3.30 per watt before incentives. A typical 8 kW system costs $23,200–$26,400 — the 30% federal credit ended Dec 31, 2025, so there's no further reduction for a cash or loan purchase. Larger systems are common in Riverside due to higher air conditioning loads. Adding a battery adds $8,000–$12,000 before SGIP rebates. $0 down financing available."
