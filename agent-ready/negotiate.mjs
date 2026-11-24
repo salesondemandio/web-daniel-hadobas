@@ -1,4 +1,4 @@
-// Vendored from dev/tools/astro-agent-ready v0.1.0. Edit there, then re-run bin/sync.mjs.
+// Vendored from dev/tools/astro-agent-ready v0.4.0. Edit there, then re-run bin/sync.mjs.
 // Shared request helpers for the agent-ready middlewares. No dependencies.
 export const MD_PREFIX = '/_md';
 
@@ -15,7 +15,7 @@ export function wantsMarkdown(accept) {
 
 /** True for paths that are pages (no file extension, not an internal folder). */
 export function isPagePath(pathname) {
-  if (pathname.startsWith(MD_PREFIX + '/') || pathname.startsWith('/_astro/')) return false;
+  if (pathname.startsWith(MD_PREFIX + '/') || pathname.startsWith('/_astro/') || pathname.startsWith('/api/')) return false;
   const last = pathname.split('/').pop() || '';
   return !last.includes('.');
 }
@@ -26,8 +26,8 @@ export function mdPathFor(pathname) {
 }
 
 /** Link header advertised on every page. Only lists resources the site actually serves. */
-export function linkHeader({ hasLlms = true } = {}) {
-  const links = ['</sitemap-index.xml>; rel="sitemap"; type="application/xml"'];
+export function linkHeader({ hasLlms = true, sitemap = '/sitemap-index.xml' } = {}) {
+  const links = [`<${sitemap}>; rel="sitemap"; type="application/xml"`];
   if (hasLlms) links.push('</llms.txt>; rel="describedby"; type="text/plain"');
   return links.join(', ');
 }

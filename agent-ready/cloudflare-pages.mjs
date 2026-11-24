@@ -1,10 +1,17 @@
-// Vendored from dev/tools/astro-agent-ready v0.1.0. Edit there, then re-run bin/sync.mjs.
+// Vendored from dev/tools/astro-agent-ready v0.4.0. Edit there, then re-run bin/sync.mjs.
 // Cloudflare Pages Functions handler. Chain it from functions/_middleware.ts:
 //   import { agentReady } from '../agent-ready/cloudflare-pages.mjs';
 //   export const onRequest = [existingHandler, agentReady];
+// Sitemap not at /sitemap-index.xml? Use makeAgentReady({ sitemap: '/sitemap.xml' }) instead.
 import { wantsMarkdown, isPagePath, mdPathFor, linkHeader, markdownHeaders } from './negotiate.mjs';
 
-export async function agentReady(context) {
+export function makeAgentReady({ sitemap = '/sitemap-index.xml' } = {}) {
+  return (context) => handle(context, sitemap);
+}
+
+export const agentReady = makeAgentReady();
+
+async function handle(context, sitemap) {
   const { request, env } = context;
   const url = new URL(request.url);
   if (!['GET', 'HEAD'].includes(request.method) || !isPagePath(url.pathname)) return context.next();
@@ -23,6 +30,6 @@ export async function agentReady(context) {
   if (!type.includes('text/html')) return res;
   const out = new Response(res.body, res);
   out.headers.append('Vary', 'Accept');
-  out.headers.append('Link', linkHeader());
+  out.headers.append('Link', linkHeader({ sitemap }));
   return out;
 }
