@@ -24,5 +24,9 @@
   },
   "keywords": [],
   "author": "Sales On Demand",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "node-html-parser": "^9.0.7",
+    "turndown": "^7.2.5"
+  }
 }
